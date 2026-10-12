@@ -98,7 +98,16 @@ namespace DynamicWorldEngine.Runtime
             // 1. Activate Interior or Register Teleport Pockets
             if (plan.MatchedInterior != null)
             {
-                _interiorManager.ActivateInterior(plan.MatchedInterior, playerPed, true);
+                bool interiorActivated = _interiorManager.ActivateInterior(plan.MatchedInterior, playerPed, true);
+                if (!interiorActivated)
+                {
+                    Console.WriteLine(string.Format(
+                        "[RuntimeExecutor] Interior activation FAILED for '{0}' (InteriorId={1}, Coords={2}, Heading={3}). Entity spawning will continue for diagnostics; the environment may be only partially realized.",
+                        plan.MatchedInterior.Name,
+                        plan.MatchedInterior.InteriorId,
+                        plan.MatchedInterior.InteriorCoords,
+                        plan.MatchedInterior.InteriorHeading));
+                }
             }
             else if (plan.ConnectedPockets != null && plan.ConnectedPockets.Count > 0)
             {
