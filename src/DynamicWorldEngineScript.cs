@@ -66,6 +66,7 @@ namespace DynamicWorldEngine
             {
                 int currentThreadId = Thread.CurrentThread.ManagedThreadId;
                 Log.MainThreadId = currentThreadId;
+                NativeFiberCoordinator.Initialize(currentThreadId);
                 PlayerTeleportCoordinator.MainThreadId = currentThreadId;
                 SpatialPerceptionScanner.MainThreadId = currentThreadId;
                 SpatialGridSampler.MainThreadId = currentThreadId;
