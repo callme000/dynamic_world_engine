@@ -36,6 +36,15 @@ if (Test-Path -LiteralPath $legacyReference -PathType Leaf) {
 }
 
 try {
+    # Reflection-only type inspection must resolve the SHVDN base class before GetType()
+    # can inspect DynamicWorldEngineScript. Preload dependencies by their real file paths.
+    $null = [Reflection.Assembly]::ReflectionOnlyLoadFrom((Resolve-Path -LiteralPath $shvdnReference).Path)
+
+    $newtonsoftReference = Join-Path $RepositoryRoot "lib\Newtonsoft.Json.dll"
+    if (Test-Path -LiteralPath $newtonsoftReference -PathType Leaf) {
+        $null = [Reflection.Assembly]::ReflectionOnlyLoadFrom((Resolve-Path -LiteralPath $newtonsoftReference).Path)
+    }
+
     $assembly = [Reflection.Assembly]::ReflectionOnlyLoadFrom((Resolve-Path -LiteralPath $AssemblyPath).Path)
     $references = @($assembly.GetReferencedAssemblies())
 }
