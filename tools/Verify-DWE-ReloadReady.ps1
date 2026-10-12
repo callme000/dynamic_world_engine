@@ -1,44 +1,110 @@
+[CmdletBinding()]
 param(
-    [string]$GtaRoot = 'C:\Program Files\Epic Games\GTAVEnhanced'
+    [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$GameScriptsPath = "C:\Program Files\Epic Games\GTAVEnhanced\scripts",
+    [string]$AssemblyPath = ""
 )
 
-$ErrorActionPreference = 'Stop'
-$Scripts = Join-Path $GtaRoot 'scripts'
+$ErrorActionPreference = "Stop"
 
-Write-Host "DWE reload-readiness check"
-Write-Host "GTA root : $GtaRoot"
-Write-Host "Scripts  : $Scripts"
-
-if (-not (Test-Path -LiteralPath $GtaRoot)) {
-    throw "GTA V Enhanced was not found at '$GtaRoot'. Pass -GtaRoot with the actual installation path."
+function Fail([string]$Message) {
+    Write-Host "[DWE][FAIL] $Message" -ForegroundColor Red
+    exit 1
 }
 
-if (-not (Test-Path -LiteralPath $Scripts)) {
-    throw "The ScriptHookVDotNet scripts directory does not exist: '$Scripts'"
+function Pass([string]$Message) {
+    Write-Host "[DWE][OK]   $Message" -ForegroundColor Green
 }
 
-$dwe = Join-Path $Scripts 'DynamicWorldEngine.dll'
-$shvdn3 = Join-Path $Scripts 'ScriptHookVDotNet3.dll'
-$shvdnLegacy = Join-Path $Scripts 'ScriptHookVDotNet.dll'
-
-if (-not (Test-Path -LiteralPath $dwe)) {
-    throw "DynamicWorldEngine.dll is missing from '$Scripts'. Pull/install the DWE runtime into the GTA scripts directory first."
+if ([string]::IsNullOrWhiteSpace($AssemblyPath)) {
+    $AssemblyPath = Join-Path $RepositoryRoot "dist\DynamicWorldEngine.dll"
 }
 
-if (-not (Test-Path -LiteralPath $shvdn3)) {
-    throw "ScriptHookVDotNet3.dll is missing from '$Scripts'."
+$shvdnReference = Join-Path $RepositoryRoot "lib\ScriptHookVDotNet3.dll"
+$legacyReference = Join-Path $RepositoryRoot "lib\ScriptHookVDotNet.dll"
+
+if (-not (Test-Path -LiteralPath $AssemblyPath -PathType Leaf)) {
+    Fail "Built assembly not found: $AssemblyPath. Run build.bat first."
 }
 
-Write-Host "Found DynamicWorldEngine.dll"
-Write-Host "Found ScriptHookVDotNet3.dll"
-
-if (-not (Test-Path -LiteralPath $shvdnLegacy)) {
-    Write-Warning "ScriptHookVDotNet.dll is not present. The current DWE binary in this repository has previously reported an assembly dependency on the legacy ScriptHookVDotNet identity. Do not treat Insert-reload as validated until the DWE binary is rebuilt against the installed ScriptHookVDotNet3 API."
+if (-not (Test-Path -LiteralPath $shvdnReference -PathType Leaf)) {
+    Fail "Required ScriptHookVDotNet3 reference is missing: $shvdnReference"
 }
 
-Write-Host ''
-Write-Host 'Deployment rule:'
-Write-Host '  1. The repository runtime files must be present in the GTA scripts directory.'
-Write-Host '  2. Start GTA V Enhanced.'
-Write-Host '  3. After a git pull that changes the DWE runtime, press Insert to reload ScriptHookVDotNet scripts.'
-Write-Host '  4. If the readiness check reports a dependency warning, the binary must be rebuilt before gameplay validation.'
+if (Test-Path -LiteralPath $legacyReference -PathType Leaf) {
+    Write-Host "[DWE][WARN] Legacy ScriptHookVDotNet.dll exists in lib/. It must not be used for the DWE build." -ForegroundColor Yellow
+}
+
+try {
+    $assembly = [Reflection.Assembly]::ReflectionOnlyLoadFrom((Resolve-Path -LiteralPath $AssemblyPath).Path)
+    $references = @($assembly.GetReferencedAssemblies())
+}
+catch {
+    Fail "Could not inspect assembly metadata: $($_.Exception.Message)"
+}
+
+$referenceNames = @($references | ForEach-Object { $_.Name })
+
+if ($referenceNames -notcontains "ScriptHookVDotNet3") {
+    Fail "DynamicWorldEngine.dll does not reference ScriptHookVDotNet3. The compiled DLL is not reload-safe for the installed SHVDN3 runtime."
+}
+Pass "Compiled DLL references ScriptHookVDotNet3."
+
+if ($referenceNames -contains "ScriptHookVDotNet") {
+    Fail "DynamicWorldEngine.dll still references legacy ScriptHookVDotNet. Rebuild from current source/reference set."
+}
+Pass "Compiled DLL has no legacy ScriptHookVDotNet dependency."
+
+$scriptType = $assembly.GetType("DynamicWorldEngine.DynamicWorldEngineScript", $false, $false)
+if ($null -eq $scriptType) {
+    Fail "DynamicWorldEngine.DynamicWorldEngineScript was not found in the compiled assembly."
+}
+Pass "DynamicWorldEngineScript entry type is present."
+
+$referenceAssemblyName = [Reflection.AssemblyName]::GetAssemblyName((Resolve-Path -LiteralPath $shvdnReference).Path)
+Write-Host "[DWE] SHVDN3 reference: $($referenceAssemblyName.FullName)"
+Write-Host "[DWE] Built assembly:     $((Resolve-Path -LiteralPath $AssemblyPath).Path)"
+
+if (-not (Test-Path -LiteralPath $GameScriptsPath -PathType Container)) {
+    Write-Host "[DWE][WARN] GTA scripts directory does not exist: $GameScriptsPath" -ForegroundColor Yellow
+    Write-Host "[DWE] Build validation passed; deployment validation skipped."
+    exit 0
+}
+
+$deployedAssembly = Join-Path $GameScriptsPath "DynamicWorldEngine.dll"
+if (-not (Test-Path -LiteralPath $deployedAssembly -PathType Leaf)) {
+    Write-Host "[DWE][WARN] No deployed DynamicWorldEngine.dll found in GTA scripts directory yet." -ForegroundColor Yellow
+    Write-Host "[DWE] Build validation passed; deployment validation skipped."
+    exit 0
+}
+
+$builtHash = (Get-FileHash -LiteralPath $AssemblyPath -Algorithm SHA256).Hash
+$deployedHash = (Get-FileHash -LiteralPath $deployedAssembly -Algorithm SHA256).Hash
+if ($builtHash -ne $deployedHash) {
+    Fail "Deployed DynamicWorldEngine.dll does not match the freshly built DLL. GTA would still load an older build."
+}
+Pass "GTA scripts DLL matches the freshly built DLL."
+
+try {
+    $deployed = [Reflection.Assembly]::ReflectionOnlyLoadFrom((Resolve-Path -LiteralPath $deployedAssembly).Path)
+    $deployedReferences = @($deployed.GetReferencedAssemblies() | ForEach-Object { $_.Name })
+}
+catch {
+    Fail "Could not inspect deployed assembly metadata: $($_.Exception.Message)"
+}
+
+if ($deployedReferences -notcontains "ScriptHookVDotNet3") {
+    Fail "Deployed DynamicWorldEngine.dll does not reference ScriptHookVDotNet3."
+}
+if ($deployedReferences -contains "ScriptHookVDotNet") {
+    Fail "Deployed DynamicWorldEngine.dll references legacy ScriptHookVDotNet."
+}
+Pass "Deployed DLL is SHVDN3-compatible and ready for Insert reload."
+
+Write-Host ""
+Write-Host "[DWE] Reload contract satisfied:" -ForegroundColor Cyan
+Write-Host "      1. Build from repository source"
+Write-Host "      2. Deploy matching DynamicWorldEngine.dll to GTA scripts"
+Write-Host "      3. Keep GTA running"
+Write-Host "      4. Press Insert to reload ScriptHookVDotNet"
+Write-Host "      5. Verify the DWE startup log"
