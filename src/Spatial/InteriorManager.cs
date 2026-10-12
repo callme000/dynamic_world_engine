@@ -93,8 +93,25 @@ namespace DynamicWorldEngine.Spatial
 
                 if (!DynamicWorldEngine.Runtime.NativeFiberCoordinator.IsMainThread)
                 {
+                    Console.WriteLine(string.Format(
+                        "[InteriorManager] Indoor activation BLOCKED for '{0}' (InteriorId={1}). CurrentThreadId={2}, MainThreadId={3}, Coords={4}.",
+                        interior.Name,
+                        interior.InteriorId,
+                        System.Threading.Thread.CurrentThread.ManagedThreadId,
+                        DynamicWorldEngine.Runtime.NativeFiberCoordinator.MainThreadId,
+                        interior.InteriorCoords));
                     return false;
                 }
+
+                Console.WriteLine(string.Format(
+                    "[InteriorManager] Starting indoor activation for '{0}' (InteriorId={1}, Coords={2}, Heading={3}, CurrentThreadId={4}, MainThreadId={5}, Teleport={6}).",
+                    interior.Name,
+                    interior.InteriorId,
+                    interior.InteriorCoords,
+                    interior.InteriorHeading,
+                    System.Threading.Thread.CurrentThread.ManagedThreadId,
+                    DynamicWorldEngine.Runtime.NativeFiberCoordinator.MainThreadId,
+                    teleportPlayer));
 
                 // --- INDOOR IPL INTERIOR PIPELINE ---
                 // 1. Enable Online Multiplayer DLC Map Streaming in Singleplayer
@@ -221,7 +238,21 @@ namespace DynamicWorldEngine.Spatial
                 // 10. Safe Teleport Player with freeze and collision streaming
                 if (teleportPlayer && playerPed != null && playerPed.Exists())
                 {
+                    Console.WriteLine(string.Format(
+                        "[InteriorManager] Calling SafeTeleportPlayer for '{0}' at {1}, heading={2}.",
+                        interior.Name, interior.InteriorCoords, interior.InteriorHeading));
                     TeleportPocketManager.SafeTeleportPlayer(playerPed, interior.InteriorCoords, interior.InteriorHeading);
+                    Console.WriteLine(string.Format(
+                        "[InteriorManager] SafeTeleportPlayer returned for '{0}'. Player position now {1}.",
+                        interior.Name, playerPed.Position));
+                }
+                else if (teleportPlayer)
+                {
+                    Console.WriteLine(string.Format(
+                        "[InteriorManager] Teleport requested for '{0}' but player ped is unavailable (null={1}, exists={2}).",
+                        interior.Name,
+                        playerPed == null,
+                        playerPed != null && playerPed.Exists()));
                 }
 
                 Notification.Show(string.Format("~g~[Interior Active]~w~~n~~y~{0}~w~", interior.Name));
@@ -229,7 +260,13 @@ namespace DynamicWorldEngine.Spatial
             }
             catch (Exception ex)
             {
-                Console.WriteLine("[InteriorManager] Error activating interior: " + ex.Message);
+                Console.WriteLine(string.Format(
+                    "[InteriorManager] Error activating interior '{0}' (InteriorId={1}, CurrentThreadId={2}, MainThreadId={3}): {4}",
+                    interior.Name,
+                    interior.InteriorId,
+                    System.Threading.Thread.CurrentThread.ManagedThreadId,
+                    DynamicWorldEngine.Runtime.NativeFiberCoordinator.MainThreadId,
+                    ex));
                 return false;
             }
         }
