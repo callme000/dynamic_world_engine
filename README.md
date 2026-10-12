@@ -18,6 +18,3 @@ This repository is under active development. Implementation details and supporte
 - Use local environment/configuration files for secrets.
 - Commit only safe example configuration, with placeholder values.
 
-## Contributing
-
-Use feature branches and pull requests so changes can be reviewed before they are merged into `main`.
