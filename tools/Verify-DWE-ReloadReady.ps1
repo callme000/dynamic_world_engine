@@ -36,17 +36,17 @@ if (Test-Path -LiteralPath $legacyReference -PathType Leaf) {
 }
 
 try {
-    # Load assemblies from their explicit paths. GetReferencedAssemblies() reads the compiled
-    # reference table and does not require loading referenced dependencies. Unlike
-    # ReflectionOnlyLoadFrom(), Assembly.LoadFile() is supported by modern PowerShell/.NET.
-    $null = [Reflection.Assembly]::LoadFile((Resolve-Path -LiteralPath $shvdnReference).Path)
+    # Load dependencies first in the normal load context. LoadFile() uses a different
+    # load context and may leave the DWE entry type unresolved even when the dependency
+    # was loaded from disk. LoadFrom() mirrors the successful local diagnostic procedure.
+    $null = [Reflection.Assembly]::LoadFrom((Resolve-Path -LiteralPath $shvdnReference).Path)
 
     $newtonsoftReference = Join-Path $RepositoryRoot "lib\Newtonsoft.Json.dll"
     if (Test-Path -LiteralPath $newtonsoftReference -PathType Leaf) {
-        $null = [Reflection.Assembly]::LoadFile((Resolve-Path -LiteralPath $newtonsoftReference).Path)
+        $null = [Reflection.Assembly]::LoadFrom((Resolve-Path -LiteralPath $newtonsoftReference).Path)
     }
 
-    $assembly = [Reflection.Assembly]::LoadFile((Resolve-Path -LiteralPath $AssemblyPath).Path)
+    $assembly = [Reflection.Assembly]::LoadFrom((Resolve-Path -LiteralPath $AssemblyPath).Path)
     $references = @($assembly.GetReferencedAssemblies())
 }
 catch {
