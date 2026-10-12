@@ -1,0 +1,3671 @@
+{
+  "schemaVersion": 1,
+  "count": 458,
+  "strategy": "Feature-targeted retrieval; only the relevant examples are appended to each live prompt to control latency and token use.",
+  "examples": [
+    {
+      "id": "P3-0001",
+      "feature": "language:english",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "All units, be advised: suspect last seen northbound on Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0002",
+      "feature": "language:english",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0003",
+      "feature": "dispatch:english",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "All units, be advised: suspect last seen northbound on Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0004",
+      "feature": "dispatch:english",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0005",
+      "feature": "heli:english",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "THIS IS LSPD! Stop the vehicle now!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0006",
+      "feature": "heli:english",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0007",
+      "feature": "phone:english",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hello, Star Lord. Dro here. What's going on?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0008",
+      "feature": "phone:english",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0009",
+      "feature": "language:hinglish",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Sabhi units, dhyaan do: suspect ko aakhri baar Alta Street par northbound dekha gaya.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0010",
+      "feature": "language:hinglish",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0011",
+      "feature": "dispatch:hinglish",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Sabhi units, dhyaan do: suspect ko aakhri baar Alta Street par northbound dekha gaya.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0012",
+      "feature": "dispatch:hinglish",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0013",
+      "feature": "heli:hinglish",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "YE LSPD HAI! Gaadi abhi roko!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0014",
+      "feature": "heli:hinglish",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0015",
+      "feature": "phone:hinglish",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hello, Star Lord. Dro bol raha hoon. Kya scene hai?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0016",
+      "feature": "phone:hinglish",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0017",
+      "feature": "language:haryanvi",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Saari units dhyaan deyo: suspect aakhri baar Alta Street pe northbound dekhya gaya.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0018",
+      "feature": "language:haryanvi",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0019",
+      "feature": "dispatch:haryanvi",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Saari units dhyaan deyo: suspect aakhri baar Alta Street pe northbound dekhya gaya.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0020",
+      "feature": "dispatch:haryanvi",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0021",
+      "feature": "heli:haryanvi",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "LSPD se! Gaadi ibbe rok!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0022",
+      "feature": "heli:haryanvi",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0023",
+      "feature": "phone:haryanvi",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hello, Star Lord. Dro bolun su. Ke scene se?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0024",
+      "feature": "phone:haryanvi",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0025",
+      "feature": "language:bhojpuri",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Sab unit dhyaan de: suspect ke aakhiri baar Alta Street par northbound dekhla gayil.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0026",
+      "feature": "language:bhojpuri",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0027",
+      "feature": "dispatch:bhojpuri",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Sab unit dhyaan de: suspect ke aakhiri baar Alta Street par northbound dekhla gayil.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0028",
+      "feature": "dispatch:bhojpuri",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0029",
+      "feature": "heli:bhojpuri",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "Ee LSPD ba! Gaadi abhi roka!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0030",
+      "feature": "heli:bhojpuri",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0031",
+      "feature": "phone:bhojpuri",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hello, Star Lord. Dro bolat bani. Ka haal ba?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0032",
+      "feature": "phone:bhojpuri",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0033",
+      "feature": "language:khari boli",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Saari units dhyaan do: suspect aakhri baar Alta Street pe northbound dekha gaya.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0034",
+      "feature": "language:khari boli",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0035",
+      "feature": "dispatch:khari boli",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Saari units dhyaan do: suspect aakhri baar Alta Street pe northbound dekha gaya.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0036",
+      "feature": "dispatch:khari boli",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0037",
+      "feature": "heli:khari boli",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "LSPD hai! Gaadi abhi rok!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0038",
+      "feature": "heli:khari boli",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0039",
+      "feature": "phone:khari boli",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hello, Star Lord. Dro bol ra h. Ke chal ra h?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0040",
+      "feature": "phone:khari boli",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0041",
+      "feature": "language:spanish",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Todas las unidades, atención: sospechoso visto por última vez al norte por Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0042",
+      "feature": "language:spanish",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0043",
+      "feature": "dispatch:spanish",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Todas las unidades, atención: sospechoso visto por última vez al norte por Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0044",
+      "feature": "dispatch:spanish",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0045",
+      "feature": "heli:spanish",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "¡AQUÍ LSPD! ¡Detén el vehículo ahora!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0046",
+      "feature": "heli:spanish",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0047",
+      "feature": "phone:spanish",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hola, Star Lord. Soy Dro. ¿Qué pasa?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0048",
+      "feature": "phone:spanish",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0049",
+      "feature": "language:portuguese",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Todas as unidades, atenção: suspeito visto pela última vez ao norte na Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0050",
+      "feature": "language:portuguese",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0051",
+      "feature": "dispatch:portuguese",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Todas as unidades, atenção: suspeito visto pela última vez ao norte na Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0052",
+      "feature": "dispatch:portuguese",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0053",
+      "feature": "heli:portuguese",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "AQUI É A LSPD! Pare o veículo agora!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0054",
+      "feature": "heli:portuguese",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0055",
+      "feature": "phone:portuguese",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Alô, Star Lord. Aqui é o Dro. O que manda?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0056",
+      "feature": "phone:portuguese",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0057",
+      "feature": "language:german",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Alle Einheiten, Achtung: Verdächtiger zuletzt nordwärts auf der Alta Street gesehen.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0058",
+      "feature": "language:german",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0059",
+      "feature": "dispatch:german",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Alle Einheiten, Achtung: Verdächtiger zuletzt nordwärts auf der Alta Street gesehen.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0060",
+      "feature": "dispatch:german",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0061",
+      "feature": "heli:german",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "HIER IST DAS LSPD! Fahrzeug sofort anhalten!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0062",
+      "feature": "heli:german",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0063",
+      "feature": "phone:german",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Hallo, Star Lord. Dro hier. Was gibt's?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0064",
+      "feature": "phone:german",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0065",
+      "feature": "language:polish",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Wszystkie jednostki, uwaga: podejrzany ostatnio widziany na Alta Street, kierunek północny.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0066",
+      "feature": "language:polish",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0067",
+      "feature": "dispatch:polish",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Wszystkie jednostki, uwaga: podejrzany ostatnio widziany na Alta Street, kierunek północny.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0068",
+      "feature": "dispatch:polish",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0069",
+      "feature": "heli:polish",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "TU LSPD! Natychmiast zatrzymaj pojazd!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0070",
+      "feature": "heli:polish",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0071",
+      "feature": "phone:polish",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Cześć, Star Lord. Tu Dro. Co się dzieje?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0072",
+      "feature": "phone:polish",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0073",
+      "feature": "language:japanese",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "全ユニットへ、容疑者はアルタ・ストリートを北上中に最後に目撃された。",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0074",
+      "feature": "language:japanese",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0075",
+      "feature": "dispatch:japanese",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "全ユニットへ、容疑者はアルタ・ストリートを北上中に最後に目撃された。",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0076",
+      "feature": "dispatch:japanese",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0077",
+      "feature": "heli:japanese",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "LSPDだ！今すぐ車を止めろ！",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0078",
+      "feature": "heli:japanese",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0079",
+      "feature": "phone:japanese",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] もしもし、スター・ロード。ドロだ。どうした？",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0080",
+      "feature": "phone:japanese",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0081",
+      "feature": "language:french",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "À toutes les unités, suspect vu pour la dernière fois vers le nord sur Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0082",
+      "feature": "language:french",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0083",
+      "feature": "dispatch:french",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "À toutes les unités, suspect vu pour la dernière fois vers le nord sur Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0084",
+      "feature": "dispatch:french",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0085",
+      "feature": "heli:french",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "ICI LE LSPD ! Arrêtez le véhicule immédiatement !",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0086",
+      "feature": "heli:french",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0087",
+      "feature": "phone:french",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Allô, Star Lord. C'est Dro. Qu'est-ce qui se passe ?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0088",
+      "feature": "phone:french",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0089",
+      "feature": "language:italian",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "A tutte le unità: sospetto visto l'ultima volta verso nord su Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0090",
+      "feature": "language:italian",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0091",
+      "feature": "dispatch:italian",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "A tutte le unità: sospetto visto l'ultima volta verso nord su Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0092",
+      "feature": "dispatch:italian",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0093",
+      "feature": "heli:italian",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "QUI LSPD! Ferma subito il veicolo!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0094",
+      "feature": "heli:italian",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0095",
+      "feature": "phone:italian",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Pronto, Star Lord. Sono Dro. Che succede?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0096",
+      "feature": "phone:italian",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0097",
+      "feature": "language:chinese",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "所有单位注意：嫌疑人最后一次被目击时正在阿尔塔街向北行驶。",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0098",
+      "feature": "language:chinese",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0099",
+      "feature": "dispatch:chinese",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "所有单位注意：嫌疑人最后一次被目击时正在阿尔塔街向北行驶。",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0100",
+      "feature": "dispatch:chinese",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0101",
+      "feature": "heli:chinese",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "这里是LSPD！立刻停车！",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0102",
+      "feature": "heli:chinese",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0103",
+      "feature": "phone:chinese",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] 喂，星爵。我是德罗。怎么了？",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0104",
+      "feature": "phone:chinese",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0105",
+      "feature": "language:malaysian",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Semua unit, perhatian: suspek kali terakhir dilihat menuju utara di Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0106",
+      "feature": "language:malaysian",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0107",
+      "feature": "dispatch:malaysian",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Semua unit, perhatian: suspek kali terakhir dilihat menuju utara di Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0108",
+      "feature": "dispatch:malaysian",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0109",
+      "feature": "heli:malaysian",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "INI LSPD! Berhenti sekarang!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0110",
+      "feature": "heli:malaysian",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0111",
+      "feature": "phone:malaysian",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Helo, Star Lord. Dro sini. Ada apa?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0112",
+      "feature": "phone:malaysian",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0113",
+      "feature": "language:arabic",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "إلى جميع الوحدات، شوهد المشتبه به آخر مرة متجهًا شمالًا في شارع ألتا.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0114",
+      "feature": "language:arabic",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0115",
+      "feature": "dispatch:arabic",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "إلى جميع الوحدات، شوهد المشتبه به آخر مرة متجهًا شمالًا في شارع ألتا.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0116",
+      "feature": "dispatch:arabic",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0117",
+      "feature": "heli:arabic",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "هنا شرطة لوس سانتوس! أوقف المركبة الآن!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0118",
+      "feature": "heli:arabic",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0119",
+      "feature": "phone:arabic",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] مرحبًا يا ستار لورد، معك درو. ما الأمر؟",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0120",
+      "feature": "phone:arabic",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0121",
+      "feature": "language:indonesian",
+      "label": "GOOD",
+      "input": "Dispatch reports an active visual contact.",
+      "output": "Semua unit, perhatian: tersangka terakhir terlihat menuju utara di Alta Street.",
+      "reason": "Every spoken word obeys the selected language while codes and street names remain usable."
+    },
+    {
+      "id": "P3-0122",
+      "feature": "language:indonesian",
+      "label": "BAD",
+      "input": "Dispatch language is selected but output drifts.",
+      "output": "All units, suspect heading northbound.",
+      "reason": "English is wrong unless the selected language is English."
+    },
+    {
+      "id": "P3-0123",
+      "feature": "dispatch:indonesian",
+      "label": "GOOD",
+      "input": "One short live scanner update.",
+      "output": "Semua unit, perhatian: tersangka terakhir terlihat menuju utara di Alta Street.",
+      "reason": "Clipped, localized, factual and under two sentences."
+    },
+    {
+      "id": "P3-0124",
+      "feature": "dispatch:indonesian",
+      "label": "BAD",
+      "input": "One short live scanner update.",
+      "output": "Good evening. I am an AI dispatcher and will now describe the situation in detail.",
+      "reason": "Assistant narration, English drift and long exposition are forbidden."
+    },
+    {
+      "id": "P3-0125",
+      "feature": "heli:indonesian",
+      "label": "GOOD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "INI LSPD! Hentikan kendaraan sekarang!",
+      "reason": "Localized shouted command with no narration."
+    },
+    {
+      "id": "P3-0126",
+      "feature": "heli:indonesian",
+      "label": "BAD",
+      "input": "Air unit has visual and orders a stop.",
+      "output": "The helicopter officer says: please stop your car.",
+      "reason": "It narrates instead of shouting and ignores the selected language."
+    },
+    {
+      "id": "P3-0127",
+      "feature": "phone:indonesian",
+      "label": "GOOD",
+      "input": "Known contact answers Star Lord.",
+      "output": "[PHONE_GREETING_COMPLETE] Halo, Star Lord. Ini Dro. Ada apa?",
+      "reason": "Greeting comes first, identifies the contact, and stays in language."
+    },
+    {
+      "id": "P3-0128",
+      "feature": "phone:indonesian",
+      "label": "BAD",
+      "input": "Known contact answers Star Lord.",
+      "output": "Yeah, what do you want?",
+      "reason": "No hello, no identity, rude cold-open and usually English drift."
+    },
+    {
+      "id": "P3-0129",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GROVE_STREET 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GROVE_STREET@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0130",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about LSIA 1100.",
+      "output": "[HUSTLE_SCHEDULE@LSIA@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0131",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes LEGION_SQUARE 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@LEGION_SQUARE@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0132",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0133",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at SANDY_SHORES 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@SANDY_SHORES@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0134",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about PALETO_BAY 2100.",
+      "output": "[HUSTLE_SCHEDULE@PALETO_BAY@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0135",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes VESPUCCI_BEACH 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@VESPUCCI_BEACH@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0136",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0137",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GRAPESEED 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GRAPESEED@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0138",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about CHUMASH 1100.",
+      "output": "[HUSTLE_SCHEDULE@CHUMASH@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0139",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes GROVE_STREET 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@GROVE_STREET@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0140",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0141",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at LEGION_SQUARE 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@LEGION_SQUARE@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0142",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about MIRROR_PARK 2100.",
+      "output": "[HUSTLE_SCHEDULE@MIRROR_PARK@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0143",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes SANDY_SHORES 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@SANDY_SHORES@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0144",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0145",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at VESPUCCI_BEACH 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@VESPUCCI_BEACH@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0146",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about ROCKFORD_HILLS 1100.",
+      "output": "[HUSTLE_SCHEDULE@ROCKFORD_HILLS@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0147",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes GRAPESEED 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@GRAPESEED@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0148",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0149",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GROVE_STREET 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GROVE_STREET@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0150",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about LSIA 2100.",
+      "output": "[HUSTLE_SCHEDULE@LSIA@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0151",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes LEGION_SQUARE 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@LEGION_SQUARE@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0152",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0153",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at SANDY_SHORES 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@SANDY_SHORES@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0154",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about PALETO_BAY 1100.",
+      "output": "[HUSTLE_SCHEDULE@PALETO_BAY@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0155",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes VESPUCCI_BEACH 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@VESPUCCI_BEACH@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0156",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0157",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GRAPESEED 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GRAPESEED@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0158",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about CHUMASH 2100.",
+      "output": "[HUSTLE_SCHEDULE@CHUMASH@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0159",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes GROVE_STREET 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@GROVE_STREET@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0160",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0161",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at LEGION_SQUARE 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@LEGION_SQUARE@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0162",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about MIRROR_PARK 1100.",
+      "output": "[HUSTLE_SCHEDULE@MIRROR_PARK@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0163",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes SANDY_SHORES 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@SANDY_SHORES@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0164",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0165",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at VESPUCCI_BEACH 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@VESPUCCI_BEACH@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0166",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about ROCKFORD_HILLS 2100.",
+      "output": "[HUSTLE_SCHEDULE@ROCKFORD_HILLS@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0167",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes GRAPESEED 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@GRAPESEED@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0168",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0169",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GROVE_STREET 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GROVE_STREET@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0170",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about LSIA 1100.",
+      "output": "[HUSTLE_SCHEDULE@LSIA@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0171",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes LEGION_SQUARE 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@LEGION_SQUARE@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0172",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0173",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at SANDY_SHORES 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@SANDY_SHORES@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0174",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about PALETO_BAY 2100.",
+      "output": "[HUSTLE_SCHEDULE@PALETO_BAY@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0175",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes VESPUCCI_BEACH 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@VESPUCCI_BEACH@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0176",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0177",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GRAPESEED 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GRAPESEED@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0178",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about CHUMASH 1100.",
+      "output": "[HUSTLE_SCHEDULE@CHUMASH@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0179",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes GROVE_STREET 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@GROVE_STREET@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0180",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0181",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at LEGION_SQUARE 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@LEGION_SQUARE@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0182",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about MIRROR_PARK 2100.",
+      "output": "[HUSTLE_SCHEDULE@MIRROR_PARK@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0183",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes SANDY_SHORES 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@SANDY_SHORES@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0184",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0185",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at VESPUCCI_BEACH 0930.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@VESPUCCI_BEACH@0930@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0186",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about ROCKFORD_HILLS 1100.",
+      "output": "[HUSTLE_SCHEDULE@ROCKFORD_HILLS@1100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0187",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes GRAPESEED 1345.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@GRAPESEED@1345] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0188",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0189",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player clearly locks a meeting at GROVE_STREET 1845.",
+      "output": "[HUSTLE_SCHEDULE_CONFIRMED@GROVE_STREET@1845@OPEN] Locked in. I will be there.",
+      "reason": "Atomic schedule uses the mandatory OPEN field."
+    },
+    {
+      "id": "P3-0190",
+      "feature": "schedule",
+      "label": "GOOD",
+      "input": "Player tentatively asks about LSIA 2100.",
+      "output": "[HUSTLE_SCHEDULE@LSIA@2100@OPEN] I can do that. Confirm it once.",
+      "reason": "Tentative request creates a draft and asks for later confirmation."
+    },
+    {
+      "id": "P3-0191",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC proposes LEGION_SQUARE 2200.",
+      "output": "[HUSTLE_NPC_PROPOSE_SCHEDULE@LEGION_SQUARE@2200] Meet me there.",
+      "reason": "Malformed: missing @OPEN. Protocol canonicalizer may repair it, but the model must emit the full tag."
+    },
+    {
+      "id": "P3-0192",
+      "feature": "schedule",
+      "label": "BAD",
+      "input": "NPC claims a successful scheduled exchange.",
+      "output": "[DEALSUCCESFUL@DEAL_ID] Done.",
+      "reason": "Placeholder Deal IDs are stripped and rejected; only a real D000123 receipt is legal."
+    },
+    {
+      "id": "P3-0193",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 1 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@1@75] I can sell 1 for $75 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0194",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 2 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@2@460] I can buy 2 for $460 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0195",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0196",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0197",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@5@1150] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0198",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@1@145] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0199",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 2 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@2@150] I can sell 2 for $150 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0200",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 3 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@3@690] I can buy 3 for $690 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0201",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0202",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0203",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@1@230] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0204",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@2@290] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0205",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 3 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@3@225] I can sell 3 for $225 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0206",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 4 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@4@920] I can buy 4 for $920 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0207",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0208",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0209",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@2@460] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0210",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@3@435] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0211",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 4 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@4@300] I can sell 4 for $300 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0212",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 5 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@5@1150] I can buy 5 for $1150 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0213",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0214",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0215",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@3@690] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0216",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@4@580] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0217",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 5 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@5@375] I can sell 5 for $375 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0218",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 1 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@1@230] I can buy 1 for $230 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0219",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0220",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0221",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@4@920] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0222",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@5@725] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0223",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 1 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@1@75] I can sell 1 for $75 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0224",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 2 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@2@460] I can buy 2 for $460 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0225",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0226",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0227",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@5@1150] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0228",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@1@145] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0229",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 2 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@2@150] I can sell 2 for $150 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0230",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 3 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@3@690] I can buy 3 for $690 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0231",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0232",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0233",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@1@230] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0234",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@2@290] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0235",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 3 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@3@225] I can sell 3 for $225 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0236",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 4 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@4@920] I can buy 4 for $920 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0237",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0238",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0239",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@2@460] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0240",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@3@435] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0241",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 4 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@4@300] I can sell 4 for $300 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0242",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 5 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@5@1150] I can buy 5 for $1150 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0243",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0244",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0245",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@3@690] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0246",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@4@580] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0247",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants to buy 5 WEED from NPC.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@WEED@5@375] I can sell 5 for $375 total.",
+      "reason": "Direction is from NPC to player and terms are explicit."
+    },
+    {
+      "id": "P3-0248",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "Player wants NPC to buy 1 COCAINE.",
+      "output": "[HUSTLE_OFFER_NPC_BUYS@COCAINE@1@230] I can buy 1 for $230 total.",
+      "reason": "Direction is from player to NPC."
+    },
+    {
+      "id": "P3-0249",
+      "feature": "hustle",
+      "label": "GOOD",
+      "input": "A valid prior receipt exists and player accepts.",
+      "output": "[HUSTLE_ACCEPT] Fine. Hand it over.",
+      "reason": "Acceptance commits only a C#-validated prior offer."
+    },
+    {
+      "id": "P3-0250",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Player asks about price; no receipt exists.",
+      "output": "[HUSTLE_ACCEPT] Deal done.",
+      "reason": "No prior offer exists; acceptance must not fabricate a transaction."
+    },
+    {
+      "id": "P3-0251",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "NPC has zero stock.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@COCAINE@4@920] Take it.",
+      "reason": "Spoken confidence cannot override zero C# stock."
+    },
+    {
+      "id": "P3-0252",
+      "feature": "hustle",
+      "label": "BAD",
+      "input": "Remote phone call discusses an immediate exchange.",
+      "output": "[HUSTLE_OFFER_NPC_SELLS@METH@5@725] I just handed it to you.",
+      "reason": "Remote calls can schedule but cannot move product or money."
+    },
+    {
+      "id": "P3-0253",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists for this contact; caller cancels it.",
+      "output": "[PHONE_CANCEL_ACTIVE@PLAYER_CANNOT_ATTEND] Understood. I cancelled the one active appointment.",
+      "reason": "C# resolves the exact real Deal ID safely."
+    },
+    {
+      "id": "P3-0254",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller asks for a 30 minute delay.",
+      "output": "[PHONE_POSTPONE_ACTIVE@30] I moved the one active appointment thirty minutes.",
+      "reason": "C# changes the game clock without guessing a Deal ID."
+    },
+    {
+      "id": "P3-0255",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller provides place and time.",
+      "output": "[PHONE_RESCHEDULE_ACTIVE@LSIA@2200] Moving it to LSIA at twenty-two hundred.",
+      "reason": "C# validates place, time and ownership."
+    },
+    {
+      "id": "P3-0256",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Caller says cancel thirty but real ID is D000008.",
+      "output": "[CANCELSCHEDULE@D000030] Cancelled.",
+      "reason": "Inventing a Deal ID is forbidden."
+    },
+    {
+      "id": "P3-0257",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Three active schedules exist.",
+      "output": "[PHONE_CANCEL_ACTIVE@BUSY] All cancelled.",
+      "reason": "Ambiguous active controls must list exact IDs and ask which one."
+    },
+    {
+      "id": "P3-0258",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Caller ends the conversation.",
+      "output": "[PHONE_END_CALL] All right, talk soon. Bye.",
+      "reason": "One spoken sign-off occurs before C# disconnects and removes the prop."
+    },
+    {
+      "id": "P3-0259",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists for this contact; caller cancels it.",
+      "output": "[PHONE_CANCEL_ACTIVE@PLAYER_CANNOT_ATTEND] Understood. I cancelled the one active appointment.",
+      "reason": "C# resolves the exact real Deal ID safely."
+    },
+    {
+      "id": "P3-0260",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller asks for a 30 minute delay.",
+      "output": "[PHONE_POSTPONE_ACTIVE@30] I moved the one active appointment thirty minutes.",
+      "reason": "C# changes the game clock without guessing a Deal ID."
+    },
+    {
+      "id": "P3-0261",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller provides place and time.",
+      "output": "[PHONE_RESCHEDULE_ACTIVE@LSIA@2200] Moving it to LSIA at twenty-two hundred.",
+      "reason": "C# validates place, time and ownership."
+    },
+    {
+      "id": "P3-0262",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Caller says cancel thirty but real ID is D000008.",
+      "output": "[CANCELSCHEDULE@D000030] Cancelled.",
+      "reason": "Inventing a Deal ID is forbidden."
+    },
+    {
+      "id": "P3-0263",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Three active schedules exist.",
+      "output": "[PHONE_CANCEL_ACTIVE@BUSY] All cancelled.",
+      "reason": "Ambiguous active controls must list exact IDs and ask which one."
+    },
+    {
+      "id": "P3-0264",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Caller ends the conversation.",
+      "output": "[PHONE_END_CALL] All right, talk soon. Bye.",
+      "reason": "One spoken sign-off occurs before C# disconnects and removes the prop."
+    },
+    {
+      "id": "P3-0265",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists for this contact; caller cancels it.",
+      "output": "[PHONE_CANCEL_ACTIVE@PLAYER_CANNOT_ATTEND] Understood. I cancelled the one active appointment.",
+      "reason": "C# resolves the exact real Deal ID safely."
+    },
+    {
+      "id": "P3-0266",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller asks for a 30 minute delay.",
+      "output": "[PHONE_POSTPONE_ACTIVE@30] I moved the one active appointment thirty minutes.",
+      "reason": "C# changes the game clock without guessing a Deal ID."
+    },
+    {
+      "id": "P3-0267",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller provides place and time.",
+      "output": "[PHONE_RESCHEDULE_ACTIVE@LSIA@2200] Moving it to LSIA at twenty-two hundred.",
+      "reason": "C# validates place, time and ownership."
+    },
+    {
+      "id": "P3-0268",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Caller says cancel thirty but real ID is D000008.",
+      "output": "[CANCELSCHEDULE@D000030] Cancelled.",
+      "reason": "Inventing a Deal ID is forbidden."
+    },
+    {
+      "id": "P3-0269",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Three active schedules exist.",
+      "output": "[PHONE_CANCEL_ACTIVE@BUSY] All cancelled.",
+      "reason": "Ambiguous active controls must list exact IDs and ask which one."
+    },
+    {
+      "id": "P3-0270",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Caller ends the conversation.",
+      "output": "[PHONE_END_CALL] All right, talk soon. Bye.",
+      "reason": "One spoken sign-off occurs before C# disconnects and removes the prop."
+    },
+    {
+      "id": "P3-0271",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists for this contact; caller cancels it.",
+      "output": "[PHONE_CANCEL_ACTIVE@PLAYER_CANNOT_ATTEND] Understood. I cancelled the one active appointment.",
+      "reason": "C# resolves the exact real Deal ID safely."
+    },
+    {
+      "id": "P3-0272",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller asks for a 30 minute delay.",
+      "output": "[PHONE_POSTPONE_ACTIVE@30] I moved the one active appointment thirty minutes.",
+      "reason": "C# changes the game clock without guessing a Deal ID."
+    },
+    {
+      "id": "P3-0273",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller provides place and time.",
+      "output": "[PHONE_RESCHEDULE_ACTIVE@LSIA@2200] Moving it to LSIA at twenty-two hundred.",
+      "reason": "C# validates place, time and ownership."
+    },
+    {
+      "id": "P3-0274",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Caller says cancel thirty but real ID is D000008.",
+      "output": "[CANCELSCHEDULE@D000030] Cancelled.",
+      "reason": "Inventing a Deal ID is forbidden."
+    },
+    {
+      "id": "P3-0275",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Three active schedules exist.",
+      "output": "[PHONE_CANCEL_ACTIVE@BUSY] All cancelled.",
+      "reason": "Ambiguous active controls must list exact IDs and ask which one."
+    },
+    {
+      "id": "P3-0276",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Caller ends the conversation.",
+      "output": "[PHONE_END_CALL] All right, talk soon. Bye.",
+      "reason": "One spoken sign-off occurs before C# disconnects and removes the prop."
+    },
+    {
+      "id": "P3-0277",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists for this contact; caller cancels it.",
+      "output": "[PHONE_CANCEL_ACTIVE@PLAYER_CANNOT_ATTEND] Understood. I cancelled the one active appointment.",
+      "reason": "C# resolves the exact real Deal ID safely."
+    },
+    {
+      "id": "P3-0278",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller asks for a 30 minute delay.",
+      "output": "[PHONE_POSTPONE_ACTIVE@30] I moved the one active appointment thirty minutes.",
+      "reason": "C# changes the game clock without guessing a Deal ID."
+    },
+    {
+      "id": "P3-0279",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller provides place and time.",
+      "output": "[PHONE_RESCHEDULE_ACTIVE@LSIA@2200] Moving it to LSIA at twenty-two hundred.",
+      "reason": "C# validates place, time and ownership."
+    },
+    {
+      "id": "P3-0280",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Caller says cancel thirty but real ID is D000008.",
+      "output": "[CANCELSCHEDULE@D000030] Cancelled.",
+      "reason": "Inventing a Deal ID is forbidden."
+    },
+    {
+      "id": "P3-0281",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Three active schedules exist.",
+      "output": "[PHONE_CANCEL_ACTIVE@BUSY] All cancelled.",
+      "reason": "Ambiguous active controls must list exact IDs and ask which one."
+    },
+    {
+      "id": "P3-0282",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Caller ends the conversation.",
+      "output": "[PHONE_END_CALL] All right, talk soon. Bye.",
+      "reason": "One spoken sign-off occurs before C# disconnects and removes the prop."
+    },
+    {
+      "id": "P3-0283",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists for this contact; caller cancels it.",
+      "output": "[PHONE_CANCEL_ACTIVE@PLAYER_CANNOT_ATTEND] Understood. I cancelled the one active appointment.",
+      "reason": "C# resolves the exact real Deal ID safely."
+    },
+    {
+      "id": "P3-0284",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller asks for a 30 minute delay.",
+      "output": "[PHONE_POSTPONE_ACTIVE@30] I moved the one active appointment thirty minutes.",
+      "reason": "C# changes the game clock without guessing a Deal ID."
+    },
+    {
+      "id": "P3-0285",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Exactly one active schedule exists; caller provides place and time.",
+      "output": "[PHONE_RESCHEDULE_ACTIVE@LSIA@2200] Moving it to LSIA at twenty-two hundred.",
+      "reason": "C# validates place, time and ownership."
+    },
+    {
+      "id": "P3-0286",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Caller says cancel thirty but real ID is D000008.",
+      "output": "[CANCELSCHEDULE@D000030] Cancelled.",
+      "reason": "Inventing a Deal ID is forbidden."
+    },
+    {
+      "id": "P3-0287",
+      "feature": "phone-control",
+      "label": "BAD",
+      "input": "Three active schedules exist.",
+      "output": "[PHONE_CANCEL_ACTIVE@BUSY] All cancelled.",
+      "reason": "Ambiguous active controls must list exact IDs and ask which one."
+    },
+    {
+      "id": "P3-0288",
+      "feature": "phone-control",
+      "label": "GOOD",
+      "input": "Caller ends the conversation.",
+      "output": "[PHONE_END_CALL] All right, talk soon. Bye.",
+      "reason": "One spoken sign-off occurs before C# disconnects and removes the prop."
+    },
+    {
+      "id": "P3-0289",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Non-Stop-Pop FM; exact track is Yuna — Live Your Life.",
+      "output": "We're back on Non-Stop-Pop FM! Up next, Yuna with “Live Your Life”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0290",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0291",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Los Santos Rock Radio.",
+      "output": "Welcome back to Los Santos Rock Radio; here's Queen with Radio Ga Ga.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0292",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0293",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on FlyLo FM; exact track is Flying Lotus — Stonecutters.",
+      "output": "We're back on FlyLo FM! Up next, Flying Lotus with “Stonecutters”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0294",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0295",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Non-Stop-Pop FM.",
+      "output": "Welcome back to Non-Stop-Pop FM; here's Yuna with Live Your Life.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0296",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0297",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Los Santos Rock Radio; exact track is Queen — Radio Ga Ga.",
+      "output": "We're back on Los Santos Rock Radio! Up next, Queen with “Radio Ga Ga”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0298",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0299",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on FlyLo FM.",
+      "output": "Welcome back to FlyLo FM; here's Flying Lotus with Stonecutters.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0300",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0301",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Non-Stop-Pop FM; exact track is Yuna — Live Your Life.",
+      "output": "We're back on Non-Stop-Pop FM! Up next, Yuna with “Live Your Life”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0302",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0303",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Los Santos Rock Radio.",
+      "output": "Welcome back to Los Santos Rock Radio; here's Queen with Radio Ga Ga.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0304",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0305",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on FlyLo FM; exact track is Flying Lotus — Stonecutters.",
+      "output": "We're back on FlyLo FM! Up next, Flying Lotus with “Stonecutters”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0306",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0307",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Non-Stop-Pop FM.",
+      "output": "Welcome back to Non-Stop-Pop FM; here's Yuna with Live Your Life.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0308",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0309",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Los Santos Rock Radio; exact track is Queen — Radio Ga Ga.",
+      "output": "We're back on Los Santos Rock Radio! Up next, Queen with “Radio Ga Ga”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0310",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0311",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on FlyLo FM.",
+      "output": "Welcome back to FlyLo FM; here's Flying Lotus with Stonecutters.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0312",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0313",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Non-Stop-Pop FM; exact track is Yuna — Live Your Life.",
+      "output": "We're back on Non-Stop-Pop FM! Up next, Yuna with “Live Your Life”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0314",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0315",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Los Santos Rock Radio.",
+      "output": "Welcome back to Los Santos Rock Radio; here's Queen with Radio Ga Ga.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0316",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0317",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on FlyLo FM; exact track is Flying Lotus — Stonecutters.",
+      "output": "We're back on FlyLo FM! Up next, Flying Lotus with “Stonecutters”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0318",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0319",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Non-Stop-Pop FM.",
+      "output": "Welcome back to Non-Stop-Pop FM; here's Yuna with Live Your Life.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0320",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0321",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Los Santos Rock Radio; exact track is Queen — Radio Ga Ga.",
+      "output": "We're back on Los Santos Rock Radio! Up next, Queen with “Radio Ga Ga”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0322",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0323",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on FlyLo FM.",
+      "output": "Welcome back to FlyLo FM; here's Flying Lotus with Stonecutters.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0324",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0325",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Non-Stop-Pop FM; exact track is Yuna — Live Your Life.",
+      "output": "We're back on Non-Stop-Pop FM! Up next, Yuna with “Live Your Life”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0326",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0327",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Los Santos Rock Radio.",
+      "output": "Welcome back to Los Santos Rock Radio; here's Queen with Radio Ga Ga.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0328",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0329",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on FlyLo FM; exact track is Flying Lotus — Stonecutters.",
+      "output": "We're back on FlyLo FM! Up next, Flying Lotus with “Stonecutters”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0330",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0331",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on Non-Stop-Pop FM.",
+      "output": "Welcome back to Non-Stop-Pop FM; here's Yuna with Live Your Life.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0332",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0333",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Return from break on Los Santos Rock Radio; exact track is Queen — Radio Ga Ga.",
+      "output": "We're back on Los Santos Rock Radio! Up next, Queen with “Radio Ga Ga”—turn it up!",
+      "reason": "Uses only the supplied exact metadata and ends cleanly."
+    },
+    {
+      "id": "P3-0334",
+      "feature": "radio",
+      "label": "GOOD",
+      "input": "Start Weazel news in English.",
+      "output": "THIS IS WEAZEL NEWS! Two verified headlines, fast, dramatic, complete sentences.",
+      "reason": "Required opener and sentence-safe delivery."
+    },
+    {
+      "id": "P3-0335",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Exact track is unavailable on FlyLo FM.",
+      "output": "Welcome back to FlyLo FM; here's Flying Lotus with Stonecutters.",
+      "reason": "Never invent a track when GTA returned no track ID."
+    },
+    {
+      "id": "P3-0336",
+      "feature": "radio",
+      "label": "BAD",
+      "input": "Read a cached ad.",
+      "output": "Cluckin' Bell is not liable for losing custody of your...",
+      "reason": "Mid-sentence truncation is forbidden; cache copy must end at sentence boundary."
+    },
+    {
+      "id": "P3-0337",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in weapons and ammunition. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0338",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000002 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000002] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0339",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000003@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0340",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000004@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0341",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000005@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0342",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000006@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0343",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0344",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0345",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in surveillance equipment. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0346",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000010 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000010] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0347",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000011@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0348",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000012@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0349",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000013@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0350",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000014@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0351",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0352",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0353",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in rare collectibles. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0354",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000018 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000018] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0355",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000019@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0356",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000020@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0357",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000021@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0358",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000022@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0359",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0360",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0361",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in high-value narcotics. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0362",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000026 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000026] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0363",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000027@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0364",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000028@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0365",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000029@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0366",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000030@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0367",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0368",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0369",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in counterfeit documents. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0370",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000034 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000034] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0371",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000035@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0372",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000036@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0373",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000037@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0374",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000038@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0375",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0376",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0377",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in weapons and ammunition. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0378",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000042 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000042] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0379",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000043@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0380",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000044@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0381",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000045@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0382",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000046@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0383",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0384",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0385",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in surveillance equipment. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0386",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000050 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000050] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0387",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000051@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0388",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000052@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0389",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000053@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0390",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000054@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0391",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0392",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0393",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in rare collectibles. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0394",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000058 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000058] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0395",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000059@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0396",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000060@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0397",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000061@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0398",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000062@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0399",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0400",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0401",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Trusted dealer is asked for an introduction.",
+      "output": "[BM_REFERRAL_CASE_CREATE] I might know someone in high-value narcotics. The engine will calculate the introduction fee.",
+      "reason": "Creates a C# referral case; it does not unlock anyone yet."
+    },
+    {
+      "id": "P3-0402",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Fee for R000066 is already calculated by C#.",
+      "output": "[BM_REFERRAL_FEE_ACCEPT@R000066] Fine. I will make the call.",
+      "reason": "Accepts only the exact pending case fee."
+    },
+    {
+      "id": "P3-0403",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Remote marketeer asks player identity and need.",
+      "output": "[BM_CALL_HOLD@R000067@QUESTION_1] Put them on hold. Ask their name and exactly what they need.",
+      "reason": "Hold is explicit and waits for a real player answer."
+    },
+    {
+      "id": "P3-0404",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Player answered on microphone.",
+      "output": "[BM_CALL_RESUME@R000068@QUESTION_1] I have their exact answer. Reconnecting you now.",
+      "reason": "Resumes once, idempotently, without fabricating speech."
+    },
+    {
+      "id": "P3-0405",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer accepts after hearing answer.",
+      "output": "[BM_DECISION@R000069@ACCEPT] I will allow one introduction. Send the contact and base.",
+      "reason": "C# unlocks only after a valid decision receipt."
+    },
+    {
+      "id": "P3-0406",
+      "feature": "black-market",
+      "label": "GOOD",
+      "input": "Marketeer refuses.",
+      "output": "[BM_DECISION@R000070@REFUSE] No. Their profile is too hot for me.",
+      "reason": "Refusal remains persistent and unlocks nothing."
+    },
+    {
+      "id": "P3-0407",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Player never answers during hold.",
+      "output": "Tell him the player said he wants guns.",
+      "reason": "Never fabricate the player's answer; timeout becomes callback pending."
+    },
+    {
+      "id": "P3-0408",
+      "feature": "black-market",
+      "label": "BAD",
+      "input": "Broker wants a fee.",
+      "output": "[CUTMONEY@5000] Paid. Here is the contact.",
+      "reason": "Only C# computes and deducts a referral fee after exact acceptance."
+    },
+    {
+      "id": "P3-0409",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0410",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0411",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0412",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0413",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0414",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0415",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0416",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0417",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0418",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0419",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0420",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0421",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0422",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0423",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0424",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0425",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0426",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0427",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0428",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0429",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0430",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0431",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0432",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0433",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0434",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0435",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0436",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Current acceptance has no receipt; previous NPC sentence clearly offered two weed for $180.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"WEED\",\"quantity\":2,\"total\":180,\"confidence\":0.97,\"evidence\":\"two bags ... one-eighty total\"}",
+      "reason": "Structured arbiter recovers exact prior terms; C# still validates."
+    },
+    {
+      "id": "P3-0437",
+      "feature": "offer-recovery",
+      "label": "GOOD",
+      "input": "Previous NPC line was vague: 'I can sort you out.'",
+      "output": "{\"direction\":\"UNKNOWN\",\"item\":\"\",\"quantity\":0,\"total\":0,\"confidence\":0.18,\"evidence\":\"no exact quantity or total\"}",
+      "reason": "Low confidence asks the NPC to restate a tagged offer."
+    },
+    {
+      "id": "P3-0438",
+      "feature": "offer-recovery",
+      "label": "BAD",
+      "input": "No receipt exists.",
+      "output": "{\"direction\":\"SELL_TO_PLAYER\",\"item\":\"COCAINE\",\"quantity\":10,\"total\":1,\"confidence\":1.0,\"evidence\":\"guessed\"}",
+      "reason": "Invented terms and impossible price must fail C# stock/price validation."
+    },
+    {
+      "id": "P3-0439",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0440",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0441",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0442",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0443",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0444",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0445",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0446",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0447",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0448",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0449",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0450",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0451",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0452",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0453",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0454",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0455",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0456",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    },
+    {
+      "id": "P3-0457",
+      "feature": "black-market-base",
+      "label": "GOOD",
+      "input": "Player approaches a known secluded base.",
+      "output": "Stream models around 220m, enable guarded activities around 100m, unload entities beyond 350m while retaining base ID and blip.",
+      "reason": "Staged world streaming prevents one-frame spawn spikes and preserves identity."
+    },
+    {
+      "id": "P3-0458",
+      "feature": "black-market-base",
+      "label": "BAD",
+      "input": "Player leaves a base.",
+      "output": "Delete the persistent contact record, base ID and map blip.",
+      "reason": "Only runtime entities unload; persistent discovery and blip state survive."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[PASS] TestNaturalLanguagePromptSpawner.exe
+[PASS] TestAssetDiscoveryPipeline.exe
+[PASS] TestEpistemicAssetIntelligence.exe
+[PASS] TestSpatialArchitecture.exe
+[PASS] TestEndToEndIntegration.exe
+[PASS] TestMilestone3Mutations.exe
+[PASS] TestPlanSerializationRoundtrip.exe
+[PASS] TestPlanRepository.exe
+[PASS] TestEnvironmentStateArchitecture.exe
+[PASS] TestMilestone2Environments.exe
+[PASS] TestCommissioningArchitecture.exe
+[PASS] TestRuntimeOwnershipArchitecture.exe
+[PASS] TestRealizationLifecycleArchitecture.exe
+[PASS] TestNpcDeathObservationArchitecture.exe
+[PASS] TestWriteBeforeDestroyInvariant.exe
+[PASS] TestRealizationScopeRollbackArchitecture.exe
+[PASS] TestSeparatedWorldDirectorArchitecture.exe
+[PASS] TestContextRetrievalArchitecture.exe
+[PASS] TestEngramResolutionArchitecture.exe
+[PASS] TestModularGeneratorArchitecture.exe
+[PASS] TestSalienceEvaluationArchitecture.exe
+[PASS] TestEphemeralStateArchitecture.exe
+[PASS] TestKairosInsightArchitecture.exe
+[PASS] TestSpatialPerceptionArchitecture.exe
+[PASS] TestSpatialWorldModelArchitecture.exe
+[PASS] TestSpatialOrchestrationPipeline.exe
+
+========================================================
+  SUMMARY: 26 test suites executed, 0 failed.
+========================================================

@@ -1,0 +1,50 @@
+{
+  "action": "BUILD_ENVIRONMENT",
+  "data": {
+    "environment_id": "env_police_roadblock_01",
+    "name": "LSPD Tactical Checkpoint",
+    "archetype": "police_checkpoint",
+    "description": "Armed police perimeter inspection checkpoint controlling street transit.",
+    "center_offset": { "x": 0.0, "y": 4.0, "z": 0.0 },
+    "props": [
+      { "model": "prop_barrier_work05", "offset": { "x": -1.5, "y":  0.0, "z": 0.0 }, "heading": 0.0, "is_dynamic": false },
+      { "model": "prop_barrier_work05", "offset": { "x":  1.5, "y":  0.0, "z": 0.0 }, "heading": 0.0, "is_dynamic": false },
+      { "model": "prop_roadcone02a",    "offset": { "x": -0.5, "y": -0.8, "z": 0.0 }, "heading": 0.0, "is_dynamic": false },
+      { "model": "prop_roadcone02a",    "offset": { "x":  0.5, "y": -0.8, "z": 0.0 }, "heading": 0.0, "is_dynamic": false }
+    ],
+    "npcs": [
+      {
+        "entity_id": "npc_cop_miller",
+        "name": "Officer Miller",
+        "occupation": "LSPD Patrol Officer",
+        "public_faction": "Police",
+        "hidden_role": "Conducting contraband checks and suspicious person searches",
+        "ped_model": "s_m_y_cop_01",
+        "offset": { "x": -0.8, "y": 1.0, "z": 0.0 },
+        "heading": 180.0,
+        "scenario": "WORLD_HUMAN_COP_IDLES",
+        "weapon": "WEAPON_COMBATPISTOL",
+        "relationships": { "Player": -20, "Criminals": -90 },
+        "initial_events": [
+          { "description": "Staffing checkpoint, commands civilians to stay back", "sentiment_tag": "Police_Checkpoint" }
+        ]
+      },
+      {
+        "entity_id": "npc_cop_davies",
+        "name": "Officer Davies",
+        "occupation": "LSPD Tactical Support",
+        "public_faction": "Police",
+        "hidden_role": "Overwatch with carbine rifle",
+        "ped_model": "s_m_y_cop_01",
+        "offset": { "x": 1.0, "y": 1.2, "z": 0.0 },
+        "heading": 180.0,
+        "scenario": "WORLD_HUMAN_GUARD_STAND",
+        "weapon": "WEAPON_CARBINERIFLE",
+        "relationships": { "Player": -25, "Officer Miller": 80 },
+        "initial_events": [
+          { "description": "Covers checkpoint perimeter with assault weapon", "sentiment_tag": "Police_Overwatch" }
+        ]
+      }
+    ]
+  }
+}

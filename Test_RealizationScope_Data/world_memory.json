@@ -1,0 +1,135 @@
+{
+  "NextNpcId": 1002,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_hostess",
+      "Guid": "e9d5b64e-6ab3-41f6-9d48-0c99bbbfa8ce",
+      "Name": "Elena Rostova",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "a_f_y_bevhills_02",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:40.6993722Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "cfccd93a",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "1184566d",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_quartermaster",
+      "Guid": "cbecae38-de36-43da-95a1-3a08e8d34ca9",
+      "Name": "Sergeant Miller",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "s_m_m_armoured_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:41.2502078Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "02be1d6c",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "e10accd1",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_happy_penthouse",
+      "PlanId": "env_happy_penthouse",
+      "Name": "Eclipse Towers Penthouse Suite",
+      "Archetype": "apartment",
+      "Description": "",
+      "CenterX": -774.2,
+      "CenterY": 312.8,
+      "CenterZ": 85.7,
+      "Heading": 180.0,
+      "Status": "REALIZED",
+      "ResidentEntityIds": [
+        "npc_hostess"
+      ],
+      "NpcIds": [
+        1000
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:40.6839482Z",
+      "LastRealizedAt": "2026-10-12T10:18:41.2078038Z",
+      "LastDerealizedAt": null,
+      "PropIds": []
+    },
+    {
+      "EnvironmentId": "env_secure_armory",
+      "PlanId": "env_secure_armory",
+      "Name": "Subterranean Weapons Cache",
+      "Archetype": "military",
+      "Description": "",
+      "CenterX": 120.5,
+      "CenterY": -1400.2,
+      "CenterZ": 29.3,
+      "Heading": 45.0,
+      "Status": "REALIZED",
+      "ResidentEntityIds": [
+        "npc_quartermaster"
+      ],
+      "NpcIds": [
+        1001
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:41.249159Z",
+      "LastRealizedAt": "2026-10-12T10:18:41.3222943Z",
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": []
+}

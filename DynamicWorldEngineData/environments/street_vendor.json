@@ -1,0 +1,33 @@
+{
+  "action": "BUILD_ENVIRONMENT",
+  "data": {
+    "environment_id": "env_street_vendor_01",
+    "name": "Sal's Sidewalk Hotdog Stand",
+    "archetype": "street_vendor",
+    "description": "Fresh street food cart serving the local neighborhood with side gossip.",
+    "center_offset": { "x": 0.0, "y": 3.0, "z": 0.0 },
+    "props": [
+      { "model": "prop_hotdogstand_01", "offset": { "x":  0.0, "y":  0.0,  "z": 0.0 }, "heading":  0.0, "is_dynamic": false },
+      { "model": "prop_cooler_01a",     "offset": { "x":  1.2, "y": -0.3,  "z": 0.0 }, "heading": 90.0, "is_dynamic": false },
+      { "model": "prop_bin_05a",        "offset": { "x": -1.2, "y": -0.2,  "z": 0.0 }, "heading":  0.0, "is_dynamic": false }
+    ],
+    "npcs": [
+      {
+        "entity_id": "npc_vendor_sal",
+        "name": "Sal 'Mustard' Calzone",
+        "occupation": "Street Food Vendor",
+        "public_faction": "Civilians",
+        "hidden_role": "Informant who overhears underworld business from hungry crooks",
+        "ped_model": "s_m_m_strvend_01",
+        "offset": { "x": 0.0, "y": 0.8, "z": 0.0 },
+        "heading": 180.0,
+        "scenario": "WORLD_HUMAN_STAND_MOBILE",
+        "weapon": "WEAPON_KNIFE",
+        "relationships": { "Player": 25, "Police": 10, "Families": 20 },
+        "initial_events": [
+          { "description": "Runs the hotdog cart and trades street gossip for tips", "sentiment_tag": "Vendor_Active" }
+        ]
+      }
+    ]
+  }
+}

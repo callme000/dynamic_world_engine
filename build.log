@@ -1,0 +1,145 @@
+=========================================================
+  COMPILING DYNAMIC WORLD ENGINE (SHVDN PLUGIN)
+=========================================================
+Microsoft (R) Visual C# Compiler version 4.8.9221.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+src\Discovery\GameAssetScanner.cs(100,35): warning CS0618: 'GTA.Game.GenerateHash(string)' is obsolete: 'Use StringHash.AtStringHash(string, uint), StringHash.AtStringHashUtf8(string, uint), AtHashValue.FromString(string, uint), or StringHash.AtStringHashUtf8(string, uint) instead.'
+src\Database\Models.cs(256,13): warning CS0618: 'DynamicWorldEngine.Database.EnvironmentRecord.PropIds' is obsolete: 'Props now belong to the CanonicalPlan. Query engine.Plans.GetPlan(env.PlanId).ResolvedProps instead.'
+src\Database\WorldMemoryStore.cs(84,33): warning CS0618: 'DynamicWorldEngine.Database.EnvironmentRecord.PropIds' is obsolete: 'Props now belong to the CanonicalPlan. Query engine.Plans.GetPlan(env.PlanId).ResolvedProps instead.'
+src\Database\WorldMemoryStore.cs(84,54): warning CS0618: 'DynamicWorldEngine.Database.EnvironmentRecord.PropIds' is obsolete: 'Props now belong to the CanonicalPlan. Query engine.Plans.GetPlan(env.PlanId).ResolvedProps instead.'
+src\Database\SpatialAssetRegistry.cs(1170,35): warning CS0618: 'GTA.Game.GenerateHash(string)' is obsolete: 'Use StringHash.AtStringHash(string, uint), StringHash.AtStringHashUtf8(string, uint), AtHashValue.FromString(string, uint), or StringHash.AtStringHashUtf8(string, uint) instead.'
+src\Database\SpatialAssetRegistry.cs(1187,35): warning CS0618: 'GTA.Game.GenerateHash(string)' is obsolete: 'Use StringHash.AtStringHash(string, uint), StringHash.AtStringHashUtf8(string, uint), AtHashValue.FromString(string, uint), or StringHash.AtStringHashUtf8(string, uint) instead.'
+src\Spatial\SpatialVisionEngine.cs(66,37): warning CS0618: 'GTA.World.GetGroundHeight(GTA.Math.Vector3)' is obsolete: 'Use GetGroundHeight(Vector3, out float, GetGroundHeightMode) instead.'
+src\Spatial\SpatialQueryService.cs(40,33): warning CS0618: 'GTA.World.GetGroundHeight(GTA.Math.Vector3)' is obsolete: 'Use GetGroundHeight(Vector3, out float, GetGroundHeightMode) instead.'
+src\Spatial\InteriorManager.cs(90,21): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\Spatial\InteriorManager.cs(215,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\Spatial\SpatialGridSampler.cs(43,31): warning CS0618: 'GTA.World.GetGroundHeight(GTA.Math.Vector3)' is obsolete: 'Use GetGroundHeight(Vector3, out float, GetGroundHeightMode) instead.'
+src\Spatial\SpatialGridSampler.cs(92,52): warning CS0618: 'GTA.World.GetGroundHeight(GTA.Math.Vector3)' is obsolete: 'Use GetGroundHeight(Vector3, out float, GetGroundHeightMode) instead.'
+src\Spatial\SpatialGridSampler.cs(357,17): warning CS0219: The variable 'areaIdx' is assigned but its value is never used
+src\Runtime\EntitySpawnerService.cs(517,33): warning CS0612: 'GTA.Vehicle.AreLightsOn' is obsolete
+src\Runtime\EntitySpawnerService.cs(698,24): warning CS0618: 'GTA.World.GetGroundHeight(GTA.Math.Vector3)' is obsolete: 'Use GetGroundHeight(Vector3, out float, GetGroundHeightMode) instead.'
+src\Runtime\EntitySpawnerService.cs(723,21): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\Runtime\EntityMutationHandler.cs(85,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\Runtime\WorldEventDispatcher.cs(32,24): warning CS0618: 'GTA.World.GetGroundHeight(GTA.Math.Vector3)' is obsolete: 'Use GetGroundHeight(Vector3, out float, GetGroundHeightMode) instead.'
+src\Runtime\WorldEventDispatcher.cs(98,57): warning CS0618: 'GTA.Game.GenerateHash(string)' is obsolete: 'Use StringHash.AtStringHash(string, uint), StringHash.AtStringHashUtf8(string, uint), AtHashValue.FromString(string, uint), or StringHash.AtStringHashUtf8(string, uint) instead.'
+src\Runtime\WorldEventDispatcher.cs(119,84): warning CS0618: 'GTA.DrivingStyle' is obsolete: 'Use VehicleDrivingFlags instead.'
+src\Runtime\WorldEventDispatcher.cs(119,29): warning CS0618: 'GTA.TaskInvoker.DriveTo(GTA.Vehicle, GTA.Math.Vector3, float, float, GTA.DrivingStyle)' is obsolete: 'Use DriveTo(Vehicle, Vector3, float, VehicleDrivingFlags, float) instead.'
+src\Runtime\WorldEventDispatcher.cs(124,85): warning CS0618: 'GTA.DrivingStyle' is obsolete: 'Use VehicleDrivingFlags instead.'
+src\Runtime\WorldEventDispatcher.cs(124,29): warning CS0618: 'GTA.TaskInvoker.DriveTo(GTA.Vehicle, GTA.Math.Vector3, float, float, GTA.DrivingStyle)' is obsolete: 'Use DriveTo(Vehicle, Vector3, float, VehicleDrivingFlags, float) instead.'
+src\Runtime\WorldEventDispatcher.cs(128,21): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\Runtime\WorldEventDispatcher.cs(120,29): warning CS0612: 'GTA.Player.WantedLevel' is obsolete
+src\Runtime\WorldEventDispatcher.cs(120,64): warning CS0612: 'GTA.Player.WantedLevel' is obsolete
+src\Simulation\ActiveNpcContext.cs(88,25): warning CS0618: 'GTA.TaskInvoker.AimAt(GTA.Entity, int)' is obsolete: 'Use TaskInvoker.AimGunAtEntity for entity targets instead.'
+src\Simulation\ActiveNpcContext.cs(97,25): warning CS0618: 'GTA.TaskInvoker.FightAgainst(GTA.Ped)' is obsolete: 'Use TaskInvoker.Combat instead.'
+src\Simulation\NpcStateMachine.cs(105,25): warning CS0618: 'GTA.TaskInvoker.FightAgainst(GTA.Ped)' is obsolete: 'Use TaskInvoker.Combat instead.'
+src\Simulation\DirectorTimelineManager.cs(72,21): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\Simulation\DirectorTimelineManager.cs(157,21): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\UI\WorldInspector.cs(25,13): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(122,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(126,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(184,29): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(206,25): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(221,29): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(226,29): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(150,17): warning CS0612: 'GTA.Player.WantedLevel' is obsolete
+src\DynamicWorldEngineScript.cs(164,21): warning CS0612: 'GTA.Player.WantedLevel' is obsolete
+src\DynamicWorldEngineScript.cs(281,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(307,13): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(334,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(341,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(347,13): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(368,21): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(419,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(426,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(432,13): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(497,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(508,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(571,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(579,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(590,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(611,25): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(660,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(695,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(705,13): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(775,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(780,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+src\DynamicWorldEngineScript.cs(793,17): warning CS0618: 'GTA.UI.Notification.Show(string, bool)' is obsolete: 'Use Notification.PostTicker instead.'
+
+=========================================================
+  BUILD SUCCESSFUL! Created dist\DynamicWorldEngine.dll
+=========================================================
+        1 file(s) copied.
+        1 file(s) copied.
+DynamicWorldEngineData\asset_index.json
+DynamicWorldEngineData\characters.json
+DynamicWorldEngineData\interiors.json
+DynamicWorldEngineData\locations.json
+DynamicWorldEngineData\props.json
+        5 file(s) copied.
+DynamicWorldEngineData\environments\bbq_party.json
+DynamicWorldEngineData\environments\chop_shop.json
+DynamicWorldEngineData\environments\gambling_den.json
+DynamicWorldEngineData\environments\police_checkpoint.json
+DynamicWorldEngineData\environments\street_vendor.json
+        5 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+DynamicWorldEngineData\asset_index.json
+DynamicWorldEngineData\characters.json
+DynamicWorldEngineData\interiors.json
+DynamicWorldEngineData\locations.json
+DynamicWorldEngineData\props.json
+        5 file(s) copied.
+DynamicWorldEngineData\environments\bbq_party.json
+DynamicWorldEngineData\environments\chop_shop.json
+DynamicWorldEngineData\environments\gambling_den.json
+DynamicWorldEngineData\environments\police_checkpoint.json
+DynamicWorldEngineData\environments\street_vendor.json
+        5 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+DynamicWorldEngineData\asset_index.json
+DynamicWorldEngineData\characters.json
+DynamicWorldEngineData\interiors.json
+DynamicWorldEngineData\locations.json
+DynamicWorldEngineData\props.json
+        5 file(s) copied.
+DynamicWorldEngineData\environments\bbq_party.json
+DynamicWorldEngineData\environments\chop_shop.json
+DynamicWorldEngineData\environments\gambling_den.json
+DynamicWorldEngineData\environments\police_checkpoint.json
+DynamicWorldEngineData\environments\street_vendor.json
+        5 file(s) copied.
+Building TestNaturalLanguagePromptSpawner.exe...
+tests\TestNaturalLanguagePromptSpawner.cs(53,66): warning CS0618: 'DynamicWorldEngine.Database.EnvironmentRecord.PropIds' is obsolete: 'Props now belong to the CanonicalPlan. Query engine.Plans.GetPlan(env.PlanId).ResolvedProps instead.'
+Building TestAssetDiscoveryPipeline.exe...
+Building TestEpistemicAssetIntelligence.exe...
+Building TestSpatialArchitecture.exe...
+Building TestEndToEndIntegration.exe...
+Building TestMilestone3Mutations.exe...
+Building TestPlanSerializationRoundtrip.exe...
+Building TestPlanRepository.exe...
+Building TestEnvironmentStateArchitecture.exe...
+Building TestMilestone2Environments.exe...
+Building TestCommissioningArchitecture.exe...
+Building TestRuntimeOwnershipArchitecture.exe...
+Building TestRealizationLifecycleArchitecture.exe...
+Building TestNpcDeathObservationArchitecture.exe...
+Building TestWriteBeforeDestroyInvariant.exe...
+Building TestRealizationScopeRollbackArchitecture.exe...
+Building TestSeparatedWorldDirectorArchitecture.exe...
+Building TestContextRetrievalArchitecture.exe...
+Building TestEngramResolutionArchitecture.exe...
+Building TestModularGeneratorArchitecture.exe...
+Building TestSalienceEvaluationArchitecture.exe...
+Building TestEphemeralStateArchitecture.exe...
+Building TestKairosInsightArchitecture.exe...
+Building TestSpatialPerceptionArchitecture.exe...
+Building TestSpatialWorldModelArchitecture.exe...
+Building TestSpatialOrchestrationPipeline.exe...
+Building SyncInteriors.exe...
+Build complete.

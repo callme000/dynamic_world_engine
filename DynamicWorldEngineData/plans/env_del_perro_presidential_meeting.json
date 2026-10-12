@@ -1,0 +1,485 @@
+{
+  "EnvironmentId": "env_del_perro_presidential_meeting",
+  "Name": "Midnight Coastal Summit",
+  "Archetype": "Covert Political Meeting",
+  "CenterPosition": {
+    "x": -1500.0,
+    "y": -1190.0,
+    "z": 2.5
+  },
+  "Heading": 140.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_del_perro_beach",
+    "Name": "Del Perro Beach Sands",
+    "Category": "beach",
+    "Description": "Expansive Pacific beachfront sands ideal for social bonfires, volleyball, and sunbathing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 40,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "beach",
+      "del_perro_beach",
+      "vespucci_beach",
+      "bonfire",
+      "sands",
+      "surf",
+      "swimming",
+      "ocean",
+      "sunbathe",
+      "Del Perro Beach",
+      "Vespucci Beach",
+      "Los Santos Beach",
+      "The Beach",
+      "Beach Sands",
+      "Beach Bonfire",
+      "open_public",
+      "beachfront_sun"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorHeading": 140.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "item_bonfire",
+      "ParentPropId": "",
+      "ModelName": "prop_beach_fire",
+      "WorldPosition": {
+        "x": -1500.0,
+        "y": -1190.0,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "item_table",
+      "ParentPropId": "",
+      "ModelName": "prop_table_01",
+      "WorldPosition": {
+        "x": -1502.11328,
+        "y": -1190.18481,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.0,
+        "y": 1.0,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "item_chair_pres",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_02",
+      "WorldPosition": {
+        "x": -1501.40881,
+        "y": -1190.12317,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 5.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "item_chair_advisor",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_02",
+      "WorldPosition": {
+        "x": -1503.09949,
+        "y": -1190.27112,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "item_cooler",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": -1499.11072,
+        "y": -1192.05151,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "item_briefcase",
+      "ParentPropId": "item_table",
+      "ModelName": "prop_cash_pile_02",
+      "WorldPosition": {
+        "x": -1502.11328,
+        "y": -1190.18481,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.3,
+        "y": 0.2,
+        "z": 0.08
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_president",
+      "Name": "The President",
+      "Occupation": "Head of State",
+      "PublicFaction": "Government",
+      "HiddenRole": "Seeking an off-the-books arrangement with the player",
+      "PedModel": "fbi_agent",
+      "WorldPosition": {
+        "x": -1501.40881,
+        "y": -1190.12317,
+        "z": 2.5
+      },
+      "Heading": 160.964218,
+      "Scenario": "none",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "talk_to:Player",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 50
+      },
+      "InitialEvents": [
+        {
+          "description": "Gathered under strict secrecy to discuss confidential matters.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_agent_1",
+      "Name": "Secret Service Agent Vance",
+      "Occupation": "Federal Security Detail",
+      "PublicFaction": "Government",
+      "HiddenRole": "Perimeter defense",
+      "PedModel": "fbi_agent",
+      "WorldPosition": {
+        "x": -1499.507,
+        "y": -1195.63538,
+        "z": 2.5
+      },
+      "Heading": 340.964233,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Scanning the dark shoreline for unauthorized approach.",
+          "sentiment_tag": "caution"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_agent_2",
+      "Name": "Secret Service Agent Reyes",
+      "Occupation": "Federal Security Detail",
+      "PublicFaction": "Government",
+      "HiddenRole": "Perimeter defense",
+      "PedModel": "fbi_agent",
+      "WorldPosition": {
+        "x": -1505.63538,
+        "y": -1190.493,
+        "z": 2.5
+      },
+      "Heading": 50.0,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Monitoring the boardwalk access points.",
+          "sentiment_tag": "caution"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": -1498.29456,
+        "y": -1186.65515,
+        "z": 2.5
+      },
+      "Heading": 197.3015,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": -1497.97949,
+        "y": -1185.843,
+        "z": 2.5
+      },
+      "Heading": 0.8955078,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_suv_1",
+      "ModelName": "rebel2",
+      "WorldPosition": {
+        "x": -1508.0,
+        "y": -1180.0,
+        "z": 2.5
+      },
+      "Heading": 260.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": "npc_agent_1"
+    },
+    {
+      "VehicleId": "veh_suv_2",
+      "ModelName": "rebel2",
+      "WorldPosition": {
+        "x": -1492.0,
+        "y": -1178.0,
+        "z": 2.5
+      },
+      "Heading": 80.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": "npc_agent_2"
+    }
+  ],
+  "Atmosphere": {
+    "weather": "CLEAR",
+    "time_hours": 1,
+    "time_minutes": 30,
+    "ambient_fx": "bonfire"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": -1500.0,
+        "y": -1190.0,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      },
+      "Heading": 140.0
+    },
+    {
+      "Center": {
+        "x": -1502.11328,
+        "y": -1190.18481,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.0,
+        "y": 2.0,
+        "z": 0.76
+      },
+      "Heading": 185.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Del Perro Beach Sands",
+    "donor_asset_origin": "Federal Government / IAA / FIB",
+    "requested_asset_family": "Presidential Protection Detail & Equipment",
+    "ontological_distinction": "Public beach real estate utilized temporarily for classified executive transport and assembly.",
+    "resolved_venue_interior": "loc_del_perro_beach",
+    "transferred_asset_models": [
+      "prop_beach_fire",
+      "prop_table_01",
+      "prop_chair_02",
+      "prop_cooler_01a",
+      "prop_cash_pile_02"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 8,
+    "ResolvedCount": 1,
+    "PassthroughCount": 7,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_beach_fire",
+        "ResolvedModelName": "prop_beach_fire",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_01",
+        "ResolvedModelName": "prop_table_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_02",
+        "ResolvedModelName": "prop_chair_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_02",
+        "ResolvedModelName": "prop_chair_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "cash_briefcase",
+        "ResolvedModelName": "prop_cash_pile_02",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 65.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 65.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "rebel2",
+        "ResolvedModelName": "rebel2",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "rebel2",
+        "ResolvedModelName": "rebel2",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

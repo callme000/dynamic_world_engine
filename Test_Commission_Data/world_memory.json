@@ -1,0 +1,231 @@
+{
+  "NextNpcId": 1003,
+  "NextEventId": 3,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_resident_dj_solomun",
+      "Guid": "54203199-4bcc-4813-9734-74ed28383dce",
+      "Name": "DJ Solomun",
+      "Occupation": "Resident DJ",
+      "PublicFaction": "Afterlife Records",
+      "HiddenRole": "Headline Artist",
+      "PedModel": "ig_djblamadon",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:34.1624965Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 15
+      },
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Solomun is testing the VIP mixer before set",
+          "SentimentTag": "neutral",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:34.1680236Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Headline Artist"
+      ],
+      "ActiveGoal": {
+        "GoalId": "7c3204b2",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "e19abce7",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_head_bouncer_vlad",
+      "Guid": "e0a63c6d-697f-4a68-bccb-9e1b191462b9",
+      "Name": "Vladislav 'The Gate' Petrenko",
+      "Occupation": "Head Bouncer",
+      "PublicFaction": "Nightlife Security",
+      "HiddenRole": "Strict Velvet Rope Enforcer",
+      "PedModel": "s_m_m_highsec_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:34.1680236Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": -10
+      },
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Strict Velvet Rope Enforcer"
+      ],
+      "ActiveGoal": {
+        "GoalId": "9a5633cb",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "21a95a69",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1002,
+      "EntityId": "npc_mechanic_tork",
+      "Guid": "719b850e-565a-48ad-81a9-141ce2f949a5",
+      "Name": "Tork 'Wrench' Henderson",
+      "Occupation": "Black Market Auto Mechanic",
+      "PublicFaction": "Chop Shop Crew",
+      "HiddenRole": "Modifies vin numbers on boosted luxury vehicles",
+      "PedModel": "s_m_m_autoshop_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:35.8373905Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 15,
+        "Police": -70
+      },
+      "History": [
+        {
+          "EventId": 2,
+          "NpcId": 1002,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Strips engines and tunes stolen getaway cars",
+          "SentimentTag": "Mechanic_Active",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:35.8373905Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Modifies vin numbers on boosted luxury vehicles"
+      ],
+      "ActiveGoal": {
+        "GoalId": "d51cb172",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "fddc1275",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_chop_shop_01",
+      "PlanId": "env_chop_shop_01",
+      "Name": "Alley Underground Chop Shop",
+      "Archetype": "chop_shop",
+      "Description": "Makeshift auto breakdown workshop dealing in stolen engine parts and wheels.",
+      "CenterX": 1088.0,
+      "CenterY": -2275.0,
+      "CenterZ": -50.0,
+      "Heading": 0.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_mechanic_tork"
+      ],
+      "NpcIds": [
+        1002
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:35.8363141Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": [
+    {
+      "EventId": 1,
+      "NpcId": 1000,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Solomun is testing the VIP mixer before set",
+      "SentimentTag": "neutral",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:34.1680236Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 2,
+      "NpcId": 1002,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Strips engines and tunes stolen getaway cars",
+      "SentimentTag": "Mechanic_Active",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:35.8373905Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    }
+  ]
+}

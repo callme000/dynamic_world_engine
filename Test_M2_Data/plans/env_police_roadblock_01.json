@@ -1,0 +1,360 @@
+{
+  "EnvironmentId": "env_police_roadblock_01",
+  "PlanId": "env_police_roadblock_01",
+  "Name": "LSPD Tactical Checkpoint",
+  "Archetype": "police_checkpoint",
+  "CenterPosition": {
+    "x": 820.0,
+    "y": -2100.0,
+    "z": 29.0
+  },
+  "Heading": 350.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_cypress_flats_drag",
+    "Name": "Cypress Flats Industrial Drag Strip",
+    "Category": "street",
+    "Description": "Straight quarter-mile industrial channel in Cypress Flats, favored for underground street drag racing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 30,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "street",
+      "cypressflats",
+      "drag",
+      "street_race",
+      "industrial",
+      "tuner",
+      "carmeet",
+      "canal",
+      "race",
+      "quarter_mile",
+      "Cypress Flats Drag Strip",
+      "Cypress Flats",
+      "Industrial Drag Strip",
+      "Canal Drag Strip",
+      "Cypress Drag",
+      "open_public",
+      "industrial_gritty"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": 820.0,
+      "y": -2100.0,
+      "z": 29.0
+    },
+    "InteriorCoords": {
+      "x": 820.0,
+      "y": -2100.0,
+      "z": 29.0
+    },
+    "InteriorHeading": 350.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_barrier_work05",
+      "WorldPosition": {
+        "x": 818.522766,
+        "y": -2099.7395,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.5,
+        "y": 0.3,
+        "z": 1.2
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_barrier_work05",
+      "WorldPosition": {
+        "x": 821.477234,
+        "y": -2100.2605,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.5,
+        "y": 0.3,
+        "z": 1.2
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_box_wood02a",
+      "WorldPosition": {
+        "x": 819.368652,
+        "y": -2100.701,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_box_wood02a",
+      "WorldPosition": {
+        "x": 820.3535,
+        "y": -2100.87476,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_cop_miller",
+      "Name": "Officer Miller",
+      "Occupation": "LSPD Patrol Officer",
+      "PublicFaction": "Police",
+      "HiddenRole": "Conducting contraband checks and suspicious person searches",
+      "PedModel": "s_m_y_cop_01",
+      "WorldPosition": {
+        "x": 819.3858,
+        "y": -2098.87622,
+        "z": 29.0
+      },
+      "Heading": 170.0,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_COMBATPISTOL",
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": -20,
+        "Criminals": -90
+      },
+      "InitialEvents": [
+        {
+          "description": "Staffing checkpoint, commands civilians to stay back",
+          "sentiment_tag": "Police_Checkpoint"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_cop_davies",
+      "Name": "Officer Davies",
+      "Occupation": "LSPD Tactical Support",
+      "PublicFaction": "Police",
+      "HiddenRole": "Overwatch with carbine rifle",
+      "PedModel": "s_m_y_cop_01",
+      "WorldPosition": {
+        "x": 821.1932,
+        "y": -2098.9917,
+        "z": 29.0
+      },
+      "Heading": 170.0,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": -25,
+        "Officer Miller": 80
+      },
+      "InitialEvents": [
+        {
+          "description": "Covers checkpoint perimeter with assault weapon",
+          "sentiment_tag": "Police_Overwatch"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_3",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": 820.1955,
+        "y": -2103.74951,
+        "z": 29.0
+      },
+      "Heading": 47.3015137,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": 820.3287,
+        "y": -2104.61035,
+        "z": 29.0
+      },
+      "Heading": 210.895508,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "WorldPosition": {
+        "x": 822.2937,
+        "y": -2101.82227,
+        "z": 29.0
+      },
+      "Heading": 335.27478,
+      "Scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 818.522766,
+        "y": -2099.7395,
+        "z": 29.0
+      },
+      "Size": {
+        "x": 0.3,
+        "y": 2.5,
+        "z": 1.2
+      },
+      "Heading": 350.0
+    },
+    {
+      "Center": {
+        "x": 821.477234,
+        "y": -2100.2605,
+        "z": 29.0
+      },
+      "Size": {
+        "x": 0.3,
+        "y": 2.5,
+        "z": 1.2
+      },
+      "Heading": 350.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": {
+    "TotalProcessed": 4,
+    "ResolvedCount": 0,
+    "PassthroughCount": 2,
+    "FallbackCount": 2,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_barrier_work05",
+        "ResolvedModelName": "prop_barrier_work05",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_barrier_work05",
+        "ResolvedModelName": "prop_barrier_work05",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_roadcone02a",
+        "ResolvedModelName": "prop_box_wood02a",
+        "IsExactMatch": false,
+        "Confidence": 0.3,
+        "MatchScore": 0.0,
+        "Provenance": "Safe Fallback: Generic Prop"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_roadcone02a",
+        "ResolvedModelName": "prop_box_wood02a",
+        "IsExactMatch": false,
+        "Confidence": 0.3,
+        "MatchScore": 0.0,
+        "Provenance": "Safe Fallback: Generic Prop"
+      }
+    ],
+    "UnresolvedAssets": [
+      "Prop: prop_roadcone02a",
+      "Prop: prop_roadcone02a"
+    ]
+  }
+}

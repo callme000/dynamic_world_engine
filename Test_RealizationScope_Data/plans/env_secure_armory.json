@@ -1,0 +1,76 @@
+{
+  "EnvironmentId": "env_secure_armory",
+  "PlanId": "env_secure_armory",
+  "Name": "Subterranean Weapons Cache",
+  "Archetype": "military",
+  "CenterPosition": {
+    "x": 120.5,
+    "y": -1400.2,
+    "z": 29.3
+  },
+  "Heading": 45.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "crate_ammo",
+      "ParentPropId": null,
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": 121.0,
+        "y": -1400.0,
+        "z": 29.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_quartermaster",
+      "Name": "Sergeant Miller",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": null,
+      "PedModel": "s_m_m_armoured_01",
+      "WorldPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "GUARD",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

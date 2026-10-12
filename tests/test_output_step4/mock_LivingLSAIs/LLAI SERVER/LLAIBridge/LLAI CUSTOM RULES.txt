@@ -1,0 +1,8 @@
+# ══════════════════════════════════════════════════════════════════════
+#  DYNAMIC WORLD ENGINE - LIVE WORLD FACTS (AUTO-INJECTED)
+# ══════════════════════════════════════════════════════════════════════
+
+[WORLD FACT] NPC #1000: Name=Darnell 'D-Lance' Jenkins, Occupation=Drug Dealer, Faction=Families. Relationships: Player: +10, Police: -50, Families: +60, Ballas: -30. History: Operates street corner in Chamberlain Hills Families turf.
+
+[WORLD FACT] NPC #1001: Name=Marcus, Occupation=Mechanic / Bartender, Faction=Civilian. HIDDEN ROLE FACT: Undercover Police Informant. Relationships: Player: +72, Police: -20, Gang A: +40. History: Player saved Marcus from gang ambush; Blackmailed by LSPD detective to leak cartel info.
+

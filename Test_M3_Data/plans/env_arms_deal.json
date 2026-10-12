@@ -1,0 +1,133 @@
+{
+  "EnvironmentId": "env_arms_deal",
+  "PlanId": "env_arms_deal",
+  "Name": "Alley Arms Deal",
+  "Archetype": "criminal_deal",
+  "CenterPosition": {
+    "x": 10.0,
+    "y": 23.5,
+    "z": 5.0
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_table_03b",
+      "WorldPosition": {
+        "x": 10.0,
+        "y": 26.5,
+        "z": 5.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.8,
+        "y": 1.0,
+        "z": 0.76
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_dealer_01",
+      "Name": "Boris 'The Russian'",
+      "Occupation": "Arms Dealer",
+      "PublicFaction": "Fixers",
+      "HiddenRole": "Loyal to the highest bidder",
+      "PedModel": "a_m_y_beach_01",
+      "WorldPosition": {
+        "x": 10.0,
+        "y": 23.5,
+        "z": 5.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 10,
+        "Police": -80
+      },
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_guard_01",
+      "Name": "Vince 'Iron'",
+      "Occupation": "Bodyguard",
+      "PublicFaction": "Fixers",
+      "HiddenRole": "Bodyguard with heavy rifle",
+      "PedModel": "a_m_y_beach_01",
+      "WorldPosition": {
+        "x": 10.0,
+        "y": 23.5,
+        "z": 5.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0,
+        "Police": -90
+      },
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 10.0,
+        "y": 26.5,
+        "z": 5.0
+      },
+      "Size": {
+        "x": 1.0,
+        "y": 1.8,
+        "z": 0.76
+      },
+      "Heading": 0.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": {
+    "TotalProcessed": 1,
+    "ResolvedCount": 0,
+    "PassthroughCount": 1,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_03b",
+        "ResolvedModelName": "prop_table_03b",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

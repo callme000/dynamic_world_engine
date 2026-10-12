@@ -1,0 +1,39 @@
+{
+  "NextNpcId": 1001,
+  "NextEventId": 3,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "Guid": "9f110d7f-2f89-49b8-910f-96489a6d8f4d",
+      "Name": "Darnell 'D-Lance' Jenkins",
+      "Occupation": "Drug Dealer",
+      "PublicFaction": "Families",
+      "HiddenRole": "None",
+      "PedModel": "g_m_y_famca_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-08-23T15:46:40.4677444Z",
+      "Relationships": {
+        "Player": 10,
+        "Police": -50,
+        "Families": 60,
+        "Ballas": -30
+      },
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Description": "Operates street corner in Chamberlain Hills Families turf",
+          "SentimentTag": "Territory_Active",
+          "Timestamp": "2026-08-23T15:46:40.5308624Z"
+        },
+        {
+          "EventId": 2,
+          "NpcId": 1000,
+          "Description": "Owed money by local mechanic Marcus",
+          "SentimentTag": "Owed_Money",
+          "Timestamp": "2026-08-23T15:46:40.5442961Z"
+        }
+      ]
+    }
+  ]
+}

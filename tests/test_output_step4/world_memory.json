@@ -1,0 +1,54 @@
+{
+  "NextNpcId": 1002,
+  "NextEventId": 3,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "Guid": "f76593de-b0a7-4aaf-bc3e-0e3d72521d62",
+      "Name": "Darnell 'D-Lance' Jenkins",
+      "Occupation": "Drug Dealer",
+      "PublicFaction": "Families",
+      "HiddenRole": "None",
+      "PedModel": "g_m_y_famca_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-08-23T15:47:11.2623755Z",
+      "Relationships": {
+        "Player": 10,
+        "Police": -50
+      },
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Description": "Operates street corner in Chamberlain Hills Families turf",
+          "SentimentTag": "Territory_Active",
+          "Timestamp": "2026-08-23T15:47:11.3107054Z"
+        }
+      ]
+    },
+    {
+      "NpcId": 1001,
+      "Guid": "d748a14a-9b49-4d6d-bb8b-39ef67b18534",
+      "Name": "Marcus",
+      "Occupation": "Mechanic",
+      "PublicFaction": "Civilian",
+      "HiddenRole": "Undercover Police Informant",
+      "PedModel": "s_m_y_barman_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-08-23T15:47:11.3232133Z",
+      "Relationships": {
+        "Player": 72,
+        "Police": -20
+      },
+      "History": [
+        {
+          "EventId": 2,
+          "NpcId": 1001,
+          "Description": "Player saved Marcus from gang ambush",
+          "SentimentTag": "Saved_Life",
+          "Timestamp": "2026-08-23T15:47:11.3537094Z"
+        }
+      ]
+    }
+  ]
+}

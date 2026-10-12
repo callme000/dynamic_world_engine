@@ -1,0 +1,459 @@
+{
+  "EnvironmentId": "env_tactical_arms_deal",
+  "PlanId": "env_tactical_arms_deal",
+  "Name": "Underground Arms Deal",
+  "Archetype": "abandoned_industrial",
+  "CenterPosition": {
+    "x": 1630.0,
+    "y": -2330.0,
+    "z": 65.0
+  },
+  "Heading": 90.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_el_burro_oilfields",
+    "Name": "El Burro Heights Oilfield",
+    "Category": "industrial",
+    "Description": "Derelict hillside oil pump derricks and industrial scrap vehicle yard in El Burro Heights.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 25,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "industrial",
+      "elburro",
+      "oilfields",
+      "derrick",
+      "scrapyard",
+      "wasteland",
+      "chopshop",
+      "gang",
+      "deal",
+      "creator_arena",
+      "El Burro Heights Oilfields",
+      "El Burro Oilfields",
+      "El Burro Scrapyard",
+      "Oilfields",
+      "El Burro Heights",
+      "industrial_gritty"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": 1630.0,
+      "y": -2330.0,
+      "z": 65.0
+    },
+    "InteriorCoords": {
+      "x": 1630.0,
+      "y": -2330.0,
+      "z": 65.0
+    },
+    "InteriorHeading": 90.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "table_1",
+      "ParentPropId": "",
+      "ModelName": "prop_table_03b",
+      "WorldPosition": {
+        "x": 1627.0,
+        "y": -2330.0,
+        "z": 65.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 90.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.8,
+        "y": 1.0,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "chair_1",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_01a",
+      "WorldPosition": {
+        "x": 1627.0,
+        "y": -2331.0,
+        "z": 65.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 180.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "barrier_1",
+      "ParentPropId": "",
+      "ModelName": "prop_barrier_work05",
+      "WorldPosition": {
+        "x": 1632.0,
+        "y": -2333.0,
+        "z": 65.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 135.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.5,
+        "y": 0.3,
+        "z": 1.2
+      }
+    },
+    {
+      "PropId": "barrier_2",
+      "ParentPropId": "",
+      "ModelName": "prop_barrier_work05",
+      "WorldPosition": {
+        "x": 1624.0,
+        "y": -2327.0,
+        "z": 65.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 45.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.5,
+        "y": 0.3,
+        "z": 1.2
+      }
+    },
+    {
+      "PropId": "case_1",
+      "ParentPropId": "table_1",
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": 1627.0,
+        "y": -2330.0,
+        "z": 65.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 90.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_dealer",
+      "Name": "Victor",
+      "Occupation": "Arms Broker",
+      "PublicFaction": "Cartel",
+      "HiddenRole": "Underground supplier looking for clean cash",
+      "PedModel": "cartel_soldier",
+      "WorldPosition": {
+        "x": 1626.2,
+        "y": -2330.0,
+        "z": 65.0
+      },
+      "Heading": 90.0,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "talk_to:npc_buyer",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Waiting to complete the arms transfer in the secluded alley.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_buyer",
+      "Name": "Marcus",
+      "Occupation": "Mercenary Liaison",
+      "PublicFaction": "Bikers",
+      "HiddenRole": "High-tier security contractor",
+      "PedModel": "nightclub_bouncer",
+      "WorldPosition": {
+        "x": 1627.8,
+        "y": -2330.0,
+        "z": 65.0
+      },
+      "Heading": 270.0,
+      "Scenario": "none",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "talk_to:npc_dealer",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Inspecting the hardware case on the table.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_3",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": 1633.65857,
+        "y": -2329.15625,
+        "z": 65.0
+      },
+      "Heading": 147.3015,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": 1634.48315,
+        "y": -2328.87573,
+        "z": 65.0
+      },
+      "Heading": 310.8955,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "WorldPosition": {
+        "x": 1631.39612,
+        "y": -2327.4248,
+        "z": 65.0
+      },
+      "Heading": 75.27481,
+      "Scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_insurgent",
+      "ModelName": "insurgent",
+      "WorldPosition": {
+        "x": 1628.0,
+        "y": -2334.0,
+        "z": 65.0
+      },
+      "Heading": 165.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "veh_granger",
+      "ModelName": "granger",
+      "WorldPosition": {
+        "x": 1626.0,
+        "y": -2326.0,
+        "z": 65.0
+      },
+      "Heading": 0.0,
+      "PrimaryColor": "black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "OVERCAST",
+    "time_hours": 23,
+    "time_minutes": 30,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 1627.0,
+        "y": -2330.0,
+        "z": 65.0
+      },
+      "Size": {
+        "x": 1.0,
+        "y": 1.8,
+        "z": 0.76
+      },
+      "Heading": 90.0
+    },
+    {
+      "Center": {
+        "x": 1632.0,
+        "y": -2333.0,
+        "z": 65.0
+      },
+      "Size": {
+        "x": 0.3,
+        "y": 2.5,
+        "z": 1.2
+      },
+      "Heading": 135.0
+    },
+    {
+      "Center": {
+        "x": 1624.0,
+        "y": -2327.0,
+        "z": 65.0
+      },
+      "Size": {
+        "x": 0.3,
+        "y": 2.5,
+        "z": 1.2
+      },
+      "Heading": 45.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "El Burro Heights Oilfield Alleyway",
+    "donor_asset_origin": "Black Market Syndicate",
+    "requested_asset_family": "Heavy Tactical Equipment",
+    "ontological_distinction": "Industrial outdoor staging utilized for illicit black market weapons transaction.",
+    "resolved_venue_interior": "loc_el_burro_oilfields",
+    "transferred_asset_models": [
+      "prop_table_03b",
+      "prop_chair_01a",
+      "prop_barrier_work05",
+      "prop_box_ammo04a"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 7,
+    "ResolvedCount": 2,
+    "PassthroughCount": 5,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_03b",
+        "ResolvedModelName": "prop_table_03b",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "weapons_case",
+        "ResolvedModelName": "prop_box_ammo04a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 45.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 45.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_04a",
+        "ResolvedModelName": "prop_chair_01a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 120.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 120.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_barrier_work05",
+        "ResolvedModelName": "prop_barrier_work05",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_barrier_work05",
+        "ResolvedModelName": "prop_barrier_work05",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "insurgent",
+        "ResolvedModelName": "insurgent",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "granger",
+        "ResolvedModelName": "granger",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

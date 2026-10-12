@@ -1,0 +1,4860 @@
+{
+  "source": "WildBrick142/v-mod-labels Rockstar trackID metadata",
+  "tracks": {
+    "1001": {
+      "artist": "HALL & OATES",
+      "title": "Adult Education",
+      "source": "trackid_rsg.txt"
+    },
+    "1004": {
+      "artist": "BOB SEGER",
+      "title": "Hollywood Nights",
+      "source": "trackid_rsg.txt"
+    },
+    "1005": {
+      "artist": "BOB SEGER",
+      "title": "Night Moves",
+      "source": "trackid_rsg.txt"
+    },
+    "1007": {
+      "artist": "BT EXPRESS",
+      "title": "Do It ('Til You're Satisfied)",
+      "source": "trackid_rsg.txt"
+    },
+    "1009": {
+      "artist": "RICK JAMES",
+      "title": "Give It To Me Baby",
+      "source": "trackid_rsg.txt"
+    },
+    "1011": {
+      "artist": "THE FIVE STAIRSTEPS",
+      "title": "O-O-H Child",
+      "source": "trackid_rsg.txt"
+    },
+    "1012": {
+      "artist": "THE DELFONICS",
+      "title": "Ready Or Not Here I Come (Can't Hide From Love)",
+      "source": "trackid_rsg.txt"
+    },
+    "1013": {
+      "artist": "THE UNDISPUTED TRUTH",
+      "title": "Smiling Faces Sometimes",
+      "source": "trackid_rsg.txt"
+    },
+    "1014": {
+      "artist": "EL CHICANO",
+      "title": "Viva Tirado - Part 1",
+      "source": "trackid_rsg.txt"
+    },
+    "1018": {
+      "artist": "BRITNEY SPEARS",
+      "title": "Gimme More",
+      "source": "trackid_rsg.txt"
+    },
+    "1019": {
+      "artist": "FERGIE",
+      "title": "Glamorous",
+      "source": "trackid_rsg.txt"
+    },
+    "1023": {
+      "artist": "AMERIE",
+      "title": "1 Thing",
+      "source": "trackid_rsg.txt"
+    },
+    "1026": {
+      "artist": "ROBYN",
+      "title": "With Every Heartbeat (With Kleerup)",
+      "source": "trackid_rsg.txt"
+    },
+    "1028": {
+      "artist": "ROBERT PLANT",
+      "title": "Big Log",
+      "source": "trackid_rsg.txt"
+    },
+    "1031": {
+      "artist": "DON JOHNSON",
+      "title": "Heartbeat",
+      "source": "trackid_rsg.txt"
+    },
+    "1032": {
+      "artist": "CHICAGO",
+      "title": "If You Leave Me Now",
+      "source": "trackid_rsg.txt"
+    },
+    "1034": {
+      "artist": "BILLY SQUIER",
+      "title": "Lonely Is The Night",
+      "source": "trackid_rsg.txt"
+    },
+    "1035": {
+      "artist": "EDDIE MURPHY",
+      "title": "Party All The Time",
+      "source": "trackid_rsg.txt"
+    },
+    "1036": {
+      "artist": "DEF LEPPARD",
+      "title": "Photograph",
+      "source": "trackid_rsg.txt"
+    },
+    "1038": {
+      "artist": "GOLDEN EARRING",
+      "title": "Radar Love",
+      "source": "trackid_rsg.txt"
+    },
+    "1039": {
+      "artist": "ELTON JOHN",
+      "title": "Saturday Night's Alright For Fighting",
+      "source": "trackid_rsg.txt"
+    },
+    "1041": {
+      "artist": "GREG KIHN BAND",
+      "title": "The Breakup Song (They Don't Write 'Em)",
+      "source": "trackid_rsg.txt"
+    },
+    "1043": {
+      "artist": "PET SHOP BOYS",
+      "title": "West End Girls",
+      "source": "trackid_rsg.txt"
+    },
+    "1044": {
+      "artist": "THE DOOBIE BROTHERS",
+      "title": "What A Fool Believes",
+      "source": "trackid_rsg.txt"
+    },
+    "1046": {
+      "artist": "FEAR",
+      "title": "The Mouth Don't Stop (The Trouble With Women Is)",
+      "source": "trackid_rsg.txt"
+    },
+    "1048": {
+      "artist": "WAYLON JENNINGS",
+      "title": "Are You Sure Hank Done It This Way",
+      "source": "trackid_rsg.txt"
+    },
+    "1049": {
+      "artist": "HASIL ADKINS",
+      "title": "Get Outta My Car",
+      "source": "trackid_rsg.txt"
+    },
+    "1051": {
+      "artist": "MARLENA SHAW",
+      "title": "California Soul",
+      "source": "trackid_rsg.txt"
+    },
+    "1052": {
+      "artist": "ONE WAY",
+      "title": "Cutie Pie",
+      "source": "trackid_rsg.txt"
+    },
+    "1055": {
+      "artist": "GEORGE MCCRAE",
+      "title": "I Get Lifted",
+      "source": "trackid_rsg.txt"
+    },
+    "1060": {
+      "artist": "STEVIE WONDER",
+      "title": "Skeletons",
+      "source": "trackid_rsg.txt"
+    },
+    "1063": {
+      "artist": "WAR",
+      "title": "The Cisco Kid",
+      "source": "trackid_rsg.txt"
+    },
+    "1064": {
+      "artist": "WELDON IRVINE",
+      "title": "We're Getting Down",
+      "source": "trackid_rsg.txt"
+    },
+    "1070": {
+      "artist": "OZARK MOUNTAIN DAREDEVILS",
+      "title": "If You Wanna Get To Heaven",
+      "source": "trackid_rsg.txt"
+    },
+    "1071": {
+      "artist": "QUEEN",
+      "title": "Radio Ga Ga",
+      "source": "trackid_rsg.txt"
+    },
+    "1072": {
+      "artist": "GERRY RAFFERTY",
+      "title": "Baker Street",
+      "source": "trackid_rsg.txt"
+    },
+    "1073": {
+      "artist": "THE ALAN PARSONS PROJECT",
+      "title": "I Wouldn't Want To Be Like You",
+      "source": "trackid_rsg.txt"
+    },
+    "1075": {
+      "artist": "SMALL FACES",
+      "title": "Ogden's Nut Gone Flake",
+      "source": "trackid_rsg.txt"
+    },
+    "1083": {
+      "artist": "EVELYN CHAMPAGNE KING",
+      "title": "I'm In Love (12\" Dance Mix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1087": {
+      "artist": "FOREIGNER",
+      "title": "Dirty White Boy",
+      "source": "trackid_rsg.txt"
+    },
+    "1088": {
+      "artist": "SIMPLE MINDS",
+      "title": "All The Things She Said",
+      "source": "trackid_rsg.txt"
+    },
+    "1091": {
+      "artist": "BLACK FLAG",
+      "title": "My War",
+      "source": "trackid_rsg.txt"
+    },
+    "1093": {
+      "artist": "SUICIDAL TENDENCIES",
+      "title": "Subliminal",
+      "source": "trackid_rsg.txt"
+    },
+    "1095": {
+      "artist": "GETO BOYS",
+      "title": "Mind Playing Tricks On Me",
+      "source": "trackid_rsg.txt"
+    },
+    "1097": {
+      "artist": "DR. DRE",
+      "title": "Still D.R.E (ft Snoop Dogg)",
+      "source": "trackid_rsg.txt"
+    },
+    "1098": {
+      "artist": "MC EIHT",
+      "title": "Streiht Up Menace",
+      "source": "trackid_rsg.txt"
+    },
+    "1100": {
+      "artist": "THE DOGG POUND",
+      "title": "What Would U Do",
+      "source": "trackid_rsg.txt"
+    },
+    "1102": {
+      "artist": "ICE CUBE",
+      "title": "You Know How We Do It",
+      "source": "trackid_rsg.txt"
+    },
+    "1103": {
+      "artist": "LEE SCRATCH PERRY & THE FULL EXPERIENCE",
+      "title": "Disco Devil",
+      "source": "trackid_rsg.txt"
+    },
+    "1107": {
+      "artist": "MIS-TEEQ",
+      "title": "Scandalous",
+      "source": "trackid_rsg.txt"
+    },
+    "1111": {
+      "artist": "STEVE WINWOOD",
+      "title": "Higher Love",
+      "source": "trackid_rsg.txt"
+    },
+    "1112": {
+      "artist": "KENNY LOGGINS",
+      "title": "I'm Free (Heaven Helps The Man)",
+      "source": "trackid_rsg.txt"
+    },
+    "1117": {
+      "artist": "JULIAN LENNON",
+      "title": "Too Late For Goodbyes",
+      "source": "trackid_rsg.txt"
+    },
+    "1124": {
+      "artist": "LEE SCRATCH PERRY",
+      "title": "I Am A Madman",
+      "source": "trackid_rsg.txt"
+    },
+    "1128": {
+      "artist": "JOE GIBBS & THE PROFESSIONALS",
+      "title": "Chapter Three",
+      "source": "trackid_rsg.txt"
+    },
+    "1129": {
+      "artist": "HALF PINT",
+      "title": "Crazy Girl",
+      "source": "trackid_rsg.txt"
+    },
+    "1132": {
+      "artist": "GREGORY ISAACS",
+      "title": "Night Nurse",
+      "source": "trackid_rsg.txt"
+    },
+    "1133": {
+      "artist": "YELLOWMAN",
+      "title": "Nobody Move Nobody Get Hurt",
+      "source": "trackid_rsg.txt"
+    },
+    "1138": {
+      "artist": "CHARLIE FEATHERS",
+      "title": "Can't Hardly Stand It",
+      "source": "trackid_rsg.txt"
+    },
+    "1141": {
+      "artist": "WAYLON JENNINGS",
+      "title": "I Ain't Living Long Like This",
+      "source": "trackid_rsg.txt"
+    },
+    "1142": {
+      "artist": "JOHNNY PAYCHECK",
+      "title": "It Won't Be Long (And I'll Be Hating You)",
+      "source": "trackid_rsg.txt"
+    },
+    "1145": {
+      "artist": "WILLIE NELSON",
+      "title": "Whiskey River",
+      "source": "trackid_rsg.txt"
+    },
+    "1146": {
+      "artist": "YOUTH BRIGADE",
+      "title": "Blown Away",
+      "source": "trackid_rsg.txt"
+    },
+    "1148": {
+      "artist": "THE GERMS",
+      "title": "Lexicon Devil",
+      "source": "trackid_rsg.txt"
+    },
+    "1156": {
+      "artist": "BLACK STROBE",
+      "title": "Boogie In Zero Gravity",
+      "source": "trackid_rsg.txt"
+    },
+    "1162": {
+      "artist": "THE C90S",
+      "title": "Shine A Light (Flight Facilities Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1163": {
+      "artist": "MIAMI HORROR",
+      "title": "Sometimes",
+      "source": "trackid_rsg.txt"
+    },
+    "1170": {
+      "artist": "POOLSIDE",
+      "title": "Do You Believe",
+      "source": "trackid_rsg.txt"
+    },
+    "1172": {
+      "artist": "TORO Y MOI",
+      "title": "Harm In Change",
+      "source": "trackid_rsg.txt"
+    },
+    "1174": {
+      "artist": "LIVING DAYS",
+      "title": "Little White Lie",
+      "source": "trackid_rsg.txt"
+    },
+    "1177": {
+      "artist": "TWIN SHADOW",
+      "title": "Shooting Holes",
+      "source": "trackid_rsg.txt"
+    },
+    "1181": {
+      "artist": "LOS BUITRES DE CULIACAN SINALOA",
+      "title": "El Cocaino",
+      "source": "trackid_rsg.txt"
+    },
+    "1182": {
+      "artist": "MEXICAN INSTITUTE OF SOUND",
+      "title": "Es-Toy",
+      "source": "trackid_rsg.txt"
+    },
+    "1183": {
+      "artist": "NINA DIOZ",
+      "title": "Criminal Sound",
+      "source": "trackid_rsg.txt"
+    },
+    "1184": {
+      "artist": "LA VIDA BOHEME",
+      "title": "Radio Capital",
+      "source": "trackid_rsg.txt"
+    },
+    "1185": {
+      "artist": "FANDANGO",
+      "title": "Autos, Moda Y Rock And Roll",
+      "source": "trackid_rsg.txt"
+    },
+    "1186": {
+      "artist": "DON CHETO",
+      "title": "El Tatuado",
+      "source": "trackid_rsg.txt"
+    },
+    "1187": {
+      "artist": "LA SONORA DINAMITA",
+      "title": "Se Me Perdio La Cadenita",
+      "source": "trackid_rsg.txt"
+    },
+    "1188": {
+      "artist": "SHE'S A TEASE",
+      "title": "Fiebre De Jack",
+      "source": "trackid_rsg.txt"
+    },
+    "1189": {
+      "artist": "MALDITA VECINDAD",
+      "title": "Pachuco",
+      "source": "trackid_rsg.txt"
+    },
+    "1190": {
+      "artist": "HECHIZEROS BAND",
+      "title": "El Sonidito",
+      "source": "trackid_rsg.txt"
+    },
+    "1191": {
+      "artist": "MILKMAN",
+      "title": "Fresco",
+      "source": "trackid_rsg.txt"
+    },
+    "1192": {
+      "artist": "JESSY BULBO",
+      "title": "Maldito",
+      "source": "trackid_rsg.txt"
+    },
+    "1193": {
+      "artist": "LA LIGA FEAT. ALIKA",
+      "title": "Yo Tengo El Don",
+      "source": "trackid_rsg.txt"
+    },
+    "1194": {
+      "artist": "LOS TIGRES DEL NORTE",
+      "title": "La Granja",
+      "source": "trackid_rsg.txt"
+    },
+    "1195": {
+      "artist": "LOS ANGELES NEGROS",
+      "title": "El Rey Y Yo",
+      "source": "trackid_rsg.txt"
+    },
+    "1196": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1197": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1198": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1199": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1200": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1201": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1202": {
+      "artist": "EAST LOS FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1204": {
+      "artist": "SOULWAX FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1206": {
+      "artist": "Worldwide FM",
+      "title": "Gilles Peterson",
+      "source": "trackid_rsg.txt"
+    },
+    "1207": {
+      "artist": "Flylo FM",
+      "title": "Mix",
+      "source": "trackid_rsg.txt"
+    },
+    "1208": {
+      "artist": "2PAC",
+      "title": "Ambitionz Az A Ridah",
+      "source": "trackid_rsg.txt"
+    },
+    "1209": {
+      "artist": "N.W.A",
+      "title": "Appetite For Destruction",
+      "source": "trackid_rsg.txt"
+    },
+    "1210": {
+      "artist": "KURUPT",
+      "title": "C-Walk",
+      "source": "trackid_rsg.txt"
+    },
+    "1211": {
+      "artist": "N.W.A",
+      "title": "Gangsta Gangsta",
+      "source": "trackid_rsg.txt"
+    },
+    "1212": {
+      "artist": "SNOOP DOGG",
+      "title": "Gin and Juice",
+      "source": "trackid_rsg.txt"
+    },
+    "1215": {
+      "artist": "DR. DRE",
+      "title": "The Next Episode (Ft Snoop Dogg)",
+      "source": "trackid_rsg.txt"
+    },
+    "1216": {
+      "artist": "KAUSION",
+      "title": "What You Wanna Do?",
+      "source": "trackid_rsg.txt"
+    },
+    "1218": {
+      "artist": "ZAPP",
+      "title": "Heartbreaker, Pts. 1-2",
+      "source": "trackid_rsg.txt"
+    },
+    "1219": {
+      "artist": "BOOTSY COLLINS",
+      "title": "I'd Rather Be With You",
+      "source": "trackid_rsg.txt"
+    },
+    "1220": {
+      "artist": "KLEEER",
+      "title": "Tonight",
+      "source": "trackid_rsg.txt"
+    },
+    "1221": {
+      "artist": "D TRAIN",
+      "title": "You're The One For Me",
+      "source": "trackid_rsg.txt"
+    },
+    "1222": {
+      "artist": "JAY ROCK FEAT. KENDRICK LAMAR",
+      "title": "Hood Gone Love It",
+      "source": "trackid_rsg.txt"
+    },
+    "1225": {
+      "artist": "DJ MEHDI",
+      "title": "Lucky Boy (Outlines Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1226": {
+      "artist": "SMOKEY ROBINSON",
+      "title": "Cruisin'",
+      "source": "trackid_rsg.txt"
+    },
+    "1227": {
+      "artist": "AARON NEVILLE",
+      "title": "Hercules",
+      "source": "trackid_rsg.txt"
+    },
+    "1228": {
+      "artist": "THE TRAMMPS",
+      "title": "Rubber Band",
+      "source": "trackid_rsg.txt"
+    },
+    "1229": {
+      "artist": "JOHNNY CASH",
+      "title": "The General Lee",
+      "source": "trackid_rsg.txt"
+    },
+    "1230": {
+      "artist": "JERRY REED",
+      "title": "You Took All The Ramblin' Out Of Me",
+      "source": "trackid_rsg.txt"
+    },
+    "1232": {
+      "artist": "WHAM!",
+      "title": "Everything She Wants",
+      "source": "trackid_rsg.txt"
+    },
+    "1234": {
+      "artist": "ALL SAINTS",
+      "title": "Pure Shores",
+      "source": "trackid_rsg.txt"
+    },
+    "1235": {
+      "artist": "RIHANNA",
+      "title": "Only Girl (In The World)",
+      "source": "trackid_rsg.txt"
+    },
+    "1237": {
+      "artist": "STEVIE NICKS",
+      "title": "I Can't Wait",
+      "source": "trackid_rsg.txt"
+    },
+    "1238": {
+      "artist": "COMPTON'S MOST WANTED",
+      "title": "Late Night Hype",
+      "source": "trackid_rsg.txt"
+    },
+    "1239": {
+      "artist": "MACK 10 FEAT. THE DOGG POUND",
+      "title": "Nothin' But The Cavi Hit",
+      "source": "trackid_rsg.txt"
+    },
+    "1240": {
+      "artist": "TOO $HORT",
+      "title": "So You Wanna Be A Gangster",
+      "source": "trackid_rsg.txt"
+    },
+    "1242": {
+      "artist": "CORONA",
+      "title": "Rhythm Of The Night",
+      "source": "trackid_rsg.txt"
+    },
+    "1245": {
+      "artist": "CIRCLE JERKS",
+      "title": "Rock House",
+      "source": "trackid_rsg.txt"
+    },
+    "1246": {
+      "artist": "T.S.O.L.",
+      "title": "Abolish Government/Silent Majority",
+      "source": "trackid_rsg.txt"
+    },
+    "1247": {
+      "artist": "SHO-NUFF",
+      "title": "Funkasize You",
+      "source": "trackid_rsg.txt"
+    },
+    "1248": {
+      "artist": "TAANA GARDNER",
+      "title": "Heartbeat",
+      "source": "trackid_rsg.txt"
+    },
+    "1254": {
+      "artist": "THE SOUL SEARCHERS",
+      "title": "Ashley's Roachclip",
+      "source": "trackid_rsg.txt"
+    },
+    "1255": {
+      "artist": "JUNIOR DELGADO",
+      "title": "Sons Of Slaves",
+      "source": "trackid_rsg.txt"
+    },
+    "1257": {
+      "artist": "KELLY ROWLAND",
+      "title": "Work (Freemasons Mix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1258": {
+      "artist": "JANE CHILD",
+      "title": "Don't Wanna Fall In Love",
+      "source": "trackid_rsg.txt"
+    },
+    "1259": {
+      "artist": "FUTURE",
+      "title": "How It Was",
+      "source": "trackid_rsg.txt"
+    },
+    "1260": {
+      "artist": "THE WEIRDOS",
+      "title": "Life Of Crime",
+      "source": "trackid_rsg.txt"
+    },
+    "1261": {
+      "artist": "DENNIS BROWN",
+      "title": "Money In My Pocket",
+      "source": "trackid_rsg.txt"
+    },
+    "1262": {
+      "artist": "PHIL COLLINS",
+      "title": "I Don't Care Anymore",
+      "source": "trackid_rsg.txt"
+    },
+    "1263": {
+      "artist": "STARDUST",
+      "title": "Music Sounds Better With You",
+      "source": "trackid_rsg.txt"
+    },
+    "1264": {
+      "artist": "THE ADOLESCENTS",
+      "title": "Amoeba",
+      "source": "trackid_rsg.txt"
+    },
+    "1265": {
+      "artist": "THE DESCENDENTS",
+      "title": "Pervert",
+      "source": "trackid_rsg.txt"
+    },
+    "1266": {
+      "artist": "DJ QUIK",
+      "title": "Dollaz & Sense",
+      "source": "trackid_rsg.txt"
+    },
+    "1267": {
+      "artist": "FIDLAR",
+      "title": "Cocaine",
+      "source": "trackid_rsg.txt"
+    },
+    "1268": {
+      "artist": "BASS DRUM OF DEATH",
+      "title": "Crawling After You",
+      "source": "trackid_rsg.txt"
+    },
+    "1270": {
+      "artist": "SAM FLAX",
+      "title": "Fire Doesn't Burn Itself",
+      "source": "trackid_rsg.txt"
+    },
+    "1273": {
+      "artist": "MOON DUO",
+      "title": "Sleepwalker",
+      "source": "trackid_rsg.txt"
+    },
+    "1275": {
+      "artist": "HOT SNAKES",
+      "title": "This Mystic Decade",
+      "source": "trackid_rsg.txt"
+    },
+    "1276": {
+      "artist": "FEATHERS",
+      "title": "Dark Matter",
+      "source": "trackid_rsg.txt"
+    },
+    "1277": {
+      "artist": "BATTLE TAPES",
+      "title": "Feel The Same",
+      "source": "trackid_rsg.txt"
+    },
+    "1278": {
+      "artist": "DAN CROLL",
+      "title": "From Nowhere (Baardson Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1279": {
+      "artist": "TONY CASTLES",
+      "title": "Heart In The Pipes (KAUF Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1280": {
+      "artist": "JAI PAUL",
+      "title": "Jasmine",
+      "source": "trackid_rsg.txt"
+    },
+    "1281": {
+      "artist": "TORO Y MOI",
+      "title": "So Many Details",
+      "source": "trackid_rsg.txt"
+    },
+    "1283": {
+      "artist": "KING TEE",
+      "title": "Played Like A Piano",
+      "source": "trackid_rsg.txt"
+    },
+    "1284": {
+      "artist": "PROTOJE",
+      "title": "Kingston Be Wise",
+      "source": "trackid_rsg.txt"
+    },
+    "1285": {
+      "artist": "STEVE MILLER",
+      "title": "Rock'n Me",
+      "source": "trackid_rsg.txt"
+    },
+    "1287": {
+      "artist": "MODJO",
+      "title": "Lady (Hear Me Tonight)",
+      "source": "trackid_rsg.txt"
+    },
+    "1288": {
+      "artist": "VYBZ KARTEL FEAT. POPCAAN",
+      "title": "We Never Fear Dem",
+      "source": "trackid_rsg.txt"
+    },
+    "1289": {
+      "artist": "TOMMY LEE SPARTA",
+      "title": "Psycho",
+      "source": "trackid_rsg.txt"
+    },
+    "1291": {
+      "artist": "C.W. MCCALL",
+      "title": "Convoy",
+      "source": "trackid_rsg.txt"
+    },
+    "1293": {
+      "artist": "GAME FEAT. 2 CHAINZ & RICK ROSS",
+      "title": "Ali Bomaye",
+      "source": "trackid_rsg.txt"
+    },
+    "1295": {
+      "artist": "CLYDE CARSON FEAT. THE TEAM",
+      "title": "Slow Down",
+      "source": "trackid_rsg.txt"
+    },
+    "1296": {
+      "artist": "FREDDIE GIBBS",
+      "title": "Still Livin'",
+      "source": "trackid_rsg.txt"
+    },
+    "1297": {
+      "artist": "SHARK?",
+      "title": "California Grrls",
+      "source": "trackid_rsg.txt"
+    },
+    "1298": {
+      "artist": "YACHT",
+      "title": "Psychic City (Classixx Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1300": {
+      "artist": "YEASAYER",
+      "title": "Don't Come Close",
+      "source": "trackid_rsg.txt"
+    },
+    "1302": {
+      "artist": "FLYING LOTUS FEAT. NIKI RANDA",
+      "title": "Getting There",
+      "source": "trackid_rsg.txt"
+    },
+    "1303": {
+      "artist": "CLAMS CASINO",
+      "title": "Crystals",
+      "source": "trackid_rsg.txt"
+    },
+    "1304": {
+      "artist": "FLYING LOTUS",
+      "title": "Crosswerved",
+      "source": "trackid_rsg.txt"
+    },
+    "1305": {
+      "artist": "FLYING LOTUS",
+      "title": "Be Spin",
+      "source": "trackid_rsg.txt"
+    },
+    "1306": {
+      "artist": "FLYING LOTUS",
+      "title": "See Thru To U (ft Erykah Badu)",
+      "source": "trackid_rsg.txt"
+    },
+    "1307": {
+      "artist": "FLYING LOTUS",
+      "title": "The Diddler",
+      "source": "trackid_rsg.txt"
+    },
+    "1308": {
+      "artist": "FLYING LOTUS",
+      "title": "Computer Face RMX",
+      "source": "trackid_rsg.txt"
+    },
+    "1309": {
+      "artist": "HUDSON MOHAWKE",
+      "title": "100hm",
+      "source": "trackid_rsg.txt"
+    },
+    "1310": {
+      "artist": "FLYING LOTUS FEAT. NIKI RANDA",
+      "title": "The Kill",
+      "source": "trackid_rsg.txt"
+    },
+    "1311": {
+      "artist": "TYLER, THE CREATOR",
+      "title": "Garbage",
+      "source": "trackid_rsg.txt"
+    },
+    "1312": {
+      "artist": "OUTKAST",
+      "title": "Elevators (Me & You)",
+      "source": "trackid_rsg.txt"
+    },
+    "1313": {
+      "artist": "CAPTAIN MURPHY",
+      "title": "Evil Grin",
+      "source": "trackid_rsg.txt"
+    },
+    "1314": {
+      "artist": "FLYING LOTUS",
+      "title": "Catapult Man",
+      "source": "trackid_rsg.txt"
+    },
+    "1315": {
+      "artist": "DABRYE",
+      "title": "Encoded Flow",
+      "source": "trackid_rsg.txt"
+    },
+    "1316": {
+      "artist": "MACHINEDRUM",
+      "title": "She Died There",
+      "source": "trackid_rsg.txt"
+    },
+    "1317": {
+      "artist": "DJ RASHAD & HEAVEE",
+      "title": "It's Wack",
+      "source": "trackid_rsg.txt"
+    },
+    "1318": {
+      "artist": "THUNDERCAT",
+      "title": "O Sheit It's X",
+      "source": "trackid_rsg.txt"
+    },
+    "1319": {
+      "artist": "FLYING LOTUS",
+      "title": "Stonecutters",
+      "source": "trackid_rsg.txt"
+    },
+    "1320": {
+      "artist": "SHADOW CHILD",
+      "title": "23",
+      "source": "trackid_rsg.txt"
+    },
+    "1321": {
+      "artist": "KINGDOM",
+      "title": "Stalker Ha",
+      "source": "trackid_rsg.txt"
+    },
+    "1322": {
+      "artist": "APHEX TWIN",
+      "title": "Windowlicker",
+      "source": "trackid_rsg.txt"
+    },
+    "1324": {
+      "artist": "PALMBOMEN",
+      "title": "Stock (Soulwax Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1325": {
+      "artist": "FATAL ERROR",
+      "title": "Fatal Error",
+      "source": "trackid_rsg.txt"
+    },
+    "1326": {
+      "artist": "SUPERSEMPFFT",
+      "title": "Let's Beam Him Up",
+      "source": "trackid_rsg.txt"
+    },
+    "1327": {
+      "artist": "MIM SULEIMAN",
+      "title": "Mingi",
+      "source": "trackid_rsg.txt"
+    },
+    "1328": {
+      "artist": "FK CLUB",
+      "title": "The Strange Art (Inflagranti Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1329": {
+      "artist": "MATIAS AGUAYO",
+      "title": "El Sucu Tucu",
+      "source": "trackid_rsg.txt"
+    },
+    "1330": {
+      "artist": "DANIEL AVERY",
+      "title": "Naive Reception",
+      "source": "trackid_rsg.txt"
+    },
+    "1331": {
+      "artist": "JOE GODDARD",
+      "title": "Gabriel (Soulwax Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1332": {
+      "artist": "DANIEL MALASO",
+      "title": "Body Music (Original Mix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1333": {
+      "artist": "GREEN VELVET & HARVARD BASS",
+      "title": "Lazer Beams",
+      "source": "trackid_rsg.txt"
+    },
+    "1334": {
+      "artist": "ZOMBIE NATION",
+      "title": "Tryouts",
+      "source": "trackid_rsg.txt"
+    },
+    "1335": {
+      "artist": "TOM ROWLANDS",
+      "title": "Nothing But Pleasure",
+      "source": "trackid_rsg.txt"
+    },
+    "1336": {
+      "artist": "JACKSON AND HIS COMPUTER BAND",
+      "title": "Arp #1",
+      "source": "trackid_rsg.txt"
+    },
+    "1337": {
+      "artist": "GOOSE",
+      "title": "Synrise (Soulwax Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1338": {
+      "artist": "TRANSISTORCAKE",
+      "title": "Mr. Croissant Taker",
+      "source": "trackid_rsg.txt"
+    },
+    "1339": {
+      "artist": "TIGA",
+      "title": "Plush (Jaques Lu Cont Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1340": {
+      "artist": "THE HACKER",
+      "title": "Shockwave (Gesaffelstein Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1341": {
+      "artist": "PULP",
+      "title": "After You (Soulwax Remix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1342": {
+      "artist": "HANK THOMPSON",
+      "title": "It Don't Hurt Anymore",
+      "source": "trackid_rsg.txt"
+    },
+    "1343": {
+      "artist": "N-JOI",
+      "title": "Anthem",
+      "source": "trackid_rsg.txt"
+    },
+    "1345": {
+      "artist": "THE CULT",
+      "title": "Rain",
+      "source": "trackid_rsg.txt"
+    },
+    "1346": {
+      "artist": "AGENT ORANGE",
+      "title": "Bored Of You",
+      "source": "trackid_rsg.txt"
+    },
+    "1347": {
+      "artist": "FAVORED NATIONS",
+      "title": "The Set Up",
+      "source": "trackid_rsg.txt"
+    },
+    "1348": {
+      "artist": "THE CHAIN GANG OF 1974",
+      "title": "Sleepwalking",
+      "source": "trackid_rsg.txt"
+    },
+    "1349": {
+      "artist": "TWIN SHADOW",
+      "title": "Old Love, New Love",
+      "source": "trackid_rsg.txt"
+    },
+    "1350": {
+      "artist": "HEALTH",
+      "title": "High Pressure Dave",
+      "source": "trackid_rsg.txt"
+    },
+    "1351": {
+      "artist": "WAVVES",
+      "title": "Nine Is God",
+      "source": "trackid_rsg.txt"
+    },
+    "1352": {
+      "artist": "CASHMERE CAT",
+      "title": "Mirror Maru",
+      "source": "trackid_rsg.txt"
+    },
+    "1353": {
+      "artist": "THE HICS",
+      "title": "Cold Air",
+      "source": "trackid_rsg.txt"
+    },
+    "1354": {
+      "artist": "INC.",
+      "title": "The Place",
+      "source": "trackid_rsg.txt"
+    },
+    "1355": {
+      "artist": "TRICKSKI",
+      "title": "Beginning",
+      "source": "trackid_rsg.txt"
+    },
+    "1356": {
+      "artist": "MALA",
+      "title": "Ghost",
+      "source": "trackid_rsg.txt"
+    },
+    "1357": {
+      "artist": "SWINDLE",
+      "title": "Forest Funk",
+      "source": "trackid_rsg.txt"
+    },
+    "1358": {
+      "artist": "TOM BROWNE",
+      "title": "Throw Down",
+      "source": "trackid_rsg.txt"
+    },
+    "1359": {
+      "artist": "DONALD BYRD",
+      "title": "You And The Music",
+      "source": "trackid_rsg.txt"
+    },
+    "1360": {
+      "artist": "CANDIDO",
+      "title": "Thousand Finger Man",
+      "source": "trackid_rsg.txt"
+    },
+    "1361": {
+      "artist": "TORO Y MOI",
+      "title": "Harm In Change",
+      "source": "trackid_rsg.txt"
+    },
+    "1362": {
+      "artist": "KYODAI",
+      "title": "Breaking",
+      "source": "trackid_rsg.txt"
+    },
+    "1363": {
+      "artist": "DJANGO DJANGO",
+      "title": "Waveforms",
+      "source": "trackid_rsg.txt"
+    },
+    "1364": {
+      "artist": "THE GASLAMP KILLER",
+      "title": "Nissim",
+      "source": "trackid_rsg.txt"
+    },
+    "1365": {
+      "artist": "OWINY SIGOMA BAND",
+      "title": "Harpoon Land",
+      "source": "trackid_rsg.txt"
+    },
+    "1366": {
+      "artist": "GUTS",
+      "title": "Brand New Revolution",
+      "source": "trackid_rsg.txt"
+    },
+    "1367": {
+      "artist": "YUNA",
+      "title": "Live Your Life (MeLo-X Motherland God Mix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1368": {
+      "artist": "KIKO NAVARRO & TUCCILLO FEAT. AMOR",
+      "title": "Lovery (Slow Cuban Vibe Mix)",
+      "source": "trackid_rsg.txt"
+    },
+    "1369": {
+      "artist": "RICHARD SPAVEN",
+      "title": "1759 (Outro)",
+      "source": "trackid_rsg.txt"
+    },
+    "1370": {
+      "artist": "HACKMAN",
+      "title": "Forgotten Notes",
+      "source": "trackid_rsg.txt"
+    },
+    "1371": {
+      "artist": "THE UPSETTERS",
+      "title": "Grumblin' Dub",
+      "source": "trackid_rsg.txt"
+    },
+    "1372": {
+      "artist": "KONSHENS",
+      "title": "Gun Shot A Fire",
+      "source": "trackid_rsg.txt"
+    },
+    "1373": {
+      "artist": "CHRONIXX",
+      "title": "Odd Ras",
+      "source": "trackid_rsg.txt"
+    },
+    "1374": {
+      "artist": "OFF!",
+      "title": "What's Next?",
+      "source": "trackid_rsg.txt"
+    },
+    "1375": {
+      "artist": "AB-SOUL FEAT. KENDRICK LAMAR",
+      "title": "ILLuminate",
+      "source": "trackid_rsg.txt"
+    },
+    "1376": {
+      "artist": "100S",
+      "title": "Life Of A Mack",
+      "source": "trackid_rsg.txt"
+    },
+    "1377": {
+      "artist": "THE BLACK ANGELS",
+      "title": "Black Grease",
+      "source": "trackid_rsg.txt"
+    },
+    "1379": {
+      "artist": "NEON INDIAN",
+      "title": "Change Of Coast",
+      "source": "trackid_rsg.txt"
+    },
+    "1380": {
+      "artist": "A$AP ROCKY",
+      "title": "R-Cali",
+      "source": "trackid_rsg.txt"
+    },
+    "1381": {
+      "artist": "BERNARD WRIGHT",
+      "title": "Haboglabotribin'",
+      "source": "trackid_rsg.txt"
+    },
+    "1383": {
+      "artist": "KENDRICK LAMAR",
+      "title": "A.D.H.D.",
+      "source": "trackid_rsg.txt"
+    },
+    "1385": {
+      "artist": "GANGRENE",
+      "title": "Bassheads",
+      "source": "trackid_rsg.txt"
+    },
+    "1386": {
+      "artist": "YG",
+      "title": "I'm A Real 1",
+      "source": "trackid_rsg.txt"
+    },
+    "1387": {
+      "artist": "PROBLEM FEAT. GLASSES MALONE",
+      "title": "Say That Then",
+      "source": "trackid_rsg.txt"
+    },
+    "1388": {
+      "artist": "BJ THE CHICAGO KID FEAT. FREDDIE GIBBS & PROBLEM",
+      "title": "Smoke And Ride",
+      "source": "trackid_rsg.txt"
+    },
+    "1389": {
+      "artist": "GUCCI MANE FEAT. CIARA",
+      "title": "Too Hood",
+      "source": "trackid_rsg.txt"
+    },
+    "1391": {
+      "artist": "AGE OF CONSENT",
+      "title": "Colours",
+      "source": "trackid_rsg.txt"
+    },
+    "1392": {
+      "artist": "NITE JEWEL",
+      "title": "Nowhere To Go",
+      "source": "trackid_rsg.txt"
+    },
+    "1393": {
+      "artist": "TY SEGALL BAND",
+      "title": "Diddy Wah Diddy",
+      "source": "trackid_rsg.txt"
+    },
+    "1394": {
+      "artist": "METZ",
+      "title": "Wet Blanket",
+      "source": "trackid_rsg.txt"
+    },
+    "1395": {
+      "artist": "CEREMONY",
+      "title": "Hysteria",
+      "source": "trackid_rsg.txt"
+    },
+    "1396": {
+      "artist": "THEE OH SEES",
+      "title": "The Dream",
+      "source": "trackid_rsg.txt"
+    },
+    "1397": {
+      "artist": "MARION BAND$ FEAT. NIPSEY HUSSLE",
+      "title": "Hold Up",
+      "source": "trackid_rsg.txt"
+    },
+    "1406": {
+      "artist": "MIKE POSNER",
+      "title": "Cooler Than Me",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1407": {
+      "artist": "MOLOKO",
+      "title": "The Time Is Now",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1408": {
+      "artist": "MORCHEEBA",
+      "title": "Tape Loop",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1409": {
+      "artist": "ROBBIE WILLIAMS & KYLIE MINOGUE",
+      "title": "Kids",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1410": {
+      "artist": "SNEAKER PIMPS",
+      "title": "6 Underground",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1411": {
+      "artist": "CASSIE",
+      "title": "Me & U",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1415": {
+      "artist": "DANNY BROWN & ACTION BRONSON",
+      "title": "Bad News",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1420": {
+      "artist": "D.O.A.",
+      "title": "The Enemy",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1421": {
+      "artist": "D.R.I",
+      "title": "I Don't Need Society",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1422": {
+      "artist": "MDC",
+      "title": "John Wayne Was A Nazi",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1423": {
+      "artist": "REDD KROSS",
+      "title": "Linda Blair",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1427": {
+      "artist": "X",
+      "title": "Los Angeles",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1428": {
+      "artist": "THE ZEROS",
+      "title": "Don't Push Me Around",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1429": {
+      "artist": "CHARLIE FEATHERS",
+      "title": "Get With It",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1432": {
+      "artist": "JAYO FELONY",
+      "title": "Sherm Stick",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1433": {
+      "artist": "SPICE 1 FEAT. MC EIHT",
+      "title": "The Murda Show",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1436": {
+      "artist": "BUSY SIGNAL",
+      "title": "Kingston Town",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1437": {
+      "artist": "DANNY HENSWORTH",
+      "title": "Mr. Money Man",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1440": {
+      "artist": "JACKSON SISTERS",
+      "title": "I Believe In Miracles",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1441": {
+      "artist": "JOHNNY \"GUITAR\" WATSON",
+      "title": "Superman Lover",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1442": {
+      "artist": "OHIO PLAYERS",
+      "title": "Climax",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1443": {
+      "artist": "THE DELFONICS",
+      "title": "Funny Feeling",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1452": {
+      "artist": "!!!",
+      "title": "One Girl/One Boy",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1453": {
+      "artist": "DOM",
+      "title": "Living In America",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1454": {
+      "artist": "MITZI",
+      "title": "Truly Alive",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1455": {
+      "artist": "NIKI & THE DOVE",
+      "title": "The Drummer",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1456": {
+      "artist": "THE RUBY SUNS",
+      "title": "In Real Life",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1457": {
+      "artist": "YEASAYER",
+      "title": "O.N.E.",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1462": {
+      "artist": "DAZZ BAND",
+      "title": "Joystick",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1466": {
+      "artist": "ZAPP & ROGER",
+      "title": "Do It Roger",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1468": {
+      "artist": "CREEDENCE CLEARWATER REVIVAL",
+      "title": "Fortunate Son",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1469": {
+      "artist": "MOUNTAIN",
+      "title": "Mississippi Queen",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1470": {
+      "artist": "ALANNAH MYLES",
+      "title": "Black Velvet",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1472": {
+      "artist": "KANSAS",
+      "title": "Carry On Wayward Son",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1473": {
+      "artist": "SURVIVOR",
+      "title": "Burning Heart",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1474": {
+      "artist": "ZZ TOP",
+      "title": "Gimme All Your Lovin'",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1475": {
+      "artist": "BROKEN ENGLISH",
+      "title": "Coming On Strong",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1477": {
+      "artist": "BOSTON",
+      "title": "Peace Of Mind",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1478": {
+      "artist": "YES",
+      "title": "Roundabout",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1479": {
+      "artist": "HARRY CHAPIN",
+      "title": "Cat's In The Cradle",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1481": {
+      "artist": "PAT BENATAR",
+      "title": "Shadows Of The Night",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1482": {
+      "artist": "BLOW MONKEYS FEAT. KYM MAZELLE",
+      "title": "Wait",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1484": {
+      "artist": "BELINDA CARLISLE",
+      "title": "Circle In The Sand",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1485": {
+      "artist": "INXS",
+      "title": "New Sensation",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1487": {
+      "artist": "BOBBY BROWN",
+      "title": "On Our Own",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1488": {
+      "artist": "SIMPLY RED",
+      "title": "Something Got Me Started (Hurley's House Mix)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1489": {
+      "artist": "BACKSTREET BOYS",
+      "title": "I Want It That Way",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1490": {
+      "artist": "GORILLAZ",
+      "title": "Feel Good Inc.",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1491": {
+      "artist": "MAROON 5",
+      "title": "Moves Like Jagger (feat. Christina Aguilera)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1492": {
+      "artist": "CUT COPY",
+      "title": "Strangers In The Wind",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1493": {
+      "artist": "M.I.A.",
+      "title": "Bad Girls",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1495": {
+      "artist": "M83",
+      "title": "Midnight City",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1496": {
+      "artist": "LORDE",
+      "title": "Tennis Court",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1497": {
+      "artist": "LADY GAGA",
+      "title": "Applause",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1498": {
+      "artist": "A$AP FERG",
+      "title": "Work",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1499": {
+      "artist": "KENDRICK LAMAR",
+      "title": "Swimming Pools (Drank)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1500": {
+      "artist": "DANNY BROWN FEAT. A$AP ROCKY & ZELOOPERZ",
+      "title": "Kush Coma",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1501": {
+      "artist": "SCHOOLBOY Q FEAT. KENDRICK LAMAR",
+      "title": "Collard Greens",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1503": {
+      "artist": "SKEME",
+      "title": "Millions",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1504": {
+      "artist": "AB-SOUL FEAT. SCHOOLBOY Q",
+      "title": "Hunnid Stax",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1505": {
+      "artist": "PROBLEM & IAMSU! FEAT. BAD LUCC & SAGE THE GEMINI",
+      "title": "Do It Big",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1506": {
+      "artist": "HOMER & JETHRO",
+      "title": "She Made Toothpicks Of The Timber Of My Heart",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1507": {
+      "artist": "TAMMY WYNETTE",
+      "title": "D-I-V-O-R-C-E",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1508": {
+      "artist": "MARVIN JACKSON",
+      "title": "Dippin' Snuff",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1509": {
+      "artist": "CPO",
+      "title": "Ballad Of A Menace",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1510": {
+      "artist": "THE CONSCIOUS DAUGHTERS",
+      "title": "We Roll Deep",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1511": {
+      "artist": "SOUTH CENTRAL CARTEL",
+      "title": "Servin' 'Em Heat",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1512": {
+      "artist": "WESTSIDE CONNECTION",
+      "title": "Bow Down",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1513": {
+      "artist": "WARREN G",
+      "title": "This D.J.",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1515": {
+      "artist": "I-OCTANE",
+      "title": "Topic Of The Day",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1516": {
+      "artist": "VYBZ KARTEL",
+      "title": "Addi Truth",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1517": {
+      "artist": "DEMARCO",
+      "title": "Loyals (Royals Remix)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1518": {
+      "artist": "PLEASURE",
+      "title": "Bouncy Lady",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1519": {
+      "artist": "WAR",
+      "title": "Magic Mountain",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1520": {
+      "artist": "BRASS CONSTRUCTION",
+      "title": "Changin'",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1522": {
+      "artist": "PANAMA",
+      "title": "Always",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1523": {
+      "artist": "HOT CHIP",
+      "title": "Flutes",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1524": {
+      "artist": "HOLY GHOST!",
+      "title": "Hold On",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1525": {
+      "artist": "SCENIC",
+      "title": "Mesmerised",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1526": {
+      "artist": "LITTLE DRAGON",
+      "title": "Crystalfilm",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1527": {
+      "artist": "TWIN SHADOW",
+      "title": "Forget",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1530": {
+      "artist": "AGE OF CONSENT",
+      "title": "Heartbreak",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1532": {
+      "artist": "SBTRKT",
+      "title": "Pharaohs feat Roses Gabor",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1534": {
+      "artist": "TORO Y MOI",
+      "title": "New Beat",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1535": {
+      "artist": "IMAGINATION",
+      "title": "Flashback",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1536": {
+      "artist": "FATBACK BAND",
+      "title": "Gotta Get My Hands On Some (Money)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1537": {
+      "artist": "PARLIAMENT",
+      "title": "Mothership Connection",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1538": {
+      "artist": "CENTRAL LINE",
+      "title": "Walking Into Sunshine",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1539": {
+      "artist": "CAMEO",
+      "title": "Back And Forth",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1540": {
+      "artist": "BILLY OCEAN",
+      "title": "Nights (Feel Like Getting Down)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1543": {
+      "artist": "BLEACHED",
+      "title": "Next Stop",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1544": {
+      "artist": "COLISEUM",
+      "title": "Used Blood",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1546": {
+      "artist": "MIND SPIDERS",
+      "title": "Fall In Line",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1547": {
+      "artist": "THE MEN",
+      "title": "Turn It Around",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1548": {
+      "artist": "NOBUNNY",
+      "title": "Gone For Good",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1549": {
+      "artist": "THE SOFT PACK",
+      "title": "Answer To Yourself",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1550": {
+      "artist": "JEFF THE BROTHERHOOD",
+      "title": "Sixpack",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1551": {
+      "artist": "HANNI EL KHATIB",
+      "title": "Pay No Mind",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1552": {
+      "artist": "THE CHAKACHAS",
+      "title": "Stories",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1553": {
+      "artist": "PARLIAMENT",
+      "title": "Flashlight",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1555": {
+      "artist": "LEE \"SCRATCH\" PERRY",
+      "title": "Money Come And Money Go",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1556": {
+      "artist": "NEON INDIAN",
+      "title": "Polish Girl",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1562": {
+      "artist": "KAUF",
+      "title": "When You're Out",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1563": {
+      "artist": "STARSHIP",
+      "title": "We Built This City",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1566": {
+      "artist": "HUMBLE PIE",
+      "title": "Thirty Days In The Hole",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1567": {
+      "artist": "E-40",
+      "title": "Captain Save A Hoe",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1569": {
+      "artist": "THE LADY OF RAGE",
+      "title": "Afro Puffs",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1570": {
+      "artist": "REAL LIFE",
+      "title": "Send Me An Angel",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1571": {
+      "artist": "SLY FOX",
+      "title": "Let's Go All The Way",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1574": {
+      "artist": "JAMIROQUAI",
+      "title": "Alright",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1575": {
+      "artist": "DIRTY VEGAS",
+      "title": "Days Go By",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1577": {
+      "artist": "G-SIDE FT G-MANE",
+      "title": "Relaxin",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1578": {
+      "artist": "TROUBLE FT GUCCI MANE",
+      "title": "Everyday",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1579": {
+      "artist": "TRAVI$ SCOTT",
+      "title": "Upper Echelon feat T.I. and 2 Chainz",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1580": {
+      "artist": "ACE HOOD FEAT. FUTURE & RICK ROSS",
+      "title": "Bugatti",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1581": {
+      "artist": "CHUCK INGLISH",
+      "title": "Came Thru/Easily feat Mac Miller and Ab-Soul",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1582": {
+      "artist": "YOUNG SCOOTER FEAT. GUCCI MANE",
+      "title": "Work",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1583": {
+      "artist": "THE HIGHWAYMEN",
+      "title": "Highwayman",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1584": {
+      "artist": "RAY PRICE",
+      "title": "Crazy Arms",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1589": {
+      "artist": "LIVING IN A BOX",
+      "title": "Living In A Box",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1590": {
+      "artist": "THE BLACK EYED PEAS",
+      "title": "Meet Me Halfway",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1594": {
+      "artist": "YOUNG SCOOTER FT TRINIDAD JAMES",
+      "title": "I Can't Wait",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1596": {
+      "artist": "BONE THUGS-N-HARMONY",
+      "title": "1st Of Tha Month",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1597": {
+      "artist": "EAZY-E",
+      "title": "No More ?'s",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1603": {
+      "artist": "LEE \"SCRATCH\" PERRY",
+      "title": "Roast Fish & Cornbread",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1604": {
+      "artist": "TAYLOR DAYNE",
+      "title": "Tell It To My Heart",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1605": {
+      "artist": "KENNY LOGGINS",
+      "title": "Danger Zone",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1606": {
+      "artist": "THE ORWELLS",
+      "title": "Who Needs You",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1607": {
+      "artist": "BRONSKI BEAT",
+      "title": "Smalltown Boy",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1608": {
+      "artist": "NAKED EYES",
+      "title": "Promises, Promises",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1609": {
+      "artist": "CURTIS MAYFIELD",
+      "title": "Eddie You Should Know Better",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1610": {
+      "artist": "DORIS",
+      "title": "You Never Come Closer",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1611": {
+      "artist": "FLYING LOTUS FT. KRAYZIE BONE",
+      "title": "Medication Medication",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1612": {
+      "artist": "XXYYXX",
+      "title": "What We Want",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1613": {
+      "artist": "LAPALUX",
+      "title": "Make Money",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1614": {
+      "artist": "MONO/POLY AND THUNDERCAT",
+      "title": "B Adams",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1615": {
+      "artist": "FLYING LOTUS",
+      "title": "Osaka Trade",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1616": {
+      "artist": "DOOM",
+      "title": "Masquatch",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1617": {
+      "artist": "FLYING LOTUS",
+      "title": "Early Mountain",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1618": {
+      "artist": "DIMLITE",
+      "title": "Into Vogon Skulls",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1619": {
+      "artist": "KNOWER",
+      "title": "F--- The Makeup, Skip The Shower",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1621": {
+      "artist": "KASKADE",
+      "title": "4AM/AraabMuzik Streetz Tonight Remix",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1622": {
+      "artist": "DEMARCO",
+      "title": "Loyals (Royals Remix)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1623": {
+      "artist": "SINKANE",
+      "title": "Shark Week",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1624": {
+      "artist": "WILLIAM ONYEABOR",
+      "title": "Body & Soul",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1625": {
+      "artist": "FOUR TET",
+      "title": "Kool FM",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1626": {
+      "artist": "MOUNT KIMBIE",
+      "title": "Made To Stray",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1627": {
+      "artist": "ANUSHKA",
+      "title": "World In A Room",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1628": {
+      "artist": "SMOKEY ROBINSON",
+      "title": "Why You Wanna See My Bad Side?",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1629": {
+      "artist": "RANDY CRAWFORD",
+      "title": "Street Life",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1630": {
+      "artist": "FLUME",
+      "title": "What You Need",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1631": {
+      "artist": "EARL SWEATSHIRT FT. VINCE STAPLES & CASEY VEGGIES",
+      "title": "Hive",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1632": {
+      "artist": "PORTISHEAD",
+      "title": "Numb",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1633": {
+      "artist": "JON WAYNE",
+      "title": "Black Magic",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1634": {
+      "artist": "ROMAN GIANARTHUR",
+      "title": "I69",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1635": {
+      "artist": "LION BABE",
+      "title": "Treat Me Like Fire",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1636": {
+      "artist": "DAM-FUNK",
+      "title": "Killdat",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1637": {
+      "artist": "JAMIE LIDELL",
+      "title": "Run Away",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1638": {
+      "artist": "CHVRCHES",
+      "title": "Recover (CID RIM REMIX)",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1639": {
+      "artist": "JIMMY EDGAR",
+      "title": "Let Yrself Be",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1640": {
+      "artist": "CLAP! CLAP!",
+      "title": "Viarejo",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1641": {
+      "artist": "MAGA BO",
+      "title": "No Balanço Da Canoa",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1642": {
+      "artist": "THE LUNIZ",
+      "title": "I Got 5 On It",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1643": {
+      "artist": "FREDDIE GIBBS & MIKE DEAN",
+      "title": "Sellin' Dope",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1644": {
+      "artist": "GASLAMP KILLER",
+      "title": "Shred You To Bits",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1645": {
+      "artist": "VISITORS",
+      "title": "V-I-S-I-T-O-R-S",
+      "source": "trackid_rsg_ng.txt"
+    },
+    "1646": {
+      "artist": "GANGRENE FEAT. SAMUEL T. HERRING & EARL SWEATSHIRT",
+      "title": "Play It Cool",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1647": {
+      "artist": "TUNDE ADEBIMPE FEAT. SAL P & SINKANE",
+      "title": "Speedline Miracle Masterpiece",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1648": {
+      "artist": "VYBZ KARTEL",
+      "title": "Fast Life",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1649": {
+      "artist": "PHANTOGRAM",
+      "title": "K.Y.S.A.",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1650": {
+      "artist": "MC EIHT & FREDDIE GIBBS FEAT. KOKANE",
+      "title": "Welcome To Los Santos",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1651": {
+      "artist": "KING AVRIEL FEAT. A$AP FERG",
+      "title": "20's 50's 100's",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1652": {
+      "artist": "AB SOUL FEAT. ALOE BLACC",
+      "title": "Trouble",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1653": {
+      "artist": "CURREN$Y & FREDDIE GIBBS",
+      "title": "Fetti",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1654": {
+      "artist": "E-40 FEAT. DaM-FunK & ARIEL PINK",
+      "title": "California",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1655": {
+      "artist": "MNDR FEAT. KILLER MIKE",
+      "title": "Lock & Load",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1656": {
+      "artist": "POPCAAN FEAT. FREDDIE GIBBS",
+      "title": "Born Bad",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1657": {
+      "artist": "WAVVES",
+      "title": "Leave",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1658": {
+      "artist": "LITTLE DRAGON",
+      "title": "Wanderer",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1659": {
+      "artist": "TODD RUNDGREN",
+      "title": "International Feel",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1660": {
+      "artist": "PANDA BEAR",
+      "title": "Mr Noah",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1661": {
+      "artist": "SCHOOLBOY Q FEAT. LANCE SKIIIWALKER",
+      "title": "Kno Ya Wrong",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1662": {
+      "artist": "SWV",
+      "title": "Rain",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1663": {
+      "artist": "JOY AGAIN",
+      "title": "On a Farm",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1664": {
+      "artist": "CURTIS MAYFIELD",
+      "title": "So In Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1665": {
+      "artist": "MARVIN GAYE",
+      "title": "When Did You Stop Loving Me, When Did I Stop Loving You",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1666": {
+      "artist": "LES YA TOUPAS DU ZAIRE",
+      "title": "Je ne bois pas beaucoup",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1667": {
+      "artist": "DREXCIYA",
+      "title": "Andreaen Sand Dunes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1668": {
+      "artist": "JAY-Z",
+      "title": "Dead Presidents II",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1669": {
+      "artist": "FRANK OCEAN",
+      "title": "Crack Rock",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1670": {
+      "artist": "M.C. MACK",
+      "title": "EZ Come, EZ Go",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1671": {
+      "artist": "APHEX TWIN",
+      "title": "IZ-US",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1672": {
+      "artist": "BURIAL",
+      "title": "Hiders",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1673": {
+      "artist": "LIL UZI VERT",
+      "title": "For Real",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1674": {
+      "artist": "MIGOS",
+      "title": "First 48",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1675": {
+      "artist": "SUSPECT",
+      "title": "FBG",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1676": {
+      "artist": "GUNNA FEAT. PLAYBOI CARTI",
+      "title": "YSL",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1677": {
+      "artist": "CHIEF KEEF FEAT. KING LOUIE",
+      "title": "Winnin",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1678": {
+      "artist": "LIL SKO",
+      "title": "Miss White Cocaine",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1679": {
+      "artist": "JME FEAT. GIGGS",
+      "title": "Man Don't Care",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1680": {
+      "artist": "(SANDY) ALEX G",
+      "title": "Master",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1681": {
+      "artist": "FRANK OCEAN",
+      "title": "Provider",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1682": {
+      "artist": "FRANK OCEAN",
+      "title": "Ivy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1683": {
+      "artist": "FRANK OCEAN",
+      "title": "Chanel",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1684": {
+      "artist": "FRANK OCEAN",
+      "title": "Nights",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1685": {
+      "artist": "FRANK OCEAN",
+      "title": "Pretty Sweet",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1686": {
+      "artist": "FUTURE",
+      "title": "Codeine Crazy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1688": {
+      "artist": "CARL FINLOW",
+      "title": "Convergence",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1689": {
+      "artist": "CARAVACA",
+      "title": "Yes I Do",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1690": {
+      "artist": "WARP FACTOR 9",
+      "title": "The Atmospherian (Tornado Wallace Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1691": {
+      "artist": "MASHROU' LEILA",
+      "title": "Roman (Bas Ibellini Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1692": {
+      "artist": "FUTURE FOUR",
+      "title": "Connection (I-Cube Rework)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1693": {
+      "artist": "RITE DE PASSAGE",
+      "title": "Quinquerime",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1694": {
+      "artist": "THE EGYPTIAN LOVER",
+      "title": "Electro Pharaoh (Instrumental)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1695": {
+      "artist": "MARCUS L.",
+      "title": "Telstar",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1696": {
+      "artist": "ROMANTHONY",
+      "title": "Bring U Up (Deetron Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1697": {
+      "artist": "SOLAR",
+      "title": "5 Seconds",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1698": {
+      "artist": "SHARIF LAFFREY",
+      "title": "And Dance",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1699": {
+      "artist": "RON HARDY",
+      "title": "Sensation (Dub Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1700": {
+      "artist": "AUX 88",
+      "title": "Sharivari (Digital Original Aux 88 Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1701": {
+      "artist": "ONI AYHUN",
+      "title": "OAR03-B",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1702": {
+      "artist": "TCK FT. JG",
+      "title": "Reach Out Your Hand (Erol Alkan Rework) - GTA Edit",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1703": {
+      "artist": "RON HARDY",
+      "title": "Sensation",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1704": {
+      "artist": "DERRICK CARTER",
+      "title": "Where Ya At",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1705": {
+      "artist": "TIGA",
+      "title": "Bugatti",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1706": {
+      "artist": "METRO AREA",
+      "title": "Miura",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1707": {
+      "artist": "THE BLACK MADONNA",
+      "title": "A Jealous Heart Never Rests",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1708": {
+      "artist": "ART OF NOISE",
+      "title": "Beat Box",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1709": {
+      "artist": "THE BLACK MADONNA FT. JAMIE PRINCIPLE",
+      "title": "We Still Believe",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1710": {
+      "artist": "NANCY MARTIN",
+      "title": "Can't Believe",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1711": {
+      "artist": "P-FUNK ALL STARS",
+      "title": "Hydraulic Pump Pt. 3",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1712": {
+      "artist": "STEVE POINDEXTER",
+      "title": "Computer Madness",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1713": {
+      "artist": "TEN CITY",
+      "title": "Devotion",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1714": {
+      "artist": "THE BLACK MADONNA",
+      "title": "We Can Never Be Apart",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1715": {
+      "artist": "JOE JACKSON",
+      "title": "Steppin' Out",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1716": {
+      "artist": "THE BLACK MADONNA",
+      "title": "He Is The Voice I Hear",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1717": {
+      "artist": "AM$TRAD BILLIONAIRE",
+      "title": "The Plan",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1718": {
+      "artist": "ARA KOUFAX",
+      "title": "Natural States (Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1719": {
+      "artist": "SWAYZAK",
+      "title": "In The Car Crash (Headgear's Always Crashing In The Same Car Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1720": {
+      "artist": "D. LYNNWOOD",
+      "title": "Bitcoins (Original Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1721": {
+      "artist": "BRYAN FERRY",
+      "title": "Don't Stop The Dance (Todd Terje Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1722": {
+      "artist": "DENIS HORVAT",
+      "title": "Madness Of Many",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1723": {
+      "artist": "JOHANNES BRECHT",
+      "title": "Incoherence",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1724": {
+      "artist": "SOLOMUN",
+      "title": "Ich Muss Los",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1725": {
+      "artist": "MATTHEW DEAR",
+      "title": "Monster",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1726": {
+      "artist": "TRUNCATE",
+      "title": "WRKTRX3",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1727": {
+      "artist": "FLOORPLAN",
+      "title": "Spin (Original Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1728": {
+      "artist": "CEVIN FISHER",
+      "title": "The Freaks Come Out (Original 2000 Freaks Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1729": {
+      "artist": "CHRIS LUM",
+      "title": "You're Mine (Clean Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1730": {
+      "artist": "ALEX METRIC & TEN VEN",
+      "title": "The Q",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1731": {
+      "artist": "SOLOMUN",
+      "title": "Customer Is King",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1732": {
+      "artist": "ADAM PORT",
+      "title": "Planet 9",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1733": {
+      "artist": "DUBFIRE",
+      "title": "The End To My Beginning",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1734": {
+      "artist": "LEONARD COHEN",
+      "title": "You Want It Darker (Solomun Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1735": {
+      "artist": "TALE OF US",
+      "title": "Overture",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1736": {
+      "artist": "TALE OF US",
+      "title": "1911",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1737": {
+      "artist": "TALE OF US",
+      "title": "Trevor's Dream",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1738": {
+      "artist": "TALE OF US",
+      "title": "Vinewood Blues",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1739": {
+      "artist": "TALE OF US",
+      "title": "Anywhere",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1740": {
+      "artist": "TALE OF US",
+      "title": "Symphony Of The Night",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1741": {
+      "artist": "TALE OF US",
+      "title": "Another World",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1742": {
+      "artist": "TALE OF US",
+      "title": "The Portal",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1743": {
+      "artist": "TALE OF US",
+      "title": "Solitude",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1744": {
+      "artist": "TALE OF US",
+      "title": "Morgan's Fate",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1745": {
+      "artist": "TALE OF US",
+      "title": "Fisherman's Horizon",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1746": {
+      "artist": "TALE OF US",
+      "title": "Myst",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1747": {
+      "artist": "TALE OF US",
+      "title": "Seeds",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1748": {
+      "artist": "TALE OF US",
+      "title": "Endless Journey",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1749": {
+      "artist": "TALE OF US",
+      "title": "Valkyr",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1750": {
+      "artist": "TALE OF US",
+      "title": "In Hyrule",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1751": {
+      "artist": "TALE OF US",
+      "title": "Disgracelands",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1752": {
+      "artist": "TALE OF US",
+      "title": "Heart Of Darkness",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1753": {
+      "artist": "HEALTH",
+      "title": "Bloodsport (World Domination)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1754": {
+      "artist": "HEALTH",
+      "title": "Risk Of Death",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1755": {
+      "artist": "HEALTH",
+      "title": "War For The Blackened Earth",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1756": {
+      "artist": "HEALTH",
+      "title": "THE WHEEL",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1757": {
+      "artist": "HEALTH",
+      "title": "Slaves Of Fear (Arena War Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1758": {
+      "artist": "HEALTH",
+      "title": "Knightriders",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1759": {
+      "artist": "HEALTH",
+      "title": "Sunrise/Windshield",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1760": {
+      "artist": "HEALTH",
+      "title": "No God In Thunderdome",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1761": {
+      "artist": "HEALTH",
+      "title": "Arena War Theme",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1770": {
+      "artist": "CITY GIRLS",
+      "title": "Act Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1771": {
+      "artist": "DENZEL CURRY FT. YBN CORDAE",
+      "title": "AL1ENZ",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1773": {
+      "artist": "HEADIE ONE FT. SKEPTA",
+      "title": "Back to Basics (Floating Points Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1778": {
+      "artist": "DABABY",
+      "title": "BOP",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1779": {
+      "artist": "MEGAN THEE STALLION FT. DABABY",
+      "title": "Cash Shit",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1780": {
+      "artist": "FREDDIE GIBBS & MADLIB",
+      "title": "Crime Pays",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1783": {
+      "artist": "EGYPTIAN LOVER",
+      "title": "Everything She Wants",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1786": {
+      "artist": "TRAVIS SCOTT",
+      "title": "Highest in the Room",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1788": {
+      "artist": "YOUNG THUG FT. GUNNA & TRAVIS SCOTT",
+      "title": "Hot (Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1789": {
+      "artist": "BURNA BOY FT. ZLATAN",
+      "title": "Killin Dem",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1790": {
+      "artist": "AJ TRACEY & SKEPTA",
+      "title": "Kiss and Tell",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1791": {
+      "artist": "D-BLOCK EUROPE",
+      "title": "Kitchen Kings",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1792": {
+      "artist": "JME FT. GIGGS",
+      "title": "Knock Your Block Off",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1793": {
+      "artist": "KRANIUM FT. AJ TRACEY",
+      "title": "Money in the Bank",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1794": {
+      "artist": "J HUS",
+      "title": "Must Be",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1796": {
+      "artist": "D DOUBLE E & WATCH THE RIDE FT. DJ DIE & DISMANTLE & DIEMANTLE & DJ RANDALL",
+      "title": "Original Format",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1797": {
+      "artist": "DABABY FT. KEVIN GATES",
+      "title": "POP STAR",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1802": {
+      "artist": "SHORELINE MAFIA",
+      "title": "Wings",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1803": {
+      "artist": "ALKALINE",
+      "title": "With the Thing",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1806": {
+      "artist": "POP SMOKE FT. CALBOY",
+      "title": "100k on a Coupe",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1807": {
+      "artist": "SLOWTHAI",
+      "title": "I Need",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1812": {
+      "artist": "SKEPTA FT. NAFE SMALLZ",
+      "title": "Greaze Mode",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1814": {
+      "artist": "NAIRA MARLEY",
+      "title": "Opotoyi (Marlians)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1815": {
+      "artist": "ESSIE GANG FT. SQ DIESEL",
+      "title": "Pattern Chanel",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1819": {
+      "artist": "KOFFEE FT. GUNNA",
+      "title": "W",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1820": {
+      "artist": "BAAUER AND CHANNEL TRES FT. DANNY BROWN",
+      "title": "Ready to Go",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1822": {
+      "artist": "DANNY BROWN",
+      "title": "Dance in the Water",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1823": {
+      "artist": "PROFESSOR RHYTHM",
+      "title": "Professor 3",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1824": {
+      "artist": "SCHOOLBOY Q",
+      "title": "Numb Numb Juice",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1825": {
+      "artist": "KLEIN & MBO",
+      "title": "The MBO Theme",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1826": {
+      "artist": "PLASTIC MODE",
+      "title": "Baja Imperial (Maxi Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1827": {
+      "artist": "L'AMOUR FEAT. KRYSTAL",
+      "title": "Let's Make Love Tonight",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1828": {
+      "artist": "SHIRLEY LITES",
+      "title": "Heat You Up (Melt You Down) (Instrumental)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1829": {
+      "artist": "SHANNON",
+      "title": "Let The Music Play (Dub Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1830": {
+      "artist": "NIGHT MOVES",
+      "title": "Transdance (New York Disco Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1831": {
+      "artist": "N.O.I.A.",
+      "title": "The Rule To Survive (Prins Thomas Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1832": {
+      "artist": "TOBIAS BERNSTRUP",
+      "title": "27",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1833": {
+      "artist": "BABY'S GANG",
+      "title": "Happy Song (Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1834": {
+      "artist": "MASALO",
+      "title": "New Dance",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1835": {
+      "artist": "DIVA",
+      "title": "Get Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1836": {
+      "artist": "MARIO DIAZ",
+      "title": "Can You Feel It (Jackin Up The Dub 12\" Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1837": {
+      "artist": "SCRAPPY",
+      "title": "Freeze (Limelight Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1838": {
+      "artist": "B BEAT GIRLS",
+      "title": "For The Same Man",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1839": {
+      "artist": "GREG LEE",
+      "title": "Got U On My Mind",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1840": {
+      "artist": "ROBERT OWENS",
+      "title": "Visions",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1841": {
+      "artist": "LISA LEE",
+      "title": "When Can I Call You (Tommy Musto & Frankie Bones British Telecom Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1842": {
+      "artist": "PIERRE'S PFANTASY CLUB",
+      "title": "Dream Girl (Original Ralphi Rosario Club Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1843": {
+      "artist": "S.L.F.",
+      "title": "Show Me What You Got (Acid Mix - Part 1)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1844": {
+      "artist": "PHORTUNE",
+      "title": "String Free (Club LeRay Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1845": {
+      "artist": "KAMAZU",
+      "title": "Indaba Kabani",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1846": {
+      "artist": "RAMPA",
+      "title": "Newborn Soul",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1847": {
+      "artist": "&ME",
+      "title": "The Rapture Pt.II",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1848": {
+      "artist": "JAI PAUL",
+      "title": "Crush (Unfinished) (Adam Port Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1849": {
+      "artist": "RAMPA & WHOMADEWHO",
+      "title": "Tell Me Are We",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1850": {
+      "artist": "JORIS VOORN & MATTHEW DEAR",
+      "title": "Homeland (&ME Remix + Jinadu Vocals)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1851": {
+      "artist": "RÜFÜS DU SOL",
+      "title": "Underwater (Adam Port Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1852": {
+      "artist": "&ME",
+      "title": "Garden",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1853": {
+      "artist": "ADAM PORT",
+      "title": "Ganesha Song",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1854": {
+      "artist": "ÂME",
+      "title": "No War (Rampa Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1855": {
+      "artist": "WESTBAM FEAT. RICHARD BUTLER",
+      "title": "You Need The Drugs (&ME Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1856": {
+      "artist": "NOMI & RAMPA",
+      "title": "Inside",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1857": {
+      "artist": "CUBICOLOR",
+      "title": "No Dancers (Adam Port Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1858": {
+      "artist": "MANQO",
+      "title": "Won't Change (Rampa Retouch)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1859": {
+      "artist": "&ME FEAT. ATELIER",
+      "title": "Starting Again",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1860": {
+      "artist": "XINOBI",
+      "title": "Far Away Place (Rampa Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1861": {
+      "artist": "&ME",
+      "title": "The Rapture",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1862": {
+      "artist": "KEINEMUSIK",
+      "title": "Muyè",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1863": {
+      "artist": "&ME",
+      "title": "In Your Eyes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1864": {
+      "artist": "RAMPA",
+      "title": "Sunday",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1865": {
+      "artist": "NTEIBINT & STELLA",
+      "title": "A State Nearby (Adam Port Calypso Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1866": {
+      "artist": "&ME",
+      "title": "Fairchild",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1867": {
+      "artist": "RAMPA FEAT. CHIARA NORIKO",
+      "title": "For This",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1868": {
+      "artist": "HERE IS WHY",
+      "title": "Tonight (Adam Port 12\" Autobahn Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1869": {
+      "artist": "KEINEMUSIK FEAT. NOMI RUIZ",
+      "title": "Bumper",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1870": {
+      "artist": "ADAM PORT",
+      "title": "White Noise Romantica",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1871": {
+      "artist": "OSUNLADE, PASTABOYS",
+      "title": "Deep Musique (Rampa Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1872": {
+      "artist": "&ME",
+      "title": "After Dark",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1873": {
+      "artist": "REZNIK & MIKESH",
+      "title": "It's Not You It's Me (Adam Port Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1874": {
+      "artist": "&ME",
+      "title": "Shadows",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1875": {
+      "artist": "SIMPLE SYMMETRY",
+      "title": "Enkidu (Adam Port's Tulum By Night Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1876": {
+      "artist": "RAMPA",
+      "title": "2000",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1877": {
+      "artist": "&ME",
+      "title": "1995",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1878": {
+      "artist": "RAMPA",
+      "title": "Terrace",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1879": {
+      "artist": "&ME",
+      "title": "Woods",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1880": {
+      "artist": "TÉLÉPOPMUSIK FEAT. YOUNG & SICK",
+      "title": "Connection (Reznik & Mikesh Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1881": {
+      "artist": "BELL TOWERS",
+      "title": "Want You (Need You) (Adam Port Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1882": {
+      "artist": "KEINEMUSIK",
+      "title": "Civilist",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1883": {
+      "artist": "RAMPA",
+      "title": "Bimma",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1884": {
+      "artist": "ADAM PORT & STEREO MC'S",
+      "title": "Place",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1885": {
+      "artist": "HONEY DIJON, JOHN MENDELSOHN, TIM K",
+      "title": "Thunda (Rampa Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1886": {
+      "artist": "&ME",
+      "title": "Solaris",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1887": {
+      "artist": "ADAM PORT",
+      "title": "Do You Still Think Of Me?",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1888": {
+      "artist": "&ME FEAT. SABOTA",
+      "title": "Trilogy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1889": {
+      "artist": "RAMPA",
+      "title": "Purge",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1890": {
+      "artist": "SIMIAN MOBILE DISCO FEAT. DEEP THROAT CHOIR",
+      "title": "Caught In A Wave (&ME Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1891": {
+      "artist": "YEAH BUT NO",
+      "title": "Run Run Run (Adam Port Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1892": {
+      "artist": "RAMPA",
+      "title": "528Hz",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1893": {
+      "artist": "PALMS TRAX",
+      "title": "Petu (Dub Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1900": {
+      "artist": "A CERTAIN RATIO",
+      "title": "Faceless",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1901": {
+      "artist": "ARIEL PINK",
+      "title": "Four Shadows",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1902": {
+      "artist": "AUTOMATIC",
+      "title": "Too Much Money",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1903": {
+      "artist": "CHARANJIT SINGH",
+      "title": "Raga Madhuvanti",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1904": {
+      "artist": "COLOURBOX",
+      "title": "Baby I Love You So",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1905": {
+      "artist": "CONNIE FRANCIS",
+      "title": "Many Tears Ago",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1906": {
+      "artist": "CRACK CLOUD",
+      "title": "Drab Measure",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1907": {
+      "artist": "DAF",
+      "title": "Liebe Auf Den Ersten Blick",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1908": {
+      "artist": "DANZIG",
+      "title": "Deep",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1909": {
+      "artist": "GLORIA JONES",
+      "title": "Tainted Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1910": {
+      "artist": "GRAUZONE",
+      "title": "Eisbar",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1911": {
+      "artist": "ICKY BLOSSOMS",
+      "title": "Cycle",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1912": {
+      "artist": "IGGY POP",
+      "title": "Nightclubbing",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1913": {
+      "artist": "JOY DIVISION",
+      "title": "She's Lost Control",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1914": {
+      "artist": "LEA PORCELAIN",
+      "title": "Pool Song",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1915": {
+      "artist": "MAC DEMARCO",
+      "title": "On The Level",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1916": {
+      "artist": "MC SHAN FEAT. TJ SWAN",
+      "title": "Left Me Lonely",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1917": {
+      "artist": "MISFITS",
+      "title": "TV Casualty",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1918": {
+      "artist": "NEW ORDER",
+      "title": "Age Of Consent",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1919": {
+      "artist": "NICK LOWE",
+      "title": "So It Goes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1920": {
+      "artist": "PROMISELAND",
+      "title": "Take Down The House",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1921": {
+      "artist": "RAMONES",
+      "title": "Time Bomb",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1922": {
+      "artist": "T LA ROCK",
+      "title": "It's Yours",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1923": {
+      "artist": "THE CRAMPS",
+      "title": "Human Fly",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1924": {
+      "artist": "THE SLITS",
+      "title": "Typical Girls",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1925": {
+      "artist": "THE STOOGES",
+      "title": "Down On The Street",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1926": {
+      "artist": "THE STROKES",
+      "title": "Hard To Explain",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1927": {
+      "artist": "THE STROKES",
+      "title": "The Adults Are Talking",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1928": {
+      "artist": "THE VELVET UNDERGROUND",
+      "title": "Rock And Roll",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1929": {
+      "artist": "THE VOIDZ",
+      "title": "Alien Crime Lord",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1930": {
+      "artist": "THE THE",
+      "title": "This Is The Day",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1931": {
+      "artist": "VIAGRA BOYS",
+      "title": "Girls & Boys",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1932": {
+      "artist": "CAPTAIN MURPHY",
+      "title": "Possessed",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1933": {
+      "artist": "J DILLA",
+      "title": "Fuck The Police",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1934": {
+      "artist": "FLYING LOTUS, RAS G",
+      "title": "Black Heaven",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1935": {
+      "artist": "RAS G",
+      "title": "Been Cosmic",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1936": {
+      "artist": "ROSS FROM FRIENDS",
+      "title": "The Daisy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1937": {
+      "artist": "CHANNEL TRES",
+      "title": "Topdown",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1938": {
+      "artist": "SMOKE DZA",
+      "title": "Spiritual",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1939": {
+      "artist": "FLYING LOTUS, MF DOOM",
+      "title": "Lunch Break",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1940": {
+      "artist": "THUNDERCAT",
+      "title": "Dragonball Durag",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1941": {
+      "artist": "SYUNSUKE ONO",
+      "title": "GLOMERULONEPHROPATHY",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1942": {
+      "artist": "ZACK FOX",
+      "title": "The Bean Kicked In",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1943": {
+      "artist": "FLYING LOTUS FEAT. DENZEL CURRY",
+      "title": "Black Balloons Reprise",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1944": {
+      "artist": "FREDDIE GIBBS",
+      "title": "Automatic",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1945": {
+      "artist": "LITTLE SNAKE",
+      "title": "Homicidal Thoughts",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1946": {
+      "artist": "TIERRA WHACK",
+      "title": "Arrogant",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1947": {
+      "artist": "DORIAN CONCEPT",
+      "title": "You're Untouchable",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1948": {
+      "artist": "FLYING LOTUS",
+      "title": "U Have To Be Odd",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1949": {
+      "artist": "LOUIS COLE",
+      "title": "Planet X",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1950": {
+      "artist": "KNXWLEDGE FEAT. ANDERSON .PAAK, NXWORRIES",
+      "title": "Itkanbe [Sonice]",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1951": {
+      "artist": "SHABAZZ PALACES",
+      "title": "Shine A Light",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1952": {
+      "artist": "MADLIB",
+      "title": "Road Of The Lonely Ones",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1953": {
+      "artist": "KING CRIMSON",
+      "title": "In The Wake Of Poseidon",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1954": {
+      "artist": "KAMASI WASHINGTON",
+      "title": "The Message (GP And 2bo4 Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1955": {
+      "artist": "SARATHY KORWAR",
+      "title": "Birthright",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1956": {
+      "artist": "MR. MITCH FEAT. DUVAL TIMOTHY",
+      "title": "Lost Touch",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1957": {
+      "artist": "THE UNDISPUTED TRUTH",
+      "title": "Sandman",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1958": {
+      "artist": "PHOTAY",
+      "title": "The People",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1959": {
+      "artist": "IDRIS MUHAMMAD",
+      "title": "Could Heaven Ever Be Like This",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1960": {
+      "artist": "AZYMUTH",
+      "title": "Jazz Carnival",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1961": {
+      "artist": "GAFACCI",
+      "title": "Azaa (Branko Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1962": {
+      "artist": "KOKOKO!",
+      "title": "Bim Bam Bam",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1963": {
+      "artist": "TSVI",
+      "title": "Labyrinth",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1964": {
+      "artist": "JAHARI MASSAMBA UNIT",
+      "title": "Riesling Pour Robert (Rhythm Heavy Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1965": {
+      "artist": "JOE ARMON-JONES FEAT. OBONGJAYAR",
+      "title": "Self:Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1966": {
+      "artist": "KOKOROKO",
+      "title": "Baba Ayoola",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1967": {
+      "artist": "KHRUANGBIN",
+      "title": "Time (You And I) (Original And GP Dub)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1968": {
+      "artist": "ARTHUR ADAMS",
+      "title": "Fight For Your Rights",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1969": {
+      "artist": "MFSB",
+      "title": "Mysteries Of The World",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1970": {
+      "artist": "STR4TA",
+      "title": "Aspects (Demus Dub)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1971": {
+      "artist": "JAMIROQUAI",
+      "title": "Emergency On Planet Earth (London Rican Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1972": {
+      "artist": "RONI SIZE",
+      "title": "Natural Thing",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1973": {
+      "artist": "DRS & DYNAMITE MC",
+      "title": "Worldwide FM (Dubplate Special)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1974": {
+      "artist": "JEFF PARKER",
+      "title": "Fusion Swirl",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1975": {
+      "artist": "SAUCE & DOGS",
+      "title": "Wax & Buff",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1976": {
+      "artist": "BADBADNOTGOOD FEAT. MF DOOM",
+      "title": "THE CHOCOLATE CONQUISTADORS",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1977": {
+      "artist": "ESG",
+      "title": "The Beat",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1978": {
+      "artist": "THE DIABOLICAL LIBERTIES",
+      "title": "Kimchi King Kong",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1979": {
+      "artist": "SWINDLE FEAT. GREENTEA PENG",
+      "title": "What More",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1980": {
+      "artist": "FUSELAGE",
+      "title": "Times Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1981": {
+      "artist": "MADLIB",
+      "title": "Muslem & Christian",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1982": {
+      "artist": "KAYTRANADA",
+      "title": "Pure Agony",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1983": {
+      "artist": "LYAM",
+      "title": "Why Don't I Feel",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1984": {
+      "artist": "JAB",
+      "title": "Directions",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1985": {
+      "artist": "JOSÉ JAMES",
+      "title": "Desire (Moodymann Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1986": {
+      "artist": "CALL SUPER",
+      "title": "Ekkles",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1987": {
+      "artist": "JONNY FAITH",
+      "title": "Ascending",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1988": {
+      "artist": "ZARA MCFARLANE",
+      "title": "State Of Mind (Alex Patchwork Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1989": {
+      "artist": "CATCHING FLIES",
+      "title": "New Gods (Ron Basejam Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1990": {
+      "artist": "DELE SOSIMI & MEDLAR",
+      "title": "Full Moon (Full Length Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1991": {
+      "artist": "EMMA-JEAN THACKRAY",
+      "title": "Movementt",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1993": {
+      "artist": "KASSA OVERALL FEAT. CARLOS OVERALL",
+      "title": "Landline",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1994": {
+      "artist": "SECRET NIGHT GANG",
+      "title": "The Sun (Full Length Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1995": {
+      "artist": "DJ NIGGA FOX",
+      "title": "5 Violinos",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1996": {
+      "artist": "MR. MANKWA",
+      "title": "Feediback",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1997": {
+      "artist": "MR. MITCH",
+      "title": "Not Modular",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1998": {
+      "artist": "JOSI DEVIL",
+      "title": "The Devil's Dance",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "1999": {
+      "artist": "KEMIKAL",
+      "title": "A Wah!",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2000": {
+      "artist": "JOY ORBISON",
+      "title": "COYP",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2001": {
+      "artist": "CRUEL SANTINO / ROBERT FLECK",
+      "title": "Sparky / Hi Press (Dub)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2002": {
+      "artist": "CRUEL SANTINO / ROBERT FLECK",
+      "title": "Sparky / Hi Press (Dub)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2003": {
+      "artist": "PA SALIEU",
+      "title": "No Warnin'",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2004": {
+      "artist": "L U C Y",
+      "title": "Almost Blue",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2005": {
+      "artist": "TIME COW & RTKAL",
+      "title": "Elephant Man",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2006": {
+      "artist": "FRANK OCEAN",
+      "title": "Cayendo (Sango Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2008": {
+      "artist": "DJ SCUD",
+      "title": "No Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2009": {
+      "artist": "FRANKEL & HARPER",
+      "title": "Trimmers (INSTINCT Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2010": {
+      "artist": "HORSEPOWER PRODUCTIONS",
+      "title": "Givin' Up On Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2011": {
+      "artist": "BLANCO",
+      "title": "Shippuden",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2012": {
+      "artist": "PEARLY",
+      "title": "Polar",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2013": {
+      "artist": "BYANO DJ",
+      "title": "Digdim Patrol 2016",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2014": {
+      "artist": "INSTINCT",
+      "title": "Operation",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2015": {
+      "artist": "KO",
+      "title": "Whip (Acapella)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2016": {
+      "artist": "OVERMONO",
+      "title": "Pieces Of 8",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2017": {
+      "artist": "JOY ORBISON & OVERMONO",
+      "title": "Bromley",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2018": {
+      "artist": "MEZ",
+      "title": "Babylon",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2019": {
+      "artist": "SPOOKY",
+      "title": "Joyride",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2020": {
+      "artist": "CELINE GILLAIN",
+      "title": "Wealthy Humans",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2021": {
+      "artist": "KWENGFACE",
+      "title": "Mad About Bars",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2022": {
+      "artist": "M1LLIONZ",
+      "title": "No Rap Cap",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2023": {
+      "artist": "BACKROAD GEE",
+      "title": "Party Popper",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2024": {
+      "artist": "WAIFER",
+      "title": "Shower Hour",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2025": {
+      "artist": "KO & JOY ORBISON",
+      "title": "Movements",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2026": {
+      "artist": "RAP",
+      "title": "Mad Friday",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2027": {
+      "artist": "THOMAS BUSH",
+      "title": "Presence: Martin",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2028": {
+      "artist": "POISON ANNA",
+      "title": "Submission",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2029": {
+      "artist": "MOODYMANN",
+      "title": "I Can't Kick This Feeling When it Hits",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2030": {
+      "artist": "DOPPLEREFFEKT",
+      "title": "Pornoviewer",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2031": {
+      "artist": "THE DIRTBOMBS",
+      "title": "Sharivari",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2032": {
+      "artist": "ANDRES",
+      "title": "New For U (Live)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2033": {
+      "artist": "KYLE HALL & KERO",
+      "title": "Zug Island",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2034": {
+      "artist": "NORM TALLEY",
+      "title": "Cosmic Wave (Delano Smith Remix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2035": {
+      "artist": "AUX 88",
+      "title": "My A.U.X. Mind",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2036": {
+      "artist": "CYBONIX",
+      "title": "Cybonix Groove",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2037": {
+      "artist": "MOODYMANN",
+      "title": "I Think Of Saturday",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2038": {
+      "artist": "MOODYMANN",
+      "title": "I'll Provide",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2039": {
+      "artist": "PAPERCLIP PEOPLE",
+      "title": "Oscillator",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2040": {
+      "artist": "BLAKE BAXTER",
+      "title": "When We Used To Play",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2041": {
+      "artist": "MOODYMANN",
+      "title": "JAN",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2042": {
+      "artist": "NORMA JEAN BELL",
+      "title": "I'm The Baddest Bitch",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2043": {
+      "artist": "ROBERTA SWEED",
+      "title": "Runaway",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2044": {
+      "artist": "GMI/UHM",
+      "title": "Formula For Passion",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2045": {
+      "artist": "WAAJEED",
+      "title": "Power In Numbers",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2046": {
+      "artist": "EDDIE FOWLKES",
+      "title": "Time To Express",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2047": {
+      "artist": "SHEEFY MCFLY",
+      "title": "Thinkin Bout You",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2048": {
+      "artist": "AMP FIDDLER",
+      "title": "Over U",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2049": {
+      "artist": "GIL SCOTT-HERON",
+      "title": "We Almost Lost Detroit",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2050": {
+      "artist": "APOLLO BROWN FEAT. PLANET ASIA",
+      "title": "Get Back",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2051": {
+      "artist": "EGB",
+      "title": "Shhhh",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2052": {
+      "artist": "EGB",
+      "title": "Clout",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2053": {
+      "artist": "MOODYMANN",
+      "title": "Sinner",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2054": {
+      "artist": "PIRAHNAHEAD & DIVINITI",
+      "title": "Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2055": {
+      "artist": "MOODYMANN",
+      "title": "Got Me Coming Back Rite Now",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2056": {
+      "artist": "THEO PARRISH",
+      "title": "Soul Control",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2057": {
+      "artist": "MARCELLUS PITTMAN",
+      "title": "Red Dogon Star",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2058": {
+      "artist": "MOODYMANN",
+      "title": "Rectify",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2059": {
+      "artist": "MOODYMANN FEAT. PITCH BLACK CITY",
+      "title": "Runaway",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2060": {
+      "artist": "MOODYMANN",
+      "title": "Let Me Show You Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2061": {
+      "artist": "AMP FIDDLER FEAT. MOODYMANN",
+      "title": "I Get Moody Sometimes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2062": {
+      "artist": "MOODYMANN",
+      "title": "No",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2063": {
+      "artist": "MOODYMANN",
+      "title": "It's 2 Late 4 U & Me",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2064": {
+      "artist": "MOODYMANN",
+      "title": "Got 2 Make It 2 Heaven",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2065": {
+      "artist": "MOODYMANN",
+      "title": "Freeki Muthafucka",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2066": {
+      "artist": "MOODYMANN",
+      "title": "I Got Werk",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2067": {
+      "artist": "MOODYMANN",
+      "title": "1988",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2070": {
+      "artist": "BRUISE",
+      "title": "Grand Hi",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2071": {
+      "artist": "DAVID FIRTH",
+      "title": "Afterlife Currency",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2072": {
+      "artist": "Commercial",
+      "title": "Mirror Park Tavern",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2073": {
+      "artist": "THE VOIDZ",
+      "title": "Where No Eagles Fly",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2074": {
+      "artist": "LL COOL J",
+      "title": "Going Back To Cali",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2075": {
+      "artist": "SETH TROXLER",
+      "title": "Lumartes (Edited Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2076": {
+      "artist": "SAMA' ABDULHADI",
+      "title": "Reverie",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2077": {
+      "artist": "RAMPA",
+      "title": "The Church",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2078": {
+      "artist": "DEICHKIND",
+      "title": "Autonom (Dixon Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2079": {
+      "artist": "KERRI CHANDLER",
+      "title": "You",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2080": {
+      "artist": "TINI FEAT. AMITURE",
+      "title": "What If, Then What?",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2081": {
+      "artist": "DJ TENNIS FEAT. ASHEE",
+      "title": "Atlanta",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2082": {
+      "artist": "MOODYMANN FEAT. CD",
+      "title": "Keep On Coming",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2083": {
+      "artist": "JAMIE JONES",
+      "title": "Laser Lass",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2084": {
+      "artist": "MANO LE TOUGH",
+      "title": "As If To Say",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2085": {
+      "artist": "BUTCH FEAT. KEMELION",
+      "title": "Raindrops",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2086": {
+      "artist": "CARL CRAIG",
+      "title": "Forever Free",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2087": {
+      "artist": "MARGARET DYGAS",
+      "title": "Wishing Well",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2088": {
+      "artist": "RED AXES",
+      "title": "Calib",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2089": {
+      "artist": "LUCIANO",
+      "title": "Mantra For Lizzie",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2090": {
+      "artist": "LOST SOULS OF SATURN & TOKIMONSTA",
+      "title": "Revision of the Past",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2091": {
+      "artist": "ADAM BEYER",
+      "title": "Break It Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2092": {
+      "artist": "TALE OF US",
+      "title": "Nova Two",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2093": {
+      "artist": "BEDOUIN",
+      "title": "Up In Flames",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2094": {
+      "artist": "DAMIAN LAZARUS FEAT. ROBERT OWENS",
+      "title": "The Future",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "2095": {
+      "artist": "Media Player",
+      "title": "Off",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4000": {
+      "artist": "CARL CRAIG",
+      "title": "Forever Free (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4001": {
+      "artist": "BUTCH FEAT. KEMELION",
+      "title": "Raindrops (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4002": {
+      "artist": "RAMPA",
+      "title": "The Church (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4003": {
+      "artist": "MOODYMANN FEAT. CD",
+      "title": "Keep On Coming (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4004": {
+      "artist": "MANO LE TOUGH",
+      "title": "As If To Say (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4005": {
+      "artist": "ADAM BEYER",
+      "title": "Break It Up (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4006": {
+      "artist": "DEICHKIND",
+      "title": "Autonom (Dixon Edit)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4007": {
+      "artist": "TINI FEAT. AMITURE",
+      "title": "What If, Then What? (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4008": {
+      "artist": "SETH TROXLER",
+      "title": "Lumartes (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4009": {
+      "artist": "DJ TENNIS FEAT. ASHEE",
+      "title": "Atlanta (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4010": {
+      "artist": "RED AXES",
+      "title": "Calib (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4011": {
+      "artist": "SAMA' ABDULHADI / JAMIE JONES",
+      "title": "Reverie (Edited) / Laser Lass (Edited)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4012": {
+      "artist": "BEDOUIN",
+      "title": "Up In Flames",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4013": {
+      "artist": "LOST SOULS OF SATURN & TOKIMONSTA",
+      "title": "Revision Of The Past",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4014": {
+      "artist": "THUNDERCAT",
+      "title": "Them Changes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4015": {
+      "artist": "CHRISTION",
+      "title": "Pimp This Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4016": {
+      "artist": "ATLANTA RHYTHM SECTION",
+      "title": "So Into You",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4017": {
+      "artist": "RO JAMES",
+      "title": "GA$",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4018": {
+      "artist": "CLAUDJA BARRY",
+      "title": "For The Sake Of Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4019": {
+      "artist": "BARBARA MCNAIR",
+      "title": "My World Is Empty Without You",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4020": {
+      "artist": "MFSB",
+      "title": "Plenty Good Lovin'",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4021": {
+      "artist": "THE EMOTIONS",
+      "title": "I Don't Wanna Lose Your Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4022": {
+      "artist": "BELL & JAMES",
+      "title": "Livin' It Up (Friday Night)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4023": {
+      "artist": "JESSE JOHNSON / MOODYMANN",
+      "title": "Where The Devil Plays",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4024": {
+      "artist": "STAVROZ",
+      "title": "Gold Town",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4025": {
+      "artist": "LARRY HEARD",
+      "title": "Lamentation",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4026": {
+      "artist": "MOBB DEEP",
+      "title": "Cradle to the Grave",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4027": {
+      "artist": "NIPSEY HUSSLE",
+      "title": "Checc Me Out",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4028": {
+      "artist": "DAM-FUNK",
+      "title": "Hood Pass Intact",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4029": {
+      "artist": "SHADE SHEIST",
+      "title": "Where I Wanna Be",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4030": {
+      "artist": "LTJ XPERIENCE FEAT. ANDUZE",
+      "title": "Bad Side",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4031": {
+      "artist": "AURRA",
+      "title": "Make Up Your Mind",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4032": {
+      "artist": "PUFF DADDY & THE FAMILY FEAT. BLACK ROB",
+      "title": "I Love You Baby",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4033": {
+      "artist": "TEENA MARIE",
+      "title": "Deja Vu",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4034": {
+      "artist": "RICK JAMES",
+      "title": "Hollywood",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4035": {
+      "artist": "JOEY PURP",
+      "title": "Elastic",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4036": {
+      "artist": "CHANNEL TRES",
+      "title": "Skate Depot (MOODYMANN REMIX)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4037": {
+      "artist": "MARVIN BELTON",
+      "title": "The Letter",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4038": {
+      "artist": "MOODYMANN",
+      "title": "Basement Party",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4039": {
+      "artist": "MOODYMANN",
+      "title": "Pray 4 Love",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4040": {
+      "artist": "MOODYMANN",
+      "title": "Technologystolemyvinyle",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4041": {
+      "artist": "AMP FIDDLER FEAT. MOODYMANN",
+      "title": "I Get Moody Sometimes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4042": {
+      "artist": "SANDY BARBER",
+      "title": "I Think I'll Do Some Steppin On My Own (Opolopo Rework)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4043": {
+      "artist": "MOODYMANN",
+      "title": "9 Nights 2 Nowhere",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4044": {
+      "artist": "NEZ FEAT. GANGSTA BOO & MOODYMANN",
+      "title": "Freaks",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4045": {
+      "artist": "OBIE TRICE FEAT. NATE DOGG",
+      "title": "The Set Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4046": {
+      "artist": "JOSE JAMES",
+      "title": "Love Conversation",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4047": {
+      "artist": "MOODYMANN",
+      "title": "Misled",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4048": {
+      "artist": "TEENA MARIE",
+      "title": "I Need Your Lovin'",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4049": {
+      "artist": "50 CENT FEAT. MOBB DEEP",
+      "title": "Outta Control",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4050": {
+      "artist": "DR. DRE FEAT. SNOOP DOGG",
+      "title": "The Next Episode",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4051": {
+      "artist": "JAY-Z",
+      "title": "Trouble",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4052": {
+      "artist": "MARY J. BLIGE",
+      "title": "Family Affair",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4053": {
+      "artist": "TRUTH HURTS FEAT. RAKIM",
+      "title": "Addictive",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4054": {
+      "artist": "ARMANDO",
+      "title": "100% of Disin' You",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4055": {
+      "artist": "DJ SLUGO",
+      "title": "418 (Bounce Mix)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4056": {
+      "artist": "KAYDY CAIN & LOS DEL CONTROL",
+      "title": "Algo Como Tú",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4057": {
+      "artist": "ROSALÍA",
+      "title": "A Palé",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4058": {
+      "artist": "CAROLINE POLACHEK",
+      "title": "Bunny Is A Rider",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4059": {
+      "artist": "ÑEJO & DALMATA",
+      "title": "Vacilar Contigo",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4060": {
+      "artist": "ROSALÍA FEAT. J BALVIN",
+      "title": "Con Altura",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4062": {
+      "artist": "BAD GYAL",
+      "title": "A La Mía",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4064": {
+      "artist": "LA GOONY CHONGA",
+      "title": "Duro 2005",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4068": {
+      "artist": "ARCA FEAT. ROSALÍA",
+      "title": "KLK",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4069": {
+      "artist": "ROSALÍA & THE WEEKND",
+      "title": "LA FAMA",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4070": {
+      "artist": "TOKISCHA & ROSALÍA",
+      "title": "Linda",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4072": {
+      "artist": "ROSALÍA",
+      "title": "DI MI NOMBRE (Cap.8: Éxtasis)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4073": {
+      "artist": "MR. FINGERS",
+      "title": "Mystery of Love (2011) (Instrumental)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4077": {
+      "artist": "DADDY YANKEE",
+      "title": "Salgo Pa' La Calle",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4078": {
+      "artist": "JUSTICE",
+      "title": "Stress",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4081": {
+      "artist": "TOKISCHA & HARACA KIKO & EL CHERRY SCOM",
+      "title": "Tukuntaso",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4082": {
+      "artist": "LAS GUANABANAS",
+      "title": "Vamos Pa la Disco",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4083": {
+      "artist": "Q",
+      "title": "Take Me Where Your Heart Is",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4087": {
+      "artist": "LIKKLE VYBZ & LIKKLE ADDI",
+      "title": "Skinny Jeans",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4089": {
+      "artist": "2 CHAINZ FEAT. TY DOLLA $IGN, TREY SONGZ, JHENÉ AIKO",
+      "title": "It's A Vibe",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4090": {
+      "artist": "VINCE STAPLES FEAT. JUICY J",
+      "title": "Big Fish",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4091": {
+      "artist": "MOUNT WESTMORE",
+      "title": "Big Subwoofer",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4092": {
+      "artist": "FUTURE",
+      "title": "Feed Me Dope",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4095": {
+      "artist": "CORDAE",
+      "title": "Kung Fu",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4097": {
+      "artist": "TYLER, THE CREATOR FEAT. 42 DUGG",
+      "title": "LEMONHEAD",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4098": {
+      "artist": "FRENCH MONTANA FEAT. KODAK BLACK",
+      "title": "Lockjaw",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4099": {
+      "artist": "SAWEETIE",
+      "title": "My Type",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4100": {
+      "artist": "A$AP FERG",
+      "title": "Plain Jane",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4101": {
+      "artist": "YOUNG STONER LIFE, YOUNG THUG & GUNNA",
+      "title": "Ski",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4102": {
+      "artist": "RODDY RICCH",
+      "title": "The Box",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4103": {
+      "artist": "JAY ROCK FEAT. KENDRICK LAMAR",
+      "title": "Wow Freestyle",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4104": {
+      "artist": "KODAK BLACK FEAT. TRAVIS SCOTT & OFFSET",
+      "title": "ZEZE",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4105": {
+      "artist": "DR. DRE",
+      "title": "Black Privilege",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4106": {
+      "artist": "DR. DRE FEAT. THURZ & COCOA SARAI",
+      "title": "Fallin Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4107": {
+      "artist": "DR. DRE FEAT. SNOOP DOGG, BUSTA RHYMES & ANDERSON .PAAK",
+      "title": "ETA",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4108": {
+      "artist": "NEZ",
+      "title": "You Wanna?",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4110": {
+      "artist": "MIGOS",
+      "title": "Stir Fry",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4111": {
+      "artist": "FUTURE FEAT. THE WEEKND",
+      "title": "Low Life",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4112": {
+      "artist": "BIG SEAN & HIT-BOY",
+      "title": "What A Life",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4114": {
+      "artist": "ARCA",
+      "title": "Machote",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4117": {
+      "artist": "DJ SPINN",
+      "title": "Bounce N Break Yo Back",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4122": {
+      "artist": "RAUW ALEJANDRO",
+      "title": "Nubes",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4124": {
+      "artist": "POPCAAN",
+      "title": "Body So Good",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4128": {
+      "artist": "SOULJA BOY TELL'EM",
+      "title": "Snap And Roll",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4129": {
+      "artist": "WILLIE COLÓN & HÉCTOR LAVOE",
+      "title": "Calle Luna Calle Sol",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4130": {
+      "artist": "YOUNG CISTER FEAT. KAYDY CAIN",
+      "title": "XULITA",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4131": {
+      "artist": "SCHOOLBOY Q",
+      "title": "Let's Get It",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4132": {
+      "artist": "DR. DRE FEAT. NIPSEY HUSSLE & TY DOLLA SIGN",
+      "title": "Diamond Mind",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4133": {
+      "artist": "DR. DRE FEAT. EMINEM",
+      "title": "Gospel",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4134": {
+      "artist": "DR. DRE FEAT. RICK ROSS & ANDERSON .PAAK",
+      "title": "The Scenic Route",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4136": {
+      "artist": "2PAC",
+      "title": "Can't C Me",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4137": {
+      "artist": "50 CENT",
+      "title": "In Da Club",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4138": {
+      "artist": "BLACKSTREET FEAT. DR. DRE & QUEEN PEN",
+      "title": "No Diggity",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4139": {
+      "artist": "DR. DRE",
+      "title": "Keep Their Heads Ringin'",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4140": {
+      "artist": "DR. DRE FEAT. HITTMAN, SIX-TWO, NATE DOGG & KURUPT",
+      "title": "Xxplosive",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4141": {
+      "artist": "DR. DRE FEAT. DAZ & SNOOP DOGG",
+      "title": "Lil' Ghetto Boy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4142": {
+      "artist": "ICE CUBE FEAT. DR. DRE & MC REN",
+      "title": "Hello",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4143": {
+      "artist": "NAS FEAT. DR. DRE",
+      "title": "Nas Is Coming",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4144": {
+      "artist": "OBIE TRICE FEAT. DR. DRE",
+      "title": "Shit Hits The Fan (Album Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4145": {
+      "artist": "SAM SNEED FEAT. DR. DRE",
+      "title": "U Better Recognize",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4147": {
+      "artist": "2PAC FEAT. DR. DRE & ROGER TROUTMAN",
+      "title": "California Love (Single Version)",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4149": {
+      "artist": "D-BLOCK EUROPE FEAT. OFFSET",
+      "title": "Chrome Hearts",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4150": {
+      "artist": "FREDO SANTANA FEAT. CHIEF KEEF, BALL OUT & TADOE",
+      "title": "Go Live",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4151": {
+      "artist": "POLO G FEAT. JUICE WRLD",
+      "title": "Flex",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4154": {
+      "artist": "AVENTURA",
+      "title": "Mi Corazoncito",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4155": {
+      "artist": "CAMARÓN DE LA ISLA",
+      "title": "Volando Voy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4156": {
+      "artist": "CHUCKY73",
+      "title": "Dominicana",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4161": {
+      "artist": "MONCHY & ALEJANDRA",
+      "title": "Dos Locos",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4162": {
+      "artist": "PLAYBOI CARTI",
+      "title": "Rockstar Made",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4164": {
+      "artist": "ALBERTO STYLEE",
+      "title": "Tumbando Fronte",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4165": {
+      "artist": "FREDDIE GIBBS FEAT. PUSHA T",
+      "title": "Miami Vice",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4166": {
+      "artist": "FREDDIE GIBBS FEAT. JUICY J",
+      "title": "Pick The Phone Up",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4167": {
+      "artist": "HIT-BOY & DOM KENNEDY",
+      "title": "XL",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4168": {
+      "artist": "MIKE DEAN & OFFSET",
+      "title": "So Fancy",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4169": {
+      "artist": "RICH THE KID & MIKE DEAN",
+      "title": "Blue Cheese",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4170": {
+      "artist": "MOZZY & YG",
+      "title": "Hoppin' Out",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4171": {
+      "artist": "TIA CORINE",
+      "title": "Coochie",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4172": {
+      "artist": "40 GLOCC",
+      "title": "Papa's Lil Soldier",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4173": {
+      "artist": "DaM-FunK",
+      "title": "The Contract - Space",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4174": {
+      "artist": "SOULWAX",
+      "title": "Los Santos Drug Wars",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4175": {
+      "artist": "NICK HOOK",
+      "title": "The Diamond Casino Heist",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4176": {
+      "artist": "RAMPA",
+      "title": "The Cayo Perico Heist II",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4177": {
+      "artist": "OH NO",
+      "title": "Lowriders",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4178": {
+      "artist": "HOLY FUCK",
+      "title": "Bikers",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4179": {
+      "artist": "HEALTH",
+      "title": "Arena Wars",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4180": {
+      "artist": "&ME",
+      "title": "The Cayo Perico Heist I",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4181": {
+      "artist": "DaM-FunK",
+      "title": "The Contract - The Journey",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4182": {
+      "artist": "DaM-FunK",
+      "title": "The Contract - Mass",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4183": {
+      "artist": "SHOW ME THE BODY",
+      "title": "Smuggler's Run",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4184": {
+      "artist": "TAKE A DAYTRIP",
+      "title": "Import/Export",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4185": {
+      "artist": "JAMES CURD AKA GREENSKEEPERS",
+      "title": "Executives And Other Criminals",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4186": {
+      "artist": "DaM-FunK",
+      "title": "The Contract - House Call",
+      "source": "trackid_rsg_dlc.txt"
+    },
+    "4187": {
+      "artist": "DaM-FunK",
+      "title": "The Contract - Smooth Kill",
+      "source": "trackid_rsg_dlc.txt"
+    }
+  }
+}

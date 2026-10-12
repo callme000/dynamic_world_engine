@@ -1,0 +1,216 @@
+{
+  "NextNpcId": 1003,
+  "NextEventId": 2,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "",
+      "Guid": "893730a2-a634-455a-87b1-4fafc81a787a",
+      "Name": "Viktor",
+      "Occupation": "Syndicate Lieutenant",
+      "PublicFaction": "Mafia",
+      "HiddenRole": "Arms courier",
+      "PedModel": "g_m_y_salvagoon_01",
+      "IsAlive": false,
+      "CreatedAt": "2026-10-12T10:18:39.4533918Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "DEAD",
+      "Relationships": {},
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Actor": "Player",
+          "Target": "Viktor",
+          "EventType": "ENTITY_DIED",
+          "Severity": 1.0,
+          "Description": "Viktor died (Shotgun blast).",
+          "SentimentTag": "tragedy",
+          "Consequences": [
+            "Deceased",
+            "Permanent_Casualty"
+          ],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:39.5532009Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Arms courier"
+      ],
+      "ActiveGoal": {
+        "GoalId": "250ee936",
+        "GoalType": "DEAD",
+        "TargetEntity": "none",
+        "Priority": 0,
+        "Status": "ACTIVE",
+        "Description": "Deceased"
+      },
+      "LongTermGoal": {
+        "GoalId": "4dd44fd4",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_guard_1",
+      "Guid": "5960dd54-444f-43ad-ade8-ac744da80814",
+      "Name": "Guard Alexei",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "g_m_m_chicold_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:39.6932922Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "49304956",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "ba129e83",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1002,
+      "EntityId": "npc_bunker_boss",
+      "Guid": "83da7d42-8db3-43cd-8eb2-f13c6a22ba6d",
+      "Name": "General Vance",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "s_m_m_security_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:39.8077471Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "2efa0e62",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "711304a7",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_dock_heist",
+      "PlanId": "env_dock_heist",
+      "Name": "Dockside Smuggler Stash",
+      "Archetype": "docks",
+      "Description": "",
+      "CenterX": 100.0,
+      "CenterY": -500.0,
+      "CenterZ": 5.0,
+      "Heading": 0.0,
+      "Status": "DEREALIZED",
+      "ResidentEntityIds": [
+        "npc_guard_1"
+      ],
+      "NpcIds": [
+        1001
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:39.6932922Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": "2026-10-12T10:18:39.7806436Z",
+      "PropIds": []
+    },
+    {
+      "EnvironmentId": "env_secure_bunker",
+      "PlanId": "env_secure_bunker",
+      "Name": "Deep Mountain Vault",
+      "Archetype": "bunker",
+      "Description": "",
+      "CenterX": 200.0,
+      "CenterY": 300.0,
+      "CenterZ": 15.0,
+      "Heading": 90.0,
+      "Status": "DEREALIZED",
+      "ResidentEntityIds": [
+        "npc_bunker_boss"
+      ],
+      "NpcIds": [
+        1002
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:39.8072475Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": "2026-10-12T10:18:39.8586598Z",
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": [
+    {
+      "EventId": 1,
+      "NpcId": 1000,
+      "Actor": "Player",
+      "Target": "Viktor",
+      "EventType": "ENTITY_DIED",
+      "Severity": 1.0,
+      "Description": "Viktor died (Shotgun blast).",
+      "SentimentTag": "tragedy",
+      "Consequences": [
+        "Deceased",
+        "Permanent_Casualty"
+      ],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:39.5532009Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    }
+  ]
+}

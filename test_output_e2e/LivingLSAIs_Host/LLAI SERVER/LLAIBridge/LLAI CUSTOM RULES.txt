@@ -1,0 +1,9 @@
+# ══════════════════════════════════════════════════════════════════════
+#  DYNAMIC WORLD ENGINE - LIVE WORLD FACTS (AUTO-INJECTED)
+#  Mod Target: Living LS AIs v4.5 | Protocol: Strict Line Feed
+# ══════════════════════════════════════════════════════════════════════
+
+[NPC #1001 Marcus (Civilian/Mechanic / Bartender)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Undercover Police Informant | Rel:Player:+72,Police:-20,Gang A:+40 | Last:"Player saved Marcus from gang ambush"
+
+[NPC #1000 Darnell 'D-Lance' Jenkins (Families/Drug Dealer)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Rel:Player:+10,Police:-50,Families:+60,Ballas:-30 | Last:"Operates street corner in Chamberlain Hills Families turf"
+

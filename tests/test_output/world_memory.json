@@ -1,0 +1,52 @@
+{
+  "NextNpcId": 1001,
+  "NextEventId": 5,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "Guid": "6ba8b127-fa89-42c5-b7f2-435628fcbba5",
+      "Name": "Marcus",
+      "Occupation": "Mechanic",
+      "PublicFaction": "Civilian",
+      "HiddenRole": "Undercover Police Informant",
+      "PedModel": "s_m_y_barman_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-09-18T10:40:05.9501518Z",
+      "Relationships": {
+        "Player": 72,
+        "Police": -20,
+        "Gang A": 40
+      },
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Description": "Player saved Marcus from gang ambush",
+          "SentimentTag": "Saved_Life",
+          "Timestamp": "2026-09-18T10:40:05.9879267Z"
+        },
+        {
+          "EventId": 2,
+          "NpcId": 1000,
+          "Description": "Marcus gave player a modified sports car",
+          "SentimentTag": "Gave_Vehicle",
+          "Timestamp": "2026-09-18T10:40:05.9980098Z"
+        },
+        {
+          "EventId": 3,
+          "NpcId": 1000,
+          "Description": "Marcus witnessed player committing robbery at Fleeca Bank",
+          "SentimentTag": "Shared_Secret",
+          "Timestamp": "2026-09-18T10:40:05.9985662Z"
+        },
+        {
+          "EventId": 4,
+          "NpcId": 1000,
+          "Description": "Blackmailed by LSPD detective",
+          "SentimentTag": "Role_Mutation",
+          "Timestamp": "2026-09-18T10:40:05.9998202Z"
+        }
+      ]
+    }
+  ]
+}

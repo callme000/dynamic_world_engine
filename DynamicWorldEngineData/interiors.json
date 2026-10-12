@@ -1,0 +1,3576 @@
+[
+  {
+    "InteriorId": "int_smugglers_run_hangar",
+    "Name": "Smugglers Run Hangar",
+    "Category": "hangar",
+    "Description": "Dynamically discovered hangar venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "hangar",
+      "airstrip",
+      "airport",
+      "airfield",
+      "smuggler",
+      "cargo",
+      "plane",
+      "aircraft",
+      "bunker",
+      "facility",
+      "military",
+      "covert",
+      "defense",
+      "tactical",
+      "subterranean"
+    ],
+    "Keywords": [
+      "Smugglers Run Hangar",
+      "int_smugglers_run_hangar",
+      "Smugglers Run Hangar",
+      "Smuggler Hangar",
+      "Airstrip Hangar",
+      "Airfield Hangar"
+    ],
+    "IplNames": [
+      "sm_smugdlc_interior_placement_interior_0_smugdlc_int_01_milo_",
+      "set_floor_1",
+      "set_floor_2",
+      "set_floor_decal_1",
+      "set_floor_decal_2",
+      "set_floor_decal_3",
+      "set_floor_decal_4",
+      "set_floor_decal_5",
+      "set_floor_decal_6",
+      "set_floor_decal_7",
+      "set_floor_decal_8",
+      "set_floor_decal_9",
+      "set_lighting_hangar_a",
+      "set_lighting_hangar_b",
+      "set_lighting_hangar_c",
+      "set_lighting_hangar_d",
+      "set_bedroom_traditional",
+      "set_office_traditional",
+      "set_bedroom_clutter",
+      "set_bedroom_modern",
+      "set_office_basic",
+      "set_tint_shell",
+      "set_bedroom_tint",
+      "set_crane_tint",
+      "set_modarea",
+      "set_lighting_tint_props"
+    ],
+    "EntranceCoords": {
+      "X": -1394.4,
+      "Y": -3267.2,
+      "Z": 13.0
+    },
+    "InteriorCoords": {
+      "X": -1266.64,
+      "Y": -2961.4,
+      "Z": -49.8
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_cargo_ship",
+    "Name": "Cargo Ship",
+    "Category": "cargo_ship",
+    "Description": "Dynamically discovered cargo_ship venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "cargo_ship",
+      "dockyard",
+      "docks",
+      "shipping",
+      "container",
+      "smuggling",
+      "harbor",
+      "port",
+      "freighter",
+      "yacht",
+      "maritime",
+      "luxury",
+      "vip",
+      "ocean"
+    ],
+    "Keywords": [
+      "Cargo Ship",
+      "int_cargo_ship",
+      "Cargo Ship",
+      "Freighter",
+      "Dockyard Cargo",
+      "Shipping Terminal"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -166.5,
+      "Y": -2369.035,
+      "Z": 20.0
+    },
+    "InteriorCoords": {
+      "X": -166.5,
+      "Y": -2369.035,
+      "Z": 20.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_maze_bank_arena",
+    "Name": "Maze Bank Arena",
+    "Category": "vault",
+    "Description": "Dynamically discovered vault venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "vault",
+      "bank",
+      "bank_vault",
+      "heist",
+      "secure",
+      "finance",
+      "arcade",
+      "gaming",
+      "entertainment"
+    ],
+    "Keywords": [
+      "Maze Bank Arena",
+      "int_maze_bank_arena"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -254.19,
+      "Y": -2027.2,
+      "Z": 29.0
+    },
+    "InteriorCoords": {
+      "X": -254.19,
+      "Y": -2027.2,
+      "Z": 29.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_denise_s_house",
+    "Name": "Denise's House",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Denise's House",
+      "int_denise_s_house"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -14.09,
+      "Y": -1442.26,
+      "Z": 31.0
+    },
+    "InteriorCoords": {
+      "X": -14.09,
+      "Y": -1442.26,
+      "Z": 31.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_simeon_s_dealership",
+    "Name": "Simeon's Dealership",
+    "Category": "yacht",
+    "Description": "Dynamically discovered yacht venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "yacht",
+      "maritime",
+      "luxury",
+      "vip",
+      "ocean"
+    ],
+    "Keywords": [
+      "Simeon's Dealership",
+      "int_simeon_s_dealership"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -60.5,
+      "Y": -1093.6,
+      "Z": 26.0
+    },
+    "InteriorCoords": {
+      "X": -60.5,
+      "Y": -1093.6,
+      "Z": 26.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_vangelico",
+    "Name": "Vangelico",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Vangelico",
+      "int_vangelico"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -632.6,
+      "Y": -238.6,
+      "Z": 38.0
+    },
+    "InteriorCoords": {
+      "X": -632.6,
+      "Y": -238.6,
+      "Z": 38.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_life_invader",
+    "Name": "Life Invader",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Life Invader",
+      "int_life_invader"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1045.3,
+      "Y": -230.3,
+      "Z": 39.0
+    },
+    "InteriorCoords": {
+      "X": -1045.3,
+      "Y": -230.3,
+      "Z": 39.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_lester_s_factory",
+    "Name": "Lester's Factory",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Lester's Factory",
+      "int_lester_s_factory"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 718.1,
+      "Y": -975.7,
+      "Z": 24.0
+    },
+    "InteriorCoords": {
+      "X": 718.1,
+      "Y": -975.7,
+      "Z": 24.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_lester_s_house",
+    "Name": "Lester's House",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Lester's House",
+      "int_lester_s_house"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 1274.6,
+      "Y": -1720.9,
+      "Z": 54.0
+    },
+    "InteriorCoords": {
+      "X": 1274.6,
+      "Y": -1720.9,
+      "Z": 54.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_foundry",
+    "Name": "Foundry",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "Foundry",
+      "int_foundry"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 1083.343,
+      "Y": -1974.48,
+      "Z": 30.0
+    },
+    "InteriorCoords": {
+      "X": 1083.343,
+      "Y": -1974.48,
+      "Z": 30.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_doomsday_facility",
+    "Name": "Facility",
+    "Category": "bunker",
+    "Description": "Dynamically discovered bunker venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "facility",
+      "doomsday",
+      "command",
+      "military",
+      "high_tech",
+      "subterranean",
+      "war_room",
+      "biohazard",
+      "research",
+      "bunker",
+      "covert",
+      "defense",
+      "tactical"
+    ],
+    "Keywords": [
+      "Facility",
+      "int_doomsday_facility",
+      "Doomsday Facility",
+      "Doomsday Command Facility",
+      "Mount Chiliad Facility"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 483.8,
+      "Y": 4809.7,
+      "Z": 30.0
+    },
+    "InteriorCoords": {
+      "X": 3388.648,
+      "Y": 5509.233,
+      "Z": 24.76
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_subterranean_bunker",
+    "Name": "Bunker",
+    "Category": "bunker",
+    "Description": "Dynamically discovered bunker venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "bunker",
+      "military",
+      "command",
+      "tactical",
+      "subterranean",
+      "defense",
+      "war_room",
+      "ordnance",
+      "facility",
+      "covert"
+    ],
+    "Keywords": [
+      "Bunker",
+      "int_subterranean_bunker",
+      "Subterranean Bunker",
+      "Subterranean Military Bunker",
+      "Military Bunker",
+      "Command Bunker"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 891.3,
+      "Y": -3245.7,
+      "Z": 20.0
+    },
+    "InteriorCoords": {
+      "X": -388.838,
+      "Y": 4339.795,
+      "Z": 55.172
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_arcade",
+    "Name": "Arcade",
+    "Category": "arcade",
+    "Description": "Dynamically discovered arcade venue.",
+    "CapacityNpcs": 15,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "arcade",
+      "gaming",
+      "entertainment"
+    ],
+    "Keywords": [
+      "Arcade",
+      "int_arcade"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 2738.068,
+      "Y": -374.0694,
+      "Z": -48.98
+    },
+    "InteriorCoords": {
+      "X": -243.1,
+      "Y": 6208.8,
+      "Z": 31.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_mckenzie_field_hangar_office",
+    "Name": "McKenzie Field Hangar Office",
+    "Category": "hangar",
+    "Description": "Dynamically discovered hangar venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "hangar",
+      "airstrip",
+      "airport",
+      "airfield",
+      "smuggler",
+      "cargo",
+      "plane",
+      "aircraft",
+      "bunker",
+      "facility",
+      "military",
+      "covert",
+      "defense",
+      "tactical",
+      "subterranean",
+      "office",
+      "agency",
+      "executive",
+      "business",
+      "runway",
+      "aviation",
+      "outdoor",
+      "open_world",
+      "landmark"
+    ],
+    "Keywords": [
+      "McKenzie Field Hangar Office",
+      "int_mckenzie_field_hangar_office",
+      "Smugglers Run Hangar",
+      "Smuggler Hangar",
+      "Airstrip Hangar",
+      "Airfield Hangar"
+    ],
+    "IplNames": [
+      "sm_smugdlc_interior_placement_interior_0_smugdlc_int_01_milo_",
+      "set_floor_1",
+      "set_floor_2",
+      "set_floor_decal_1",
+      "set_floor_decal_2",
+      "set_floor_decal_3",
+      "set_floor_decal_4",
+      "set_floor_decal_5",
+      "set_floor_decal_6",
+      "set_floor_decal_7",
+      "set_floor_decal_8",
+      "set_floor_decal_9",
+      "set_lighting_hangar_a",
+      "set_lighting_hangar_b",
+      "set_lighting_hangar_c",
+      "set_lighting_hangar_d",
+      "set_bedroom_traditional",
+      "set_office_traditional",
+      "set_bedroom_clutter",
+      "set_bedroom_modern",
+      "set_office_basic",
+      "set_tint_shell",
+      "set_bedroom_tint",
+      "set_crane_tint",
+      "set_modarea",
+      "set_lighting_tint_props"
+    ],
+    "EntranceCoords": {
+      "X": 2147.34,
+      "Y": 4789.64,
+      "Z": -47.37
+    },
+    "InteriorCoords": {
+      "X": 2146.031,
+      "Y": 4782.017,
+      "Z": 39.99
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_casino",
+    "Name": "Casino",
+    "Category": "casino",
+    "Description": "Dynamically discovered casino venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "casino",
+      "gambling",
+      "high_roller"
+    ],
+    "Keywords": [
+      "Casino",
+      "int_casino"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 924.6,
+      "Y": 45.4,
+      "Z": 80.0
+    },
+    "InteriorCoords": {
+      "X": 1089.7,
+      "Y": 205.9,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_nightclub",
+    "Name": "Nightclub",
+    "Category": "nightclub",
+    "Description": "Dynamically discovered nightclub venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "nightclub",
+      "party",
+      "nightlife",
+      "music",
+      "social",
+      "dance"
+    ],
+    "Keywords": [
+      "Nightclub",
+      "int_nightclub"
+    ],
+    "IplNames": [
+      "ba_int_placement_ba_interior_0_dlc_int_01_ba_milo_",
+      "Int01_ba_security_upgrade﻿",
+      "Int01_ba﻿_equipment_setup",
+      "Int01_ba_Style02",
+      "Int01_ba_Style03",
+      "int01_ba_style02_podium",
+      "Int01_ba_style03_podium",
+      "int01_ba_lights_screen﻿﻿",
+      "Int01_ba_Screen﻿﻿",
+      "I﻿nt01_ba_bar_cont﻿ent﻿",
+      "Int01_ba_booze_0﻿1﻿",
+      "Int01_ba_booze_02",
+      "Int01_ba_booze_03",
+      "Int01_ba_dj01﻿",
+      "Int0﻿1_ba_dj02",
+      "Int01_ba_dj03",
+      "Int01_ba_dj04",
+      "DJ_01_Lights_01﻿﻿",
+      "DJ_01_Lights_02",
+      "DJ_01_Lights_03",
+      "DJ_01_Lights_04",
+      "DJ_02_Lights_01",
+      "DJ_02_Lights_02",
+      "DJ_02_Lights_03",
+      "DJ_02_Lights_04",
+      "DJ_03_Lights_01",
+      "DJ_03_Lights_02",
+      "DJ_03_Lights_03",
+      "DJ_03_Lights_04",
+      "DJ_04_Lights_01﻿",
+      "DJ_04_Lights_02",
+      "DJ_04_Lights_03",
+      "DJ_04_Lights_04",
+      "light_rigs_off",
+      "Int01_ba_lightgrid_01",
+      "Int01_ba_Clutter",
+      "Int01_ba_equipment_upgrade",
+      "Int01_ba_clubname_01﻿﻿﻿",
+      "Int01_ba_clubname_02",
+      "Int01_ba_clubname_03",
+      "Int01_ba_clubname_04",
+      "Int01_ba_clubname_05",
+      "Int01_ba_clubname_06",
+      "Int01_ba_clubname_07",
+      "Int01_ba_clubname_08",
+      "Int01_ba_clubname_09",
+      "Int01_ba_dry_ice",
+      "Int01_ba_deliverytruck",
+      "Int01_ba_trophy04",
+      "Int01_ba_trophy05",
+      "Int01_ba_trophy07",
+      "Int01_ba_trophy09",
+      "Int01_ba_trophy08",
+      "Int01_ba_trophy11",
+      "Int01_ba_trophy10﻿",
+      "Int01_ba_trophy03",
+      "Int01_ba_trophy01",
+      "Int01_ba_trophy02",
+      "Int01_ba_trad_lights﻿",
+      "Int01_ba_Worklamps﻿",
+      "int01_ba_style01_podium﻿﻿",
+      "int01_ba_style01_podium",
+      "Int01_ba_clubname_01﻿",
+      "int01_ba_style02",
+      "int01_ba_style03",
+      "int01_ba_style01",
+      "Int01_ba_style01_podium"
+    ],
+    "EntranceCoords": {
+      "X": -121.4,
+      "Y": -1290.5,
+      "Z": 28.5
+    },
+    "InteriorCoords": {
+      "X": -1569.2,
+      "Y": -3017.3,
+      "Z": -75.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_maze_bank_tower",
+    "Name": "Maze Bank Tower",
+    "Category": "vault",
+    "Description": "Dynamically discovered vault venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "vault",
+      "bank",
+      "bank_vault",
+      "heist",
+      "secure",
+      "finance",
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Maze Bank Tower",
+      "int_maze_bank_tower"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -70.8,
+      "Y": -800.4,
+      "Z": 43.6
+    },
+    "InteriorCoords": {
+      "X": -75.3,
+      "Y": -823.6,
+      "Z": 242.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_arcadius_tower",
+    "Name": "Arcadius Tower",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Arcadius Tower",
+      "int_arcadius_tower"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -118.3,
+      "Y": -608.4,
+      "Z": 35.6
+    },
+    "InteriorCoords": {
+      "X": -140.15,
+      "Y": -624.4,
+      "Z": 167.8
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_maze_bank_west_tower",
+    "Name": "Maze Bank West Tower",
+    "Category": "vault",
+    "Description": "Dynamically discovered vault venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "vault",
+      "bank",
+      "bank_vault",
+      "heist",
+      "secure",
+      "finance",
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Maze Bank West Tower",
+      "int_maze_bank_west_tower"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1370.8,
+      "Y": -503.6,
+      "Z": 32.5
+    },
+    "InteriorCoords": {
+      "X": -1388.9,
+      "Y": -478.9,
+      "Z": 71.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_lombok_tower",
+    "Name": "Lombok Tower",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Lombok Tower",
+      "int_lombok_tower"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1582.4,
+      "Y": -556.6,
+      "Z": 33.9
+    },
+    "InteriorCoords": {
+      "X": -1576.7,
+      "Y": -567.08,
+      "Z": 107.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_iaa_facility",
+    "Name": "IAA Facility",
+    "Category": "bunker",
+    "Description": "Dynamically discovered bunker venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "bunker",
+      "facility",
+      "military",
+      "covert",
+      "defense",
+      "tactical",
+      "subterranean"
+    ],
+    "Keywords": [
+      "IAA Facility",
+      "int_iaa_facility"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 2049.9,
+      "Y": 2949.5,
+      "Z": 46.7
+    },
+    "InteriorCoords": {
+      "X": 2155.11,
+      "Y": 2920.9,
+      "Z": -63.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_omega_s_garage",
+    "Name": "Omega's Garage",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "Omega's Garage",
+      "int_omega_s_garage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 2331.7,
+      "Y": 2576.1,
+      "Z": 45.6
+    },
+    "InteriorCoords": {
+      "X": 2331.7,
+      "Y": 2576.1,
+      "Z": 45.6
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_tequilala",
+    "Name": "Tequilala",
+    "Category": "nightclub",
+    "Description": "Dynamically discovered nightclub venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "nightclub",
+      "party",
+      "nightlife",
+      "music",
+      "social",
+      "dance"
+    ],
+    "Keywords": [
+      "Tequilala",
+      "int_tequilala"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -564.2,
+      "Y": 275.5,
+      "Z": 82.0
+    },
+    "InteriorCoords": {
+      "X": -564.2,
+      "Y": 275.5,
+      "Z": 82.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_server_farm",
+    "Name": "Server Farm",
+    "Category": "vault",
+    "Description": "Dynamically discovered vault venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "vault",
+      "bank",
+      "bank_vault",
+      "heist",
+      "secure",
+      "finance",
+      "server",
+      "data_center",
+      "laboratory",
+      "research",
+      "biohazard",
+      "science"
+    ],
+    "Keywords": [
+      "Server Farm",
+      "int_server_farm"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 2477.26,
+      "Y": -402.02,
+      "Z": 93.5
+    },
+    "InteriorCoords": {
+      "X": 2154.7,
+      "Y": 2921.04,
+      "Z": -82.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_doomsday_silo_base",
+    "Name": "Doomsday Silo Base",
+    "Category": "bunker",
+    "Description": "Dynamically discovered bunker venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "bunker",
+      "facility",
+      "military",
+      "covert",
+      "defense",
+      "tactical",
+      "subterranean"
+    ],
+    "Keywords": [
+      "Doomsday Silo Base",
+      "int_doomsday_silo_base"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -361.36,
+      "Y": 4827.09,
+      "Z": 142.5
+    },
+    "InteriorCoords": {
+      "X": 1256.1,
+      "Y": 4799.07,
+      "Z": -40.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_dr_friedlander_office",
+    "Name": "Dr Friedlander Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Dr Friedlander Office",
+      "int_dr_friedlander_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1898.1,
+      "Y": -572.5,
+      "Z": 11.0
+    },
+    "InteriorCoords": {
+      "X": -1902.3,
+      "Y": -572.6,
+      "Z": 18.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_morgue",
+    "Name": "Morgue",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Morgue",
+      "int_morgue"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 240.9,
+      "Y": -1379.4,
+      "Z": 32.8
+    },
+    "InteriorCoords": {
+      "X": 253.9,
+      "Y": -1372.3,
+      "Z": 29.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_meat_packing_factory",
+    "Name": "Meat Packing Factory",
+    "Category": "industrial",
+    "Description": "Dynamically discovered industrial venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "slaughterhouse",
+      "meatpacking",
+      "industrial",
+      "cartel",
+      "safehouse",
+      "interrogation",
+      "warehouse"
+    ],
+    "Keywords": [
+      "Meat Packing Factory",
+      "int_meat_packing_factory",
+      "Meat Packing Factory",
+      "Slaughterhouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 961.6,
+      "Y": -2185.2,
+      "Z": 29.0
+    },
+    "InteriorCoords": {
+      "X": 961.6,
+      "Y": -2185.2,
+      "Z": 29.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_cluck_n_bell",
+    "Name": "Cluck N Bell",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Cluck N Bell",
+      "int_cluck_n_bell"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -70.8,
+      "Y": 6266.3,
+      "Z": 30.0
+    },
+    "InteriorCoords": {
+      "X": -70.8,
+      "Y": 6266.3,
+      "Z": 30.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_martin_madrazo_s_house",
+    "Name": "Martin Madrazo's House",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Martin Madrazo's House",
+      "int_martin_madrazo_s_house"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 1395.06,
+      "Y": 1141.7,
+      "Z": 113.4
+    },
+    "InteriorCoords": {
+      "X": 1396.4,
+      "Y": 1141.7,
+      "Z": 113.4
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_nightclub_vip",
+    "Name": "Bahama Mamas West",
+    "Category": "nightclub",
+    "Description": "Dynamically discovered nightclub venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "nightclub",
+      "party",
+      "nightlife",
+      "music",
+      "social",
+      "dance",
+      "bahama_mamas",
+      "bar"
+    ],
+    "Keywords": [
+      "Bahama Mamas West",
+      "int_nightclub_vip",
+      "Bahama Mamas",
+      "Bahama Mamas West"
+    ],
+    "IplNames": [
+      "ba_int_placement_ba_interior_0_dlc_int_01_ba_milo_",
+      "Int01_ba_security_upgrade﻿",
+      "Int01_ba﻿_equipment_setup",
+      "Int01_ba_Style02",
+      "Int01_ba_Style03",
+      "int01_ba_style02_podium",
+      "Int01_ba_style03_podium",
+      "int01_ba_lights_screen﻿﻿",
+      "Int01_ba_Screen﻿﻿",
+      "I﻿nt01_ba_bar_cont﻿ent﻿",
+      "Int01_ba_booze_0﻿1﻿",
+      "Int01_ba_booze_02",
+      "Int01_ba_booze_03",
+      "Int01_ba_dj01﻿",
+      "Int0﻿1_ba_dj02",
+      "Int01_ba_dj03",
+      "Int01_ba_dj04",
+      "DJ_01_Lights_01﻿﻿",
+      "DJ_01_Lights_02",
+      "DJ_01_Lights_03",
+      "DJ_01_Lights_04",
+      "DJ_02_Lights_01",
+      "DJ_02_Lights_02",
+      "DJ_02_Lights_03",
+      "DJ_02_Lights_04",
+      "DJ_03_Lights_01",
+      "DJ_03_Lights_02",
+      "DJ_03_Lights_03",
+      "DJ_03_Lights_04",
+      "DJ_04_Lights_01﻿",
+      "DJ_04_Lights_02",
+      "DJ_04_Lights_03",
+      "DJ_04_Lights_04",
+      "light_rigs_off",
+      "Int01_ba_lightgrid_01",
+      "Int01_ba_Clutter",
+      "Int01_ba_equipment_upgrade",
+      "Int01_ba_clubname_01﻿﻿﻿",
+      "Int01_ba_clubname_02",
+      "Int01_ba_clubname_03",
+      "Int01_ba_clubname_04",
+      "Int01_ba_clubname_05",
+      "Int01_ba_clubname_06",
+      "Int01_ba_clubname_07",
+      "Int01_ba_clubname_08",
+      "Int01_ba_clubname_09",
+      "Int01_ba_dry_ice",
+      "Int01_ba_deliverytruck",
+      "Int01_ba_trophy04",
+      "Int01_ba_trophy05",
+      "Int01_ba_trophy07",
+      "Int01_ba_trophy09",
+      "Int01_ba_trophy08",
+      "Int01_ba_trophy11",
+      "Int01_ba_trophy10﻿",
+      "Int01_ba_trophy03",
+      "Int01_ba_trophy01",
+      "Int01_ba_trophy02",
+      "Int01_ba_trad_lights﻿",
+      "Int01_ba_Worklamps﻿",
+      "int01_ba_style01_podium﻿﻿",
+      "int01_ba_style01_podium",
+      "Int01_ba_clubname_01﻿",
+      "int01_ba_style02",
+      "int01_ba_style03",
+      "int01_ba_style01",
+      "Int01_ba_style01_podium"
+    ],
+    "EntranceCoords": {
+      "X": -1388.9,
+      "Y": -586.11,
+      "Z": 29.5
+    },
+    "InteriorCoords": {
+      "X": -1387.5,
+      "Y": -588.2,
+      "Z": 29.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_solomon_richard_s_office",
+    "Name": "Solomon Richard's Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Solomon Richard's Office",
+      "int_solomon_richard_s_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1007.9,
+      "Y": -487.3,
+      "Z": 39.1
+    },
+    "InteriorCoords": {
+      "X": -1003.066,
+      "Y": -477.88,
+      "Z": 49.1
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_submarine",
+    "Name": "Submarine",
+    "Category": "submersible",
+    "Description": "Dynamically discovered submersible venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "submarine",
+      "submersible",
+      "naval",
+      "underwater",
+      "maritime",
+      "military"
+    ],
+    "Keywords": [
+      "Submarine",
+      "int_submarine",
+      "Submarine",
+      "Naval Submarine",
+      "Submersible Vessel"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1291.8,
+      "Y": 6859.5,
+      "Z": -90.0
+    },
+    "InteriorCoords": {
+      "X": 514.35,
+      "Y": 4887.685,
+      "Z": -63.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_gunrunning_yacht",
+    "Name": "Gunrunning Yacht",
+    "Category": "yacht",
+    "Description": "Dynamically discovered yacht venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "yacht",
+      "luxury",
+      "maritime",
+      "vip",
+      "ocean",
+      "party"
+    ],
+    "Keywords": [
+      "Gunrunning Yacht",
+      "int_gunrunning_yacht",
+      "Galaxy Super Yacht",
+      "Luxury Yacht",
+      "Super Yacht",
+      "Gunrunning Yacht"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1414.3,
+      "Y": 6750.7,
+      "Z": 11.9
+    },
+    "InteriorCoords": {
+      "X": -1414.3,
+      "Y": 6750.7,
+      "Z": 11.9
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_arena_war_workshop",
+    "Name": "Arena War Workshop",
+    "Category": "studio",
+    "Description": "Dynamically discovered studio venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "studio",
+      "art",
+      "gallery",
+      "exhibition",
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "workshop",
+      "garage",
+      "autoshop",
+      "stripping",
+      "arcade",
+      "gaming",
+      "entertainment"
+    ],
+    "Keywords": [
+      "Arena War Workshop",
+      "int_arena_war_workshop"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -377.1033,
+      "Y": -1876.6,
+      "Z": 19.5
+    },
+    "InteriorCoords": {
+      "X": 216.0,
+      "Y": 5205.0,
+      "Z": -89.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_arena_war_vip_area",
+    "Name": "Arena War Vip Area",
+    "Category": "arcade",
+    "Description": "Dynamically discovered arcade venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "arcade",
+      "gaming",
+      "entertainment"
+    ],
+    "Keywords": [
+      "Arena War Vip Area",
+      "int_arena_war_vip_area"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 200.8,
+      "Y": 5180.0,
+      "Z": -89.0
+    },
+    "InteriorCoords": {
+      "X": 2834.6,
+      "Y": -3908.4,
+      "Z": 139.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_casino_penthouse",
+    "Name": "DC&R Penthouse",
+    "Category": "penthouse",
+    "Description": "Dynamically discovered penthouse venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "penthouse",
+      "luxury",
+      "vip",
+      "party",
+      "casino",
+      "gambling",
+      "high_roller"
+    ],
+    "Keywords": [
+      "DC&R Penthouse",
+      "int_casino_penthouse",
+      "int_diamond_penthouse",
+      "Diamond Casino Penthouse",
+      "Casino Penthouse",
+      "DC&R Penthouse"
+    ],
+    "IplNames": [
+      "vw_int_placement_vw_interior_1_dlc_casino_apart_milo_",
+      "Set_Pent_Tint_Shell",
+      "Set_Pent_Pattern_01",
+      "Set_Pent_Pattern_02",
+      "Set_Pent_Pattern_03",
+      "Set_Pent_Pattern_04",
+      "Set_Pent_Pattern_05",
+      "Set_Pent_Pattern_06",
+      "Set_Pent_Pattern_07",
+      "Set_Pent_Pattern_08",
+      "Set_Pent_Pattern_09",
+      "Set_Pent_Spa_Bar_Open",
+      "Set_Pent_Spa_Bar_Closed",
+      "Set_Pent_Media_Bar_Open",
+      "Set_Pent_Media_Bar_Closed",
+      "Set_Pent_Dealer",
+      "Set_Pent_NoDealer",
+      "Set_Pent_Arcade_Retro",
+      "Set_Pent_Arcade_Modern",
+      "Set_Pent_Bar_Clutter",
+      "Set_Pent_Clutter_01",
+      "Set_Pent_Clutter_02",
+      "Set_Pent_Clutter_03",
+      "set_pent_bar_light_0",
+      "set_pent_bar_light_01",
+      "set_pent_bar_light_02",
+      "set_pent_bar_party_0",
+      "set_pent_bar_party_1",
+      "set_pent_bar_party_2",
+      "set_pent_bar_party_after",
+      "Set_Pent_GUEST_BLOCKER",
+      "Set_Pent_LOUNGE_BLOCKER",
+      "Set_Pent_OFFICE_BLOCKER",
+      "Set_Pent_CINE_BLOCKER",
+      "Set_Pent_SPA_BLOCKER",
+      "Set_Pent_BAR_BLOCKER"
+    ],
+    "EntranceCoords": {
+      "X": -286.54,
+      "Y": -1919.5,
+      "Z": 28.5
+    },
+    "InteriorCoords": {
+      "X": 2836.9,
+      "Y": -3701.0,
+      "Z": 139.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_wrecked_hospital",
+    "Name": "Wrecked Hospital",
+    "Category": "hospital",
+    "Description": "Dynamically discovered hospital venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "hospital",
+      "medical",
+      "clinic",
+      "emergency",
+      "triage",
+      "paramedic",
+      "doctor",
+      "patient",
+      "surgery"
+    ],
+    "Keywords": [
+      "Wrecked Hospital",
+      "int_wrecked_hospital",
+      "Wrecked Hospital",
+      "Hospital",
+      "Emergency Room",
+      "Triage",
+      "Hospital Clinic",
+      "Medical Center",
+      "Trauma Center"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 299.03,
+      "Y": -584.45,
+      "Z": 43.0
+    },
+    "InteriorCoords": {
+      "X": 299.03,
+      "Y": -584.45,
+      "Z": 43.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_o_niels_farm",
+    "Name": "O'Niels Farm",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "O'Niels Farm",
+      "int_o_niels_farm"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 2452.8,
+      "Y": 4969.933,
+      "Z": 46.0
+    },
+    "InteriorCoords": {
+      "X": 2452.8,
+      "Y": 4969.933,
+      "Z": 46.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_kiflom_storage_room",
+    "Name": "Kiflom Storage Room",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Kiflom Storage Room",
+      "int_kiflom_storage_room"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 241.8,
+      "Y": 360.68,
+      "Z": 105.0
+    },
+    "InteriorCoords": {
+      "X": 241.8,
+      "Y": 360.68,
+      "Z": 105.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_torture_room",
+    "Name": "Torture Room",
+    "Category": "interrogation",
+    "Description": "Dynamically discovered interrogation venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "interrogation",
+      "torture",
+      "safehouse",
+      "basement",
+      "cartel",
+      "questioning",
+      "hostage",
+      "lockup",
+      "underground",
+      "covert",
+      "hideout",
+      "undercover"
+    ],
+    "Keywords": [
+      "Torture Room",
+      "int_torture_room",
+      "Torture Room",
+      "Interrogation Room",
+      "Cartel Safehouse",
+      "Cartel Interrogation",
+      "Interrogation Chamber"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 134.4,
+      "Y": -2203.4,
+      "Z": 7.0
+    },
+    "InteriorCoords": {
+      "X": 134.4,
+      "Y": -2203.4,
+      "Z": 7.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_haines_autos",
+    "Name": "Haines Autos",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Haines Autos",
+      "int_haines_autos"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 483.5,
+      "Y": -1312.5,
+      "Z": 29.0
+    },
+    "InteriorCoords": {
+      "X": 483.5,
+      "Y": -1312.5,
+      "Z": 29.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_jannitor_s_appartment",
+    "Name": "Jannitor's Appartment",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Jannitor's Appartment",
+      "int_jannitor_s_appartment"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1150.3,
+      "Y": -1521.05,
+      "Z": 10.0
+    },
+    "InteriorCoords": {
+      "X": -1150.3,
+      "Y": -1521.05,
+      "Z": 10.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_fib_office",
+    "Name": "FIB Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "FIB Office",
+      "int_fib_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -106.9,
+      "Y": -8.67,
+      "Z": 70.0
+    },
+    "InteriorCoords": {
+      "X": -106.9,
+      "Y": -8.67,
+      "Z": 70.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_roger_s_scrap_yard",
+    "Name": "Roger's Scrap yard",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "Roger's Scrap yard",
+      "int_roger_s_scrap_yard"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 104.178,
+      "Y": -744.49,
+      "Z": 45.0
+    },
+    "InteriorCoords": {
+      "X": 104.178,
+      "Y": -744.49,
+      "Z": 45.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_aircraft_carrier",
+    "Name": "Aircraft Carrier",
+    "Category": "yacht",
+    "Description": "Dynamically discovered yacht venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "yacht",
+      "maritime",
+      "luxury",
+      "vip",
+      "ocean"
+    ],
+    "Keywords": [
+      "Aircraft Carrier",
+      "int_aircraft_carrier"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 3034.114,
+      "Y": -4668.572,
+      "Z": 15.2
+    },
+    "InteriorCoords": {
+      "X": 3034.114,
+      "Y": -4668.572,
+      "Z": 15.2
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_humaine_labs",
+    "Name": "Humaine Labs",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Humaine Labs",
+      "int_humaine_labs"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 3623.21,
+      "Y": 3753.35,
+      "Z": 28.5
+    },
+    "InteriorCoords": {
+      "X": 3623.21,
+      "Y": 3753.35,
+      "Z": 28.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_cayo_perico_island",
+    "Name": "Cayo Perico Island",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Cayo Perico Island",
+      "int_cayo_perico_island"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 4994.744,
+      "Y": -4763.647,
+      "Z": 4.0
+    },
+    "InteriorCoords": {
+      "X": 4994.744,
+      "Y": -4763.647,
+      "Z": 4.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_tuner_workshop",
+    "Name": "Tuner Workshop",
+    "Category": "studio",
+    "Description": "Dynamically discovered studio venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "studio",
+      "art",
+      "gallery",
+      "exhibition",
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "workshop",
+      "garage",
+      "autoshop",
+      "stripping"
+    ],
+    "Keywords": [
+      "Tuner Workshop",
+      "int_tuner_workshop"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 493.2297,
+      "Y": -894.32,
+      "Z": 24.73
+    },
+    "InteriorCoords": {
+      "X": -1358.061,
+      "Y": 167.81,
+      "Z": -99.8
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_los_santos_car_meet",
+    "Name": "Los Santos Car Meet",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [],
+    "Keywords": [
+      "Los Santos Car Meet",
+      "int_los_santos_car_meet"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 779.598,
+      "Y": -1867.766,
+      "Z": 28.22
+    },
+    "InteriorCoords": {
+      "X": -2220.702,
+      "Y": 1157.264,
+      "Z": -24.25
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_record_a_studios",
+    "Name": "Record A Studios",
+    "Category": "studio",
+    "Description": "Dynamically discovered studio venue.",
+    "CapacityNpcs": 15,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "studio",
+      "art",
+      "gallery",
+      "exhibition",
+      "music",
+      "recording"
+    ],
+    "Keywords": [
+      "Record A Studios",
+      "int_record_a_studios"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -841.56,
+      "Y": -229.24,
+      "Z": 36.25
+    },
+    "InteriorCoords": {
+      "X": -1021.854,
+      "Y": -92.17,
+      "Z": -100.4
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_agency",
+    "Name": "Agency",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 15,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Agency",
+      "int_agency"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 389.26,
+      "Y": -75.19,
+      "Z": 67.18
+    },
+    "InteriorCoords": {
+      "X": 372.63,
+      "Y": -57.123,
+      "Z": 102.36
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_agency_garage",
+    "Name": "Agency Garage",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 15,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage",
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Agency Garage",
+      "int_agency_garage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 371.97,
+      "Y": -60.067,
+      "Z": 102.36
+    },
+    "InteriorCoords": {
+      "X": -1067.078,
+      "Y": -85.76,
+      "Z": -95.59
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_criminal_enterprise_warehouse",
+    "Name": "The Criminal Enterprise Warehouse",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "The Criminal Enterprise Warehouse",
+      "int_the_criminal_enterprise_warehouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 118.52,
+      "Y": -3164.46,
+      "Z": 5.0
+    },
+    "InteriorCoords": {
+      "X": 817.45,
+      "Y": -3001.381,
+      "Z": -69.99
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_criminal_enterprise_basement",
+    "Name": "The Criminal Enterprise Basement",
+    "Category": "basement",
+    "Description": "Dynamically discovered basement venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "basement",
+      "safehouse",
+      "underground",
+      "cartel",
+      "interrogation",
+      "covert",
+      "warehouse",
+      "torture",
+      "hideout",
+      "hostage",
+      "undercover"
+    ],
+    "Keywords": [
+      "The Criminal Enterprise Basement",
+      "int_the_criminal_enterprise_basement",
+      "Criminal Enterprise Basement",
+      "Underground Safehouse",
+      "Cartel Hideout"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 116.12,
+      "Y": -2688.961,
+      "Z": 5.0
+    },
+    "InteriorCoords": {
+      "X": 844.26,
+      "Y": -3004.994,
+      "Z": -45.4
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_los_santos_drug_wars_morgue",
+    "Name": "Los Santos Drug Wars Morgue",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Los Santos Drug Wars Morgue",
+      "int_los_santos_drug_wars_morgue"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 232.23,
+      "Y": -1360.9,
+      "Z": 27.6
+    },
+    "InteriorCoords": {
+      "X": 506.1275,
+      "Y": -2566.58,
+      "Z": -59.92
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_los_santos_drug_wars_multistory_garage",
+    "Name": "Los Santos Drug Wars Multistory Garage",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "Los Santos Drug Wars Multistory Garage",
+      "int_los_santos_drug_wars_multistory_garage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 316.94,
+      "Y": -1104.8,
+      "Z": 28.4
+    },
+    "InteriorCoords": {
+      "X": 519.76,
+      "Y": -2639.702,
+      "Z": -49.99
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_los_santos_drug_wars_juggalo_hideout",
+    "Name": "Los Santos Drug Wars Juggalo Hideout",
+    "Category": "interrogation",
+    "Description": "Dynamically discovered interrogation venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "interrogation",
+      "torture",
+      "safehouse",
+      "hideout",
+      "hostage",
+      "basement",
+      "covert",
+      "cartel",
+      "undercover"
+    ],
+    "Keywords": [
+      "Los Santos Drug Wars Juggalo Hideout",
+      "int_los_santos_drug_wars_juggalo_hideout"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 597.43,
+      "Y": -408.15,
+      "Z": 25.04
+    },
+    "InteriorCoords": {
+      "X": 572.94,
+      "Y": -402.64,
+      "Z": -70.64
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_san_andreas_mercanaries_vinewood_car_club",
+    "Name": "San Andreas Mercanaries Vinewood Car Club",
+    "Category": "mansion",
+    "Description": "Dynamically discovered mansion venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "mansion",
+      "party",
+      "luxury",
+      "vip",
+      "estate",
+      "residence",
+      "nightclub",
+      "nightlife",
+      "music",
+      "social",
+      "dance"
+    ],
+    "Keywords": [
+      "San Andreas Mercanaries Vinewood Car Club",
+      "int_san_andreas_mercanaries_vinewood_car_club"
+    ],
+    "IplNames": [
+      "apa_ch2_04_mansion_generic",
+      "apa_ch2_04_mansion_private",
+      "apa_ch2_04_mansion_railings_m",
+      "apa_ch2_04_mansion_railings_p",
+      "apa_ch2_04_mansion_shutters",
+      "m25_2_ch2_04_mansion_interior_a",
+      "m25_2_ch2_04_mansion_interior_b",
+      "m25_2_ch2_04_mansion_interior_c",
+      "m25_2_ch2_04_mansion_interior_d",
+      "apa_ch2_04_mansion_grass",
+      "apa_ch2_04_mansion_shared",
+      "apa_ch2_04_mansion_player_bounds",
+      "apa_ch2_04_mansion_furniture",
+      "apa_ch2_04_mansion_firepit",
+      "m25_2_east_mansion_gym",
+      "m25_2_east_dog_house"
+    ],
+    "EntranceCoords": {
+      "X": 1233.54,
+      "Y": -3234.95,
+      "Z": 4.52
+    },
+    "InteriorCoords": {
+      "X": 1212.94,
+      "Y": -3252.905,
+      "Z": -49.99
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_san_andreas_mercanaries_merryweather_facility",
+    "Name": "San Andreas Mercanaries Merryweather Facility",
+    "Category": "bunker",
+    "Description": "Dynamically discovered bunker venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "bunker",
+      "facility",
+      "military",
+      "covert",
+      "defense",
+      "tactical",
+      "subterranean"
+    ],
+    "Keywords": [
+      "San Andreas Mercanaries Merryweather Facility",
+      "int_san_andreas_mercanaries_merryweather_facility"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 551.1148,
+      "Y": -3052.221,
+      "Z": 12.28
+    },
+    "InteriorCoords": {
+      "X": -1922.213,
+      "Y": 3749.882,
+      "Z": -100.64
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_chop_shop_salvage_yard",
+    "Name": "The Chop Shop Salvage Yard",
+    "Category": "chop_shop",
+    "Description": "Dynamically discovered chop_shop venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "autoshop",
+      "workshop",
+      "garage",
+      "stripping",
+      "supercars",
+      "scrapyard"
+    ],
+    "Keywords": [
+      "The Chop Shop Salvage Yard",
+      "int_the_chop_shop_salvage_yard",
+      "The Chop Shop",
+      "Chop Shop",
+      "Salvage Yard",
+      "Mechanic Workshop",
+      "Auto Salvage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -512.422,
+      "Y": -1738.619,
+      "Z": 18.29
+    },
+    "InteriorCoords": {
+      "X": 1088.0,
+      "Y": -2275.0,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_chop_shop_warehouse_a",
+    "Name": "The Chop Shop Warehouse A",
+    "Category": "chop_shop",
+    "Description": "Dynamically discovered chop_shop venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "autoshop",
+      "workshop",
+      "garage",
+      "stripping",
+      "supercars",
+      "scrapyard"
+    ],
+    "Keywords": [
+      "The Chop Shop Warehouse A",
+      "int_the_chop_shop_warehouse_a",
+      "The Chop Shop",
+      "Chop Shop",
+      "Salvage Yard",
+      "Mechanic Workshop",
+      "Auto Salvage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 928.76,
+      "Y": -2307.951,
+      "Z": 29.5
+    },
+    "InteriorCoords": {
+      "X": 1220.0,
+      "Y": -2280.0,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_chop_shop_warehouse_b",
+    "Name": "The Chop Shop Warehouse B",
+    "Category": "chop_shop",
+    "Description": "Dynamically discovered chop_shop venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "autoshop",
+      "workshop",
+      "garage",
+      "stripping",
+      "supercars",
+      "scrapyard"
+    ],
+    "Keywords": [
+      "The Chop Shop Warehouse B",
+      "int_the_chop_shop_warehouse_b",
+      "The Chop Shop",
+      "Chop Shop",
+      "Salvage Yard",
+      "Mechanic Workshop",
+      "Auto Salvage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 877.07,
+      "Y": -2403.086,
+      "Z": 26.93
+    },
+    "InteriorCoords": {
+      "X": 1000.0,
+      "Y": -2200.0,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_chop_shop_casino_base",
+    "Name": "The Chop Shop Casino Base",
+    "Category": "chop_shop",
+    "Description": "Dynamically discovered chop_shop venue.",
+    "CapacityNpcs": 35,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "autoshop",
+      "workshop",
+      "garage",
+      "stripping",
+      "supercars",
+      "scrapyard",
+      "casino",
+      "gambling",
+      "high_roller"
+    ],
+    "Keywords": [
+      "The Chop Shop Casino Base",
+      "int_the_chop_shop_casino_base",
+      "The Chop Shop",
+      "Chop Shop",
+      "Salvage Yard",
+      "Mechanic Workshop",
+      "Auto Salvage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 935.54,
+      "Y": -0.15,
+      "Z": 77.7
+    },
+    "InteriorCoords": {
+      "X": 858.0,
+      "Y": -2275.0,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_chop_shop_counterfiet_cash_factory",
+    "Name": "The Chop Shop Counterfiet Cash Factory",
+    "Category": "chop_shop",
+    "Description": "Dynamically discovered chop_shop venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "autoshop",
+      "workshop",
+      "garage",
+      "stripping",
+      "supercars",
+      "scrapyard"
+    ],
+    "Keywords": [
+      "The Chop Shop Counterfiet Cash Factory",
+      "int_the_chop_shop_counterfiet_cash_factory",
+      "The Chop Shop",
+      "Chop Shop",
+      "Salvage Yard",
+      "Mechanic Workshop",
+      "Auto Salvage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -104.9,
+      "Y": -1408.53,
+      "Z": 28.6
+    },
+    "InteriorCoords": {
+      "X": 930.0,
+      "Y": -2270.0,
+      "Z": -51.4
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_bottom_dollar_bounties_bail_office",
+    "Name": "Bottom Dollar Bounties Bail Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Bottom Dollar Bounties Bail Office",
+      "int_bottom_dollar_bounties_bail_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 485.7,
+      "Y": -943.55,
+      "Z": 26.15
+    },
+    "InteriorCoords": {
+      "X": 570.14,
+      "Y": -2675.78,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_bottom_dollar_bounties_vinewood_car_club_mod_shop",
+    "Name": "Bottom Dollar Bounties Vinewood Car Club Mod Shop",
+    "Category": "mansion",
+    "Description": "Dynamically discovered mansion venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "mansion",
+      "party",
+      "luxury",
+      "vip",
+      "estate",
+      "residence",
+      "nightclub",
+      "nightlife",
+      "music",
+      "social",
+      "dance"
+    ],
+    "Keywords": [
+      "Bottom Dollar Bounties Vinewood Car Club Mod Shop",
+      "int_bottom_dollar_bounties_vinewood_car_club_mod_shop"
+    ],
+    "IplNames": [
+      "apa_ch2_04_mansion_generic",
+      "apa_ch2_04_mansion_private",
+      "apa_ch2_04_mansion_railings_m",
+      "apa_ch2_04_mansion_railings_p",
+      "apa_ch2_04_mansion_shutters",
+      "m25_2_ch2_04_mansion_interior_a",
+      "m25_2_ch2_04_mansion_interior_b",
+      "m25_2_ch2_04_mansion_interior_c",
+      "m25_2_ch2_04_mansion_interior_d",
+      "apa_ch2_04_mansion_grass",
+      "apa_ch2_04_mansion_shared",
+      "apa_ch2_04_mansion_player_bounds",
+      "apa_ch2_04_mansion_furniture",
+      "apa_ch2_04_mansion_firepit",
+      "m25_2_east_mansion_gym",
+      "m25_2_east_dog_house"
+    ],
+    "EntranceCoords": {
+      "X": 1240.216,
+      "Y": -3257.247,
+      "Z": 5.9
+    },
+    "InteriorCoords": {
+      "X": 649.7,
+      "Y": -2678.85,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_agents_of_sabotage_hacker_basement",
+    "Name": "Agents of Sabotage Hacker Basement",
+    "Category": "interrogation",
+    "Description": "Dynamically discovered interrogation venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "interrogation",
+      "torture",
+      "safehouse",
+      "hideout",
+      "hostage",
+      "basement",
+      "covert",
+      "cartel",
+      "undercover"
+    ],
+    "Keywords": [
+      "Agents of Sabotage Hacker Basement",
+      "int_agents_of_sabotage_hacker_basement"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 739.97,
+      "Y": -970.234,
+      "Z": 23.45
+    },
+    "InteriorCoords": {
+      "X": 745.8,
+      "Y": -998.58,
+      "Z": -47.37
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_agents_of_sabotage_hacker_basement_garage",
+    "Name": "Agents of Sabotage Hacker Basement Garage",
+    "Category": "interrogation",
+    "Description": "Dynamically discovered interrogation venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "interrogation",
+      "torture",
+      "safehouse",
+      "hideout",
+      "hostage",
+      "basement",
+      "covert",
+      "cartel",
+      "undercover",
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "Agents of Sabotage Hacker Basement Garage",
+      "int_agents_of_sabotage_hacker_basement_garage"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 738.71,
+      "Y": -948.67,
+      "Z": 24.63
+    },
+    "InteriorCoords": {
+      "X": 733.62,
+      "Y": -983.525,
+      "Z": -67.74
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_split_sides_commedy_club",
+    "Name": "Split Sides Commedy Club",
+    "Category": "nightclub",
+    "Description": "Dynamically discovered nightclub venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "nightclub",
+      "party",
+      "nightlife",
+      "music",
+      "social",
+      "dance"
+    ],
+    "Keywords": [
+      "Split Sides Commedy Club",
+      "int_split_sides_commedy_club"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -430.04,
+      "Y": 261.718,
+      "Z": 82.0
+    },
+    "InteriorCoords": {
+      "X": 383.22,
+      "Y": -1001.26,
+      "Z": -100.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_money_front_car_wash_office",
+    "Name": "Money Front Car Wash Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Money Front Car Wash Office",
+      "int_money_front_car_wash_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 10.53,
+      "Y": -1405.65,
+      "Z": 28.2
+    },
+    "InteriorCoords": {
+      "X": 8.22,
+      "Y": -1399.97,
+      "Z": -75.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_money_front_smoke_on_the_water_higgin_s_heli_tour_office",
+    "Name": "Money Front Smoke On the Water/Higgin's Heli Tour Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Money Front Smoke On the Water/Higgin's Heli Tour Office",
+      "int_money_front_smoke_on_the_water_higgin_s_heli_tour_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1163.356,
+      "Y": -1565.465,
+      "Z": 3.4
+    },
+    "InteriorCoords": {
+      "X": -1164.415,
+      "Y": -1540.94,
+      "Z": -50.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_hotel_room",
+    "Name": "Hotel Room",
+    "Category": null,
+    "Description": "Dynamically discovered  venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [],
+    "Keywords": [
+      "Hotel Room",
+      "int_hotel_room"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 1121.437,
+      "Y": 2641.793,
+      "Z": 37.29978
+    },
+    "InteriorCoords": {
+      "X": 151.34,
+      "Y": -1007.802,
+      "Z": -100.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_weed_farm",
+    "Name": "Weed Farm",
+    "Category": "drug_lab",
+    "Description": "Dynamically discovered drug_lab venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "weed",
+      "cannabis",
+      "farm",
+      "growhouse",
+      "drug_lab",
+      "hydroponics",
+      "clandestine",
+      "lab",
+      "meth",
+      "cocaine",
+      "chemical",
+      "manufacturing",
+      "illicit",
+      "contraband"
+    ],
+    "Keywords": [
+      "Weed Farm",
+      "int_weed_farm",
+      "Weed Farm",
+      "Cannabis Growhouse",
+      "Hydroponic Farm",
+      "Illicit Lab"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 2882.437,
+      "Y": 4462.606,
+      "Z": 47.3
+    },
+    "InteriorCoords": {
+      "X": 1065.95,
+      "Y": -3183.58,
+      "Z": -40.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_cocaine_lockup",
+    "Name": "Cocaine Lockup",
+    "Category": "drug_lab",
+    "Description": "Dynamically discovered drug_lab venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "cocaine",
+      "coke",
+      "drug_lab",
+      "chemical",
+      "manufacturing",
+      "packaging",
+      "clandestine",
+      "lab",
+      "meth",
+      "illicit",
+      "contraband"
+    ],
+    "Keywords": [
+      "Cocaine Lockup",
+      "int_cocaine_lockup",
+      "Cocaine Lockup",
+      "Cocaine Processing Lockup",
+      "Cocaine Lab",
+      "Illicit Lab"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -1462.01,
+      "Y": -382.291,
+      "Z": 37.5
+    },
+    "InteriorCoords": {
+      "X": 1088.69,
+      "Y": -3188.02,
+      "Z": -39.8
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_meth_lab",
+    "Name": "Meth Lab",
+    "Category": "drug_lab",
+    "Description": "Dynamically discovered drug_lab venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "meth",
+      "drug_lab",
+      "chemical",
+      "manufacturing",
+      "cooks",
+      "hazmat",
+      "clandestine",
+      "lab",
+      "cocaine",
+      "illicit",
+      "contraband"
+    ],
+    "Keywords": [
+      "Meth Lab",
+      "int_meth_lab",
+      "Meth Lab",
+      "Methamphetamine Lab",
+      "Clandestine Meth Lab",
+      "Chemical Lab",
+      "Illicit Lab",
+      "Drug Lab"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 202.045,
+      "Y": 2461.467,
+      "Z": 54.7
+    },
+    "InteriorCoords": {
+      "X": 997.17,
+      "Y": -3200.7,
+      "Z": -37.3
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_document_forgery",
+    "Name": "Document Forgery",
+    "Category": "drug_lab",
+    "Description": "Dynamically discovered drug_lab venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "lab",
+      "drug_lab",
+      "meth",
+      "cocaine",
+      "chemical",
+      "manufacturing",
+      "illicit",
+      "contraband"
+    ],
+    "Keywords": [
+      "Document Forgery",
+      "int_document_forgery"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 300.1986,
+      "Y": -759.1166,
+      "Z": 28.5
+    },
+    "InteriorCoords": {
+      "X": 1173.056,
+      "Y": -3196.576,
+      "Z": -40.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_counterfeit_office",
+    "Name": "Counterfeit Office",
+    "Category": "office",
+    "Description": "Dynamically discovered office venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "office",
+      "agency",
+      "executive",
+      "business"
+    ],
+    "Keywords": [
+      "Counterfeit Office",
+      "int_counterfeit_office"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 670.8732,
+      "Y": -2667.514,
+      "Z": 5.2
+    },
+    "InteriorCoords": {
+      "X": 1138.06,
+      "Y": -3198.819,
+      "Z": -40.7
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_small_cargo_warehouse",
+    "Name": "Small Cargo Warehouse",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage",
+      "cargo_ship",
+      "dockyard",
+      "shipping",
+      "container",
+      "smuggling",
+      "port"
+    ],
+    "Keywords": [
+      "Small Cargo Warehouse",
+      "int_small_cargo_warehouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -424.789,
+      "Y": 185.59,
+      "Z": 79.8
+    },
+    "InteriorCoords": {
+      "X": 1104.767,
+      "Y": -3099.539,
+      "Z": -40.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_medium_cargo_warehouse",
+    "Name": "Medium Cargo Warehouse",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage",
+      "cargo_ship",
+      "dockyard",
+      "shipping",
+      "container",
+      "smuggling",
+      "port"
+    ],
+    "Keywords": [
+      "Medium Cargo Warehouse",
+      "int_medium_cargo_warehouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -295.311,
+      "Y": -1353.118,
+      "Z": 30.31
+    },
+    "InteriorCoords": {
+      "X": 1072.769,
+      "Y": -3102.537,
+      "Z": -40.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_large_cargo_warehouse",
+    "Name": "Large Cargo Warehouse",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage",
+      "cargo_ship",
+      "dockyard",
+      "shipping",
+      "container",
+      "smuggling",
+      "port"
+    ],
+    "Keywords": [
+      "Large Cargo Warehouse",
+      "int_large_cargo_warehouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": -873.377,
+      "Y": -2734.696,
+      "Z": 12.92
+    },
+    "InteriorCoords": {
+      "X": 1027.522,
+      "Y": -3101.361,
+      "Z": -40.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_vehicle_warehouse",
+    "Name": "Vehicle Warehouse",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage"
+    ],
+    "Keywords": [
+      "Vehicle Warehouse",
+      "int_vehicle_warehouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 1211.081,
+      "Y": -1262.385,
+      "Z": 34.22
+    },
+    "InteriorCoords": {
+      "X": 970.171,
+      "Y": -2995.51,
+      "Z": -41.0
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_richman_mansion",
+    "Name": "Richman Mansion",
+    "Category": "mansion",
+    "Description": "Dynamically discovered mansion venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "mansion",
+      "party",
+      "luxury",
+      "estate",
+      "residence",
+      "vip"
+    ],
+    "Keywords": [
+      "Richman Mansion",
+      "int_richman_mansion",
+      "Richman Mansion",
+      "Richman Villa",
+      "Richman Estate"
+    ],
+    "IplNames": [
+      "hei_ch1_06e_mansion_generic",
+      "hei_ch1_06e_mansion_railings_m",
+      "hei_ch1_06e_mansion_railings_p",
+      "hei_ch1_06e_mansion_shutters",
+      "m25_2_ch1_06e_mansion_interior_a",
+      "m25_2_ch1_06e_mansion_interior_b",
+      "m25_2_ch1_06e_mansion_interior_c",
+      "m25_2_ch1_06e_mansion_interior_d",
+      "hei_ch1_06e_mansion_shared",
+      "hei_ch1_06f_mansion_shared",
+      "hei_ch1_06e_mansion_private",
+      "hei_ch1_roads_mansion",
+      "hei_ch1_06e_mansion_player_bounds",
+      "hei_ch1_06e_mansion_furniture",
+      "hei_ch1_06e_mansion_firepit",
+      "m25_2_mansion_gym",
+      "m25_2_dog_house",
+      "hei_ch1_06e_mansion_ground"
+    ],
+    "EntranceCoords": {
+      "X": -1691.942,
+      "Y": 490.0016,
+      "Z": 128.36
+    },
+    "InteriorCoords": {
+      "X": -1644.0,
+      "Y": 476.0,
+      "Z": 128.84
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_vinewood_mansion",
+    "Name": "Vinewood Mansion",
+    "Category": "mansion",
+    "Description": "Dynamically discovered mansion venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "mansion",
+      "party",
+      "luxury",
+      "estate",
+      "residence",
+      "vip"
+    ],
+    "Keywords": [
+      "Vinewood Mansion",
+      "int_vinewood_mansion",
+      "Vinewood Mansion",
+      "Vinewood Residence",
+      "Vinewood Estate"
+    ],
+    "IplNames": [
+      "apa_ch2_04_mansion_generic",
+      "apa_ch2_04_mansion_private",
+      "apa_ch2_04_mansion_railings_m",
+      "apa_ch2_04_mansion_railings_p",
+      "apa_ch2_04_mansion_shutters",
+      "m25_2_ch2_04_mansion_interior_a",
+      "m25_2_ch2_04_mansion_interior_b",
+      "m25_2_ch2_04_mansion_interior_c",
+      "m25_2_ch2_04_mansion_interior_d",
+      "apa_ch2_04_mansion_grass",
+      "apa_ch2_04_mansion_shared",
+      "apa_ch2_04_mansion_player_bounds",
+      "apa_ch2_04_mansion_furniture",
+      "apa_ch2_04_mansion_firepit",
+      "m25_2_east_mansion_gym",
+      "m25_2_east_dog_house"
+    ],
+    "EntranceCoords": {
+      "X": 541.1427,
+      "Y": 776.741,
+      "Z": 201.5745
+    },
+    "InteriorCoords": {
+      "X": 545.0,
+      "Y": 728.0,
+      "Z": 201.96
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_tongva_mansion",
+    "Name": "Tongva Hills Mansion",
+    "Category": "mansion",
+    "Description": "Dynamically discovered mansion venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "mansion",
+      "party",
+      "luxury",
+      "estate",
+      "residence",
+      "vip"
+    ],
+    "Keywords": [
+      "Tongva Hills Mansion",
+      "int_tongva_mansion",
+      "Tongva Hills Mansion",
+      "Tongva Estate",
+      "Tongva Hills"
+    ],
+    "IplNames": [
+      "hei_ch1_09_mansion_generic",
+      "hei_ch1_09_mansion_private",
+      "hei_ch1_09_mansion_railings_m",
+      "hei_ch1_09_mansion_railings_p",
+      "hei_ch1_09_mansion_shutters",
+      "m25_2_ch1_09_mansion_interior_a",
+      "m25_2_ch1_09_mansion_interior_b",
+      "m25_2_ch1_09_mansion_interior_c",
+      "m25_2_ch1_09_mansion_interior_d",
+      "hei_ch1_09_mansion_shared",
+      "hei_ch1_09_mansion_player_bounds",
+      "hei_ch1_09_mansion_furniture",
+      "hei_ch1_09_mansion_firepit",
+      "m25_2_tongva_mansion_gym",
+      "m25_2_tongva_dog_house"
+    ],
+    "EntranceCoords": {
+      "X": -2555.205,
+      "Y": 1912.11218,
+      "Z": 168.26
+    },
+    "InteriorCoords": {
+      "X": -2593.0,
+      "Y": 1889.0,
+      "Z": 166.99
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_kortz_center",
+    "Name": "The Kortz Center",
+    "Category": "gallery",
+    "Description": "Dynamically discovered gallery venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "kortz",
+      "museum",
+      "gallery",
+      "art",
+      "exhibit",
+      "culture"
+    ],
+    "Keywords": [
+      "The Kortz Center",
+      "int_the_kortz_center",
+      "The Kortz Center",
+      "Kortz Center",
+      "Kortz",
+      "Art Gallery",
+      "Museum",
+      "Kortz Art Center"
+    ],
+    "IplNames": [
+      "m26_1_int_placement_interior_int_sewers_access_milo_"
+    ],
+    "EntranceCoords": {
+      "X": -2290.609,
+      "Y": 364.1249,
+      "Z": 173.7028
+    },
+    "InteriorCoords": {
+      "X": -2290.61,
+      "Y": 364.12,
+      "Z": 173.7
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_kortz_center_loading_bay",
+    "Name": "The Kortz Center Loading Bay",
+    "Category": "gallery",
+    "Description": "Dynamically discovered gallery venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "kortz",
+      "museum",
+      "gallery",
+      "art",
+      "exhibit",
+      "culture"
+    ],
+    "Keywords": [
+      "The Kortz Center Loading Bay",
+      "int_the_kortz_center_loading_bay",
+      "The Kortz Center",
+      "Kortz Center",
+      "Kortz",
+      "Art Gallery",
+      "Museum",
+      "Kortz Art Center"
+    ],
+    "IplNames": [
+      "m26_1_int_placement_interior_int_sewers_access_milo_"
+    ],
+    "EntranceCoords": {
+      "X": -2350.42,
+      "Y": 261.7922,
+      "Z": 163.5638
+    },
+    "InteriorCoords": {
+      "X": -2290.61,
+      "Y": 364.12,
+      "Z": 173.7
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_the_kortz_center_sewer_access",
+    "Name": "The Kortz Center Sewer Access",
+    "Category": "gallery",
+    "Description": "Dynamically discovered gallery venue.",
+    "CapacityNpcs": 10,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "kortz",
+      "museum",
+      "gallery",
+      "art",
+      "exhibit",
+      "culture"
+    ],
+    "Keywords": [
+      "The Kortz Center Sewer Access",
+      "int_the_kortz_center_sewer_access",
+      "The Kortz Center",
+      "Kortz Center",
+      "Kortz",
+      "Art Gallery",
+      "Museum",
+      "Kortz Art Center"
+    ],
+    "IplNames": [
+      "m26_1_int_placement_interior_int_sewers_access_milo_"
+    ],
+    "EntranceCoords": {
+      "X": -2304.079,
+      "Y": 218.7717,
+      "Z": 166.829
+    },
+    "InteriorCoords": {
+      "X": -2290.61,
+      "Y": 364.12,
+      "Z": 173.7
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_mansion_art_studio",
+    "Name": "Mansion Art Studio",
+    "Category": "studio",
+    "Description": "Dynamically discovered studio venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "studio",
+      "art",
+      "gallery",
+      "exhibition",
+      "music",
+      "recording"
+    ],
+    "Keywords": [
+      "Mansion Art Studio",
+      "int_mansion_art_studio",
+      "Mansion Art Studio",
+      "Art Workshop"
+    ],
+    "IplNames": [
+      "m26_1_int_placement_interior_int_art_worshop_milo_"
+    ],
+    "EntranceCoords": {
+      "X": -1647.862,
+      "Y": 478.1452,
+      "Z": 117.3968
+    },
+    "InteriorCoords": {
+      "X": 2588.974,
+      "Y": 5953.709,
+      "Z": -50.00682
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_biker_clubhouse_a",
+    "Name": "Lost MC Biker Clubhouse",
+    "Category": "biker_clubhouse",
+    "Description": "Dynamically discovered biker_clubhouse venue.",
+    "CapacityNpcs": 25,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "biker",
+      "clubhouse",
+      "motorcycle",
+      "chopper",
+      "lost_mc",
+      "bar",
+      "gang",
+      "biker_gang",
+      "nightclub",
+      "party",
+      "nightlife",
+      "music",
+      "social",
+      "dance"
+    ],
+    "Keywords": [
+      "Lost MC Biker Clubhouse",
+      "int_biker_clubhouse_a",
+      "Lost MC Clubhouse",
+      "Biker Clubhouse",
+      "Biker Bar",
+      "Motorcycle Club",
+      "Clubhouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 982.0,
+      "Y": -102.0,
+      "Z": 74.85
+    },
+    "InteriorCoords": {
+      "X": 982.0,
+      "Y": -102.0,
+      "Z": 74.85
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_biker_clubhouse_b",
+    "Name": "Biker Clubhouse 2-Story",
+    "Category": "biker_clubhouse",
+    "Description": "Dynamically discovered biker_clubhouse venue.",
+    "CapacityNpcs": 30,
+    "SupportsVehicles": true,
+    "SemanticTags": [
+      "biker",
+      "clubhouse",
+      "motorcycle",
+      "chopper",
+      "lost_mc",
+      "bar",
+      "gang",
+      "nightclub",
+      "party",
+      "nightlife",
+      "music",
+      "social",
+      "dance",
+      "biker_gang"
+    ],
+    "Keywords": [
+      "Biker Clubhouse 2-Story",
+      "int_biker_clubhouse_b",
+      "Biker Clubhouse",
+      "Motorcycle Clubhouse"
+    ],
+    "IplNames": [
+      "bkr_biker_interior_placement_interior_0_biker_dlc_int_01_milo_"
+    ],
+    "EntranceCoords": {
+      "X": 1107.0,
+      "Y": -3157.0,
+      "Z": -37.5
+    },
+    "InteriorCoords": {
+      "X": 1107.0,
+      "Y": -3157.0,
+      "Z": -37.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_police_station",
+    "Name": "Mission Row Police Station",
+    "Category": "police_station",
+    "Description": "Dynamically discovered police_station venue.",
+    "CapacityNpcs": 25,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "police",
+      "police_station",
+      "precinct",
+      "cop",
+      "cops",
+      "booking_desk",
+      "jail",
+      "lockup",
+      "law_enforcement",
+      "prison"
+    ],
+    "Keywords": [
+      "Mission Row Police Station",
+      "int_police_station",
+      "Police Station",
+      "Police Precinct",
+      "LSPD Precinct",
+      "Booking Desk"
+    ],
+    "IplNames": [
+      "rc12b_fixed"
+    ],
+    "EntranceCoords": {
+      "X": 432.0,
+      "Y": -981.5,
+      "Z": 30.7
+    },
+    "InteriorCoords": {
+      "X": 443.0,
+      "Y": -981.0,
+      "Z": 30.7
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_police_jail",
+    "Name": "Mission Row Holding Cells",
+    "Category": "police_station",
+    "Description": "Dynamically discovered police_station venue.",
+    "CapacityNpcs": 15,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "police",
+      "jail",
+      "cells",
+      "holding_cell",
+      "lockup",
+      "precinct",
+      "police_station",
+      "cop",
+      "prison",
+      "law_enforcement"
+    ],
+    "Keywords": [
+      "Mission Row Holding Cells",
+      "int_police_jail",
+      "Police Lockup",
+      "Holding Cells",
+      "Jail Cells"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 432.0,
+      "Y": -981.5,
+      "Z": 30.7
+    },
+    "InteriorCoords": {
+      "X": 459.0,
+      "Y": -993.5,
+      "Z": 24.9
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_diamond_penthouse",
+    "Name": "Diamond Casino Penthouse",
+    "Category": "penthouse",
+    "Description": "Dynamically discovered penthouse venue.",
+    "CapacityNpcs": 25,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "penthouse",
+      "casino",
+      "diamond_casino",
+      "luxury",
+      "vip",
+      "party",
+      "gambling",
+      "high_roller"
+    ],
+    "Keywords": [
+      "Diamond Casino Penthouse",
+      "int_diamond_penthouse",
+      "Casino Penthouse",
+      "Diamond Penthouse"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 924.6,
+      "Y": 45.4,
+      "Z": 80.0
+    },
+    "InteriorCoords": {
+      "X": 968.6,
+      "Y": 63.3,
+      "Z": 112.5
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_bank_vault",
+    "Name": "Pacific Standard Bank Vault",
+    "Category": "vault",
+    "Description": "Dynamically discovered vault venue.",
+    "CapacityNpcs": 20,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "bank",
+      "vault",
+      "bank_vault",
+      "pacific_standard",
+      "heist",
+      "deposit",
+      "gold",
+      "cash",
+      "secure",
+      "finance"
+    ],
+    "Keywords": [
+      "Pacific Standard Bank Vault",
+      "int_bank_vault",
+      "Pacific Standard Bank",
+      "Bank Vault",
+      "Pacific Standard"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 235.4,
+      "Y": 216.8,
+      "Z": 106.3
+    },
+    "InteriorCoords": {
+      "X": 255.85,
+      "Y": 217.6,
+      "Z": 101.68
+    },
+    "InteriorHeading": 0.0
+  },
+  {
+    "InteriorId": "int_fib_server_vault",
+    "Name": "FIB Server Farm Vault",
+    "Category": "vault",
+    "Description": "Dynamically discovered vault venue.",
+    "CapacityNpcs": 15,
+    "SupportsVehicles": false,
+    "SemanticTags": [
+      "server",
+      "vault",
+      "fib",
+      "mainframe",
+      "data_center",
+      "laboratory",
+      "research",
+      "classified",
+      "biohazard",
+      "science",
+      "bank",
+      "bank_vault",
+      "heist",
+      "secure",
+      "finance"
+    ],
+    "Keywords": [
+      "FIB Server Farm Vault",
+      "int_fib_server_vault",
+      "FIB Server Farm",
+      "Server Farm",
+      "FIB Laboratory"
+    ],
+    "IplNames": [],
+    "EntranceCoords": {
+      "X": 105.47,
+      "Y": -745.15,
+      "Z": 45.75
+    },
+    "InteriorCoords": {
+      "X": 136.1,
+      "Y": -749.16,
+      "Z": 262.85
+    },
+    "InteriorHeading": 0.0
+  }
+]

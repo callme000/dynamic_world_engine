@@ -1,0 +1,113 @@
+=== Bridge Audio Log Started: 2026-08-08T07:26:14.830Z ===
+[2026-08-08T07:26:14.832Z] [SERVER_BOOT] LLAI bridge process initialized
+[2026-08-08T07:26:14.835Z] [PROXY_ENV] none set — the bridge connects directly to Google.
+[2026-08-08T07:26:14.835Z] [PROXY_ENV] If Google is blocked on your network, a VPN in system-proxy mode will NOT help here.
+[2026-08-08T07:26:14.836Z] [PROXY_ENV] Node ignores Windows proxy settings. Use TUN / full-tunnel VPN mode instead.
+[2026-08-08T07:26:14.839Z] [RADIO_CACHE_LOADED] ads=6 news=6 (carried over from a previous session)
+[2026-08-08T07:26:15.751Z] [THINKING_LEVEL] set to minimal
+[2026-08-08T07:26:15.753Z] [CUSTOM_RULES] cleared
+[2026-08-08T07:26:15.753Z] [WEB_SEARCH] ENABLED
+[2026-08-08T07:26:15.757Z] [SCENARIO_SESSION_FRESH_PACK_REQUIRED] retainedCache=0
+[2026-08-08T07:26:16.297Z] [MAIN_SESSION_START] id=1 npc=Brianna
+[2026-08-08T07:26:16.321Z] [SCENARIO_LIVE_OPEN] model=gemini-2.5-flash-native-audio-preview-12-2025 otherLiveSockets=0
+[2026-08-08T07:26:16.617Z] [SCENARIO_LIVE_READY] pack prompt sent over the Live socket
+[2026-08-08T07:26:16.822Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:26:17.208Z] [GEMINI_CLOSE] code=1011 SERVER ERROR on Google's side. reason="You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: h"  Usually temporary.
+[2026-08-08T07:26:17.209Z] [GEMINI_CLOSE] The session closed BEFORE setup completed — Gemini rejected the connection itself, so no NPC reply was ever possible. The code above says why.
+[2026-08-08T07:26:17.209Z] [WEB_SEARCH_QUOTA_TRIPPED] Google rejected the session at setup because the Google Search grounding quota is exhausted — that is a SEPARATE, smaller free-tier bucket from normal chat. This is the real cause of "NPC never replies while Web Search is ON".
+[2026-08-08T07:26:17.209Z] [WEB_SEARCH_AUTO_DISABLED] Retrying this same conversation WITHOUT search so the NPC can talk. Search stays off until the bridge restarts. Turn the menu toggle off to stop seeing this.
+[2026-08-08T07:26:17.725Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:26:18.388Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:26:22.280Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=32
+[2026-08-08T07:26:22.516Z] [LIVE_MIC_RESET] nothing active; state already clean
+[2026-08-08T07:26:25.752Z] [MAIN_SESSION_START] id=2 npc=Ned
+[2026-08-08T07:26:25.826Z] [VISION_QUEUE] trigger=chat_open_initial visionId=1 reason=SESSION_NOT_READY (csharp_request)
+[2026-08-08T07:26:26.300Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:26:26.878Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:26:26.881Z] [VISION_SENT] trigger=chat_open_initial visionId=1 bytes=31149 source=sessionReadyDrain
+[2026-08-08T07:26:28.508Z] [VISION_SENT] trigger=text_every_turn visionId=2 bytes=30759 source=csharp_request
+[2026-08-08T07:26:30.161Z] [STREAM_TAG_FIRED] tag=NOD source=bracket raw=NOD bufferChars=11
+[2026-08-08T07:26:34.744Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=97
+[2026-08-08T07:26:35.090Z] [LIVE_MIC_RESET] nothing active; state already clean
+[2026-08-08T07:26:59.329Z] [GEMINI_CLOSE] code=1011 SERVER ERROR on Google's side. reason="Internal error occurred."  Usually temporary.
+[2026-08-08T07:26:59.330Z] [SCENARIO_LIVE_FALLBACK_REST] Live scenario socket closed early. code=1011 reason="Internal error occurred."
+[2026-08-08T07:27:05.102Z] [MAIN_SESSION_END] id=2
+[2026-08-08T07:27:18.129Z] [SCENARIO_PREFETCH_OK] generated=11 retained=0 mergedCache=11 keyIndex=0
+[2026-08-08T07:27:36.736Z] [RADIO_CACHE_TAKE] kind=ads remaining=5
+[2026-08-08T07:27:36.737Z] [RADIO_CACHE_TAKE] kind=news remaining=5
+[2026-08-08T07:27:36.737Z] [RADIO_BREAK] cycle 1 START station=RADIO_22_DLC_BATTLE_MIX1_RADIO host=the DJ hasCrime=false adVoice=Fenrir newsVoice=Despina
+[2026-08-08T07:27:37.237Z] [RADIO_BREAK] HOST_INTRO open voice=Puck search=false
+[2026-08-08T07:27:42.017Z] [RADIO_BREAK] HOST_INTRO done (turnComplete) chunks=67 text=Time for the news and some ads, but we'll be right back with the vibes.
+[2026-08-08T07:27:42.655Z] [RADIO_BREAK] ADS open voice=Fenrir search=false
+[2026-08-08T07:28:22.484Z] [RADIO_BREAK] ADS done (timeout) chunks=1120 text=Are you tired of waiting years for a trailer that just shows a guy in a jort and
+[2026-08-08T07:28:23.980Z] [RADIO_BREAK] NEWS open voice=Despina search=false
+[2026-08-08T07:29:02.099Z] [RADIO_BREAK] NEWS done (turnComplete) chunks=894 text=Good morning America, and thank God you're awake because the world is officially
+[2026-08-08T07:29:03.077Z] [RADIO_BREAK] HOST_OUTRO open voice=Puck search=false
+[2026-08-08T07:29:12.335Z] [RADIO_BREAK] HOST_OUTRO done (turnComplete) chunks=177 text=And we are back. That last commercial break was a something. Anyway, let's turn 
+[2026-08-08T07:29:12.799Z] [AUDIO_LANE] news released the lane
+[2026-08-08T07:29:12.800Z] [RADIO_BREAK] cycle 1 ENDED (complete)
+[2026-08-08T07:29:15.815Z] [RADIO_CACHE_REFILL_START] reason=post-break needAds=1 needNews=1
+[2026-08-08T07:29:17.931Z] [RADIO_CACHE_REFILL_ADS] added=1 total=6
+[2026-08-08T07:29:19.155Z] [RADIO_CACHE_REFILL_NEWS] added=1 total=6
+[2026-08-08T07:29:23.407Z] [MAIN_SESSION_START] id=3 npc=Jolene
+[2026-08-08T07:29:27.062Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:29:27.701Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:29:28.549Z] [LIVE_MIC_RESET] nothing active; state already clean
+[2026-08-08T07:29:29.302Z] [MAIN_SESSION_START] id=4 npc=Ramon
+[2026-08-08T07:29:29.481Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:29:30.032Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:29:30.844Z] [STREAM_TAG_FIRED] tag=HONK source=bracket raw=HONK bufferChars=17
+[2026-08-08T07:29:35.273Z] [LIVE_MIC_RESET] nothing active; state already clean
+[2026-08-08T07:29:36.560Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=97
+[2026-08-08T07:29:42.197Z] [MAIN_SESSION_START] id=5 npc=Heather
+[2026-08-08T07:29:42.235Z] [VISION_QUEUE] trigger=chat_open_initial visionId=3 reason=SESSION_NOT_READY (csharp_request)
+[2026-08-08T07:29:42.686Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:29:43.231Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:29:43.232Z] [VISION_SENT] trigger=chat_open_initial visionId=3 bytes=29080 source=sessionReadyDrain
+[2026-08-08T07:29:46.876Z] [VISION_SENT] trigger=text_every_turn visionId=4 bytes=29984 source=csharp_request
+[2026-08-08T07:29:54.268Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=130
+[2026-08-08T07:30:20.378Z] [MAIN_SESSION_START] id=6 npc=Vikram
+[2026-08-08T07:30:20.889Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:30:21.449Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:30:25.440Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=38
+[2026-08-08T07:30:27.613Z] [MAIN_SESSION_END] id=6
+[2026-08-08T07:30:30.422Z] [LIVE_MIC_RESET] nothing active; state already clean
+[2026-08-08T07:30:39.373Z] [MAIN_SESSION_START] id=7 npc=Onyx
+[2026-08-08T07:30:39.558Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:30:40.123Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:30:45.113Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=89
+[2026-08-08T07:31:37.366Z] [LIVE_MIC_RESET] nothing active; state already clean
+[2026-08-08T07:32:07.378Z] [MAIN_SESSION_END] id=7
+[2026-08-08T07:32:24.902Z] [RADIO_CACHE_TAKE] kind=ads remaining=5
+[2026-08-08T07:32:24.903Z] [RADIO_CACHE_TAKE] kind=news remaining=5
+[2026-08-08T07:32:24.903Z] [RADIO_BREAK] cycle 2 START station=RADIO_07_DANCE_01 host=Soulwax hasCrime=false adVoice=Aoede newsVoice=Iapetus
+[2026-08-08T07:32:25.426Z] [RADIO_BREAK] HOST_INTRO open voice=Iapetus search=false
+[2026-08-08T07:32:29.757Z] [RADIO_BREAK] HOST_INTRO done (turnComplete) chunks=52 text=Time for a short break and the news. We'll be right back.
+[2026-08-08T07:32:30.700Z] [RADIO_BREAK] ADS open voice=Aoede search=false
+[2026-08-08T07:33:07.523Z] [RADIO_BREAK] ADS done (turnComplete) chunks=864 text=Tired of waiting in line at the DMV? Come down to Fleeca Bank where our new loan
+[2026-08-08T07:33:08.496Z] [RADIO_BREAK] NEWS open voice=Iapetus search=false
+[2026-08-08T07:33:37.445Z] [RADIO_BREAK] NEWS done (turnComplete) chunks=672 text=Well folks, NASA's Voyager One is still screaming into the void, proving old tec
+[2026-08-08T07:33:38.407Z] [RADIO_BREAK] HOST_OUTRO open voice=Iapetus search=false
+[2026-08-08T07:33:44.960Z] [RADIO_BREAK] HOST_OUTRO done (turnComplete) chunks=110 text=Back with more. That last thing was pointless. New music kicks in now.
+[2026-08-08T07:33:45.412Z] [AUDIO_LANE] news released the lane
+[2026-08-08T07:33:45.413Z] [RADIO_BREAK] cycle 2 ENDED (complete)
+[2026-08-08T07:33:48.419Z] [RADIO_CACHE_REFILL_START] reason=post-break needAds=1 needNews=1
+[2026-08-08T07:33:50.198Z] [RADIO_CACHE_REFILL_ADS] added=1 total=6
+[2026-08-08T07:33:51.493Z] [RADIO_CACHE_REFILL_NEWS] added=1 total=6
+[2026-08-08T07:33:53.729Z] [MAIN_SESSION_START] id=8 npc=Ling
+[2026-08-08T07:33:53.755Z] [VISION_QUEUE] trigger=chat_open_initial visionId=5 reason=SESSION_NOT_READY (csharp_request)
+[2026-08-08T07:33:54.238Z] [STT_LANG] mode=english codes=en-US
+[2026-08-08T07:33:55.016Z] [GEMINI_SETUP_COMPLETE] session ready — Gemini accepted the key and the model.
+[2026-08-08T07:33:55.018Z] [VISION_SENT] trigger=chat_open_initial visionId=5 bytes=27007 source=sessionReadyDrain
+[2026-08-08T07:33:55.052Z] [LIVE_MIC_START] turn=1 contextChars=3790 manualVAD=true sceneInterruption=false
+[2026-08-08T07:33:55.054Z] [VISION_SENT] trigger=mic_start visionId=6 bytes=27199 source=csharp_request
+[2026-08-08T07:33:55.496Z] [LIVE_MIC_END] turn=1 chunks=40 bytes=51200 peakRms=0.0268
+[2026-08-08T07:34:04.581Z] [LIVE_MIC_TRANSCRIPT_FINAL] turn=1 chars=29 text="You heard the news yesterday?"
+[2026-08-08T07:34:04.582Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=1 inputChars=29 outputChars=162
+[2026-08-08T07:34:04.582Z] [LIVE_MIC_RELEASE] turn=1
+[2026-08-08T07:34:05.117Z] [LIVE_MIC_START] turn=2 contextChars=6169 manualVAD=true sceneInterruption=false
+[2026-08-08T07:34:05.118Z] [VISION_SENT] trigger=mic_start visionId=7 bytes=33226 source=csharp_request
+[2026-08-08T07:34:07.053Z] [LIVE_MIC_END] turn=2 chunks=48 bytes=60800 peakRms=0.0294
+[2026-08-08T07:34:15.703Z] [LIVE_MIC_FORCE_RELEASE] turn=2 reason=soft_release_Backspace pressed
+[2026-08-08T07:34:17.273Z] [LIVE_NORMAL_TURN_COMPLETE] micTurn=0 inputChars=0 outputChars=163
+[2026-08-08T07:34:47.641Z] [MAIN_SESSION_END] id=8

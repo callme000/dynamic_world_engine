@@ -1,0 +1,1264 @@
+{
+  "NextNpcId": 1022,
+  "NextEventId": 8,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_dealer_marcus",
+      "Guid": "b2549238-a393-4996-bec2-7b3d5960e61a",
+      "Name": "Marcus 'Snake-Eyes' Vance",
+      "Occupation": "Blackjack & Poker Dealer",
+      "PublicFaction": "Independent Fixers",
+      "HiddenRole": "Secretly skimming money from Ballas kingpin",
+      "PedModel": "s_m_m_highsec_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.7343041Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 10,
+        "Police": -60,
+        "Ballas": -30
+      },
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Deals high-stakes illegal poker in back alleys",
+          "SentimentTag": "Gambling_Active",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:32.7395408Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Secretly skimming money from Ballas kingpin"
+      ],
+      "ActiveGoal": {
+        "GoalId": "27c78ec1",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "44da8bcc",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_guard_bruno",
+      "Guid": "5ab68477-304e-4886-8adc-5f3fc7e5dae1",
+      "Name": "Bruno 'The Wall' Kowalski",
+      "Occupation": "Enforcer & Table Bouncer",
+      "PublicFaction": "Independent Fixers",
+      "HiddenRole": "Under orders to shoot anyone who draws a weapon",
+      "PedModel": "g_m_y_salvagoon_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.7395408Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": -10,
+        "Police": -80,
+        "Marcus 'Snake-Eyes' Vance": 90
+      },
+      "History": [
+        {
+          "EventId": 2,
+          "NpcId": 1001,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Guards Marcus and the card table with a loaded sawed-off shotgun",
+          "SentimentTag": "Guard_Active",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:32.7405768Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Under orders to shoot anyone who draws a weapon"
+      ],
+      "ActiveGoal": {
+        "GoalId": "8536a04f",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "0968efd7",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1002,
+      "EntityId": "npc_gambling_patron_3",
+      "Guid": "65c9562c-0d2e-4888-b1c7-e3302dfc1ff9",
+      "Name": "Poker Tournament Patron 3",
+      "Occupation": "High-Roller Gambler",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "High-Stakes Table Bettor",
+      "PedModel": "a_f_y_smartcaspat_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "High-Stakes Table Bettor"
+      ],
+      "ActiveGoal": {
+        "GoalId": "2a8e3c13",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "39044b50",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1003,
+      "EntityId": "npc_gambling_patron_4",
+      "Guid": "2e384041-6e87-45fa-bf69-b53205dd0a65",
+      "Name": "Poker Tournament Patron 4",
+      "Occupation": "High-Roller Gambler",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "VIP Tournament Observer",
+      "PedModel": "a_m_y_smartcaspat_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "VIP Tournament Observer"
+      ],
+      "ActiveGoal": {
+        "GoalId": "4a2834be",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "1b8ea55f",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1004,
+      "EntityId": "npc_gambling_patron_5",
+      "Guid": "baf036ac-f72a-4e77-91c3-9987f12ae7f1",
+      "Name": "Poker Tournament Patron 5",
+      "Occupation": "High-Roller Gambler",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Syndicate Card Sharp",
+      "PedModel": "csb_billionaire",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Syndicate Card Sharp"
+      ],
+      "ActiveGoal": {
+        "GoalId": "932fe999",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "df0232df",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1005,
+      "EntityId": "npc_gambling_patron_6",
+      "Guid": "1bbbe7ad-dc7b-4602-9154-43a405f7245f",
+      "Name": "Poker Tournament Patron 6",
+      "Occupation": "High-Roller Gambler",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Floor Pit Security Guard",
+      "PedModel": "s_m_m_security_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Floor Pit Security Guard"
+      ],
+      "ActiveGoal": {
+        "GoalId": "9790f45b",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "ae91e5dd",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1006,
+      "EntityId": "npc_vendor_sal",
+      "Guid": "23834bff-033d-48a6-9c83-8eb19539998c",
+      "Name": "Sal 'Mustard' Calzone",
+      "Occupation": "Street Food Vendor",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Informant who overhears underworld business from hungry crooks",
+      "PedModel": "s_m_m_strvend_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:32.9500478Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 25,
+        "Police": 10,
+        "Families": 20
+      },
+      "History": [
+        {
+          "EventId": 3,
+          "NpcId": 1006,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Runs the hotdog cart and trades street gossip for tips",
+          "SentimentTag": "Vendor_Active",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:32.9500478Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Informant who overhears underworld business from hungry crooks"
+      ],
+      "ActiveGoal": {
+        "GoalId": "968b0308",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "e6285de6",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1007,
+      "EntityId": "npc_mechanic_tork",
+      "Guid": "a6e6f5bf-c04a-4f7b-a864-6f2e6e75bdd5",
+      "Name": "Tork 'Wrench' Henderson",
+      "Occupation": "Black Market Auto Mechanic",
+      "PublicFaction": "Chop Shop Crew",
+      "HiddenRole": "Modifies vin numbers on boosted luxury vehicles",
+      "PedModel": "s_m_m_autoshop_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.1436438Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 15,
+        "Police": -70
+      },
+      "History": [
+        {
+          "EventId": 4,
+          "NpcId": 1007,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Strips engines and tunes stolen getaway cars",
+          "SentimentTag": "Mechanic_Active",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:33.1436438Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Modifies vin numbers on boosted luxury vehicles"
+      ],
+      "ActiveGoal": {
+        "GoalId": "9d224920",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "e4448ab3",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1008,
+      "EntityId": "npc_cop_miller",
+      "Guid": "78721bfc-956b-4b75-bfab-1122717bb5c0",
+      "Name": "Officer Miller",
+      "Occupation": "LSPD Patrol Officer",
+      "PublicFaction": "Police",
+      "HiddenRole": "Conducting contraband checks and suspicious person searches",
+      "PedModel": "s_m_y_cop_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": -20,
+        "Criminals": -90
+      },
+      "History": [
+        {
+          "EventId": 5,
+          "NpcId": 1008,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Staffing checkpoint, commands civilians to stay back",
+          "SentimentTag": "Police_Checkpoint",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:33.3027639Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Conducting contraband checks and suspicious person searches"
+      ],
+      "ActiveGoal": {
+        "GoalId": "48d66ff9",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "5ddf2bf7",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1009,
+      "EntityId": "npc_cop_davies",
+      "Guid": "78d8853b-44e8-410f-a92c-ef6703582615",
+      "Name": "Officer Davies",
+      "Occupation": "LSPD Tactical Support",
+      "PublicFaction": "Police",
+      "HiddenRole": "Overwatch with carbine rifle",
+      "PedModel": "s_m_y_cop_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": -25,
+        "Officer Miller": 80
+      },
+      "History": [
+        {
+          "EventId": 6,
+          "NpcId": 1009,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Covers checkpoint perimeter with assault weapon",
+          "SentimentTag": "Police_Overwatch",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:33.3027639Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Overwatch with carbine rifle"
+      ],
+      "ActiveGoal": {
+        "GoalId": "e7e4f61b",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "abcab324",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1010,
+      "EntityId": "npc_military_garrison_3",
+      "Guid": "02b9fb71-dde2-4b42-9b5c-de036f6f11a0",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Tactical Checkpoint Sentinel"
+      ],
+      "ActiveGoal": {
+        "GoalId": "14cd6bd3",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "1d21a80d",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1011,
+      "EntityId": "npc_military_garrison_4",
+      "Guid": "4b3765e2-da61-404a-8b04-17a28c56c94f",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Perimeter Sandbag Gunner"
+      ],
+      "ActiveGoal": {
+        "GoalId": "3c539b98",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "79847424",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1012,
+      "EntityId": "npc_military_garrison_5",
+      "Guid": "370a57dc-d341-4ef6-a364-1d8300ee4675",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Field Communications Specialist"
+      ],
+      "ActiveGoal": {
+        "GoalId": "ff8be1ea",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "3dcdda8f",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1013,
+      "EntityId": "npc_homie_tyrone",
+      "Guid": "f000a162-941c-4177-b6b2-3a1eddb928f0",
+      "Name": "Tyrone 'Smokey' Green",
+      "Occupation": "Grillmaster & Families OG",
+      "PublicFaction": "Families",
+      "HiddenRole": "Hosting neighborhood gathering, hates Ballas encroaching on turf",
+      "PedModel": "g_m_y_famca_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 40,
+        "Families": 90,
+        "Ballas": -80
+      },
+      "History": [
+        {
+          "EventId": 7,
+          "NpcId": 1013,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Flips ribs on the grill and offers food to friendly neighbors",
+          "SentimentTag": "BBQ_Host",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:33.4289183Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Hosting neighborhood gathering, hates Ballas encroaching on turf"
+      ],
+      "ActiveGoal": {
+        "GoalId": "553647e0",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "4b83b41a",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1014,
+      "EntityId": "npc_vip_guest_2",
+      "Guid": "1c137f85-ba98-4987-9cf2-2e653cd395b9",
+      "Name": "VIP Guest 2",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_f_y_studioparty_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "deeb8710",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "b05f1e0d",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1015,
+      "EntityId": "npc_vip_guest_3",
+      "Guid": "652cb228-8714-4faf-9871-176e6a6a6ea9",
+      "Name": "VIP Guest 3",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_f_y_studioparty_02",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "d279d544",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "c31fdefe",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1016,
+      "EntityId": "npc_vip_guest_4",
+      "Guid": "0262e2c2-9dd9-4916-ae0e-9b204b7e4ce7",
+      "Name": "VIP Guest 4",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_m_y_studioparty_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "239facaa",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "764e12f9",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1017,
+      "EntityId": "npc_vip_guest_5",
+      "Guid": "2306bb14-56b6-404a-b388-1d4271e4f908",
+      "Name": "VIP Guest 5",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_m_m_studioparty_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "e4ff1090",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "eec8cc9a",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1018,
+      "EntityId": "npc_vip_guest_6",
+      "Guid": "c0139658-6613-47f4-ad58-97671eaf86d8",
+      "Name": "VIP Guest 6",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_f_y_smartcaspat_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "24038883",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "ec2df935",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1019,
+      "EntityId": "npc_vip_guest_7",
+      "Guid": "d48e4bd2-9d3d-4ff2-ac83-abd138b4d791",
+      "Name": "VIP Guest 7",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_m_y_smartcaspat_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "063c034b",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "bdb1990a",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1020,
+      "EntityId": "npc_vip_guest_8",
+      "Guid": "7e7c272f-13a7-4942-bb1b-c963871f462c",
+      "Name": "VIP Guest 8",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "csb_billionaire",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "715a9adb",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "f558fc2a",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1021,
+      "EntityId": "npc_vip_guest_9",
+      "Guid": "9906408b-ba2e-4e52-b2b5-8a1e1629d976",
+      "Name": "VIP Guest 9",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "s_f_y_clubbar_02",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Party Guest"
+      ],
+      "ActiveGoal": {
+        "GoalId": "8ae3a2fb",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "d90c18e3",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_street_vendor_01",
+      "PlanId": "env_street_vendor_01",
+      "Name": "Sal's Sidewalk Hotdog Stand",
+      "Archetype": "street_vendor",
+      "Description": "Fresh street food cart serving the local neighborhood with side gossip.",
+      "CenterX": 820.0,
+      "CenterY": -2100.0,
+      "CenterZ": 29.0,
+      "Heading": 350.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_vendor_sal"
+      ],
+      "NpcIds": [
+        1006
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:32.9500478Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    },
+    {
+      "EnvironmentId": "env_chop_shop_01",
+      "PlanId": "env_chop_shop_01",
+      "Name": "Alley Underground Chop Shop",
+      "Archetype": "chop_shop",
+      "Description": "Makeshift auto breakdown workshop dealing in stolen engine parts and wheels.",
+      "CenterX": 1088.0,
+      "CenterY": -2275.0,
+      "CenterZ": -50.0,
+      "Heading": 0.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_mechanic_tork"
+      ],
+      "NpcIds": [
+        1007
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:33.1436438Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    },
+    {
+      "EnvironmentId": "env_police_roadblock_01",
+      "PlanId": "env_police_roadblock_01",
+      "Name": "LSPD Tactical Checkpoint",
+      "Archetype": "police_checkpoint",
+      "Description": "Armed police perimeter inspection checkpoint controlling street transit.",
+      "CenterX": 820.0,
+      "CenterY": -2100.0,
+      "CenterZ": 29.0,
+      "Heading": 350.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_cop_miller",
+        "npc_cop_davies",
+        "npc_military_garrison_3",
+        "npc_military_garrison_4",
+        "npc_military_garrison_5"
+      ],
+      "NpcIds": [
+        1008,
+        1009,
+        1010,
+        1011,
+        1012
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    },
+    {
+      "EnvironmentId": "env_bbq_party_01",
+      "PlanId": "env_bbq_party_01",
+      "Name": "Grove Street Backyard BBQ",
+      "Archetype": "bbq_party",
+      "Description": "Casual neighborhood block party barbecue with smoking grill, cold beers, and boombox.",
+      "CenterX": 100.0,
+      "CenterY": -1940.0,
+      "CenterZ": 20.8,
+      "Heading": 45.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_homie_tyrone",
+        "npc_vip_guest_2",
+        "npc_vip_guest_3",
+        "npc_vip_guest_4",
+        "npc_vip_guest_5",
+        "npc_vip_guest_6",
+        "npc_vip_guest_7",
+        "npc_vip_guest_8",
+        "npc_vip_guest_9"
+      ],
+      "NpcIds": [
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": [
+    {
+      "EventId": 1,
+      "NpcId": 1000,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Deals high-stakes illegal poker in back alleys",
+      "SentimentTag": "Gambling_Active",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:32.7395408Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 2,
+      "NpcId": 1001,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Guards Marcus and the card table with a loaded sawed-off shotgun",
+      "SentimentTag": "Guard_Active",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:32.7405768Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 3,
+      "NpcId": 1006,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Runs the hotdog cart and trades street gossip for tips",
+      "SentimentTag": "Vendor_Active",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:32.9500478Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 4,
+      "NpcId": 1007,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Strips engines and tunes stolen getaway cars",
+      "SentimentTag": "Mechanic_Active",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:33.1436438Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 5,
+      "NpcId": 1008,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Staffing checkpoint, commands civilians to stay back",
+      "SentimentTag": "Police_Checkpoint",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:33.3027639Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 6,
+      "NpcId": 1009,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Covers checkpoint perimeter with assault weapon",
+      "SentimentTag": "Police_Overwatch",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:33.3027639Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 7,
+      "NpcId": 1013,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Flips ribs on the grill and offers food to friendly neighbors",
+      "SentimentTag": "BBQ_Host",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:33.4289183Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    }
+  ]
+}

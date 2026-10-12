@@ -1,0 +1,120 @@
+{
+  "NextNpcId": 1002,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_cartel_boss_diego",
+      "Guid": "f7eeeb5f-6aea-4ac6-a71a-47853e655722",
+      "Name": "Diego 'El Rayo' Morales",
+      "Occupation": "Cartel Kingpin",
+      "PublicFaction": "Morales Syndicate",
+      "HiddenRole": "Syndicate Don",
+      "PedModel": "g_m_m_mexboss_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:30.292258Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Syndicate Don"
+      ],
+      "ActiveGoal": {
+        "GoalId": "99390fa8",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "37586e68",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_guard_hector",
+      "Guid": "ce5f06ad-ab42-434e-a224-8857a6fa6483",
+      "Name": "Hector",
+      "Occupation": "Bodyguard",
+      "PublicFaction": "Morales Syndicate",
+      "HiddenRole": "Loyal Sentry",
+      "PedModel": "g_m_y_mexgoon_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:30.292258Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Loyal Sentry"
+      ],
+      "ActiveGoal": {
+        "GoalId": "7a55507a",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "64f1c7a7",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_cartel_compound_01",
+      "PlanId": "env_cartel_compound_01",
+      "Name": "Cartel Secret Compound",
+      "Archetype": "bunker",
+      "Description": "",
+      "CenterX": 150.0,
+      "CenterY": 300.0,
+      "CenterZ": 45.0,
+      "Heading": 180.0,
+      "Status": "DEREALIZED",
+      "ResidentEntityIds": [
+        "npc_cartel_boss_diego",
+        "npc_guard_hector"
+      ],
+      "NpcIds": [
+        1000,
+        1001
+      ],
+      "PortalStates": {
+        "pocket_compound_vault": false
+      },
+      "ContainerStates": {
+        "vault_safe_01": "unlocked_looted"
+      },
+      "ScenarioState": "active_heist_shootout",
+      "CreatedAt": "2026-10-12T10:18:30.2891002Z",
+      "LastRealizedAt": "2026-10-12T10:18:30.5617053Z",
+      "LastDerealizedAt": "2026-10-12T10:18:30.5627202Z",
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": []
+}

@@ -1,0 +1,268 @@
+{
+  "EnvironmentId": "env_chop_shop_01",
+  "PlanId": "env_chop_shop_01",
+  "Name": "Alley Underground Chop Shop",
+  "Archetype": "chop_shop",
+  "CenterPosition": {
+    "x": 1088.0,
+    "y": -2275.0,
+    "z": -50.0
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "int_the_chop_shop_salvage_yard",
+    "Name": "The Chop Shop Salvage Yard",
+    "Category": "chop_shop",
+    "Description": "Dynamically discovered chop_shop venue.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 10,
+    "SemanticTags": [
+      "chop_shop",
+      "salvage",
+      "mechanic",
+      "autoshop",
+      "workshop",
+      "garage",
+      "stripping",
+      "supercars",
+      "scrapyard",
+      "The Chop Shop Salvage Yard",
+      "int_the_chop_shop_salvage_yard",
+      "The Chop Shop",
+      "Chop Shop",
+      "Salvage Yard",
+      "Mechanic Workshop",
+      "Auto Salvage"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -512.422,
+      "y": -1738.619,
+      "z": 18.29
+    },
+    "InteriorCoords": {
+      "x": 1088.0,
+      "y": -2275.0,
+      "z": -50.0
+    },
+    "InteriorHeading": 0.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_toolchest_01",
+      "WorldPosition": {
+        "x": 1087.0,
+        "y": -2274.5,
+        "z": -50.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 90.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 0.6,
+        "z": 1.2
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_box_wood02a",
+      "WorldPosition": {
+        "x": 1088.2,
+        "y": -2274.8,
+        "z": -50.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 45.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_barrel_exp_01a",
+      "WorldPosition": {
+        "x": 1089.5,
+        "y": -2274.2,
+        "z": -50.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.9
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_box_wood02a",
+      "WorldPosition": {
+        "x": 1089.2,
+        "y": -2275.5,
+        "z": -50.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 30.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_mechanic_tork",
+      "Name": "Tork 'Wrench' Henderson",
+      "Occupation": "Black Market Auto Mechanic",
+      "PublicFaction": "Chop Shop Crew",
+      "HiddenRole": "Modifies vin numbers on boosted luxury vehicles",
+      "PedModel": "s_m_m_autoshop_01",
+      "WorldPosition": {
+        "x": 1088.0,
+        "y": -2274.1,
+        "z": -50.0
+      },
+      "Heading": 180.0,
+      "Scenario": "WORLD_HUMAN_VEHICLE_MECHANIC",
+      "Weapon": "WEAPON_WRENCH",
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 15,
+        "Police": -70
+      },
+      "InitialEvents": [
+        {
+          "description": "Strips engines and tunes stolen getaway cars",
+          "sentiment_tag": "Mechanic_Active"
+        }
+      ]
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 1087.0,
+        "y": -2274.5,
+        "z": -50.0
+      },
+      "Size": {
+        "x": 0.6,
+        "y": 1.2,
+        "z": 1.2
+      },
+      "Heading": 90.0
+    },
+    {
+      "Center": {
+        "x": 1089.5,
+        "y": -2274.2,
+        "z": -50.0
+      },
+      "Size": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.9
+      },
+      "Heading": 0.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": {
+    "TotalProcessed": 4,
+    "ResolvedCount": 0,
+    "PassthroughCount": 2,
+    "FallbackCount": 2,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_toolchest_01",
+        "ResolvedModelName": "prop_toolchest_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_car_engine_01",
+        "ResolvedModelName": "prop_box_wood02a",
+        "IsExactMatch": false,
+        "Confidence": 0.3,
+        "MatchScore": 0.0,
+        "Provenance": "Safe Fallback: Generic Prop"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_barrel_exp_01a",
+        "ResolvedModelName": "prop_barrel_exp_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_wheel_01",
+        "ResolvedModelName": "prop_box_wood02a",
+        "IsExactMatch": false,
+        "Confidence": 0.3,
+        "MatchScore": 0.0,
+        "Provenance": "Safe Fallback: Generic Prop"
+      }
+    ],
+    "UnresolvedAssets": [
+      "Prop: prop_car_engine_01",
+      "Prop: prop_wheel_01"
+    ]
+  }
+}

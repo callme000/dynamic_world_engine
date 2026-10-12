@@ -1,0 +1,433 @@
+{
+  "EnvironmentId": "env_delperro_beach_bonfire",
+  "Name": "Secluded Beach Bonfire Meeting",
+  "Archetype": "beach_meeting",
+  "CenterPosition": {
+    "x": -1500.0,
+    "y": -1190.0,
+    "z": 2.5
+  },
+  "Heading": 140.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_del_perro_beach",
+    "Name": "Del Perro Beach Sands",
+    "Category": "beach",
+    "Description": "Expansive Pacific beachfront sands ideal for social bonfires, volleyball, and sunbathing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 40,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "beach",
+      "del_perro_beach",
+      "vespucci_beach",
+      "bonfire",
+      "sands",
+      "surf",
+      "swimming",
+      "ocean",
+      "sunbathe",
+      "Del Perro Beach",
+      "Vespucci Beach",
+      "Los Santos Beach",
+      "The Beach",
+      "Beach Sands",
+      "Beach Bonfire",
+      "open_public",
+      "beachfront_sun"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorHeading": 140.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "item_1",
+      "ParentPropId": "",
+      "ModelName": "prop_table_01",
+      "WorldPosition": {
+        "x": -1500.0,
+        "y": -1190.0,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.0,
+        "y": 1.0,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "item_4",
+      "ParentPropId": "",
+      "ModelName": "prop_beach_fire",
+      "WorldPosition": {
+        "x": -1498.71448,
+        "y": -1188.4679,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "item_5",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": -1500.95093,
+        "y": -1187.244,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "item_2",
+      "ParentPropId": "item_1",
+      "ModelName": "prop_chair_02",
+      "WorldPosition": {
+        "x": -1499.234,
+        "y": -1190.64282,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "item_3",
+      "ParentPropId": "item_1",
+      "ModelName": "prop_chair_02",
+      "WorldPosition": {
+        "x": -1500.766,
+        "y": -1189.35718,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 50.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_1",
+      "Name": "Carlos Mendoza",
+      "Occupation": "Cartel Lieutenant",
+      "PublicFaction": "Cartel",
+      "HiddenRole": "Facilitating covert weapons drop",
+      "PedModel": "cartel_soldier",
+      "WorldPosition": {
+        "x": -1499.93835,
+        "y": -1190.70447,
+        "z": 2.5
+      },
+      "Heading": 320.0,
+      "Scenario": "WORLD_HUMAN_SMOKING",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "talk_to:npc_2",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Carlos arrives at the rendezvous point, checking the surroundings before lighting his cigarette.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_2",
+      "Name": "Lena Ortiz",
+      "Occupation": "Local Smuggler",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Buyer of contraband",
+      "PedModel": "civilian_female",
+      "WorldPosition": {
+        "x": -1500.70447,
+        "y": -1190.06165,
+        "z": 2.5
+      },
+      "Heading": 140.0,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "none",
+      "InitialTask": "talk_to:npc_1",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Lena carries a cooler of drinks, waiting for the exchange to begin.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_biker_crowd_3",
+      "Name": "Lost MC Brother 3",
+      "Occupation": "Motorcycle Club Member",
+      "PublicFaction": "Lost MC",
+      "HiddenRole": "Lost MC Prospect",
+      "PedModel": "g_m_y_lost_01",
+      "WorldPosition": {
+        "x": -1495.86719,
+        "y": -1189.44849,
+        "z": 2.5
+      },
+      "Heading": 202.098175,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "hangout",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_biker_crowd_4",
+      "Name": "Lost MC Brother 4",
+      "Occupation": "Motorcycle Club Member",
+      "PublicFaction": "Lost MC",
+      "HiddenRole": "Lost MC Veteran",
+      "PedModel": "g_m_y_lost_02",
+      "WorldPosition": {
+        "x": -1499.76428,
+        "y": -1187.99512,
+        "z": 2.5
+      },
+      "Heading": 125.971275,
+      "Scenario": "WORLD_HUMAN_SMOKING",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "hangout",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_biker_crowd_5",
+      "Name": "Lost MC Brother 5",
+      "Occupation": "Motorcycle Club Member",
+      "PublicFaction": "Lost MC",
+      "HiddenRole": "Lost MC Associate",
+      "PedModel": "g_m_y_lost_03",
+      "WorldPosition": {
+        "x": -1501.669,
+        "y": -1192.91345,
+        "z": 2.5
+      },
+      "Heading": 166.9356,
+      "Scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "hangout",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_1",
+      "ModelName": "rebel2",
+      "WorldPosition": {
+        "x": -1508.0,
+        "y": -1185.0,
+        "z": 2.5
+      },
+      "Heading": 230.0,
+      "PrimaryColor": "black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "veh_2",
+      "ModelName": "surfer",
+      "WorldPosition": {
+        "x": -1506.0,
+        "y": -1186.0,
+        "z": 2.5
+      },
+      "Heading": 230.0,
+      "PrimaryColor": "red",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "CLEAR",
+    "time_hours": 22,
+    "time_minutes": 0,
+    "ambient_fx": "bonfire"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": -1500.0,
+        "y": -1190.0,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.0,
+        "y": 2.0,
+        "z": 0.76
+      },
+      "Heading": 140.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Del Perro Beach",
+    "donor_asset_origin": "GTA V Base Game",
+    "requested_asset_family": "Beach props and vehicles",
+    "ontological_distinction": "The assets (bonfire, chairs, table, cooler, rebel sedan, surfer motorcycle) are generic beach equipment sourced from the base game and are not tied to any private faction or location.",
+    "resolved_venue_interior": "loc_del_perro_beach",
+    "transferred_asset_models": [
+      "prop_table_01",
+      "prop_beach_fire",
+      "prop_cooler_01a",
+      "prop_chair_02"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 7,
+    "ResolvedCount": 0,
+    "PassthroughCount": 7,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_01",
+        "ResolvedModelName": "prop_table_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_02",
+        "ResolvedModelName": "prop_chair_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_02",
+        "ResolvedModelName": "prop_chair_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_beach_fire",
+        "ResolvedModelName": "prop_beach_fire",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "rebel2",
+        "ResolvedModelName": "rebel2",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "surfer",
+        "ResolvedModelName": "surfer",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

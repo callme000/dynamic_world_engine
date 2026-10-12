@@ -1,0 +1,12 @@
+{
+  "name": "llai-bridge",
+  "version": "1.0.0",
+  "description": "LivingLSAIs — Gemini Live Bridge Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.17.1"
+  }
+}

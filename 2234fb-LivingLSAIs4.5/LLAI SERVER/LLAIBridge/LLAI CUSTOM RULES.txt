@@ -1,0 +1,25 @@
+# ══════════════════════════════════════════════════════════════════════
+#  DYNAMIC WORLD ENGINE - LIVE WORLD FACTS (AUTO-INJECTED)
+#  Mod Target: Living LS AIs v4.5 | Protocol: Strict Line Feed
+# ══════════════════════════════════════════════════════════════════════
+
+[NPC #1165 Jax (Civilians/Beach Regular)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Local supplier | Rel:Player:+0 | Last:"Enjoying the late night warmth of the beach fire."
+
+[NPC #1166 Chloe (Civilians/Surfer)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Lookout | Rel:Player:+0 | Last:"Sipping a cold drink by the fire."
+
+[NPC #1167 Marine Soldier 3 (Military/Marine Tactical Specialist)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Tactical Checkpoint Sentinel
+
+[NPC #1168 Marine Soldier 4 (Military/Marine Tactical Specialist)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Perimeter Sandbag Gunner
+
+[NPC #1169 Marine Soldier 5 (Military/Marine Tactical Specialist)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Field Communications Specialist
+
+[NPC #1160 Marcus Vance (Bikers/Arms Dealer)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Independent contractor supplying high-tier military hardware. | Rel:Player:+0 | Last:"Preparing the weapons case for inspection during the transaction."
+
+[NPC #1161 Victor Chen (Cartel/Syndicate Enforcer)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Purchasing illegal armaments for an upcoming operation. | Rel:Player:+0 | Last:"Inspecting the firearms quality before handing over payment."
+
+[NPC #1162 Marine Soldier 3 (Military/Marine Tactical Specialist)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Tactical Checkpoint Sentinel
+
+[NPC #1163 Marine Soldier 4 (Military/Marine Tactical Specialist)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Perimeter Sandbag Gunner
+
+[NPC #1164 Marine Soldier 5 (Military/Marine Tactical Specialist)] CALM | Goal=MAINTAIN_ROUTINE | Fear:0% Trust:0 | Secret:Field Communications Specialist
+

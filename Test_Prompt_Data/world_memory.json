@@ -1,0 +1,316 @@
+{
+  "NextNpcId": 1005,
+  "NextEventId": 3,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_dealer",
+      "Guid": "217306b1-ac67-402b-83bb-99c684788d2c",
+      "Name": "Viktor Kozlov",
+      "Occupation": "Arms Trafficker",
+      "PublicFaction": "Mafia",
+      "HiddenRole": "Black market weapons broker operating out of off-grid transit depots",
+      "PedModel": "cartel_boss",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:16.5857113Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 1000,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Arranged a face-to-face inspection of surplus hardware for incoming buyers.",
+          "SentimentTag": "neutral",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:16.5955834Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Black market weapons broker operating out of off-grid transit depots"
+      ],
+      "ActiveGoal": {
+        "GoalId": "1a0c18f3",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "2ccf75d5",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_bodyguard",
+      "Guid": "1b960775-cc42-48af-b35a-ca95c01def8d",
+      "Name": "Mikhail Voronin",
+      "Occupation": "Private Enforcer",
+      "PublicFaction": "Mafia",
+      "HiddenRole": "Vetted contractor providing lethal close-protection over high-value trades",
+      "PedModel": "cartel_soldier",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:16.5955834Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "History": [
+        {
+          "EventId": 2,
+          "NpcId": 1001,
+          "Actor": "Player",
+          "Target": "npc",
+          "EventType": "INTERACTION",
+          "Severity": 0.5,
+          "Description": "Securing perimeter and scanning any visitors approaching the transaction table.",
+          "SentimentTag": "neutral",
+          "Consequences": [],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:16.5955834Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Vetted contractor providing lethal close-protection over high-value trades"
+      ],
+      "ActiveGoal": {
+        "GoalId": "f66f4f2a",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "9c249793",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1002,
+      "EntityId": "npc_military_garrison_3",
+      "Guid": "7cc9a7f9-74ba-4ccd-a8b3-df9b6fc9b384",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:16.5955834Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Tactical Checkpoint Sentinel"
+      ],
+      "ActiveGoal": {
+        "GoalId": "c905f1d1",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "56d12739",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1003,
+      "EntityId": "npc_military_garrison_4",
+      "Guid": "3fd0f6f6-332b-4187-aa03-c7d4eb61c42c",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:16.5955834Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Perimeter Sandbag Gunner"
+      ],
+      "ActiveGoal": {
+        "GoalId": "9ff586ca",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "f3ce93c7",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1004,
+      "EntityId": "npc_military_garrison_5",
+      "Guid": "725d45f2-c1c1-4988-b363-039e0c4138b2",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:16.5955834Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Field Communications Specialist"
+      ],
+      "ActiveGoal": {
+        "GoalId": "40afc413",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "d4d874de",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_black_market_weapons_cache",
+      "PlanId": "env_black_market_weapons_cache",
+      "Name": "Underground Black Market Deal",
+      "Archetype": "Illegal Arms Cache",
+      "Description": "A dimly lit industrial lockup converted into a covert staging area for illicit military hardware. An experienced arms broker presides from behind an equipment table, flanked by an alert contractor and open cases of high-grade ordnance.",
+      "CenterX": 1104.767,
+      "CenterY": -3099.539,
+      "CenterZ": -40.0,
+      "Heading": 0.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_dealer",
+        "npc_bodyguard",
+        "npc_military_garrison_3",
+        "npc_military_garrison_4",
+        "npc_military_garrison_5"
+      ],
+      "NpcIds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004
+      ],
+      "PortalStates": {
+        "env_black_market_weapons_cache_ocean_kosatka": false
+      },
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:16.5489387Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": [
+    {
+      "EventId": 1,
+      "NpcId": 1000,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Arranged a face-to-face inspection of surplus hardware for incoming buyers.",
+      "SentimentTag": "neutral",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:16.5955834Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 2,
+      "NpcId": 1001,
+      "Actor": "Player",
+      "Target": "npc",
+      "EventType": "INTERACTION",
+      "Severity": 0.5,
+      "Description": "Securing perimeter and scanning any visitors approaching the transaction table.",
+      "SentimentTag": "neutral",
+      "Consequences": [],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:16.5955834Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "NextNpcId": 1002,
+  "NextEventId": 4,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 101,
+      "EntityId": "npc_vincent",
+      "Guid": "28a033d5-5866-4ed5-98cd-c16aeb7715b0",
+      "Name": "Vincent",
+      "Occupation": "Arms Courier",
+      "PublicFaction": "Syndicate",
+      "HiddenRole": null,
+      "PedModel": null,
+      "IsAlive": false,
+      "CreatedAt": "2026-10-12T10:18:38.0730197Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "DEAD",
+      "Relationships": {},
+      "History": [
+        {
+          "EventId": 1,
+          "NpcId": 101,
+          "Actor": "Player",
+          "Target": "Vincent",
+          "EventType": "ENTITY_DIED",
+          "Severity": 1.0,
+          "Description": "Vincent died (Sniper round).",
+          "SentimentTag": "tragedy",
+          "Consequences": [
+            "Deceased",
+            "Permanent_Casualty"
+          ],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:38.0866486Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "41d90d67",
+        "GoalType": "DEAD",
+        "TargetEntity": "none",
+        "Priority": 0,
+        "Status": "ACTIVE",
+        "Description": "Deceased"
+      },
+      "LongTermGoal": {
+        "GoalId": "d2a8d902",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 102,
+      "EntityId": "npc_sophia",
+      "Guid": "1df76496-7dcc-4a51-8699-a9b86969cf18",
+      "Name": "Sophia",
+      "Occupation": "Casino Dealer",
+      "PublicFaction": "Independent",
+      "HiddenRole": null,
+      "PedModel": null,
+      "IsAlive": false,
+      "CreatedAt": "2026-10-12T10:18:38.1582262Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "DEAD",
+      "Relationships": {},
+      "History": [
+        {
+          "EventId": 2,
+          "NpcId": 102,
+          "Actor": "Unknown",
+          "Target": "Sophia",
+          "EventType": "ENTITY_DIED",
+          "Severity": 1.0,
+          "Description": "Sophia died (Fatal injuries).",
+          "SentimentTag": "tragedy",
+          "Consequences": [
+            "Deceased",
+            "Permanent_Casualty"
+          ],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:38.1754882Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "e8255513",
+        "GoalType": "DEAD",
+        "TargetEntity": "none",
+        "Priority": 0,
+        "Status": "ACTIVE",
+        "Description": "Deceased"
+      },
+      "LongTermGoal": {
+        "GoalId": "4df7d569",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 103,
+      "EntityId": "npc_marcus",
+      "Guid": "35479d41-63b3-4dae-9b55-2b9b85999e60",
+      "Name": "Marcus",
+      "Occupation": "Security Lead",
+      "PublicFaction": "Independent",
+      "HiddenRole": null,
+      "PedModel": null,
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:38.1954555Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "86a09e5b",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "1dd36133",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_dealer_dmitri",
+      "Guid": "d3eeaa12-bfe0-4d10-aed0-efdd16e3c982",
+      "Name": "Dmitri",
+      "Occupation": "Arms Dealer",
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "g_m_y_salvagoon_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:38.2936129Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "4a57e4f0",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "cdaeff8b",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_guard_boris",
+      "Guid": "c1a81c41-7831-408a-b335-7319e73ea3d5",
+      "Name": "Boris",
+      "Occupation": "Bodyguard",
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "s_m_y_blackops_01",
+      "IsAlive": false,
+      "CreatedAt": "2026-10-12T10:18:38.2936129Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "DEAD",
+      "Relationships": {},
+      "History": [
+        {
+          "EventId": 3,
+          "NpcId": 1001,
+          "Actor": "Unknown",
+          "Target": "Boris",
+          "EventType": "ENTITY_DIED",
+          "Severity": 1.0,
+          "Description": "Boris died (Fatal injuries).",
+          "SentimentTag": "tragedy",
+          "Consequences": [
+            "Deceased",
+            "Permanent_Casualty"
+          ],
+          "Witnesses": [],
+          "Timestamp": "2026-10-12T10:18:38.7610621Z",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "PositionZ": 0.0,
+          "HasPosition": false
+        }
+      ],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "16d9be3d",
+        "GoalType": "DEAD",
+        "TargetEntity": "none",
+        "Priority": 0,
+        "Status": "ACTIVE",
+        "Description": "Deceased"
+      },
+      "LongTermGoal": {
+        "GoalId": "070c34d6",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [],
+  "WorldEvents": [
+    {
+      "EventId": 1,
+      "NpcId": 101,
+      "Actor": "Player",
+      "Target": "Vincent",
+      "EventType": "ENTITY_DIED",
+      "Severity": 1.0,
+      "Description": "Vincent died (Sniper round).",
+      "SentimentTag": "tragedy",
+      "Consequences": [
+        "Deceased",
+        "Permanent_Casualty"
+      ],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:38.0866486Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 2,
+      "NpcId": 102,
+      "Actor": "Unknown",
+      "Target": "Sophia",
+      "EventType": "ENTITY_DIED",
+      "Severity": 1.0,
+      "Description": "Sophia died (Fatal injuries).",
+      "SentimentTag": "tragedy",
+      "Consequences": [
+        "Deceased",
+        "Permanent_Casualty"
+      ],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:38.1754882Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    },
+    {
+      "EventId": 3,
+      "NpcId": 1001,
+      "Actor": "Unknown",
+      "Target": "Boris",
+      "EventType": "ENTITY_DIED",
+      "Severity": 1.0,
+      "Description": "Boris died (Fatal injuries).",
+      "SentimentTag": "tragedy",
+      "Consequences": [
+        "Deceased",
+        "Permanent_Casualty"
+      ],
+      "Witnesses": [],
+      "Timestamp": "2026-10-12T10:18:38.7610621Z",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "PositionZ": 0.0,
+      "HasPosition": false
+    }
+  ]
+}

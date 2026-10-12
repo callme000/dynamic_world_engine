@@ -1,0 +1,555 @@
+[
+  {
+    "schemaVersion": 2,
+    "venueType": "any",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "public_yoga_dispute",
+    "sceneDescription": "An intense argument over territorial space during an outdoor meditation session.",
+    "setup": [
+      {
+        "tag": "YOGA",
+        "npc": "A",
+        "purpose": "social_activity",
+        "physicalReason": "Actor A is maintaining a balance pose blocking the main walkway.",
+        "dialogueFact": "Actor A claims absolute priority over the public sidewalk square footage."
+      },
+      {
+        "tag": "RECORD",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding up a phone to capture the blockage.",
+        "dialogueFact": "Actor B is recording the illegal obstruction for the neighborhood feed."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Demand immediate cessation of sidewalk obstruction and deletion of unauthorized video footage.",
+      "openingLine": "You are violating the pedestrian code and I am documenting every second of your arrogance.",
+      "incidentBrief": "Actor A blocked the public walkway with a yoga mat while Actor B recorded the violation.",
+      "backstory": "Actor A consistently ignores neighborhood zoning etiquette during morning routines.",
+      "stakes": "The video will be uploaded to city forums resulting in a substantial civic fine for Actor A.",
+      "twist": "The walkway is actually private property owned by Actor A's family trust.",
+      "dangerLevel": "none",
+      "primaryEvidenceType": "RECORD",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A is holding a yoga pose while Actor B films with a phone.",
+      "mood": "tense",
+      "behaviorA": "defensive and rigid",
+      "behaviorB": "self-righteous and filming",
+      "relationshipDynamic": "neighborly feud",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "any",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "lost_wallet_confrontation",
+    "sceneDescription": "A fierce accusation over a missing leather wallet found near a public seating area.",
+    "setup": [
+      {
+        "tag": "SEARCH_GROUND",
+        "npc": "A",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor A is scanning the dirt for dropped currency.",
+        "dialogueFact": "Actor A lost a brown leather wallet containing rent money."
+      },
+      {
+        "tag": "PROP",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding the disputed item.",
+        "dialogueFact": "Actor B picked up the wallet from the ground near the bench.",
+        "placement": "HAND",
+        "prop": "WALLET"
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Accuse the finder of theft and demand the immediate return of personal cash.",
+      "openingLine": "I saw you pick up my wallet off the ground and you are not keeping my rent.",
+      "incidentBrief": "Actor B picked up Actor A's dropped wallet and refused to hand it over without a reward.",
+      "backstory": "Actor A dropped the wallet while rushing to catch a bus.",
+      "stakes": "Loss of three hundred dollars in cash and essential identification cards.",
+      "twist": "The wallet contains someone else's driver license instead of Actor A's.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:WALLET",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A is searching the ground while Actor B holds the wallet.",
+      "mood": "suspicious",
+      "behaviorA": "panicked and accusatory",
+      "behaviorB": "calm and opportunistic",
+      "relationshipDynamic": "strangers in conflict",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "any",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "document_verification_dispute",
+    "sceneDescription": "An urgent debate regarding missing corporate papers left unattended on a ledge.",
+    "setup": [
+      {
+        "tag": "IMPATIENT",
+        "npc": "A",
+        "purpose": "social_activity",
+        "physicalReason": "Actor A is tapping their foot in frustration waiting for document review.",
+        "dialogueFact": "Actor A needs the signed audit papers back immediately."
+      },
+      {
+        "tag": "PROP",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding the paper portfolio.",
+        "dialogueFact": "Actor B refuses to surrender the documents until a missing signature is provided.",
+        "placement": "HAND",
+        "prop": "DOCUMENTS"
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Demand the release of confidential paperwork held hostage by a rival contractor.",
+      "openingLine": "Hand over those folders right now or I report your entire firm for breach of contract.",
+      "incidentBrief": "Actor B withheld critical audit documents due to a perceived missing corporate seal.",
+      "backstory": "Actor A left the papers unattended on a table for five minutes.",
+      "stakes": "A multi-million dollar corporate merger will collapse by end of day.",
+      "twist": "The documents are entirely blank pages used as a decoy.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:DOCUMENTS",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A is acting impatient while Actor B holds the documents.",
+      "mood": "frustrated",
+      "behaviorA": "agitated and demanding",
+      "behaviorB": "bureaucratic and stubborn",
+      "relationshipDynamic": "rival professionals",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "street",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "street_side_intoxication",
+    "sceneDescription": "A loud public argument fueled by excessive alcohol consumption and unpaid debts.",
+    "setup": [
+      {
+        "tag": "VERY_DRUNK",
+        "npc": "A",
+        "purpose": "social_activity",
+        "physicalReason": "Actor A is swaying heavily under the influence.",
+        "dialogueFact": "Actor A insists they already repaid a borrowed bar tab last Tuesday."
+      },
+      {
+        "tag": "PROP",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding an empty glass bottle as a makeshift pointer.",
+        "dialogueFact": "Actor B claims the debt remains unpaid with accumulated interest.",
+        "placement": "HAND",
+        "prop": "BEER_BOTTLE"
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Collect past-due bar money from an intoxicated acquaintance.",
+      "openingLine": "You owe me forty bucks for those tequila shots and swaying won't clear the debt.",
+      "incidentBrief": "Actor B confronted an inebriated Actor A over an unresolved drinking debt from the weekend.",
+      "backstory": "Actor A ran out of the bar before settling the tab.",
+      "stakes": "Permanent severance of friendship and a potential street brawl.",
+      "twist": "Actor A actually paid via a mobile app that went to a completely different person.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:BEER_BOTTLE",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A is very drunk and swaying while Actor B holds a beer bottle.",
+      "mood": "belligerent",
+      "behaviorA": "slurring and evasive",
+      "behaviorB": "aggrieved and persistent",
+      "relationshipDynamic": "former drinking buddies",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "convenience",
+    "requirements": {
+      "requiresCashier": true,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": true,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "store_checkout_dispute",
+    "sceneDescription": "A bitter argument over rejected counterfeit cash at a local convenience store register.",
+    "setup": [
+      {
+        "tag": "PROP",
+        "npc": "A",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor A is holding a pile of crumpled paper currency.",
+        "dialogueFact": "Actor A insists the cash is completely legitimate and issued by a federal bank.",
+        "placement": "HAND",
+        "prop": "CASH_PILE"
+      },
+      {
+        "tag": "PHONE",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding a phone to call store management.",
+        "dialogueFact": "Actor B detected fake security watermarks on the presented bills."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Refuse counterfeit banknotes and threaten police involvement for fraud.",
+      "openingLine": "This cash has fake serial numbers and I am calling the authorities right now.",
+      "incidentBrief": "Actor B rejected Actor A's cash payment at the counter due to suspected forgery.",
+      "backstory": "Actor A received the bills from an unregulated ATM earlier that morning.",
+      "stakes": "Confiscation of fake money and possible arrest for uttering forged currency.",
+      "twist": "The bills are authentic collector items printed with historical presidential portraits.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:CASH_PILE",
+      "primaryEvidenceOwner": "A",
+      "physicalOpeningState": "Actor A holds a cash pile while Actor B uses a phone.",
+      "mood": "combative",
+      "behaviorA": "defensive and indignant",
+      "behaviorB": "vigilant and unyielding",
+      "relationshipDynamic": "customer versus clerk",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "liquor",
+    "requirements": {
+      "requiresCashier": true,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": true,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "rare_liquor_theft_accusation",
+    "sceneDescription": "A tense standoff behind the counter over an expensive missing vintage whiskey bottle.",
+    "setup": [
+      {
+        "tag": "PROP",
+        "npc": "A",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor A is holding a whiskey bottle recovered from a customer coat.",
+        "dialogueFact": "Actor A caught the patron trying to walk out without paying.",
+        "placement": "HAND",
+        "prop": "WHISKEY_BOTTLE"
+      },
+      {
+        "tag": "COWER",
+        "npc": "B",
+        "purpose": "threat_response",
+        "physicalReason": "Actor B is cowering away from the shopkeeper accusation.",
+        "dialogueFact": "Actor B claims a different customer handed them the bottle by mistake."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Expose shoplifting and demand immediate payment for high-end liquor.",
+      "openingLine": "You thought you could slide that vintage whiskey under your jacket and walk away free.",
+      "incidentBrief": "Actor A intercepted Actor B attempting to walk out with a premium liquor bottle.",
+      "backstory": "Actor B noticed the display case left unlocked during a delivery.",
+      "stakes": "Grand theft charges and a permanent ban from the establishment.",
+      "twist": "The store owner actually gifted the bottle to Actor B earlier as a promotional prize.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:WHISKEY_BOTTLE",
+      "primaryEvidenceOwner": "A",
+      "physicalOpeningState": "Actor A holds a whiskey bottle while Actor B cowers in fear.",
+      "mood": "hostile",
+      "behaviorA": "stern and accusing",
+      "behaviorB": "fearful and defensive",
+      "relationshipDynamic": "merchant and suspected thief",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "clothing",
+    "requirements": {
+      "requiresCashier": true,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": true,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "fitting_room_sabotage",
+    "sceneDescription": "A bitter quarrel inside a boutique over ruined designer garments and spilled coffee.",
+    "setup": [
+      {
+        "tag": "PROP",
+        "npc": "A",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor A is holding a coffee cup that spilled onto the clothing.",
+        "dialogueFact": "Actor A blames the boutique layout for the accidental liquid spill.",
+        "placement": "HAND",
+        "prop": "COFFEE"
+      },
+      {
+        "tag": "IMPATIENT",
+        "npc": "B",
+        "purpose": "social_activity",
+        "physicalReason": "Actor B is crossing arms and tapping a foot in disgust.",
+        "dialogueFact": "Actor B demands full retail reimbursement for the stained designer jacket."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Demand financial compensation for luxury merchandise ruined by careless behavior.",
+      "openingLine": "That designer silk is completely ruined and you are paying every cent of the retail price.",
+      "incidentBrief": "Actor A spilled coffee onto a high-end jacket that Actor B intended to purchase.",
+      "backstory": "Actor A brought an open beverage into a strict no-food retail zone.",
+      "stakes": "Four hundred dollars in damages plus store disciplinary action.",
+      "twist": "The jacket was already heavily stained and clearance-marked before the spill.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:COFFEE",
+      "primaryEvidenceOwner": "A",
+      "physicalOpeningState": "Actor A holds a coffee cup while Actor B looks impatient and angry.",
+      "mood": "heated",
+      "behaviorA": "dismissive and careless",
+      "behaviorB": "furious and demanding",
+      "relationshipDynamic": "shopper and boutique clerk",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "ammu",
+    "requirements": {
+      "requiresCashier": true,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": true,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "ammunition_permit_dispute",
+    "sceneDescription": "A tense regulatory standoff over background checks and restricted high-caliber rounds.",
+    "setup": [
+      {
+        "tag": "GUARD",
+        "npc": "A",
+        "purpose": "social_activity",
+        "physicalReason": "Actor A is standing in a defensive posture behind the security counter.",
+        "dialogueFact": "Actor A refuses to sell armor-piercing rounds without an updated federal permit."
+      },
+      {
+        "tag": "PROP",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding a duffel bag intended for gear storage.",
+        "dialogueFact": "Actor B insists their license paperwork is pending electronic approval.",
+        "placement": "HAND",
+        "prop": "DUFFEL_BAG"
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Block illegal ammunition purchase and enforce federal firearms regulations.",
+      "openingLine": "Without a verified state firearms permit, I cannot let that duffel bag leave loaded.",
+      "incidentBrief": "Actor A denied the sale of restricted ammunition due to an expired digital permit.",
+      "backstory": "Actor B's renewal application was delayed by state system maintenance.",
+      "stakes": "Denial of sale and potential reporting of suspicious purchasing behavior.",
+      "twist": "Actor B is an undercover federal firearms inspector testing store compliance.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PROP:DUFFEL_BAG",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A is guarding the counter while Actor B holds a duffel bag.",
+      "mood": "strict",
+      "behaviorA": "uncompromising and vigilant",
+      "behaviorB": "evasive and persistent",
+      "relationshipDynamic": "dealer and frustrated buyer",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "beach",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "beachfront_towel_turf_war",
+    "sceneDescription": "A petty territorial dispute on the sand over prime ocean view placement.",
+    "setup": [
+      {
+        "tag": "SUNBATHE",
+        "npc": "A",
+        "purpose": "social_activity",
+        "physicalReason": "Actor A is lounging on the sand blocking prime umbrella space.",
+        "dialogueFact": "Actor A claims they reserved this exact patch of sand since dawn."
+      },
+      {
+        "tag": "RECORD",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding a camera filming the encroachment.",
+        "dialogueFact": "Actor B accuses Actor A of stealing public beach real estate."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Force removal of unauthorized beach gear blocking public shoreline access.",
+      "openingLine": "You have no right to string up ropes across public sand and claim this ocean view.",
+      "incidentBrief": "Actor A set up beach boundaries that infringed on Actor B's sunbathing zone.",
+      "backstory": "Actor A arrived at sunrise to stake out the best spot near the water.",
+      "stakes": "Public embarrassment online and confiscation of beach equipment by rangers.",
+      "twist": "The entire beach section is currently closed for environmental turtle nesting.",
+      "dangerLevel": "none",
+      "primaryEvidenceType": "RECORD",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A is sunbathing while Actor B records with a camera.",
+      "mood": "annoyed",
+      "behaviorA": "lazy and territorial",
+      "behaviorB": "pugnacious and filming",
+      "relationshipDynamic": "beachgoers at odds",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "vehicle",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": true,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "parking_space_standoff",
+    "sceneDescription": "A high-tension confrontation over a disputed parking slot in a crowded lot.",
+    "setup": [
+      {
+        "tag": "SEARCH_GROUND",
+        "npc": "A",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor A is inspecting tire tracks marking the claimed space.",
+        "dialogueFact": "Actor A had their blinker on waiting for the departing vehicle."
+      },
+      {
+        "tag": "PHONE",
+        "npc": "B",
+        "purpose": "evidence_holding",
+        "physicalReason": "Actor B is holding a phone recording license plates.",
+        "dialogueFact": "Actor B swung into the bay from the opposite direction ignoring the queue."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Assert priority claim over a contested parking space and demand surrender.",
+      "openingLine": "I was signaling for this bay for five minutes before you cut across traffic to steal it.",
+      "incidentBrief": "Actor B stole a parking bay that Actor A was actively signaling and waiting to enter.",
+      "backstory": "Actor A had been waiting patiently while the previous driver unloaded bags.",
+      "stakes": "A slashed tire or a violent parking lot altercation.",
+      "twist": "The parking space is marked as a reserved accessibility zone with a tow-away warning.",
+      "dangerLevel": "low",
+      "primaryEvidenceType": "PHONE",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A searches the ground near the vehicle while Actor B uses a phone.",
+      "mood": "combative",
+      "behaviorA": "furious and wronged",
+      "behaviorB": "defiant and unapologetic",
+      "relationshipDynamic": "aggressive drivers",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  },
+  {
+    "schemaVersion": 2,
+    "venueType": "any",
+    "requirements": {
+      "requiresCashier": false,
+      "requiresAnimal": false,
+      "requiresVehicle": false,
+      "requiresIndoor": false,
+      "requiresAtm": false,
+      "requiresBench": false,
+      "requiresTrashBin": false
+    },
+    "eventType": "medical_emergency_assistance",
+    "sceneDescription": "An urgent roadside medical situation involving a collapsed individual and panicked friend.",
+    "setup": [
+      {
+        "tag": "LIE_DOWN",
+        "npc": "A",
+        "purpose": "medical_assistance",
+        "physicalReason": "Actor A has collapsed onto the pavement due to sudden exhaustion.",
+        "dialogueFact": "Actor A suffers from chronic vertigo and heat exhaustion."
+      },
+      {
+        "tag": "MEDIC_KNEEL",
+        "npc": "B",
+        "purpose": "medical_assistance",
+        "physicalReason": "Actor B is kneeling beside Actor A checking vital signs.",
+        "dialogueFact": "Actor B is administering emergency first aid and trying to keep Actor A conscious."
+      }
+    ],
+    "sceneConfig": {
+      "openingIntent": "Call for immediate medical assistance and keep the collapsed person stable.",
+      "openingLine": "Don't move them, they passed out from heatstroke and need an ambulance right away.",
+      "incidentBrief": "Actor A collapsed on the pavement from heat exhaustion while Actor B provided first aid.",
+      "backstory": "Actor A walked three miles in direct sunlight without drinking water.",
+      "stakes": "Risk of severe dehydration or hospitalization if medical aid is delayed.",
+      "twist": "Actor A is just faking unconsciousness to avoid paying an exorbitant taxi fare.",
+      "dangerLevel": "none",
+      "primaryEvidenceType": "MEDIC_KNEEL",
+      "primaryEvidenceOwner": "B",
+      "physicalOpeningState": "Actor A lies down on the ground while Actor B kneels to provide medical help.",
+      "mood": "frantic",
+      "behaviorA": "unresponsive and weak",
+      "behaviorB": "panicked and caring",
+      "relationshipDynamic": "distressed companions",
+      "maxExchanges": 12
+    },
+    "cleanup": []
+  }
+]

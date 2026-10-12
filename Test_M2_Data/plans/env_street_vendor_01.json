@@ -1,0 +1,226 @@
+{
+  "EnvironmentId": "env_street_vendor_01",
+  "PlanId": "env_street_vendor_01",
+  "Name": "Sal's Sidewalk Hotdog Stand",
+  "Archetype": "street_vendor",
+  "CenterPosition": {
+    "x": 820.0,
+    "y": -2100.0,
+    "z": 29.0
+  },
+  "Heading": 350.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_cypress_flats_drag",
+    "Name": "Cypress Flats Industrial Drag Strip",
+    "Category": "street",
+    "Description": "Straight quarter-mile industrial channel in Cypress Flats, favored for underground street drag racing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 30,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "street",
+      "cypressflats",
+      "drag",
+      "street_race",
+      "industrial",
+      "tuner",
+      "carmeet",
+      "canal",
+      "race",
+      "quarter_mile",
+      "Cypress Flats Drag Strip",
+      "Cypress Flats",
+      "Industrial Drag Strip",
+      "Canal Drag Strip",
+      "Cypress Drag",
+      "open_public",
+      "industrial_gritty"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": 820.0,
+      "y": -2100.0,
+      "z": 29.0
+    },
+    "InteriorCoords": {
+      "x": 820.0,
+      "y": -2100.0,
+      "z": 29.0
+    },
+    "InteriorHeading": 350.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_hotdog_cart_01",
+      "WorldPosition": {
+        "x": 820.0,
+        "y": -2100.0,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.8,
+        "y": 1.1,
+        "z": 1.9
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": 821.129639,
+        "y": -2100.504,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 80.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_bin_05a",
+      "WorldPosition": {
+        "x": 818.7835,
+        "y": -2099.98853,
+        "z": 29.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 1.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_vendor_sal",
+      "Name": "Sal 'Mustard' Calzone",
+      "Occupation": "Street Food Vendor",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Informant who overhears underworld business from hungry crooks",
+      "PedModel": "s_m_m_strvend_01",
+      "WorldPosition": {
+        "x": 820.1389,
+        "y": -2099.21216,
+        "z": 29.0
+      },
+      "Heading": 170.0,
+      "Scenario": "WORLD_HUMAN_STAND_MOBILE",
+      "Weapon": "WEAPON_KNIFE",
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 25,
+        "Police": 10,
+        "Families": 20
+      },
+      "InitialEvents": [
+        {
+          "description": "Runs the hotdog cart and trades street gossip for tips",
+          "sentiment_tag": "Vendor_Active"
+        }
+      ]
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 820.0,
+        "y": -2100.0,
+        "z": 29.0
+      },
+      "Size": {
+        "x": 1.1,
+        "y": 1.8,
+        "z": 1.9
+      },
+      "Heading": 350.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": {
+    "TotalProcessed": 3,
+    "ResolvedCount": 1,
+    "PassthroughCount": 2,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_hotdogstand_01",
+        "ResolvedModelName": "prop_hotdog_cart_01",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 30.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 30.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_bin_05a",
+        "ResolvedModelName": "prop_bin_05a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

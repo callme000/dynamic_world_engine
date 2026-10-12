@@ -1,0 +1,134 @@
+{
+  "EnvironmentId": "env_luxury_casino_01",
+  "PlanId": "env_luxury_casino_01",
+  "Name": "The Diamond VIP Suite",
+  "Archetype": "casino",
+  "CenterPosition": {
+    "x": 100.0,
+    "y": 200.0,
+    "z": 15.0
+  },
+  "Heading": 45.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "poker_table_01",
+      "ParentPropId": null,
+      "ModelName": "prop_table_01",
+      "WorldPosition": {
+        "x": 102.0,
+        "y": 200.0,
+        "z": 15.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "PropId": "vip_bar_01",
+      "ParentPropId": null,
+      "ModelName": "prop_bar_01",
+      "WorldPosition": {
+        "x": 98.0,
+        "y": 200.0,
+        "z": 15.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_dealer_01",
+      "Name": "Dealer Sophia",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": null,
+      "PedModel": "a_f_y_topless",
+      "WorldPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_guard_01",
+      "Name": "Guard Viktor",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": null,
+      "PedModel": "s_m_m_security_01",
+      "WorldPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_limo_01",
+      "ModelName": "stretch",
+      "WorldPosition": {
+        "x": 90.0,
+        "y": 200.0,
+        "z": 15.0
+      },
+      "Heading": 0.0,
+      "PrimaryColor": "",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "EXTRASUNNY",
+    "time_hours": 22,
+    "time_minutes": 30,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

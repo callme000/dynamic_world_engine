@@ -1,0 +1,9 @@
+{
+  "NextNpcId": 1000,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [],
+  "Props": [],
+  "Environments": [],
+  "WorldEvents": []
+}

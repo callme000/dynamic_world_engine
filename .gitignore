@@ -1,0 +1,4 @@
+.env
+.env.*
+!.env.example
+2234fb-LivingLSAIs4.5/LivingLSAIs.ini

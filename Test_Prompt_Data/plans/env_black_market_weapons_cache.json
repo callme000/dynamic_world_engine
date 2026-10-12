@@ -1,0 +1,540 @@
+{
+  "EnvironmentId": "env_black_market_weapons_cache",
+  "PlanId": "env_black_market_weapons_cache",
+  "Name": "Underground Black Market Deal",
+  "Archetype": "Illegal Arms Cache",
+  "CenterPosition": {
+    "x": 1104.767,
+    "y": -3099.539,
+    "z": -40.0
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "int_small_cargo_warehouse",
+    "Name": "Small Cargo Warehouse",
+    "Category": "warehouse",
+    "Description": "Dynamically discovered warehouse venue.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 10,
+    "SemanticTags": [
+      "warehouse",
+      "industrial",
+      "storage",
+      "cargo_ship",
+      "dockyard",
+      "shipping",
+      "container",
+      "smuggling",
+      "port",
+      "Small Cargo Warehouse",
+      "int_small_cargo_warehouse"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -424.789,
+      "y": 185.59,
+      "z": 79.8
+    },
+    "InteriorCoords": {
+      "x": 1104.767,
+      "y": -3099.539,
+      "z": -40.0
+    },
+    "InteriorHeading": 0.0,
+    "EntitySets": [],
+    "SupportsVehicles": false,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "dealer_table",
+      "ParentPropId": "",
+      "ModelName": "prop_table_03",
+      "WorldPosition": {
+        "x": 1104.767,
+        "y": -3096.539,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.4,
+        "y": 1.2,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "dealer_chair",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_01a",
+      "WorldPosition": {
+        "x": 1104.767,
+        "y": -3095.789,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 180.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "work_illumination",
+      "ParentPropId": "",
+      "ModelName": "prop_stall_01",
+      "WorldPosition": {
+        "x": 1102.96692,
+        "y": -3097.339,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 45.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.5,
+        "y": 1.2,
+        "z": 1.8
+      }
+    },
+    {
+      "PropId": "ammo_stack_left",
+      "ParentPropId": "",
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": 1103.267,
+        "y": -3096.039,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 10.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "ammo_stack_right",
+      "ParentPropId": "",
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": 1106.367,
+        "y": -3096.239,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 350.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "weapon_case_open",
+      "ParentPropId": "dealer_table",
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": 1104.417,
+        "y": -3096.539,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "cash_briefcase",
+      "ParentPropId": "dealer_table",
+      "ModelName": "prop_cash_case_01",
+      "WorldPosition": {
+        "x": 1105.21692,
+        "y": -3096.539,
+        "z": -40.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 15.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.4,
+        "z": 0.15
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_dealer",
+      "Name": "Viktor Kozlov",
+      "Occupation": "Arms Trafficker",
+      "PublicFaction": "Mafia",
+      "HiddenRole": "Black market weapons broker operating out of off-grid transit depots",
+      "PedModel": "cartel_boss",
+      "WorldPosition": {
+        "x": 1104.767,
+        "y": -3095.789,
+        "z": -40.0
+      },
+      "Heading": 107.655106,
+      "Scenario": "none",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "none",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Arranged a face-to-face inspection of surplus hardware for incoming buyers.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_bodyguard",
+      "Name": "Mikhail Voronin",
+      "Occupation": "Private Enforcer",
+      "PublicFaction": "Mafia",
+      "HiddenRole": "Vetted contractor providing lethal close-protection over high-value trades",
+      "PedModel": "cartel_soldier",
+      "WorldPosition": {
+        "x": 1105.867,
+        "y": -3096.13916,
+        "z": -40.0
+      },
+      "Heading": 287.655121,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Securing perimeter and scanning any visitors approaching the transaction table.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_3",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": 1105.6106,
+        "y": -3103.19751,
+        "z": -40.0
+      },
+      "Heading": 57.3015022,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": 1105.89124,
+        "y": -3104.02222,
+        "z": -40.0
+      },
+      "Heading": 220.895523,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "WorldPosition": {
+        "x": 1107.34216,
+        "y": -3100.9353,
+        "z": -40.0
+      },
+      "Heading": 345.2748,
+      "Scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_smuggler_van",
+      "ModelName": "burrito3",
+      "WorldPosition": {
+        "x": 1109.267,
+        "y": -3095.039,
+        "z": -40.0
+      },
+      "Heading": 290.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "CLEAR",
+    "time_hours": 23,
+    "time_minutes": 45,
+    "ambient_fx": "smoke_plume"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 1104.767,
+        "y": -3096.539,
+        "z": -40.0
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 2.4,
+        "z": 0.76
+      },
+      "Heading": 0.0
+    },
+    {
+      "Center": {
+        "x": 1102.96692,
+        "y": -3097.339,
+        "z": -40.0
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 2.5,
+        "z": 1.8
+      },
+      "Heading": 45.0
+    },
+    {
+      "Center": {
+        "x": 1103.267,
+        "y": -3096.039,
+        "z": -40.0
+      },
+      "Size": {
+        "x": 0.5,
+        "y": 0.8,
+        "z": 0.5
+      },
+      "Heading": 10.0
+    },
+    {
+      "Center": {
+        "x": 1106.367,
+        "y": -3096.239,
+        "z": -40.0
+      },
+      "Size": {
+        "x": 0.5,
+        "y": 0.8,
+        "z": 0.5
+      },
+      "Heading": 350.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [
+    {
+      "PocketId": "env_black_market_weapons_cache_ocean_kosatka",
+      "EnvironmentId": "env_black_market_weapons_cache",
+      "StreetCoords": {
+        "x": 1098.767,
+        "y": -3097.539,
+        "z": -40.0
+      },
+      "InteriorCoords": {
+        "x": -1605.0,
+        "y": -2820.0,
+        "z": 0.5
+      },
+      "InteriorExitCoords": {
+        "x": 1104.767,
+        "y": -3099.539,
+        "z": -40.0
+      },
+      "EntranceTitle": "VIP Harbor Shuttle to Moored Full-Scale Kosatka Submarine",
+      "IsLocked": false,
+      "IsKnownToPlayer": true,
+      "RequiredSecret": "",
+      "RequiredFaction": "",
+      "RequiredRelationship": -100,
+      "LockReason": "VIP Maritime Access"
+    }
+  ],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": {
+    "requested_asset": "cargo_van",
+    "asset_classification": "Oversized Entity (35.0m Length, 9.0m Height)",
+    "physical_dimensions": "35.0m x 32.0m x 9.0m",
+    "target_environment": "",
+    "environment_clearance": "Interior Envelope (3.5m Ceiling, Pedestrian Doorways Only)",
+    "spatial_conflict_detected": true,
+    "conflict_reason": "Volumetric Context Mismatch: The requested vehicle exceeds the physical boundary dimensions and clearance ceiling of this interior.",
+    "resolution_strategy": "CENTERPIECE_SUBMERSIBLE_ADAPTATION_AND_NEARBY_REALIZATION",
+    "suggested_realization": "Centerpiece Auxiliary Submersible (Avisa) deployed inside venue, with full-scale vessel moored at nearby coastal deep-water coordinates."
+  },
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Industrial Warehouse",
+    "donor_asset_origin": "Smuggling Network Hardware",
+    "requested_asset_family": "Trafficking Cache and Military Containers",
+    "ontological_distinction": "Local warehouse interior repurposed as a clandestine trade outpost using portable trafficking crates and personal armaments.",
+    "resolved_venue_interior": "int_small_cargo_warehouse",
+    "transferred_asset_models": [
+      "prop_table_03",
+      "prop_chair_01a",
+      "prop_stall_01",
+      "prop_box_ammo04a",
+      "prop_cash_case_01"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 8,
+    "ResolvedCount": 8,
+    "PassthroughCount": 0,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "folding_table",
+        "ResolvedModelName": "prop_table_03",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 135.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 135.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "office_chair",
+        "ResolvedModelName": "prop_chair_01a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 95.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 95.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "weapons_case",
+        "ResolvedModelName": "prop_box_ammo04a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 65.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 65.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "cash_briefcase",
+        "ResolvedModelName": "prop_cash_case_01",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 75.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 75.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "worklight",
+        "ResolvedModelName": "prop_stall_01",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 40.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 40.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "ammo_crate",
+        "ResolvedModelName": "prop_box_ammo04a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 65.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 65.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "ammo_crate",
+        "ResolvedModelName": "prop_box_ammo04a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 65.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 65.0)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "cargo_van",
+        "ResolvedModelName": "burrito3",
+        "IsExactMatch": false,
+        "Confidence": 0.85,
+        "MatchScore": 0.0,
+        "Provenance": "Semantic Class: Commercial Transport"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

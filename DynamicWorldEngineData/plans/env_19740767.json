@@ -1,0 +1,769 @@
+{
+  "EnvironmentId": "env_19740767",
+  "Name": "Armed Defense Tactical Operation",
+  "Archetype": "military_operations",
+  "CenterPosition": {
+    "x": -1500.0,
+    "y": -1190.0,
+    "z": 2.5
+  },
+  "Heading": 140.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_del_perro_beach",
+    "Name": "Del Perro Beach Sands",
+    "Category": "beach",
+    "Description": "Expansive Pacific beachfront sands ideal for social bonfires, volleyball, and sunbathing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 40,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "beach",
+      "del_perro_beach",
+      "vespucci_beach",
+      "bonfire",
+      "sands",
+      "surf",
+      "swimming",
+      "ocean",
+      "sunbathe",
+      "Del Perro Beach",
+      "Vespucci Beach",
+      "Los Santos Beach",
+      "The Beach",
+      "Beach Sands",
+      "Beach Bonfire",
+      "open_public",
+      "beachfront_sun"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorHeading": 140.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "planning_table",
+      "ParentPropId": "",
+      "ModelName": "prop_table_03",
+      "WorldPosition": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.4,
+        "y": 1.2,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "planning_chair_1",
+      "ParentPropId": "",
+      "ModelName": "v_serv_plas_wall01",
+      "WorldPosition": {
+        "x": -1501.009,
+        "y": -1193.06946,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 3.0,
+        "y": 0.2,
+        "z": 2.8
+      }
+    },
+    {
+      "PropId": "planning_chair_2",
+      "ParentPropId": "",
+      "ModelName": "v_serv_plas_wall01",
+      "WorldPosition": {
+        "x": -1502.84766,
+        "y": -1191.52673,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 50.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 3.0,
+        "y": 0.2,
+        "z": 2.8
+      }
+    },
+    {
+      "PropId": "outdoor_central_bonfire",
+      "ParentPropId": "",
+      "ModelName": "prop_beach_fire",
+      "WorldPosition": {
+        "x": -1501.42834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "outdoor_bbq_grill",
+      "ParentPropId": "",
+      "ModelName": "prop_bbq_5",
+      "WorldPosition": {
+        "x": -1500.33459,
+        "y": -1194.28809,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 0.8,
+        "z": 1.1
+      }
+    },
+    {
+      "PropId": "outdoor_drink_cooler",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": -1499.69177,
+        "y": -1193.52209,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "outdoor_camp_chair_1",
+      "ParentPropId": "",
+      "ModelName": "bkr_prop_biker_chair_01",
+      "WorldPosition": {
+        "x": -1503.07483,
+        "y": -1190.553,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 50.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.9
+      }
+    },
+    {
+      "PropId": "outdoor_camp_chair_2",
+      "ParentPropId": "",
+      "ModelName": "bkr_prop_biker_chair_01",
+      "WorldPosition": {
+        "x": -1503.84619,
+        "y": -1191.47229,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 50.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.9
+      }
+    },
+    {
+      "PropId": "outdoor_camp_chair_3",
+      "ParentPropId": "",
+      "ModelName": "bkr_prop_biker_chair_01",
+      "WorldPosition": {
+        "x": -1502.89258,
+        "y": -1193.44714,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 320.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.9
+      }
+    },
+    {
+      "PropId": "outdoor_camp_chair_4",
+      "ParentPropId": "",
+      "ModelName": "bkr_prop_biker_chair_01",
+      "WorldPosition": {
+        "x": -1500.13647,
+        "y": -1192.49634,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.9
+      }
+    },
+    {
+      "PropId": "outdoor_picnic_table",
+      "ParentPropId": "",
+      "ModelName": "prop_picnictable_01",
+      "WorldPosition": {
+        "x": -1504.6095,
+        "y": -1190.04834,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.2,
+        "y": 1.4,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "table_item_1",
+      "ParentPropId": "planning_table",
+      "ModelName": "prop_blueprint_01",
+      "WorldPosition": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.6,
+        "z": 0.02
+      }
+    },
+    {
+      "PropId": "table_item_2",
+      "ParentPropId": "planning_table",
+      "ModelName": "prop_laptop_01a",
+      "WorldPosition": {
+        "x": -1501.68628,
+        "y": -1192.63184,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.4,
+        "y": 0.3,
+        "z": 0.25
+      }
+    },
+    {
+      "PropId": "table_item_3",
+      "ParentPropId": "planning_table",
+      "ModelName": "prop_cash_pile_02",
+      "WorldPosition": {
+        "x": -1502.17041,
+        "y": -1191.96436,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.3,
+        "y": 0.2,
+        "z": 0.08
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_tactical_lead",
+      "Name": "Tactical Unit Officer",
+      "Occupation": "Security Lead",
+      "PublicFaction": "Military",
+      "HiddenRole": "Enforcing perimeter security",
+      "PedModel": "RampMarineCutscene",
+      "WorldPosition": {
+        "x": -1501.28552,
+        "y": -1191.5321,
+        "z": 2.5
+      },
+      "Heading": 31.5202,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": -10
+      },
+      "InitialEvents": [
+        {
+          "description": "Guards the perimeter with heavy weapon",
+          "sentiment_tag": "military"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_2",
+      "Name": "Marine Soldier 2",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": -1498.29456,
+        "y": -1186.65515,
+        "z": 2.5
+      },
+      "Heading": 197.3015,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_3",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": -1497.97949,
+        "y": -1185.843,
+        "z": 2.5
+      },
+      "Heading": 0.8955078,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "WorldPosition": {
+        "x": -1501.07532,
+        "y": -1187.275,
+        "z": 2.5
+      },
+      "Heading": 125.274811,
+      "Scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Garrison Patrol Soldier",
+      "PedModel": "s_m_y_armymech_01",
+      "WorldPosition": {
+        "x": -1503.7251,
+        "y": -1194.39148,
+        "z": 2.5
+      },
+      "Heading": 95.34219,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "mil_veh_1",
+      "ModelName": "khanjali",
+      "WorldPosition": {
+        "x": -1502.8,
+        "y": -1182.0,
+        "z": 2.5
+      },
+      "Heading": 140.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "mil_veh_2",
+      "ModelName": "apc",
+      "WorldPosition": {
+        "x": -1497.2,
+        "y": -1182.0,
+        "z": 2.5
+      },
+      "Heading": 140.0,
+      "PrimaryColor": "black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "mil_veh_3",
+      "ModelName": "apc",
+      "WorldPosition": {
+        "x": -1500.0,
+        "y": -1176.0,
+        "z": 2.5
+      },
+      "Heading": 140.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "OVERCAST",
+    "time_hours": 20,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 2.4,
+        "z": 0.76
+      },
+      "Heading": 140.0
+    },
+    {
+      "Center": {
+        "x": -1501.009,
+        "y": -1193.06946,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 0.2,
+        "y": 3.0,
+        "z": 2.8
+      },
+      "Heading": 230.0
+    },
+    {
+      "Center": {
+        "x": -1502.84766,
+        "y": -1191.52673,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 0.2,
+        "y": 3.0,
+        "z": 2.8
+      },
+      "Heading": 50.0
+    },
+    {
+      "Center": {
+        "x": -1500.33459,
+        "y": -1194.28809,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 0.8,
+        "y": 1.2,
+        "z": 1.1
+      },
+      "Heading": 230.0
+    },
+    {
+      "Center": {
+        "x": -1504.6095,
+        "y": -1190.04834,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.4,
+        "y": 2.2,
+        "z": 0.76
+      },
+      "Heading": 230.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": {
+    "TotalProcessed": 17,
+    "ResolvedCount": 0,
+    "PassthroughCount": 17,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_03",
+        "ResolvedModelName": "prop_table_03",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_blueprint_01",
+        "ResolvedModelName": "prop_blueprint_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_laptop_01a",
+        "ResolvedModelName": "prop_laptop_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cash_pile_02",
+        "ResolvedModelName": "prop_cash_pile_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "v_serv_plas_wall01",
+        "ResolvedModelName": "v_serv_plas_wall01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "v_serv_plas_wall01",
+        "ResolvedModelName": "v_serv_plas_wall01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_beach_fire",
+        "ResolvedModelName": "prop_beach_fire",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_bbq_5",
+        "ResolvedModelName": "prop_bbq_5",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "bkr_prop_biker_chair_01",
+        "ResolvedModelName": "bkr_prop_biker_chair_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "bkr_prop_biker_chair_01",
+        "ResolvedModelName": "bkr_prop_biker_chair_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "bkr_prop_biker_chair_01",
+        "ResolvedModelName": "bkr_prop_biker_chair_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "bkr_prop_biker_chair_01",
+        "ResolvedModelName": "bkr_prop_biker_chair_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_picnictable_01",
+        "ResolvedModelName": "prop_picnictable_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "Khanjali",
+        "ResolvedModelName": "khanjali",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "Apc",
+        "ResolvedModelName": "apc",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "Apc",
+        "ResolvedModelName": "apc",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "EnvironmentId": "env_del_perro_beach_bonfire",
+  "PlanId": "env_del_perro_beach_bonfire",
+  "Name": "Del Perro Beach After-Hours Bonfire",
+  "Archetype": "beach_party",
+  "CenterPosition": {
+    "x": -1500.0,
+    "y": -1190.0,
+    "z": 2.5
+  },
+  "Heading": 140.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_del_perro_beach",
+    "Name": "Del Perro Beach Sands",
+    "Category": "beach",
+    "Description": "Expansive Pacific beachfront sands ideal for social bonfires, volleyball, and sunbathing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 40,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "beach",
+      "del_perro_beach",
+      "vespucci_beach",
+      "bonfire",
+      "sands",
+      "surf",
+      "swimming",
+      "ocean",
+      "sunbathe",
+      "Del Perro Beach",
+      "Vespucci Beach",
+      "Los Santos Beach",
+      "The Beach",
+      "Beach Sands",
+      "Beach Bonfire",
+      "open_public",
+      "beachfront_sun"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorHeading": 140.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "prop_bonfire_1",
+      "ParentPropId": "",
+      "ModelName": "prop_beach_fire",
+      "WorldPosition": {
+        "x": -1500.0,
+        "y": -1190.0,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "prop_chair_1",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_02",
+      "WorldPosition": {
+        "x": -1499.43213,
+        "y": -1192.43457,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "prop_chair_2",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_02",
+      "WorldPosition": {
+        "x": -1502.49634,
+        "y": -1189.86353,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 95.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    },
+    {
+      "PropId": "prop_cooler_1",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": -1497.56543,
+        "y": -1189.43213,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 155.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_1",
+      "Name": "Jax",
+      "Occupation": "Beach Regular",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Local supplier",
+      "PedModel": "beach_guy",
+      "WorldPosition": {
+        "x": -1500.51953,
+        "y": -1192.17493,
+        "z": 2.5
+      },
+      "Heading": 310.0026,
+      "Scenario": "WORLD_HUMAN_PARTYING",
+      "Weapon": "none",
+      "InitialTask": "none",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Enjoying the late night warmth of the beach fire.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_2",
+      "Name": "Chloe",
+      "Occupation": "Surfer",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Lookout",
+      "PedModel": "beach_girl",
+      "WorldPosition": {
+        "x": -1502.43457,
+        "y": -1190.56787,
+        "z": 2.5
+      },
+      "Heading": 130.002579,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "none",
+      "InitialTask": "none",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Sipping a cold drink by the fire.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_3",
+      "Name": "Marine Soldier 3",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": -1498.29456,
+        "y": -1186.65515,
+        "z": 2.5
+      },
+      "Heading": 197.3015,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": -1497.97949,
+        "y": -1185.843,
+        "z": 2.5
+      },
+      "Heading": 0.8955078,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Field Communications Specialist",
+      "PedModel": "s_m_y_marine_02",
+      "WorldPosition": {
+        "x": -1501.07532,
+        "y": -1187.275,
+        "z": 2.5
+      },
+      "Heading": 125.274811,
+      "Scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_rebel",
+      "ModelName": "rebel2",
+      "WorldPosition": {
+        "x": -1506.0,
+        "y": -1186.0,
+        "z": 2.5
+      },
+      "Heading": 205.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "veh_surfer",
+      "ModelName": "surfer",
+      "WorldPosition": {
+        "x": -1494.0,
+        "y": -1184.0,
+        "z": 2.5
+      },
+      "Heading": 20.0,
+      "PrimaryColor": "yellow",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "CLEAR",
+    "time_hours": 1,
+    "time_minutes": 30,
+    "ambient_fx": "bonfire"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": -1500.0,
+        "y": -1190.0,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      },
+      "Heading": 140.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Del Perro Beach Sands",
+    "donor_asset_origin": "Base Game Beach Props & Vehicles",
+    "requested_asset_family": "Coastal Leisure",
+    "ontological_distinction": "Location is public beach real estate populated with native beach and off-road assets.",
+    "resolved_venue_interior": "loc_del_perro_beach",
+    "transferred_asset_models": [
+      "prop_beach_fire",
+      "prop_chair_02",
+      "prop_cooler_01a"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 6,
+    "ResolvedCount": 0,
+    "PassthroughCount": 6,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_beach_fire",
+        "ResolvedModelName": "prop_beach_fire",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_02",
+        "ResolvedModelName": "prop_chair_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_02",
+        "ResolvedModelName": "prop_chair_02",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "rebel2",
+        "ResolvedModelName": "rebel2",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "surfer",
+        "ResolvedModelName": "surfer",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

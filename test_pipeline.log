@@ -1,0 +1,118 @@
+=================================================================
+  TEST SUITE: 11-Stage Spatial Orchestration Pipeline
+=================================================================
+
+--- Scenario 1: Macro-Location Discovery & Selection (Stages 1 & 2) ---
+DEBUG Beach: Selected='Del Perro Beach Sands', Score=175.0, IsExplicit=True
+  [PASS] LocationSelectionResult is non-null for beach prompt
+  [PASS] SelectedLocation is resolved
+  [PASS] Selected location is Del Perro Beach
+  [PASS] Selected location category is 'beach'
+  [PASS] Explicit landmark prompt flagged as explicit target
+DEBUG Drag: Selected='Cypress Flats Industrial Drag Strip', Score=125.0, Reason='Direct identity match: Cypress Flats', CandidatesCount=5
+   Candidate[0]: Cypress Flats Industrial Drag Strip (Score: 125.0, Id: loc_cypress_flats_drag)
+   Candidate[1]: Sandy Shores Airfield (Score: 30.0, Id: loc_sandyshores_airfield)
+   Candidate[2]: Vinewood Racetrack (Score: 15.0, Id: loc_vinewood_racetrack)
+   Candidate[3]: LSIA Commercial Runway (Score: 15.0, Id: loc_lsia_runway)
+   Candidate[4]: Redwood Lights Motocross Track (Score: 15.0, Id: loc_redwood_lights_track)
+  [PASS] SelectedLocation resolved for drag race
+  [PASS] Selected location is Cypress Flats
+  [PASS] Cypress Flats supports vehicles
+  [PASS] SelectedLocation resolved for indoor poker
+  [PASS] Penthouse/casino location correctly classified as interior
+
+--- Scenario 2: Physical Context Teleport Anchoring (Stage 3) ---
+  [PASS] Coordinator begins unanchored
+  [PASS] TeleportAnchorResult is non-null
+  [PASS] AnchorPhysicalContext reports success
+  [PASS] Coordinator is marked anchored
+  [PASS] CurrentAnchorPosition matches target
+  [PASS] CurrentAnchorHeading matches target heading
+  [PASS] Diagnostic message logged
+
+--- Scenario 3: Spatial World Model Probing & Candidate Areas (Stages 4 & 5) ---
+  [PASS] SpatialWorldModel successfully sampled
+  [PASS] Model contains sampled surfaces
+  [PASS] Model clusters at least 2 distinct Candidate Areas
+  [PASS] Candidate Area_A identified
+  [PASS] Area_A surface is SAND
+  [PASS] Area_A has flat walkable slope
+  [PASS] Area_A has high seclusion score
+  [PASS] Area_A has meeting/bonfire suitability tags
+
+--- Scenario 4: Scoped World Context Packet Synthesis (Stage 6) ---
+  [PASS] WorldContextPacket is non-null
+  [PASS] Packet binds correct LocationCandidate
+  [PASS] Packet includes CandidateAreas
+  [PASS] Packet includes physical constraints
+  [PASS] Packet provides recommended authentic GTA assets
+  [PASS] FormatForPrompt emits non-empty string
+  [PASS] Brief contains standardized header
+  [PASS] Brief exposes Candidate Area_A
+  [PASS] Brief exposes Candidate Area_B
+  [PASS] Brief is token-efficient (length 2598 chars < 3000 chars / ~500 tokens)
+
+--- Scenario 5: Orientation-First Intent Solving within Candidate Area (Stages 7 & 8) ---
+  [PASS] SpatialPlacementSolver produces solution
+  [PASS] Solution feasibility confirmed
+  [PASS] Solution places focal table + 2 chairs
+  [PASS] Both opposing chairs placed
+  [PASS] Chairs have opposing 180 deg differential (actual diff: 180.0 deg)
+
+--- Scenario 6: Hard Spatial Validation Gate & Auto-Corrector (Stage 9) ---
+  [PASS] SpatialValidationResult is non-null
+  [PASS] Auto-corrections applied: 4
+  [PASS] Floating prop Z clamped from 3.7 to 2.30
+  [PASS] Overlapping props separated to 0.50m
+  [PASS] Plan passed validation barrier after auto-corrections
+
+--- Scenario 7: Full 11-Stage End-to-End Orchestration Pipeline (Stages 1-11) ---
+[LlmTransportClient] Initialized with 1 Gemini keys, 1 Groq keys.
+[SpatialVisionEngine] ProbeGroundElevation warning: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[LlmTransportClient] Gemini 'gemini-3.7-flash' failed: The remote server returned an error: (429) Too Many Requests.
+[LlmTransportClient] Gemini 'gemini-3.6-flash' failed: The remote server returned an error: (429) Too Many Requests.
+[LlmTransportClient] Gemini 'gemini-flash-latest' failed: The remote server returned an error: (429) Too Many Requests.
+[SpatialAffordanceScanner] Dynamic prop scan exception: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[SpatialVisionEngine] ProbeWaterSurface warning: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[LivingLsAiBridge] Successfully synchronized 8 active NPC facts to: C:\Users\melod\Documents\gtavmods\2234fb-LivingLSAIs4.5\LLAI SERVER\LLAIBridge\LLAI CUSTOM RULES.txt
+  [PASS] SpatialOrchestrationResult is non-null
+  [PASS] ExecuteOrchestrationPipeline succeeded
+  [PASS] Stage 1 & 2: Macro-location resolved
+  [PASS] Stage 3: Physical context anchored
+  [PASS] Stage 4 & 5: Physical World Model generated
+  [PASS] Stage 6: World Context Packet synthesized
+  [PASS] Stage 7: Scene Intent JSON generated
+  [PASS] Stage 8: SpatialExecutionPlan produced
+  [PASS] Stage 9: Hard Spatial Validation Gate passed
+  [PASS] Stage 10: Environment committed to storage
+  [PASS] Environment enrolled with COMMISSIONED status
+  [PASS] Plan durably persisted in PlanRepository
+  [PASS] Environment enrolled in WorldMemoryStore
+
+--- Scenario 8: Headless Robustness & Edge-Case Resilience ---
+[LlmTransportClient] Initialized with 1 Gemini keys, 1 Groq keys.
+[SpatialVisionEngine] ProbeGroundElevation warning: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[LlmTransportClient] Gemini 'gemini-3.7-flash' failed: The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.
+[LlmTransportClient] Gemini 'gemini-3.6-flash' failed: The operation has timed out
+[LlmTransportClient] Gemini 'gemini-flash-latest' failed: The remote server returned an error: (503) Server Unavailable.
+[SpatialAffordanceScanner] Dynamic prop scan exception: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[SpatialVisionEngine] ProbeWaterSurface warning: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[LivingLsAiBridge] Successfully synchronized 8 active NPC facts to: C:\Users\melod\Documents\gtavmods\2234fb-LivingLSAIs4.5\LLAI SERVER\LLAIBridge\LLAI CUSTOM RULES.txt
+  [PASS] Generic prompt without landmark executes cleanly
+  [PASS] Generic prompt produces valid execution plan
+[SpatialVisionEngine] ProbeGroundElevation warning: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[LlmTransportClient] Gemini 'gemini-3.7-flash' failed: The remote server returned an error: (429) Too Many Requests.
+[LlmTransportClient] Gemini 'gemini-3.6-flash' failed: The remote server returned an error: (503) Server Unavailable.
+[LlmTransportClient] Gemini 'gemini-flash-latest' failed: The remote server returned an error: (429) Too Many Requests.
+[LlmTransportClient] Gemini 'gemini-flash-lite-latest' failed: The underlying connection was closed: A connection that was expected to be kept alive was closed by the server.
+[LlmTransportClient] Gemini 'gemini-3.5-flash' failed: The operation has timed out
+[LlmTransportClient] Gemini 'gemini-2.5-flash' failed: The remote server returned an error: (404) Not Found.
+[SpatialAffordanceScanner] Dynamic prop scan exception: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[SpatialVisionEngine] ProbeWaterSurface warning: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+[LivingLsAiBridge] Successfully synchronized 8 active NPC facts to: C:\Users\melod\Documents\gtavmods\2234fb-LivingLSAIs4.5\LLAI SERVER\LLAIBridge\LLAI CUSTOM RULES.txt
+  [PASS] Minimal single-word prompt executes without throwing
+  [PASS] DiscoverAndSelectLocation works as standalone API
+  [PASS] AnchorPhysicalContext works as standalone API
+
+Results: 63 passed, 0 failed.
+=================================================================

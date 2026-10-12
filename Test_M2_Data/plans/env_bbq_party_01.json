@@ -1,0 +1,421 @@
+{
+  "EnvironmentId": "env_bbq_party_01",
+  "PlanId": "env_bbq_party_01",
+  "Name": "Grove Street Backyard BBQ",
+  "Archetype": "bbq_party",
+  "CenterPosition": {
+    "x": 100.0,
+    "y": -1940.0,
+    "z": 20.8
+  },
+  "Heading": 45.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_grove_street",
+    "Name": "Grove Street Cul-de-Sac",
+    "Category": "hood",
+    "Description": "Legendary circular cul-de-sac in Davis, historic turf of the Families gang.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 30,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "hood",
+      "grovestreet",
+      "grove_street",
+      "families",
+      "ballas",
+      "gang",
+      "turf",
+      "culdesac",
+      "lowrider",
+      "driveby",
+      "davis",
+      "ganton",
+      "creator_arena",
+      "Grove Street",
+      "Grove Street Cul-de-Sac",
+      "The Cul-de-Sac",
+      "Families Turf",
+      "Grove St",
+      "Davis Cul-de-Sac",
+      "open_public",
+      "hood_street"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": 100.0,
+      "y": -1940.0,
+      "z": 20.8
+    },
+    "InteriorCoords": {
+      "x": 100.0,
+      "y": -1940.0,
+      "z": 20.8
+    },
+    "InteriorHeading": 45.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_bbq_5",
+      "WorldPosition": {
+        "x": 100.0,
+        "y": -1940.0,
+        "z": 20.8
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 45.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 0.8,
+        "z": 1.1
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": 100.919235,
+        "y": -1939.36365,
+        "z": 20.8
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 135.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_bin_05a",
+      "WorldPosition": {
+        "x": 99.01005,
+        "y": -1940.56567,
+        "z": 20.8
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 90.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 1.0
+      }
+    },
+    {
+      "PropId": "",
+      "ParentPropId": "",
+      "ModelName": "prop_chair_01a",
+      "WorldPosition": {
+        "x": 99.50503,
+        "y": -1941.34351,
+        "z": 20.8
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 105.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.6,
+        "y": 0.6,
+        "z": 0.85
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_homie_tyrone",
+      "Name": "Tyrone 'Smokey' Green",
+      "Occupation": "Grillmaster & Families OG",
+      "PublicFaction": "Families",
+      "HiddenRole": "Hosting neighborhood gathering, hates Ballas encroaching on turf",
+      "PedModel": "g_m_y_famca_01",
+      "WorldPosition": {
+        "x": 99.50503,
+        "y": -1939.505,
+        "z": 20.8
+      },
+      "Heading": 225.0,
+      "Scenario": "WORLD_HUMAN_BBQ",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 40,
+        "Families": 90,
+        "Ballas": -80
+      },
+      "InitialEvents": [
+        {
+          "description": "Flips ribs on the grill and offers food to friendly neighbors",
+          "sentiment_tag": "BBQ_Host"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_vip_guest_2",
+      "Name": "VIP Guest 2",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_f_y_studioparty_01",
+      "WorldPosition": {
+        "x": 94.4840851,
+        "y": -1942.92529,
+        "z": 20.8
+      },
+      "Heading": 176.832,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_3",
+      "Name": "VIP Guest 3",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_f_y_studioparty_02",
+      "WorldPosition": {
+        "x": 108.777039,
+        "y": -1944.05676,
+        "z": 20.8
+      },
+      "Heading": 41.7229843,
+      "Scenario": "WORLD_HUMAN_PARTYING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_4",
+      "Name": "VIP Guest 4",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_m_y_studioparty_01",
+      "WorldPosition": {
+        "x": 100.561615,
+        "y": -1932.97546,
+        "z": 20.8
+      },
+      "Heading": 57.51127,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_5",
+      "Name": "VIP Guest 5",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_m_m_studioparty_01",
+      "WorldPosition": {
+        "x": 102.732368,
+        "y": -1945.22473,
+        "z": 20.8
+      },
+      "Heading": 186.323517,
+      "Scenario": "WORLD_HUMAN_PARTYING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_6",
+      "Name": "VIP Guest 6",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_f_y_smartcaspat_01",
+      "WorldPosition": {
+        "x": 105.4663,
+        "y": -1933.36743,
+        "z": 20.8
+      },
+      "Heading": 23.477766,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_7",
+      "Name": "VIP Guest 7",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "a_m_y_smartcaspat_01",
+      "WorldPosition": {
+        "x": 92.38896,
+        "y": -1937.18591,
+        "z": 20.8
+      },
+      "Heading": 38.5119057,
+      "Scenario": "WORLD_HUMAN_PARTYING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_8",
+      "Name": "VIP Guest 8",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "csb_billionaire",
+      "WorldPosition": {
+        "x": 94.95491,
+        "y": -1941.54456,
+        "z": 20.8
+      },
+      "Heading": 148.064468,
+      "Scenario": "WORLD_HUMAN_DRINKING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_vip_guest_9",
+      "Name": "VIP Guest 9",
+      "Occupation": "High-Society VIP",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Party Guest",
+      "PedModel": "s_f_y_clubbar_02",
+      "WorldPosition": {
+        "x": 102.285126,
+        "y": -1934.5885,
+        "z": 20.8
+      },
+      "Heading": 225.740967,
+      "Scenario": "WORLD_HUMAN_PARTYING",
+      "Weapon": "none",
+      "InitialTask": "party_roam",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 100.0,
+        "y": -1940.0,
+        "z": 20.8
+      },
+      "Size": {
+        "x": 0.8,
+        "y": 1.2,
+        "z": 1.1
+      },
+      "Heading": 45.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": {
+    "TotalProcessed": 4,
+    "ResolvedCount": 2,
+    "PassthroughCount": 2,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_bbq_3",
+        "ResolvedModelName": "prop_bbq_5",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 45.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 45.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_boombox_01",
+        "ResolvedModelName": "prop_bin_05a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 40.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 40.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_chair_01a",
+        "ResolvedModelName": "prop_chair_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

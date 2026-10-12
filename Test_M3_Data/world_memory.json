@@ -1,0 +1,122 @@
+{
+  "NextNpcId": 1002,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_dealer_01",
+      "Guid": "e9a4fef8-e9da-4537-8841-767d11cf61fb",
+      "Name": "Boris 'The Russian'",
+      "Occupation": "Arms Dealer",
+      "PublicFaction": "Fixers",
+      "HiddenRole": "Loyal to the highest bidder",
+      "PedModel": "a_m_y_beach_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:27.994588Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 10,
+        "Police": -80
+      },
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Loyal to the highest bidder"
+      ],
+      "ActiveGoal": {
+        "GoalId": "dc8223b5",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "bc26385d",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_guard_01",
+      "Guid": "7f3c8bb8-90a9-4eaa-afc9-3fdd311b4000",
+      "Name": "Vince 'Iron'",
+      "Occupation": "Bodyguard",
+      "PublicFaction": "Fixers",
+      "HiddenRole": "Bodyguard with heavy rifle",
+      "PedModel": "a_m_y_beach_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:27.9966309Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {
+        "Player": 0,
+        "Police": -90
+      },
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [
+        "Bodyguard with heavy rifle"
+      ],
+      "ActiveGoal": {
+        "GoalId": "784b1100",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "92348143",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_arms_deal",
+      "PlanId": "env_arms_deal",
+      "Name": "Alley Arms Deal",
+      "Archetype": "criminal_deal",
+      "Description": "An illegal weapon sale taking place in the alley",
+      "CenterX": 10.0,
+      "CenterY": 23.5,
+      "CenterZ": 5.0,
+      "Heading": 0.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_dealer_01",
+        "npc_guard_01"
+      ],
+      "NpcIds": [
+        1000,
+        1001
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:27.9598381Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": []
+}

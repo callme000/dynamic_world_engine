@@ -1,0 +1,76 @@
+{
+  "EnvironmentId": "env_happy_penthouse",
+  "PlanId": "env_happy_penthouse",
+  "Name": "Eclipse Towers Penthouse Suite",
+  "Archetype": "apartment",
+  "CenterPosition": {
+    "x": -774.2,
+    "y": 312.8,
+    "z": 85.7
+  },
+  "Heading": 180.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "sofa_01",
+      "ParentPropId": null,
+      "ModelName": "prop_couch_lg_02",
+      "WorldPosition": {
+        "x": -773.0,
+        "y": 312.0,
+        "z": 85.7
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_hostess",
+      "Name": "Elena Rostova",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": null,
+      "PedModel": "a_f_y_bevhills_02",
+      "WorldPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

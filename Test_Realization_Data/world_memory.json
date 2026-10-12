@@ -1,0 +1,151 @@
+{
+  "NextNpcId": 1003,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_dealer_01",
+      "Guid": "9d9c6fbc-100e-46a7-9eee-a88222859ab9",
+      "Name": "Dealer Sophia",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "a_f_y_topless",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:36.7915819Z",
+      "Trust": 0,
+      "Fear": 50,
+      "Respect": 0,
+      "CurrentState": "PANICKED",
+      "Relationships": {
+        "Player": -16
+      },
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "ec2ff8bf",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "f035f405",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1001,
+      "EntityId": "npc_guard_01",
+      "Guid": "c69b4113-7d6e-4c9d-b650-b127d73a87e1",
+      "Name": "Guard Viktor",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "s_m_m_security_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:36.7920804Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "602d8b47",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "d5b6120f",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    },
+    {
+      "NpcId": 1002,
+      "EntityId": "npc_dockworker_01",
+      "Guid": "64ea1b95-8e23-4293-a4db-339c40799c99",
+      "Name": "Worker Joe",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "s_m_m_dockwork_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-10-12T10:18:36.8781297Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "a1715730",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "585749d9",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_luxury_casino_01",
+      "PlanId": "env_luxury_casino_01",
+      "Name": "The Diamond VIP Suite",
+      "Archetype": "casino",
+      "Description": "",
+      "CenterX": 100.0,
+      "CenterY": 200.0,
+      "CenterZ": 15.0,
+      "Heading": 45.0,
+      "Status": "DEREALIZED",
+      "ResidentEntityIds": [
+        "npc_dealer_01",
+        "npc_guard_01"
+      ],
+      "NpcIds": [
+        1000,
+        1001
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-10-12T10:18:36.7878525Z",
+      "LastRealizedAt": "2026-10-12T10:18:37.3939655Z",
+      "LastDerealizedAt": "2026-10-12T10:18:37.4263483Z",
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": []
+}

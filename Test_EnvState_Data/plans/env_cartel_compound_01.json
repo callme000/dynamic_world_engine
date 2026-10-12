@@ -1,0 +1,143 @@
+{
+  "EnvironmentId": "env_cartel_compound_01",
+  "PlanId": "env_cartel_compound_01",
+  "Name": "Cartel Secret Compound",
+  "Archetype": "bunker",
+  "CenterPosition": {
+    "x": 150.0,
+    "y": 300.0,
+    "z": 45.0
+  },
+  "Heading": 180.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "blast_door_frame",
+      "ParentPropId": null,
+      "ModelName": "prop_sec_barrier_01a",
+      "WorldPosition": {
+        "x": 150.0,
+        "y": 300.0,
+        "z": 45.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 180.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 3.0,
+        "y": 0.4,
+        "z": 2.8
+      }
+    },
+    {
+      "PropId": "vault_safe_01",
+      "ParentPropId": null,
+      "ModelName": "p_v_43_safe_s",
+      "WorldPosition": {
+        "x": 105.0,
+        "y": 205.0,
+        "z": 1500.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 90.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.5
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_cartel_boss_diego",
+      "Name": "Diego 'El Rayo' Morales",
+      "Occupation": "Cartel Kingpin",
+      "PublicFaction": "Morales Syndicate",
+      "HiddenRole": "Syndicate Don",
+      "PedModel": "g_m_m_mexboss_01",
+      "WorldPosition": {
+        "x": 102.0,
+        "y": 202.0,
+        "z": 1500.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_guard_hector",
+      "Name": "Hector",
+      "Occupation": "Bodyguard",
+      "PublicFaction": "Morales Syndicate",
+      "HiddenRole": "Loyal Sentry",
+      "PedModel": "g_m_y_mexgoon_01",
+      "WorldPosition": {
+        "x": 100.0,
+        "y": 198.0,
+        "z": 1500.0
+      },
+      "Heading": 45.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "OVERCAST",
+    "time_hours": 23,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": {
+    "PocketId": "pocket_compound_vault",
+    "EnvironmentId": "env_cartel_compound_01",
+    "StreetCoords": {
+      "x": 150.0,
+      "y": 300.0,
+      "z": 45.0
+    },
+    "InteriorCoords": {
+      "x": 100.0,
+      "y": 200.0,
+      "z": 1500.0
+    },
+    "InteriorExitCoords": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "EntranceTitle": "Reinforced Blast Door",
+    "IsLocked": true,
+    "IsKnownToPlayer": true,
+    "RequiredSecret": "",
+    "RequiredFaction": "",
+    "RequiredRelationship": -100,
+    "LockReason": "Locked"
+  },
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

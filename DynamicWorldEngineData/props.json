@@ -1,0 +1,2525 @@
+[
+  {
+    "Model": "prop_sec_barrier_01a",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 3.0,
+      "Y": 0.4,
+      "Z": 2.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 2.8,
+    "Tags": [
+      "reinforced",
+      "security",
+      "industrial",
+      "military",
+      "outpost"
+    ]
+  },
+  {
+    "Model": "v_serv_plas_wall01",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 3.0,
+      "Y": 0.2,
+      "Z": 2.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.8,
+    "Tags": [
+      "plaster",
+      "office",
+      "indoor",
+      "clean",
+      "hospital"
+    ]
+  },
+  {
+    "Model": "prop_barrier_work05",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 2.5,
+      "Y": 0.3,
+      "Z": 1.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 1.2,
+    "Tags": [
+      "roadblock",
+      "police",
+      "construction",
+      "barrier",
+      "red"
+    ]
+  },
+  {
+    "Model": "prop_barrier_work01a",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.3,
+      "Z": 1.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 1.0,
+    "Tags": [
+      "roadblock",
+      "police",
+      "sawhorse",
+      "striped"
+    ]
+  },
+  {
+    "Model": "prop_barrier_wat_03b",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.6,
+      "Z": 1.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 1.0,
+    "Tags": [
+      "concrete",
+      "k-rail",
+      "heavy_barrier",
+      "military"
+    ]
+  },
+  {
+    "Model": "prop_metal_plates01",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 2.5,
+      "Y": 0.1,
+      "Z": 2.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.2,
+    "Tags": [
+      "metal",
+      "slum",
+      "junkyard",
+      "rustic",
+      "scrap"
+    ]
+  },
+  {
+    "Model": "prop_mp_cone_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.4,
+      "Y": 0.4,
+      "Z": 0.7
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "traffic_cone",
+      "police",
+      "road",
+      "orange"
+    ]
+  },
+  {
+    "Model": "v_ilev_cd_floor01",
+    "Category": "Floor",
+    "Dimensions": {
+      "X": 4.0,
+      "Y": 4.0,
+      "Z": 0.15
+    },
+    "Walkable": true,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.15,
+    "Tags": [
+      "concrete",
+      "industrial",
+      "bunker",
+      "vault",
+      "foundation"
+    ]
+  },
+  {
+    "Model": "prop_wood_plank_01",
+    "Category": "Floor",
+    "Dimensions": {
+      "X": 3.0,
+      "Y": 2.0,
+      "Z": 0.1
+    },
+    "Walkable": true,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.1,
+    "Tags": [
+      "wood",
+      "rustic",
+      "alley",
+      "deck",
+      "patio"
+    ]
+  },
+  {
+    "Model": "prop_steel_plate_01",
+    "Category": "Ceiling",
+    "Dimensions": {
+      "X": 4.0,
+      "Y": 4.0,
+      "Z": 0.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "steel",
+      "ceiling",
+      "industrial",
+      "roof"
+    ]
+  },
+  {
+    "Model": "prop_bbq_5",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.8,
+      "Z": 1.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "bbq",
+      "grill",
+      "cookout",
+      "charcoal",
+      "food",
+      "party",
+      "smoke"
+    ]
+  },
+  {
+    "Model": "prop_bbq_1",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.5,
+      "Y": 0.8,
+      "Z": 1.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.95,
+    "Tags": [
+      "bbq",
+      "grill",
+      "gas_grill",
+      "backyard",
+      "luxury_bbq"
+    ]
+  },
+  {
+    "Model": "prop_picnictable_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.2,
+      "Y": 1.4,
+      "Z": 0.76
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.76,
+    "Tags": [
+      "outdoor",
+      "bbq",
+      "park",
+      "wood",
+      "picnic",
+      "backyard"
+    ]
+  },
+  {
+    "Model": "prop_cooler_01a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.5,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.5,
+    "Tags": [
+      "cooler",
+      "drinks",
+      "ice",
+      "beer",
+      "bbq",
+      "party",
+      "beach"
+    ]
+  },
+  {
+    "Model": "prop_speaker_05",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.5,
+      "Z": 1.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 1.2,
+    "Tags": [
+      "speaker",
+      "sound",
+      "dj",
+      "party",
+      "music",
+      "loud"
+    ]
+  },
+  {
+    "Model": "prop_speaker_06",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.5,
+      "Y": 0.5,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "speaker",
+      "audio",
+      "party",
+      "music"
+    ]
+  },
+  {
+    "Model": "prop_dj_deck_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.4,
+      "Y": 0.7,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "dj",
+      "music",
+      "turntable",
+      "club",
+      "party",
+      "mixer"
+    ]
+  },
+  {
+    "Model": "prop_beer_bottle",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.25
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "drink",
+      "alcohol",
+      "bar",
+      "party",
+      "bbq",
+      "beer"
+    ]
+  },
+  {
+    "Model": "prop_beercan_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.08,
+      "Y": 0.08,
+      "Z": 0.15
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "beer",
+      "can",
+      "drink",
+      "party",
+      "bbq"
+    ]
+  },
+  {
+    "Model": "prop_patio_lounger1",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 1.9,
+      "Y": 0.7,
+      "Z": 0.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.35,
+    "Tags": [
+      "lounger",
+      "sunbed",
+      "pool",
+      "beach",
+      "patio",
+      "relax"
+    ]
+  },
+  {
+    "Model": "prop_parasol_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 2.5,
+      "Y": 2.5,
+      "Z": 2.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "umbrella",
+      "parasol",
+      "beach",
+      "patio",
+      "shade"
+    ]
+  },
+  {
+    "Model": "prop_hotdog_cart_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 1.1,
+      "Z": 1.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.95,
+    "Tags": [
+      "hotdog",
+      "food_cart",
+      "vendor",
+      "street_food",
+      "snack"
+    ]
+  },
+  {
+    "Model": "prop_taco_cart_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 1.1,
+      "Z": 1.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.95,
+    "Tags": [
+      "taco",
+      "food_cart",
+      "vendor",
+      "mexican",
+      "street_food"
+    ]
+  },
+  {
+    "Model": "prop_stall_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.5,
+      "Y": 1.2,
+      "Z": 1.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.8,
+    "Tags": [
+      "market",
+      "stall",
+      "fruit",
+      "goods",
+      "vendor",
+      "flea_market"
+    ]
+  },
+  {
+    "Model": "prop_bin_05a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 1.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 1.0,
+    "Tags": [
+      "trash",
+      "bin",
+      "street",
+      "garbage"
+    ]
+  },
+  {
+    "Model": "prop_table_03b",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 1.0,
+      "Z": 0.76
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.76,
+    "Tags": [
+      "wood",
+      "card",
+      "poker",
+      "gambling",
+      "alley",
+      "bar",
+      "utility"
+    ]
+  },
+  {
+    "Model": "prop_table_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 1.0,
+      "Z": 0.76
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.76,
+    "Tags": [
+      "office",
+      "desk",
+      "computer",
+      "clean",
+      "meeting"
+    ]
+  },
+  {
+    "Model": "prop_card_table_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 1.5,
+      "Y": 1.5,
+      "Z": 0.76
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.76,
+    "Tags": [
+      "gambling",
+      "poker",
+      "felt",
+      "cards",
+      "casino",
+      "blackjack"
+    ]
+  },
+  {
+    "Model": "prop_office_desk_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.2,
+      "Y": 1.1,
+      "Z": 0.76
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.76,
+    "Tags": [
+      "executive",
+      "desk",
+      "office",
+      "government",
+      "iaa"
+    ]
+  },
+  {
+    "Model": "prop_chair_01a",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.45,
+    "Tags": [
+      "folding",
+      "metal",
+      "poker",
+      "alley",
+      "bbq",
+      "chair"
+    ]
+  },
+  {
+    "Model": "prop_chair_02",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.45,
+    "Tags": [
+      "plastic",
+      "lawn_chair",
+      "patio",
+      "bbq",
+      "backyard"
+    ]
+  },
+  {
+    "Model": "prop_couch_01",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.9,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.45,
+    "Tags": [
+      "leather",
+      "luxury",
+      "vip",
+      "lounge",
+      "couch",
+      "sofa"
+    ]
+  },
+  {
+    "Model": "prop_bar_stool_01",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 0.5,
+      "Y": 0.5,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.75,
+    "Tags": [
+      "bar",
+      "club",
+      "tall",
+      "stool",
+      "cocktail"
+    ]
+  },
+  {
+    "Model": "prop_cash_pile_02",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.3,
+      "Y": 0.2,
+      "Z": 0.08
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "cash",
+      "money",
+      "contraband",
+      "gambling",
+      "bribe",
+      "hundreds"
+    ]
+  },
+  {
+    "Model": "prop_cash_case_01",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.4,
+      "Z": 0.15
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.15,
+    "Tags": [
+      "briefcase",
+      "cash_case",
+      "money",
+      "deal",
+      "heist",
+      "ransom"
+    ]
+  },
+  {
+    "Model": "prop_cash_crate_01",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 0.8,
+      "Z": 0.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.6,
+    "Tags": [
+      "crate",
+      "cash_crate",
+      "millions",
+      "bank",
+      "vault"
+    ]
+  },
+  {
+    "Model": "prop_gold_vault_pile",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.8,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.5,
+    "Tags": [
+      "gold",
+      "bullion",
+      "bars",
+      "vault",
+      "heist",
+      "wealth"
+    ]
+  },
+  {
+    "Model": "prop_coke_block_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.25,
+      "Y": 0.15,
+      "Z": 0.08
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "cocaine",
+      "coke_brick",
+      "kilo",
+      "cartel",
+      "narcotics",
+      "white"
+    ]
+  },
+  {
+    "Model": "prop_drug_package_02",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.3,
+      "Y": 0.2,
+      "Z": 0.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "drugs",
+      "coke",
+      "brick",
+      "contraband",
+      "cartel",
+      "package"
+    ]
+  },
+  {
+    "Model": "prop_weed_tub_01b",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.5,
+    "Tags": [
+      "weed",
+      "hydroponics",
+      "marijuana",
+      "tub",
+      "grow"
+    ]
+  },
+  {
+    "Model": "prop_meth_bag_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.2,
+      "Y": 0.15,
+      "Z": 0.05
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "meth",
+      "crystal",
+      "blue",
+      "drugs",
+      "chemical"
+    ]
+  },
+  {
+    "Model": "prop_box_ammo04a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.5,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.5,
+    "Tags": [
+      "ammo",
+      "weapons",
+      "military",
+      "stash",
+      "ordnance"
+    ]
+  },
+  {
+    "Model": "prop_box_guncase_01a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.4,
+      "Z": 0.3
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.3,
+    "Tags": [
+      "guncase",
+      "weapons",
+      "rifle",
+      "contraband",
+      "arms_deal"
+    ]
+  },
+  {
+    "Model": "prop_barrel_exp_01a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "explosive",
+      "red_barrel",
+      "flammable",
+      "danger"
+    ]
+  },
+  {
+    "Model": "prop_bodybag_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.9,
+      "Y": 0.6,
+      "Z": 0.3
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "bodybag",
+      "corpse",
+      "morgue",
+      "murder",
+      "crime_scene"
+    ]
+  },
+  {
+    "Model": "prop_carjack",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.1,
+      "Y": 0.5,
+      "Z": 0.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "carjack",
+      "hydraulic",
+      "mechanic",
+      "garage",
+      "tools"
+    ]
+  },
+  {
+    "Model": "prop_engine_hoist",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.5,
+      "Y": 1.2,
+      "Z": 2.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "engine_crane",
+      "hoist",
+      "garage",
+      "mechanic",
+      "chop_shop"
+    ]
+  },
+  {
+    "Model": "prop_wheel_tyre",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.7,
+      "Y": 0.7,
+      "Z": 0.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.8,
+    "Tags": [
+      "tire",
+      "tyre_stack",
+      "wheels",
+      "garage",
+      "racing"
+    ]
+  },
+  {
+    "Model": "prop_toolchest_01",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.6,
+      "Z": 1.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 1.2,
+    "Tags": [
+      "toolchest",
+      "tools",
+      "wrench",
+      "mechanic",
+      "red_cabinet"
+    ]
+  },
+  {
+    "Model": "prop_generator_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.4,
+      "Y": 0.9,
+      "Z": 1.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 1.1,
+    "Tags": [
+      "generator",
+      "power",
+      "industrial",
+      "heavy_duty"
+    ]
+  },
+  {
+    "Model": "prop_oilcan_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.2,
+      "Y": 0.2,
+      "Z": 0.3
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "oil",
+      "oilcan",
+      "motor_oil",
+      "garage"
+    ]
+  },
+  {
+    "Model": "prop_compressor_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 0.6,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "compressor",
+      "air_tank",
+      "pneumatic",
+      "garage"
+    ]
+  },
+  {
+    "Model": "prop_laptop_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.4,
+      "Y": 0.3,
+      "Z": 0.25
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "computer",
+      "laptop",
+      "hacker",
+      "tech",
+      "office",
+      "surveillance"
+    ]
+  },
+  {
+    "Model": "prop_monitor_w_large",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.2,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "monitor",
+      "screen",
+      "cctv",
+      "display",
+      "command"
+    ]
+  },
+  {
+    "Model": "prop_server_rack_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 0.8,
+      "Z": 2.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.2,
+    "Tags": [
+      "server",
+      "mainframe",
+      "data_rack",
+      "fib",
+      "tech"
+    ]
+  },
+  {
+    "Model": "prop_flood_light_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.8,
+      "Z": 2.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "floodlight",
+      "stadium_light",
+      "construction",
+      "police_light"
+    ]
+  },
+  {
+    "Model": "prop_bench_press_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 1.2,
+      "Z": 1.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.5,
+    "Tags": [
+      "bench_press",
+      "gym",
+      "workout",
+      "fitness",
+      "weights"
+    ]
+  },
+  {
+    "Model": "prop_barbell_100kg",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 0.4,
+      "Z": 0.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "barbell",
+      "weights",
+      "iron",
+      "gym",
+      "heavy"
+    ]
+  },
+  {
+    "Model": "prop_punch_bag",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.5,
+      "Y": 0.5,
+      "Z": 1.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "punching_bag",
+      "boxing",
+      "gym",
+      "fight"
+    ]
+  },
+  {
+    "Model": "prop_sandbag_01",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.8,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "sandbag",
+      "military",
+      "bunker",
+      "war",
+      "defense",
+      "checkpoint"
+    ]
+  },
+  {
+    "Model": "prop_sandbag_02",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.8,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "sandbag",
+      "military",
+      "corner",
+      "defense"
+    ]
+  },
+  {
+    "Model": "prop_camo_net_01",
+    "Category": "Ceiling",
+    "Dimensions": {
+      "X": 4.0,
+      "Y": 4.0,
+      "Z": 2.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "camo",
+      "camouflage",
+      "netting",
+      "military",
+      "tent"
+    ]
+  },
+  {
+    "Model": "prop_rack_gun_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.5,
+      "Y": 0.5,
+      "Z": 1.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "gun_rack",
+      "rifles",
+      "armory",
+      "military",
+      "weapons"
+    ]
+  },
+  {
+    "Model": "prop_military_crate_01",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.8,
+      "Z": 0.7
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.7,
+    "Tags": [
+      "military_crate",
+      "ammo_box",
+      "ordnance",
+      "army"
+    ]
+  },
+  {
+    "Model": "prop_alien_egg_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.6,
+      "Z": 0.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "alien_egg",
+      "ufo",
+      "alien",
+      "extraterrestrial",
+      "specimen"
+    ]
+  },
+  {
+    "Model": "prop_biotech_store",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.8,
+      "Z": 2.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "biotech",
+      "containment",
+      "capsule",
+      "lab",
+      "sci-fi"
+    ]
+  },
+  {
+    "Model": "prop_chem_vial_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.25
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "chemical",
+      "vial",
+      "science",
+      "lab",
+      "virus"
+    ]
+  },
+  {
+    "Model": "prop_microscope_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.3,
+      "Y": 0.3,
+      "Z": 0.45
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "microscope",
+      "science",
+      "lab",
+      "research"
+    ]
+  },
+  {
+    "Model": "prop_satellite_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 2.0,
+      "Z": 3.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "satellite",
+      "radar",
+      "ufo",
+      "dish",
+      "communications"
+    ]
+  },
+  {
+    "Model": "prop_stretcher_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.7,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.85,
+    "Tags": [
+      "stretcher",
+      "ambulance",
+      "hospital",
+      "paramedic",
+      "medical"
+    ]
+  },
+  {
+    "Model": "prop_med_bag_01b",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.5,
+      "Y": 0.3,
+      "Z": 0.3
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "medbag",
+      "firstaid",
+      "medical",
+      "paramedic",
+      "trauma"
+    ]
+  },
+  {
+    "Model": "prop_fire_exting_1a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.25,
+      "Y": 0.25,
+      "Z": 0.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "fire_extinguisher",
+      "fire",
+      "emergency",
+      "safety"
+    ]
+  },
+  {
+    "Model": "vw_prop_casino_roulette_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.2,
+      "Y": 1.4,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.85,
+    "Tags": [
+      "roulette",
+      "casino",
+      "gambling",
+      "luxury",
+      "vip"
+    ]
+  },
+  {
+    "Model": "vw_prop_casino_slot_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.9,
+      "Y": 0.8,
+      "Z": 1.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "slot_machine",
+      "casino",
+      "gambling",
+      "neon"
+    ]
+  },
+  {
+    "Model": "ba_prop_battle_dj_stand",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 1.0,
+      "Z": 1.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.95,
+    "Tags": [
+      "dj_stand",
+      "dj_booth",
+      "dj",
+      "nightclub",
+      "penthouse",
+      "party",
+      "music"
+    ]
+  },
+  {
+    "Model": "ba_prop_battle_club_speaker_large",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.9,
+      "Y": 0.8,
+      "Z": 2.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "speaker",
+      "club_speaker",
+      "sound",
+      "penthouse",
+      "party",
+      "loud"
+    ]
+  },
+  {
+    "Model": "ba_prop_club_champ_open",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 0.4,
+      "Y": 0.4,
+      "Z": 0.45
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "champagne",
+      "ice_bucket",
+      "vip",
+      "luxury",
+      "party",
+      "drinks"
+    ]
+  },
+  {
+    "Model": "sf_prop_sf_penthouse_party",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.5,
+      "Y": 1.5,
+      "Z": 0.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "party_props",
+      "penthouse_party",
+      "celebration",
+      "luxury",
+      "vip"
+    ]
+  },
+  {
+    "Model": "ch_prop_ch_penthousedoor_01a",
+    "Category": "Door",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.1,
+      "Z": 2.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "penthouse_door",
+      "luxury_door",
+      "gold",
+      "vip"
+    ]
+  },
+  {
+    "Model": "ba_prop_club_bar_chair_01",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 0.5,
+      "Y": 0.5,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.75,
+    "Tags": [
+      "bar_stool",
+      "bar_chair",
+      "vip",
+      "club",
+      "penthouse"
+    ]
+  },
+  {
+    "Model": "prop_couch_01",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 2.2,
+      "Y": 0.9,
+      "Z": 0.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.45,
+    "Tags": [
+      "couch",
+      "sofa",
+      "vip_couch",
+      "luxury",
+      "penthouse"
+    ]
+  },
+  {
+    "Model": "prop_champ_flute",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.25
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "champagne",
+      "luxury",
+      "vip",
+      "drink",
+      "glass"
+    ]
+  },
+  {
+    "Model": "prop_barrier_vip_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 0.2,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "velvet_rope",
+      "vip_barrier",
+      "luxury",
+      "club",
+      "red_carpet"
+    ]
+  },
+  {
+    "Model": "prop_beach_fire",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "campfire",
+      "bonfire",
+      "fire",
+      "camping",
+      "wilderness",
+      "flame"
+    ]
+  },
+  {
+    "Model": "prop_tent_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 2.5,
+      "Y": 2.2,
+      "Z": 1.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "tent",
+      "camping",
+      "survival",
+      "woods",
+      "outdoor"
+    ]
+  },
+  {
+    "Model": "prop_lantern_01",
+    "Category": "Lighting",
+    "Dimensions": {
+      "X": 0.25,
+      "Y": 0.25,
+      "Z": 0.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "lantern",
+      "camping",
+      "light",
+      "oil_lamp"
+    ]
+  },
+  {
+    "Model": "prop_scaffolding_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 3.0,
+      "Y": 1.5,
+      "Z": 3.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "scaffolding",
+      "construction",
+      "industrial",
+      "building"
+    ]
+  },
+  {
+    "Model": "prop_tool_bench_02",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.9,
+      "Z": 0.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.9,
+    "Tags": [
+      "workbench",
+      "tools",
+      "construction",
+      "mechanic"
+    ]
+  },
+  {
+    "Model": "prop_bench_01a",
+    "Category": "Seat",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 0.7,
+      "Z": 0.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.45,
+    "Tags": [
+      "bench",
+      "park",
+      "street",
+      "sit"
+    ]
+  },
+  {
+    "Model": "prop_dumpster_01a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 1.2,
+      "Z": 1.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "dumpster",
+      "trash",
+      "alley",
+      "garbage"
+    ]
+  },
+  {
+    "Model": "prop_vend_soda_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 0.8,
+      "Z": 1.9
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "vending_machine",
+      "soda",
+      "drinks",
+      "snack"
+    ]
+  },
+  {
+    "Model": "prop_pizza_box_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.4,
+      "Y": 0.4,
+      "Z": 0.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "pizza",
+      "food",
+      "party",
+      "box"
+    ]
+  },
+  {
+    "Model": "prop_food_bs_burg1",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.15,
+      "Y": 0.15,
+      "Z": 0.12
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "burger",
+      "food",
+      "eating",
+      "fastfood"
+    ]
+  },
+  {
+    "Model": "prop_drink_whiskey",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.25
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "whiskey",
+      "liquor",
+      "alcohol",
+      "bar"
+    ]
+  },
+  {
+    "Model": "prop_gravetomb_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 0.8,
+      "Z": 0.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "tombstone",
+      "grave",
+      "cemetery",
+      "spooky",
+      "horror"
+    ]
+  },
+  {
+    "Model": "prop_coffin_02b",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 0.7,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "coffin",
+      "casket",
+      "funeral",
+      "corpse",
+      "horror"
+    ]
+  },
+  {
+    "Model": "prop_pooltable_02",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.4,
+      "Y": 1.3,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.85,
+    "Tags": [
+      "pool_table",
+      "billiards",
+      "biker",
+      "clubhouse",
+      "bar"
+    ]
+  },
+  {
+    "Model": "prop_dart_board_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.5,
+      "Y": 0.1,
+      "Z": 0.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "dartboard",
+      "darts",
+      "game",
+      "bar",
+      "pub"
+    ]
+  },
+  {
+    "Model": "xm_prop_x17_desk_cover_01a",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.4,
+      "Y": 1.2,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.85,
+    "Tags": [
+      "doomsday_desk",
+      "war_room",
+      "command_desk",
+      "military_desk",
+      "control_room",
+      "high_tech",
+      "console"
+    ]
+  },
+  {
+    "Model": "xm_prop_lab_desk_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.0,
+      "Y": 1.0,
+      "Z": 0.85
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.85,
+    "Tags": [
+      "lab_desk",
+      "tech_desk",
+      "facility_desk",
+      "control_room",
+      "science"
+    ]
+  },
+  {
+    "Model": "xm_prop_x17_screens_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 2.2,
+      "Y": 0.4,
+      "Z": 1.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "screens",
+      "monitors",
+      "surveillance_wall",
+      "radar",
+      "doomsday_screens",
+      "command"
+    ]
+  },
+  {
+    "Model": "xm_prop_x17_server_farm_cables_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.5,
+      "Y": 1.0,
+      "Z": 2.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.4,
+    "Tags": [
+      "server_farm",
+      "cables",
+      "facility_server",
+      "data_vault",
+      "doomsday"
+    ]
+  },
+  {
+    "Model": "prop_cs_server_rack",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 0.9,
+      "Z": 2.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.2,
+    "Tags": [
+      "server_rack",
+      "mainframe",
+      "data_center",
+      "fib",
+      "tech",
+      "control_room"
+    ]
+  },
+  {
+    "Model": "gr_prop_gr_crates_rifles_01a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.8,
+      "Y": 1.0,
+      "Z": 0.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.8,
+    "Tags": [
+      "rifle_crate",
+      "gunrunning",
+      "weapons_pallet",
+      "military_ordnance",
+      "exhibition"
+    ]
+  },
+  {
+    "Model": "prop_box_wood02a_pu",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 0.8,
+      "Z": 0.6
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.6,
+    "Tags": [
+      "ammo_crate",
+      "wooden_crate",
+      "military_supply",
+      "hardware"
+    ]
+  },
+  {
+    "Model": "h4_prop_h4_panther_statue_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.4,
+      "Z": 0.7
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "panther_statue",
+      "cayo_perico",
+      "heist_loot",
+      "statue",
+      "valuable",
+      "gold_panther",
+      "auction_item",
+      "artifact"
+    ]
+  },
+  {
+    "Model": "h4_prop_h4_necklace_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.3,
+      "Y": 0.3,
+      "Z": 0.15
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "ruby_necklace",
+      "necklace",
+      "cayo_perico",
+      "heist_loot",
+      "jewels",
+      "auction_item"
+    ]
+  },
+  {
+    "Model": "h4_prop_h4_glass_disp_01a",
+    "Category": "Container",
+    "Dimensions": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 1.8
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 1.0,
+    "Tags": [
+      "glass_case",
+      "display_case",
+      "pedestal",
+      "security_glass",
+      "cayo_perico",
+      "museum",
+      "auction_pedestal"
+    ]
+  },
+  {
+    "Model": "h4_prop_h4_gold_stack_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.6,
+      "Y": 0.4,
+      "Z": 0.3
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "gold_bars",
+      "gold_stack",
+      "cayo_perico",
+      "bullion",
+      "wealth",
+      "heist_loot"
+    ]
+  },
+  {
+    "Model": "h4_prop_h4_cctv_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.4,
+      "Y": 0.4,
+      "Z": 0.4
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "cctv",
+      "security_camera",
+      "cayo_perico",
+      "compound_camera",
+      "surveillance"
+    ]
+  },
+  {
+    "Model": "h4_prop_h4_gate_l_01a",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 2.5,
+      "Y": 0.3,
+      "Z": 3.0
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 3.0,
+    "Tags": [
+      "compound_gate",
+      "iron_gate",
+      "cayo_perico",
+      "security_gate",
+      "blast_gate"
+    ]
+  },
+  {
+    "Model": "prop_palm_sm_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 2.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "palm_tree",
+      "tropical_plant",
+      "palm",
+      "foliage",
+      "tropical",
+      "cayo_flora"
+    ]
+  },
+  {
+    "Model": "prop_plant_palm_01a",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.8,
+      "Z": 1.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "potted_palm",
+      "tropical_plant",
+      "exotic_flora",
+      "tropical",
+      "hotel_plant"
+    ]
+  },
+  {
+    "Model": "prop_lectern_01",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.6,
+      "Z": 1.2
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 1.1,
+    "Tags": [
+      "auction_podium",
+      "podium",
+      "lectern",
+      "auctioneer",
+      "stage"
+    ]
+  },
+  {
+    "Model": "prop_fncsec_04gate",
+    "Category": "Wall",
+    "Dimensions": {
+      "X": 3.0,
+      "Y": 0.3,
+      "Z": 2.5
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.5,
+    "Tags": [
+      "security_gate",
+      "fence_gate",
+      "perimeter_gate",
+      "compound"
+    ]
+  },
+  {
+    "Model": "prop_table_03",
+    "Category": "Table",
+    "Dimensions": {
+      "X": 2.4,
+      "Y": 1.2,
+      "Z": 0.76
+    },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.76,
+    "Tags": [
+      "planning_table",
+      "conference_table",
+      "table",
+      "wood_table",
+      "heist_table",
+      "boardroom"
+    ]
+  },
+  {
+    "Model": "prop_blueprint_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.8,
+      "Y": 0.6,
+      "Z": 0.02
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "blueprint",
+      "heist_plan",
+      "schematic",
+      "robbery_plan",
+      "vault_blueprints",
+      "planning"
+    ]
+  },
+  {
+    "Model": "prop_cash_stack_01",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.3,
+      "Y": 0.2,
+      "Z": 0.1
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "cash_stack",
+      "cash",
+      "money",
+      "robbery_score",
+      "loot",
+      "hundreds"
+    ]
+  },
+  {
+    "Model": "prop_v_cam_phone",
+    "Category": "Prop",
+    "Dimensions": {
+      "X": 0.15,
+      "Y": 0.08,
+      "Z": 0.02
+    },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [
+      "phone",
+      "cellphone",
+      "burner_phone",
+      "contract",
+      "record_phone"
+    ]
+  },
+  {
+    "Model": "bkr_prop_meth_chckvat",
+    "Category": "Container",
+    "Dimensions": { "X": 2.2, "Y": 1.8, "Z": 2.5 },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 2.5,
+    "Tags": [ "vat", "meth_vat", "meth", "chemical", "manufacturing", "cooks", "lab" ]
+  },
+  {
+    "Model": "bkr_prop_meth_table01a",
+    "Category": "Table",
+    "Dimensions": { "X": 2.4, "Y": 1.2, "Z": 0.9 },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.9,
+    "Tags": [ "table", "meth_table", "lab_table", "meth", "chemical", "lab", "cooks" ]
+  },
+  {
+    "Model": "bkr_prop_meth_scale_01a",
+    "Category": "Prop",
+    "Dimensions": { "X": 0.35, "Y": 0.35, "Z": 0.1 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [ "scale", "meth_scale", "meth", "contraband", "measuring" ]
+  },
+  {
+    "Model": "bkr_prop_meth_acetone",
+    "Category": "Container",
+    "Dimensions": { "X": 0.6, "Y": 0.6, "Z": 1.0 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 1.0,
+    "Tags": [ "barrel", "drum", "chemical", "acetone", "meth", "solvent" ]
+  },
+  {
+    "Model": "bkr_prop_biker_chair_01",
+    "Category": "Seat",
+    "Dimensions": { "X": 0.6, "Y": 0.6, "Z": 0.9 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.45,
+    "Tags": [ "chair", "seat", "biker_chair", "biker", "clubhouse" ]
+  },
+  {
+    "Model": "prop_bar_beerfridge",
+    "Category": "Container",
+    "Dimensions": { "X": 1.2, "Y": 0.8, "Z": 1.6 },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 1.6,
+    "Tags": [ "fridge", "beerfridge", "beer", "bar", "clubhouse", "drinks" ]
+  },
+  {
+    "Model": "prop_container_01a",
+    "Category": "Container",
+    "Dimensions": { "X": 12.0, "Y": 2.5, "Z": 2.8 },
+    "Walkable": true,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 2.8,
+    "Tags": [ "container", "shipping", "cargo", "freight", "dockyard", "port" ]
+  },
+  {
+    "Model": "prop_pallet_01a",
+    "Category": "Prop",
+    "Dimensions": { "X": 1.2, "Y": 1.2, "Z": 0.15 },
+    "Walkable": true,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.15,
+    "Tags": [ "pallet", "cargo", "warehouse", "industrial", "shipping", "dockyard" ]
+  },
+  {
+    "Model": "prop_file_box_01",
+    "Category": "Prop",
+    "Dimensions": { "X": 0.4, "Y": 0.3, "Z": 0.3 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [ "file", "files", "box", "office", "police", "records", "case_files" ]
+  },
+  {
+    "Model": "v_med_bed1",
+    "Category": "Prop",
+    "Dimensions": { "X": 2.1, "Y": 0.9, "Z": 0.8 },
+    "Walkable": false,
+    "BlocksNavMesh": true,
+    "CanAttachChildren": true,
+    "SurfaceElevation": 0.8,
+    "Tags": [ "gurney", "bed", "hospital_bed", "medical", "hospital", "triage", "patient" ]
+  },
+  {
+    "Model": "v_med_ivstand",
+    "Category": "Prop",
+    "Dimensions": { "X": 0.5, "Y": 0.5, "Z": 1.8 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [ "ivstand", "iv", "medical", "hospital", "triage", "drip" ]
+  },
+  {
+    "Model": "v_serv_ct_defib",
+    "Category": "Prop",
+    "Dimensions": { "X": 0.35, "Y": 0.3, "Z": 0.2 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [ "defibrillator", "defib", "medical", "hospital", "emergency", "triage" ]
+  },
+  {
+    "Model": "prop_weld_torch",
+    "Category": "Prop",
+    "Dimensions": { "X": 0.6, "Y": 0.4, "Z": 0.9 },
+    "Walkable": false,
+    "BlocksNavMesh": false,
+    "CanAttachChildren": false,
+    "SurfaceElevation": 0.0,
+    "Tags": [ "welder", "welding", "torch", "mechanic", "chop_shop", "tools" ]
+  }
+]

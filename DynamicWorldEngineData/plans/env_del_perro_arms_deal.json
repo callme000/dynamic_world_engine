@@ -1,0 +1,422 @@
+{
+  "EnvironmentId": "env_del_perro_arms_deal",
+  "Name": "Midnight Beachfront Arms Deal",
+  "Archetype": "covert_arms_deal",
+  "CenterPosition": {
+    "x": -1500.0,
+    "y": -1190.0,
+    "z": 2.5
+  },
+  "Heading": 140.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_del_perro_beach",
+    "Name": "Del Perro Beach Sands",
+    "Category": "beach",
+    "Description": "Expansive Pacific beachfront sands ideal for social bonfires, volleyball, and sunbathing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 40,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "beach",
+      "del_perro_beach",
+      "vespucci_beach",
+      "bonfire",
+      "sands",
+      "surf",
+      "swimming",
+      "ocean",
+      "sunbathe",
+      "Del Perro Beach",
+      "Vespucci Beach",
+      "Los Santos Beach",
+      "The Beach",
+      "Beach Sands",
+      "Beach Bonfire",
+      "open_public",
+      "beachfront_sun"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorHeading": 140.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "prop_fire_1",
+      "ParentPropId": "",
+      "ModelName": "prop_beach_fire",
+      "WorldPosition": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "prop_table_1",
+      "ParentPropId": "",
+      "ModelName": "prop_table_01",
+      "WorldPosition": {
+        "x": -1499.43213,
+        "y": -1192.43457,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.0,
+        "y": 1.0,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "prop_cooler_1",
+      "ParentPropId": "",
+      "ModelName": "prop_cooler_01a",
+      "WorldPosition": {
+        "x": -1502.81763,
+        "y": -1190.24658,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 230.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "prop_case_1",
+      "ParentPropId": "prop_table_1",
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": -1499.43213,
+        "y": -1192.43457,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 185.0
+      },
+      "IsDynamic": true,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_dealer",
+      "Name": "Victor 'Vito' Vance",
+      "Occupation": "Arms Dealer",
+      "PublicFaction": "Bikers",
+      "HiddenRole": "Independent smuggler supplying local gangs",
+      "PedModel": "biker_dealer",
+      "WorldPosition": {
+        "x": -1499.62231,
+        "y": -1191.88354,
+        "z": 2.5
+      },
+      "Heading": 160.956192,
+      "Scenario": "none",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "talk_to:npc_buyer",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Negotiating the price of military-grade hardware in the dark.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_buyer",
+      "Name": "Marcus 'Kilo' Brody",
+      "Occupation": "Gang Lieutenant",
+      "PublicFaction": "Families",
+      "HiddenRole": "Looking to gain an edge in turf wars",
+      "PedModel": "families_gang_member",
+      "WorldPosition": {
+        "x": -1499.24182,
+        "y": -1192.98584,
+        "z": 2.5
+      },
+      "Heading": 340.9562,
+      "Scenario": "none",
+      "Weapon": "WEAPON_MICROSMG",
+      "InitialTask": "talk_to:npc_dealer",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Inspecting the contents of the weapons case.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_driver",
+      "Name": "Silent Snake",
+      "Occupation": "Getaway Driver",
+      "PublicFaction": "Bikers",
+      "HiddenRole": "Overwatch lookout",
+      "PedModel": "biker_muscle",
+      "WorldPosition": {
+        "x": -1500.08813,
+        "y": -1197.10583,
+        "z": 2.5
+      },
+      "Heading": 170.0,
+      "Scenario": "WORLD_HUMAN_SMOKING",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "guard_post",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Smoking a cigarette while leaning against the truck door, watching the boardwalk.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": -1498.29456,
+        "y": -1186.65515,
+        "z": 2.5
+      },
+      "Heading": 197.3015,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": -1497.97949,
+        "y": -1185.843,
+        "z": 2.5
+      },
+      "Heading": 0.8955078,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_1",
+      "ModelName": "rebel2",
+      "WorldPosition": {
+        "x": -1505.0,
+        "y": -1184.0,
+        "z": 2.5
+      },
+      "Heading": 170.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": true,
+      "DriverEntityId": "npc_driver"
+    },
+    {
+      "VehicleId": "veh_2",
+      "ModelName": "surfer",
+      "WorldPosition": {
+        "x": -1494.0,
+        "y": -1186.0,
+        "z": 2.5
+      },
+      "Heading": 260.0,
+      "PrimaryColor": "blue",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "CLEAR",
+    "time_hours": 1,
+    "time_minutes": 30,
+    "ambient_fx": "bonfire"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 0.5
+      },
+      "Heading": 140.0
+    },
+    {
+      "Center": {
+        "x": -1499.43213,
+        "y": -1192.43457,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.0,
+        "y": 2.0,
+        "z": 0.76
+      },
+      "Heading": 185.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Del Perro Beach Sands",
+    "donor_asset_origin": "Smuggler Run DLC",
+    "requested_asset_family": "Illicit firearms and off-road transport",
+    "ontological_distinction": "Public beach repurposed as a temporary clandestine meeting ground using imported contraband props and vehicles.",
+    "resolved_venue_interior": "loc_del_perro_beach",
+    "transferred_asset_models": [
+      "prop_beach_fire",
+      "prop_table_01",
+      "prop_cooler_01a",
+      "prop_box_ammo04a"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 6,
+    "ResolvedCount": 1,
+    "PassthroughCount": 5,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_beach_fire",
+        "ResolvedModelName": "prop_beach_fire",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_01",
+        "ResolvedModelName": "prop_table_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "weapons_case",
+        "ResolvedModelName": "prop_box_ammo04a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 45.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 45.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "prop_cooler_01a",
+        "ResolvedModelName": "prop_cooler_01a",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "rebel2",
+        "ResolvedModelName": "rebel2",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "surfer",
+        "ResolvedModelName": "surfer",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}

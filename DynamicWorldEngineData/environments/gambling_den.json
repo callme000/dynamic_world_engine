@@ -1,0 +1,52 @@
+{
+  "action": "BUILD_ENVIRONMENT",
+  "data": {
+    "environment_id": "env_gambling_den_01",
+    "name": "Alley High-Stakes Gambling Den",
+    "archetype": "gambling_den",
+    "description": "Underground high-stakes card table run by local fixers and backed by armed muscle.",
+    "center_offset": { "x": 0.0, "y": 3.0, "z": 0.0 },
+    "props": [
+      { "model": "prop_table_03b",    "offset": { "x":  0.0, "y":  0.00, "z": 0.0  }, "heading":   0.0, "is_dynamic": false },
+      { "model": "prop_chair_01a",    "offset": { "x":  0.0, "y": -0.85, "z": 0.0  }, "heading":   0.0, "is_dynamic": false },
+      { "model": "prop_chair_01a",    "offset": { "x":  0.0, "y":  0.85, "z": 0.0  }, "heading": 180.0, "is_dynamic": false },
+      { "model": "prop_chair_01a",    "offset": { "x": -0.85,"y":  0.0,  "z": 0.0  }, "heading":  90.0, "is_dynamic": false },
+      { "model": "prop_cash_pile_01", "offset": { "x":  0.1, "y":  0.0,  "z": 0.76 }, "heading":  45.0, "is_dynamic": false },
+      { "model": "prop_beer_bottle",  "offset": { "x": -0.2, "y":  0.2,  "z": 0.76 }, "heading":   0.0, "is_dynamic": false }
+    ],
+    "npcs": [
+      {
+        "entity_id": "npc_dealer_marcus",
+        "name": "Marcus 'Snake-Eyes' Vance",
+        "occupation": "Blackjack & Poker Dealer",
+        "public_faction": "Independent Fixers",
+        "hidden_role": "Secretly skimming money from Ballas kingpin",
+        "ped_model": "s_m_m_highsec_01",
+        "offset": { "x": 0.0, "y": 0.95, "z": 0.0 },
+        "heading": 180.0,
+        "scenario": "WORLD_HUMAN_STAND_IMPARTIAL",
+        "weapon": "WEAPON_DAGGER",
+        "relationships": { "Player": 10, "Police": -60, "Ballas": -30 },
+        "initial_events": [
+          { "description": "Deals high-stakes illegal poker in back alleys", "sentiment_tag": "Gambling_Active" }
+        ]
+      },
+      {
+        "entity_id": "npc_guard_bruno",
+        "name": "Bruno 'The Wall' Kowalski",
+        "occupation": "Enforcer & Table Bouncer",
+        "public_faction": "Independent Fixers",
+        "hidden_role": "Under orders to shoot anyone who draws a weapon",
+        "ped_model": "g_m_y_salvagoon_01",
+        "offset": { "x": 1.8, "y": 0.3, "z": 0.0 },
+        "heading": 270.0,
+        "scenario": "WORLD_HUMAN_GUARD_STAND",
+        "weapon": "WEAPON_SAWNOFFSHOTGUN",
+        "relationships": { "Player": -10, "Police": -80, "Marcus 'Snake-Eyes' Vance": 90 },
+        "initial_events": [
+          { "description": "Guards Marcus and the card table with a loaded sawed-off shotgun", "sentiment_tag": "Guard_Active" }
+        ]
+      }
+    ]
+  }
+}

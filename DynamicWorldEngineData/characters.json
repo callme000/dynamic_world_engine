@@ -1,0 +1,298 @@
+[
+  {
+    "CharacterId": "char_moodymann",
+    "FullName": "Moodymann (Kenny Dixon Jr.)",
+    "PedModel": "ig_moodyman_02",
+    "DefaultOccupation": "Resident Headlining DJ & Music Producer",
+    "PublicFaction": "The Music Locker / KDJ",
+    "CanonDescription": "Legendary Detroit house and techno producer headlining The Music Locker underground club beneath the Diamond Casino.",
+    "DlcOrigin": "The Cayo Perico Heist / The Music Locker & Los Santos Tuners",
+    "Roles": [
+      "dj",
+      "party_dj",
+      "resident_dj",
+      "producer",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_music_locker",
+      "int_casino_penthouse",
+      "int_nightclub_vip"
+    ],
+    "Keywords": [
+      "moodymann",
+      "moodyman",
+      "kenny dixon",
+      "kdj",
+      "music locker dj",
+      "party dj",
+      "gta online dj",
+      "detroit techno"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "dj_performance"
+  },
+  {
+    "CharacterId": "char_solomun",
+    "FullName": "Solomun",
+    "PedModel": "ig_solomon",
+    "DefaultOccupation": "Resident Underground DJ & Diynamic Founder",
+    "PublicFaction": "Diynamic / After Hours",
+    "CanonDescription": "Acclaimed Bosnian-German deep house DJ and music producer who launched the underground club scene across Los Santos.",
+    "DlcOrigin": "After Hours DLC",
+    "Roles": [
+      "dj",
+      "party_dj",
+      "resident_dj",
+      "producer",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_nightclub_vip",
+      "int_music_locker"
+    ],
+    "Keywords": [
+      "solomun",
+      "solomon",
+      "diynamic",
+      "after hours dj",
+      "deep house dj",
+      "party dj"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "dj_performance"
+  },
+  {
+    "CharacterId": "char_black_madonna",
+    "FullName": "The Black Madonna",
+    "PedModel": "ig_djblamadon",
+    "DefaultOccupation": "Resident High-Energy Disco & House DJ",
+    "PublicFaction": "We Still Believe / The Music Locker",
+    "CanonDescription": "Globally renowned American DJ known for euphoric house and disco sets at the Nightclub and The Music Locker.",
+    "DlcOrigin": "After Hours & The Music Locker DLC",
+    "Roles": [
+      "dj",
+      "party_dj",
+      "resident_dj",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_music_locker",
+      "int_nightclub_vip"
+    ],
+    "Keywords": [
+      "black madonna",
+      "the black madonna",
+      "blessed madonna",
+      "blamadon",
+      "party dj"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "dj_performance"
+  },
+  {
+    "CharacterId": "char_dixon",
+    "FullName": "Dixon",
+    "PedModel": "ig_djdixmanager",
+    "DefaultOccupation": "Resident Electronic & Techno DJ",
+    "PublicFaction": "Innervisions / After Hours",
+    "CanonDescription": "German electronic DJ and Innervisions founder known for precise techno and seamless electronic transitions.",
+    "DlcOrigin": "After Hours DLC",
+    "Roles": [
+      "dj",
+      "party_dj",
+      "resident_dj",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_nightclub_vip"
+    ],
+    "Keywords": [
+      "dixon",
+      "djdixon",
+      "innervisions",
+      "techno dj"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "dj_performance"
+  },
+  {
+    "CharacterId": "char_tale_of_us",
+    "FullName": "Tale of Us",
+    "PedModel": "ig_talcc",
+    "DefaultOccupation": "Resident Melodic Techno DJ Duo",
+    "PublicFaction": "Afterlife / After Hours",
+    "CanonDescription": "Italian electronic and melodic techno DJ duo performing hypnotic sets for VIP clubgoers.",
+    "DlcOrigin": "After Hours DLC",
+    "Roles": [
+      "dj",
+      "party_dj",
+      "resident_dj",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_nightclub_vip"
+    ],
+    "Keywords": [
+      "tale of us",
+      "taleofus",
+      "afterlife",
+      "melodic techno"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "dj_performance"
+  },
+  {
+    "CharacterId": "char_dr_dre",
+    "FullName": "Dr. Dre",
+    "PedModel": "ig_musician_00",
+    "DefaultOccupation": "Legendary VIP Producer & Hip-Hop Icon",
+    "PublicFaction": "Record A Studios / Aftermath",
+    "CanonDescription": "Iconic Grammy-winning producer and artist with exclusive stolen tracks recovered by F. Clinton and Partner.",
+    "DlcOrigin": "The Contract & The Cayo Perico Heist",
+    "Roles": [
+      "producer",
+      "vip_artist",
+      "heist_client",
+      "dj",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_record_a_studios",
+      "int_casino_penthouse"
+    ],
+    "Keywords": [
+      "dr dre",
+      "doctor dre",
+      "dre",
+      "record a",
+      "the contract"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "studio_session"
+  },
+  {
+    "CharacterId": "char_dj_pooh",
+    "FullName": "DJ Pooh",
+    "PedModel": "ig_djpooh",
+    "DefaultOccupation": "Radio Host & West Coast DJ",
+    "PublicFaction": "West Coast Classics",
+    "CanonDescription": "Legendary record producer and host of West Coast Classics, connecting old school beats to Los Santos nightlife.",
+    "DlcOrigin": "The Contract & Base Game",
+    "Roles": [
+      "dj",
+      "radio_host",
+      "celebrity"
+    ],
+    "AssociatedInteriors": [
+      "int_record_a_studios",
+      "int_music_locker"
+    ],
+    "Keywords": [
+      "dj pooh",
+      "pooh",
+      "west coast classics"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_PARTYING",
+    "DefaultInitialTask": "dj_performance"
+  },
+  {
+    "CharacterId": "char_franklin",
+    "FullName": "Franklin Clinton",
+    "PedModel": "p_franklin_02",
+    "DefaultOccupation": "Agency Partner & Heist Mastermind",
+    "PublicFaction": "F. Clinton & Partner",
+    "CanonDescription": "GTA V protagonist turned high-end celebrity problem solver and Agency partner.",
+    "DlcOrigin": "Story Mode & The Contract",
+    "Roles": [
+      "protagonist",
+      "mastermind",
+      "agency_partner"
+    ],
+    "AssociatedInteriors": [
+      "int_record_a_studios"
+    ],
+    "Keywords": [
+      "franklin",
+      "franklin clinton"
+    ],
+    "DefaultScenario": "PROP_HUMAN_SEAT_CHAIR",
+    "DefaultInitialTask": "tactical_planning"
+  },
+  {
+    "CharacterId": "char_lamar",
+    "FullName": "Lamar Davis",
+    "PedModel": "ig_lamardavis_02",
+    "DefaultOccupation": "LD Organics Founder & Conspirator",
+    "PublicFaction": "LD Organics",
+    "CanonDescription": "Longtime friend of Franklin, street entrepreneur, and LD Organics brand ambassador.",
+    "DlcOrigin": "Story Mode & The Contract",
+    "Roles": [
+      "conspirator",
+      "gangster",
+      "entrepreneur"
+    ],
+    "AssociatedInteriors": [
+      "int_record_a_studios"
+    ],
+    "Keywords": [
+      "lamar",
+      "lamar davis"
+    ],
+    "DefaultScenario": "PROP_HUMAN_SEAT_CHAIR",
+    "DefaultInitialTask": "hype_conspiracy"
+  },
+  {
+    "CharacterId": "char_tom_connors",
+    "FullName": "Tom Connors",
+    "PedModel": "ig_tomcasino",
+    "DefaultOccupation": "Diamond Casino Guest Services Manager",
+    "PublicFaction": "The Diamond Casino & Resort",
+    "CanonDescription": "Head of VIP Guest Services coordinating high-roller bookings and talent bookings for The Music Locker.",
+    "DlcOrigin": "The Diamond Casino & Resort & The Music Locker",
+    "Roles": [
+      "guest_services",
+      "manager",
+      "vip_liaison"
+    ],
+    "AssociatedInteriors": [
+      "int_casino_penthouse",
+      "int_music_locker"
+    ],
+    "Keywords": [
+      "tom connors",
+      "casino manager"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_CLIPBOARD",
+    "DefaultInitialTask": "manage_vip"
+  },
+  {
+    "CharacterId": "char_dr_dre",
+    "FullName": "Dr. Dre",
+    "PedModel": "ig_musician_00",
+    "DefaultOccupation": "Iconic Hip-Hop Producer & Artist",
+    "PublicFaction": "Record A Studios / The Contract",
+    "CanonDescription": "Legendary hip-hop artist and music producer visiting Los Santos to track down his stolen unreleased music contract tracks.",
+    "DlcOrigin": "The Contract (mpsecurity)",
+    "Roles": [
+      "artist",
+      "producer",
+      "celebrity",
+      "musician"
+    ],
+    "AssociatedInteriors": [
+      "int_record_a_studios",
+      "int_agency"
+    ],
+    "Keywords": [
+      "dr. dre",
+      "dr dre",
+      "dre",
+      "andre young",
+      "record a studios",
+      "the contract"
+    ],
+    "DefaultScenario": "WORLD_HUMAN_STAND",
+    "DefaultInitialTask": ""
+  }
+]

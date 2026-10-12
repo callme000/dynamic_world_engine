@@ -1,0 +1,484 @@
+{
+  "EnvironmentId": "env_del_perro_tactical_briefing",
+  "Name": "Del Perro Shoreline Covert Briefing",
+  "Archetype": "Covert Field Briefing",
+  "CenterPosition": {
+    "x": -1500.0,
+    "y": -1190.0,
+    "z": 2.5
+  },
+  "Heading": 140.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "loc_del_perro_beach",
+    "Name": "Del Perro Beach Sands",
+    "Category": "beach",
+    "Description": "Expansive Pacific beachfront sands ideal for social bonfires, volleyball, and sunbathing.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 40,
+    "SemanticTags": [
+      "outdoor",
+      "open_world",
+      "landmark",
+      "beach",
+      "del_perro_beach",
+      "vespucci_beach",
+      "bonfire",
+      "sands",
+      "surf",
+      "swimming",
+      "ocean",
+      "sunbathe",
+      "Del Perro Beach",
+      "Vespucci Beach",
+      "Los Santos Beach",
+      "The Beach",
+      "Beach Sands",
+      "Beach Bonfire",
+      "open_public",
+      "beachfront_sun"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorCoords": {
+      "x": -1500.0,
+      "y": -1190.0,
+      "z": 2.5
+    },
+    "InteriorHeading": 140.0,
+    "EntitySets": [],
+    "SupportsVehicles": true,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "prop_field_table",
+      "ParentPropId": "",
+      "ModelName": "prop_table_03",
+      "WorldPosition": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 320.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.4,
+        "y": 1.2,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "prop_equipment_footlocker",
+      "ParentPropId": "",
+      "ModelName": "prop_military_crate_01",
+      "WorldPosition": {
+        "x": -1503.12939,
+        "y": -1191.55139,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 225.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 1.2,
+        "y": 0.8,
+        "z": 0.7
+      }
+    },
+    {
+      "PropId": "prop_cooler_hydration",
+      "ParentPropId": "",
+      "ModelName": "prop_monitor_w_large",
+      "WorldPosition": {
+        "x": -1500.88049,
+        "y": -1192.91626,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 330.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "prop_briefing_laptop",
+      "ParentPropId": "prop_field_table",
+      "ModelName": "prop_laptop_01a",
+      "WorldPosition": {
+        "x": -1502.1582,
+        "y": -1192.10522,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 320.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.4,
+        "y": 0.3,
+        "z": 0.25
+      }
+    },
+    {
+      "PropId": "prop_tactical_satellite_radio",
+      "ParentPropId": "prop_field_table",
+      "ModelName": "prop_monitor_w_large",
+      "WorldPosition": {
+        "x": -1501.596,
+        "y": -1192.44641,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 345.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.2,
+        "z": 0.5
+      }
+    },
+    {
+      "PropId": "prop_covert_docs",
+      "ParentPropId": "prop_field_table",
+      "ModelName": "prop_monitor_w_large",
+      "WorldPosition": {
+        "x": -1502.07324,
+        "y": -1192.59546,
+        "z": 2.3
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 310.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.2,
+        "z": 0.5
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_case_officer",
+      "Name": "Handler Keller",
+      "Occupation": "Black Ops Handler",
+      "PublicFaction": "Military",
+      "HiddenRole": "Disavowed Intelligence Coordinator orchestrating a high-risk extraction",
+      "PedModel": "tactical_operative",
+      "WorldPosition": {
+        "x": -1502.44263,
+        "y": -1192.911,
+        "z": 2.5
+      },
+      "Heading": 83.8765,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "talk_to:Player",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 1
+      },
+      "InitialEvents": [
+        {
+          "description": "Reviewed mission satellite feeds and synchronized communications for the Del Perro infiltration window.",
+          "sentiment_tag": "positive"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_perimeter_scout",
+      "Name": "Sergeant Ramos",
+      "Occupation": "Perimeter Spotter",
+      "PublicFaction": "Military",
+      "HiddenRole": "Dedicated marksman providing overwatch against boardwalk surveillance",
+      "PedModel": "paramilitary_mercenary",
+      "WorldPosition": {
+        "x": -1498.8562,
+        "y": -1192.52625,
+        "z": 2.5
+      },
+      "Heading": 263.876526,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Monitoring boardwalk foot traffic to prevent civilian interference during the debrief.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_boat_pilot",
+      "Name": "Morales",
+      "Occupation": "Extraction Coxswain",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Smuggler contracted for swift maritime insertion and exfiltration",
+      "PedModel": "diver_specialist",
+      "WorldPosition": {
+        "x": -1503.34058,
+        "y": -1185.89148,
+        "z": 2.5
+      },
+      "Heading": 80.0,
+      "Scenario": "WORLD_HUMAN_SMOKING",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "guard_post",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Prepped coastal dinghy engine for rapid throttle response upon mission signal.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_military_garrison_4",
+      "Name": "Marine Soldier 4",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Tactical Checkpoint Sentinel",
+      "PedModel": "s_m_y_marine_01",
+      "WorldPosition": {
+        "x": -1498.29456,
+        "y": -1186.65515,
+        "z": 2.5
+      },
+      "Heading": 197.3015,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    },
+    {
+      "EntityId": "npc_military_garrison_5",
+      "Name": "Marine Soldier 5",
+      "Occupation": "Marine Tactical Specialist",
+      "PublicFaction": "Military",
+      "HiddenRole": "Perimeter Sandbag Gunner",
+      "PedModel": "s_m_m_marine_01",
+      "WorldPosition": {
+        "x": -1497.97949,
+        "y": -1185.843,
+        "z": 2.5
+      },
+      "Heading": 0.8955078,
+      "Scenario": "WORLD_HUMAN_COP_IDLES",
+      "Weapon": "WEAPON_CARBINERIFLE",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_recon_truck",
+      "ModelName": "mule",
+      "WorldPosition": {
+        "x": -1503.8,
+        "y": -1185.5,
+        "z": 2.5
+      },
+      "Heading": 280.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": true,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "veh_coastal_zodiac",
+      "ModelName": "dinghy",
+      "WorldPosition": {
+        "x": -1493.5,
+        "y": -1192.0,
+        "z": 2.5
+      },
+      "Heading": 350.0,
+      "PrimaryColor": "matte_black",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "FOGGY",
+    "time_hours": 23,
+    "time_minutes": 15,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": -1501.92834,
+        "y": -1192.2981,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 2.4,
+        "z": 0.76
+      },
+      "Heading": 320.0
+    },
+    {
+      "Center": {
+        "x": -1503.12939,
+        "y": -1191.55139,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 0.8,
+        "y": 1.2,
+        "z": 0.7
+      },
+      "Heading": 225.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Del Perro Beach Sands (Area_A)",
+    "donor_asset_origin": "Tactical Intelligence & Private Military Supply",
+    "requested_asset_family": "Field command workstation, rugged communications, and covert landing craft",
+    "ontological_distinction": "The natural beachfront remains an open public coastal shore, while the tactical briefing table, military-grade comms, and disavowed personnel originate from black-budget defense contractors.",
+    "resolved_venue_interior": "loc_del_perro_beach",
+    "transferred_asset_models": [
+      "prop_table_03",
+      "prop_military_crate_01",
+      "prop_monitor_w_large",
+      "prop_laptop_01a"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 8,
+    "ResolvedCount": 7,
+    "PassthroughCount": 1,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "folding_table",
+        "ResolvedModelName": "prop_table_03",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 145.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 145.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "ruggedized_laptop",
+        "ResolvedModelName": "prop_laptop_01a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 70.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 70.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "radio_transceiver",
+        "ResolvedModelName": "prop_monitor_w_large",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 65.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 65.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "manila_folder",
+        "ResolvedModelName": "prop_monitor_w_large",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 50.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 50.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "military_crate",
+        "ResolvedModelName": "prop_military_crate_01",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 120.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 120.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "ice_chest",
+        "ResolvedModelName": "prop_monitor_w_large",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 50.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 50.0)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "offroad_truck",
+        "ResolvedModelName": "mule",
+        "IsExactMatch": false,
+        "Confidence": 0.85,
+        "MatchScore": 0.0,
+        "Provenance": "Semantic Class: Commercial Transport"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "dinghy",
+        "ResolvedModelName": "dinghy",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Known GTA Vehicle)"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}
