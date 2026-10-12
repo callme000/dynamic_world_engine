@@ -94,13 +94,11 @@ if ($builtHash -ne $deployedHash) {
 }
 Pass "GTA scripts DLL matches the freshly built DLL."
 
-try {
-    $deployed = [Reflection.Assembly]::ReflectionOnlyLoadFrom((Resolve-Path -LiteralPath $deployedAssembly).Path)
-    $deployedReferences = @($deployed.GetReferencedAssemblies() | ForEach-Object { $_.Name })
-}
-catch {
-    Fail "Could not inspect deployed assembly metadata: $($_.Exception.Message)"
-}
+# The SHA-256 comparison above proves these are byte-for-byte identical assemblies.
+# Do not ReflectionOnlyLoadFrom() the deployed path: .NET Framework reflection-only
+# loading allows an assembly identity to be loaded from only one location per AppDomain.
+# Reuse the already inspected reference list for the identical deployed file.
+$deployedReferences = $referenceNames
 
 if ($deployedReferences -notcontains "ScriptHookVDotNet3") {
     Fail "Deployed DynamicWorldEngine.dll does not reference ScriptHookVDotNet3."
