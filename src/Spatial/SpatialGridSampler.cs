@@ -107,10 +107,20 @@ namespace DynamicWorldEngine.Spatial
                     float groundHeight;
                     Vector3 normal;
                     bool gotNormal = World.GetGroundHeightAndNormal(probePos, out groundHeight, out normal);
-                    if (!gotNormal) groundHeight = World.GetGroundHeight(probePos);
+                    if (!gotNormal)
+                    {
+                        groundHeight = World.GetGroundHeight(probePos);
+                        normal = Vector3.Zero;
+                    }
 
-                    float nz = Math.Max(-1.0f, Math.Min(1.0f, normal.Z));
-                    float slopeDeg = (float)Math.Acos(nz) * (180.0f / (float)Math.PI);
+                    // A fallback elevation without a valid surface normal is not enough
+                    // evidence to call the cell flat or walkable.
+                    float slopeDeg = -1.0f;
+                    if (gotNormal)
+                    {
+                        float nz = Math.Max(-1.0f, Math.Min(1.0f, normal.Z));
+                        slopeDeg = (float)Math.Acos(nz) * (180.0f / (float)Math.PI);
+                    }
 
                     // Check water elevation
                     bool isWater = false;
@@ -125,12 +135,13 @@ namespace DynamicWorldEngine.Spatial
                     }
                     catch {}
 
-                    // Surface type inference
-                    string sType = "CONCRETE";
+                    // Surface type inference. Unknown geometry is deliberately
+                    // excluded from candidate-area clustering.
+                    string sType = gotNormal ? "CONCRETE" : "UNKNOWN";
                     if (isWater) sType = "WATER";
-                    else if (groundHeight <= 4.0f && Math.Abs(cx) > 1000f) sType = "SAND";
+                    else if (gotNormal && groundHeight <= 4.0f && Math.Abs(cx) > 1000f) sType = "SAND";
 
-                    bool walkable = !isWater && slopeDeg < 30.0f;
+                    bool walkable = gotNormal && !isWater && slopeDeg < 30.0f;
 
                     var surface = new SpatialSurface
                     {
