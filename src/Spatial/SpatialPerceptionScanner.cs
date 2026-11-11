@@ -45,7 +45,9 @@ namespace DynamicWorldEngine.Spatial
             WorldMemoryStore store = null,
             EphemeralStateRecomputer recomputer = null)
         {
-            var snapshot = ScanLocation(origin, radius, store, recomputer);
+            // The semantic scan must not run its optional candidate-area grid pass:
+            // this method builds the full grid model immediately below.
+            var snapshot = ScanLocationCore(origin, radius, store, recomputer, sampleCandidateAreas: false);
             var model = _gridSampler.SampleArea(origin, radius, SpatialGridSampler.DefaultCellSize, store, snapshot.ZoneName);
             model.SemanticSnapshot = snapshot;
             if (model.CandidateAreas != null && model.CandidateAreas.Count > 0)
@@ -63,6 +65,16 @@ namespace DynamicWorldEngine.Spatial
             float radius = 50.0f,
             WorldMemoryStore store = null,
             EphemeralStateRecomputer recomputer = null)
+        {
+            return ScanLocationCore(origin, radius, store, recomputer, sampleCandidateAreas: true);
+        }
+
+        private WorldPerceptionSnapshot ScanLocationCore(
+            Vector3 origin,
+            float radius,
+            WorldMemoryStore store,
+            EphemeralStateRecomputer recomputer,
+            bool sampleCandidateAreas)
         {
             var snapshot = new WorldPerceptionSnapshot
             {
@@ -106,16 +118,21 @@ namespace DynamicWorldEngine.Spatial
             // 7. Feasibility Synthesis
             EvaluatePlacementFeasibility(snapshot);
 
-            // 8. Grounded Candidate Areas via Grid Sampling
-            try
+            // 8. Grounded Candidate Areas via Grid Sampling.
+            // ScanSpatialWorldModel performs this pass itself and supplies its result
+            // to SemanticSnapshot, so avoid sampling the same grid twice.
+            if (sampleCandidateAreas)
             {
-                var model = _gridSampler.SampleArea(origin, radius, SpatialGridSampler.DefaultCellSize, store, snapshot.ZoneName);
-                if (model != null && model.CandidateAreas != null && model.CandidateAreas.Count > 0)
+                try
                 {
-                    snapshot.CandidateAreas = model.CandidateAreas;
+                    var model = _gridSampler.SampleArea(origin, radius, SpatialGridSampler.DefaultCellSize, store, snapshot.ZoneName);
+                    if (model != null && model.CandidateAreas != null && model.CandidateAreas.Count > 0)
+                    {
+                        snapshot.CandidateAreas = model.CandidateAreas;
+                    }
                 }
+                catch {}
             }
-            catch {}
 
             return snapshot;
         }
@@ -124,10 +141,13 @@ namespace DynamicWorldEngine.Spatial
         {
             if (!IsMainThread)
             {
-                snapshot.Elevation = origin.Z;
-                snapshot.SlopeDegrees = 1.5f;
-                snapshot.TerrainCategory = "Flat Urban Ground";
-                snapshot.WalkableAreaPercent = 90.0f;
+                // Defensive guard: ScanLocationCore normally returns before reaching
+                // this probe when native observation is unavailable.
+                snapshot.Elevation = -1.0f;
+                snapshot.GroundElevationAvailable = false;
+                snapshot.SlopeDegrees = -1.0f;
+                snapshot.TerrainCategory = "Unknown (off game thread)";
+                snapshot.WalkableAreaPercent = -1.0f;
                 return;
             }
 
