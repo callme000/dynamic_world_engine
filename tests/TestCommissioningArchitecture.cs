@@ -119,12 +119,19 @@ namespace DynamicWorldEngine.Tests
                 }
             };
 
+            // A caller-supplied/cached validation result must not bypass revalidation.
+            plan1.ValidationResult = new SpatialValidationResult
+            {
+                IsValid = true,
+                PhysicalFeasibilityConfirmed = true
+            };
+
             // [Phase 2] Default policy must reject plans without live spatial evidence.
             bool strictRejected = false;
             try { engine.CommissionEnvironment(plan1, null); }
             catch (InvalidOperationException) { strictRejected = true; }
             total++;
-            if (strictRejected) { Console.WriteLine("  ✔ PASS: Default commissioning rejects unverified geometry."); passed++; }
+            if (strictRejected) { Console.WriteLine("  ✔ PASS: Default commissioning rejects unverified geometry even with a forged cached validation result."); passed++; }
             else { Console.WriteLine("  ❌ FAIL: Default commissioning accepted unverified geometry."); }
 
             // Explicit simulation mode is permitted for this headless architecture test.
