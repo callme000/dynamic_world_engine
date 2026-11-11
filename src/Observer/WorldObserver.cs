@@ -5,6 +5,7 @@ using GTA.Math;
 using GTA.Native;
 using DynamicWorldEngine.Database;
 using DynamicWorldEngine.Simulation;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Observer
 {
@@ -25,6 +26,7 @@ namespace DynamicWorldEngine.Observer
 
         public void ObserveWorld(Ped playerPed, List<ActiveNpcContext> activeContexts)
         {
+            if (!GameThreadGate.EnforceMainThread("WorldObserver.ObserveWorld")) return;
             if (activeContexts == null) return;
 
             bool playerValid = false;
@@ -198,6 +200,7 @@ namespace DynamicWorldEngine.Observer
 
         public void ProcessSpokenUtterance(int npcId, string playerUtterance, Ped ped, Ped playerPed, List<ActiveNpcContext> activeContexts = null)
         {
+            if (!GameThreadGate.EnforceMainThread("WorldObserver.ProcessSpokenUtterance")) return;
             if (string.IsNullOrEmpty(playerUtterance)) return;
 
             NpcRecord targetNpc = _simEngine.Store.GetNpcById(npcId);
