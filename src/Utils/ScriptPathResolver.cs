@@ -66,6 +66,11 @@ namespace DynamicWorldEngine.Utils
                 : path;
 
             string fullPath = Path.GetFullPath(candidate);
+            string root = Path.GetPathRoot(fullPath);
+            if (!string.IsNullOrEmpty(root) && fullPath.Length <= root.Length)
+            {
+                return root;
+            }
             return fullPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
         }
     }
