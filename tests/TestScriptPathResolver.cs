@@ -45,6 +45,11 @@ namespace DynamicWorldEngine.Tests
                     ScriptPathResolver.ResolveScriptsDirectory(gameRoot));
 
                 AssertEqual(
+                    "Game-root resolution remains at the GTA installation root",
+                    gameRoot,
+                    ScriptPathResolver.ResolveGameRootDirectory(gameRoot));
+
+                AssertEqual(
                     "Scripts base directory resolves to itself, not scripts/scripts",
                     scripts,
                     ScriptPathResolver.ResolveScriptsDirectory(scripts));
