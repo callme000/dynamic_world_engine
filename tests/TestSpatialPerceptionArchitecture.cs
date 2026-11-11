@@ -263,6 +263,15 @@ namespace DynamicWorldEngine.Tests
                 Assert(syntheticModel.Provenance.CompletenessScore > 0f,
                     "Synthetic model completeness is reported separately from native provenance");
 
+                var combinedModel = engine.GetSpatialWorldModel(120f, -1400f, 30f);
+                Assert(combinedModel != null, "GetSpatialWorldModel returns a model");
+                Assert(combinedModel.SemanticSnapshot != null,
+                    "Combined spatial model retains its semantic perception snapshot");
+                Assert(combinedModel.Provenance.ScanType == "SYNTHETIC_FALLBACK",
+                    "Headless combined model retains synthetic provenance");
+                Assert(combinedModel.SemanticSnapshot.CandidateAreas.Count == combinedModel.CandidateAreas.Count,
+                    "Semantic snapshot receives candidate areas from the combined grid model");
+
                 // 3. Multi-site ranking via EngineCore
                 var candidates = new List<Vector3>
                 {
