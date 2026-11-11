@@ -6,6 +6,7 @@ using GTA.Math;
 using GTA.Native;
 using GTA.UI;
 using Newtonsoft.Json;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Spatial
 {
@@ -69,6 +70,7 @@ namespace DynamicWorldEngine.Spatial
             string title = "Underground Bunker", bool isLocked = false, bool isKnown = true, string lockReason = "Locked",
             bool createBlip = true)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.RegisterPocket")) return;
             PocketTransition pocket = new PocketTransition(pocketId, envId, streetCoords, interiorCoords, interiorExitCoords, title, isLocked, isKnown, lockReason);
             
             // Create Street Blip only if known to player and createBlip is true
@@ -95,6 +97,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void UnlockPocket(string pocketId)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.UnlockPocket")) return;
             var p = _activePockets.Find(x => string.Equals(x.PocketId, pocketId, StringComparison.OrdinalIgnoreCase));
             if (p != null)
             {
@@ -108,6 +111,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void RevealPocketToPlayer(string pocketId)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.RevealPocketToPlayer")) return;
             var p = _activePockets.Find(x => string.Equals(x.PocketId, pocketId, StringComparison.OrdinalIgnoreCase));
             if (p != null && !p.IsKnownToPlayer)
             {
@@ -129,6 +133,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void ProcessPocketTransitions(Ped playerPed)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.ProcessPocketTransitions")) return;
             if (playerPed == null || !playerPed.Exists() || playerPed.IsDead || _activePockets.Count == 0) return;
 
             DateTime now = DateTime.UtcNow;
@@ -203,6 +208,7 @@ namespace DynamicWorldEngine.Spatial
 
         public static void SafeTeleportPlayer(Ped player, Vector3 destination, float heading = 0f)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.SafeTeleportPlayer")) return;
             if (player == null || !player.Exists()) return;
 
             try
@@ -257,6 +263,7 @@ namespace DynamicWorldEngine.Spatial
 
         private void DisplayHelpText(string text)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.DisplayHelpText")) return;
             Function.Call(Hash.BEGIN_TEXT_COMMAND_DISPLAY_HELP, "STRING");
             Function.Call(Hash.ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME, text);
             Function.Call(Hash.END_TEXT_COMMAND_DISPLAY_HELP, 0, false, true, -1);
@@ -264,6 +271,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void RemovePocketsForEnvironment(string envId)
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.RemovePocketsForEnvironment")) return;
             if (string.IsNullOrEmpty(envId)) return;
 
             for (int i = _activePockets.Count - 1; i >= 0; i--)
@@ -282,6 +290,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void ClearAllPockets()
         {
+            if (!GameThreadGate.EnforceMainThread("TeleportPocketManager.ClearAllPockets")) return;
             foreach (var p in _activePockets)
             {
                 if (p.EntranceBlip != null && p.EntranceBlip.Exists())
