@@ -35,8 +35,8 @@ namespace DynamicWorldEngine.Tests
                 var recovered = new WorldMemoryStore(directory);
                 Check("Valid backup is recovered after primary corruption",
                     recovered.GetNpcByName("First NPC") != null);
-                Check("Recovery does not silently discard the last committed NPC",
-                    recovered.GetNpcByName("First NPC") != null);
+                Check("Recovery rolls back to the previous committed generation",
+                    recovered.GetNpcByName("Second NPC") == null);
 
                 File.WriteAllText(backup, "{ backup is also corrupt");
                 bool rejectedCorruptState = false;
