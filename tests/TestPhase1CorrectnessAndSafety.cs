@@ -209,7 +209,7 @@ namespace DynamicWorldEngine.Tests
             // Attempting to commission this invalid plan MUST throw InvalidOperationException
             AssertThrows<InvalidOperationException>("INV-4", "CommissionEnvironment rejects plan failing validation barrier", () =>
             {
-                engine.CommissionEnvironment(invalidPlan);
+                engine.CommissionEnvironment(invalidPlan, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
             });
 
             // Ensure plan was NOT persisted
@@ -248,7 +248,7 @@ namespace DynamicWorldEngine.Tests
             // Commissioning MUST fail and throw InvalidOperationException because plan could not be persisted
             AssertThrows<InvalidOperationException>("INV-12", "CommissionEnvironment aborts when PlanRepository fails", () =>
             {
-                engine.CommissionEnvironment(plan);
+                engine.CommissionEnvironment(plan, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
             });
 
             // Clean up attributes

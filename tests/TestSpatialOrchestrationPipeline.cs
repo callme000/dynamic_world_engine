@@ -273,7 +273,7 @@ namespace DynamicWorldEngine.Tests
             var engine = new EngineCore();
             string prompt = "Set up a secret meeting with the president at Del Perro Beach";
 
-            var result = engine.ExecuteOrchestrationPipeline(prompt, null, 0f, autoRealize: false);
+            var result = engine.ExecuteOrchestrationPipeline(prompt, null, 0f, autoRealize: false, commissioningMode: SpatialCommissioningMode.AllowUnverifiedSimulation);
 
             Assert(result != null, "SpatialOrchestrationResult is non-null");
             Assert(result.Success, "ExecuteOrchestrationPipeline succeeded");
@@ -298,13 +298,21 @@ namespace DynamicWorldEngine.Tests
 
             var engine = new EngineCore();
 
+            // Default production policy must reject a headless/synthetic scan at the commit barrier.
+            var strictEngine = new EngineCore();
+            var strictResult = strictEngine.ExecuteOrchestrationPipeline("A small camp in a quiet field", autoRealize: false);
+            Assert(strictResult != null && !strictResult.Success && strictResult.Environment == null,
+                "Default orchestration refuses to commission synthetic spatial evidence");
+            Assert(strictResult != null && strictResult.DiagnosticMessage.Contains("complete live GTA spatial evidence"),
+                "Strict commissioning explains the missing live evidence");
+
             // Edge case 1: Open ground prompt with no specific landmark named
-            var resGeneric = engine.ExecuteOrchestrationPipeline("Tactical arms deal in a secluded alleyway", autoRealize: false);
+            var resGeneric = engine.ExecuteOrchestrationPipeline("Tactical arms deal in a secluded alleyway", autoRealize: false, commissioningMode: SpatialCommissioningMode.AllowUnverifiedSimulation);
             Assert(resGeneric != null && resGeneric.Success, "Generic prompt without landmark executes cleanly");
             Assert(resGeneric.Plan != null, "Generic prompt produces valid execution plan");
 
             // Edge case 2: Empty/minimal prompt fallback
-            var resMinimal = engine.ExecuteOrchestrationPipeline("briefing", autoRealize: false);
+            var resMinimal = engine.ExecuteOrchestrationPipeline("briefing", autoRealize: false, commissioningMode: SpatialCommissioningMode.AllowUnverifiedSimulation);
             Assert(resMinimal != null && resMinimal.Success, "Minimal single-word prompt executes without throwing");
 
             // Edge case 3: Direct API queries

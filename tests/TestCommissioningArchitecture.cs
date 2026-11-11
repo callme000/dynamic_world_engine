@@ -119,9 +119,24 @@ namespace DynamicWorldEngine.Tests
                 }
             };
 
-            // [Phase 2] Commission Canonical Plan 1
+            // A caller-supplied/cached validation result must not bypass revalidation.
+            plan1.ValidationResult = new SpatialValidationResult
+            {
+                IsValid = true,
+                PhysicalFeasibilityConfirmed = true
+            };
+
+            // [Phase 2] Default policy must reject plans without live spatial evidence.
+            bool strictRejected = false;
+            try { engine.CommissionEnvironment(plan1, null); }
+            catch (InvalidOperationException) { strictRejected = true; }
+            total++;
+            if (strictRejected) { Console.WriteLine("  ✔ PASS: Default commissioning rejects unverified geometry even with a forged cached validation result."); passed++; }
+            else { Console.WriteLine("  ❌ FAIL: Default commissioning accepted unverified geometry."); }
+
+            // Explicit simulation mode is permitted for this headless architecture test.
             Console.WriteLine("\n[Step 2] Commissioning Environment 1 (The Neon Penthouse VIP)...");
-            EnvironmentRecord env1 = engine.CommissionEnvironment(plan1, null);
+            EnvironmentRecord env1 = engine.CommissionEnvironment(plan1, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
 
             total++;
             if (env1 != null)
@@ -212,7 +227,7 @@ namespace DynamicWorldEngine.Tests
             // [Phase 3] Commission Environment 2 via JSON Command
             Console.WriteLine("\n[Step 3] Commissioning Environment 2 via CommissionEnvironment(JSON payload)...");
             string bikerJson = EnvironmentCatalog.GetChopShopJson();
-            EnvironmentRecord env2 = engine.CommissionEnvironment(bikerJson, 200f, 400f, 15f, 0f);
+            EnvironmentRecord env2 = engine.CommissionEnvironment(bikerJson, 200f, 400f, 15f, 0f, SpatialCommissioningMode.AllowUnverifiedSimulation);
 
             total++;
             if (env2 != null && env2.Status == "COMMISSIONED")

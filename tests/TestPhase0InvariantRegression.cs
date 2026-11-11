@@ -426,7 +426,7 @@ namespace DynamicWorldEngine.Tests
             };
 
             // CommissionEnvironment should succeed normally
-            var envRec = engine.CommissionEnvironment(commPlan);
+            var envRec = engine.CommissionEnvironment(commPlan, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
             AssertNotNull("INV-5", "CommissionEnvironment returns record on successful persistence", envRec);
             AssertTrue("INV-5", "Commissioned environment has matching PlanId", 
                 envRec != null && envRec.PlanId == "test_commission_persist");
@@ -642,7 +642,7 @@ namespace DynamicWorldEngine.Tests
                 }
             };
 
-            var env = engine.CommissionEnvironment(plan);
+            var env = engine.CommissionEnvironment(plan, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
 
             AssertNotNull("INV-5", "CommissionEnvironment returns non-null on success", env);
 

@@ -110,8 +110,8 @@ namespace DynamicWorldEngine.Tests
 
             // [Phase 2] Commission both environments (Zero entities realized)
             Console.WriteLine("\n[Step 2] Commissioning environments 1 & 2...");
-            var envRec1 = engine.CommissionEnvironment(plan1);
-            var envRec2 = engine.CommissionEnvironment(plan2);
+            var envRec1 = engine.CommissionEnvironment(plan1, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
+            var envRec2 = engine.CommissionEnvironment(plan2, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
 
             AssertTrue("Environment 1 commissioned with status 'COMMISSIONED'", envRec1 != null && envRec1.Status == "COMMISSIONED");
             AssertTrue("Environment 2 commissioned with status 'COMMISSIONED'", envRec2 != null && envRec2.Status == "COMMISSIONED");

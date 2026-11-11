@@ -124,7 +124,7 @@ namespace DynamicWorldEngine.Tests
                 }
             };
 
-            var envRec = engine.CommissionEnvironment(plan);
+            var envRec = engine.CommissionEnvironment(plan, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
             AssertTrue("Environment commissioned", envRec != null && envRec.Status == "COMMISSIONED");
 
             // Mock native runtime realization
@@ -164,7 +164,7 @@ namespace DynamicWorldEngine.Tests
                 }
             };
 
-            var failEnvRec = engine.CommissionEnvironment(failPlan);
+            var failEnvRec = engine.CommissionEnvironment(failPlan, null, SpatialCommissioningMode.AllowUnverifiedSimulation);
             AssertTrue("Fail test environment commissioned", failEnvRec != null);
 
             var bossPed = CreateMockPed(9003);
