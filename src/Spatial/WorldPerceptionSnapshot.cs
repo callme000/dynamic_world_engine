@@ -89,7 +89,7 @@ namespace DynamicWorldEngine.Spatial
             WestClearance = 50.0f;
             AvailableWidth = 50.0f;
             AvailableLength = 50.0f;
-            WalkableAreaPercent = 0.0f;
+            WalkableAreaPercent = -1.0f;
             RoadDistance = -1.0f;
             SidewalkDistance = -1.0f;
             NavMeshAvailable = false;
