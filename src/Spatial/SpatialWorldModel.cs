@@ -114,7 +114,7 @@ namespace DynamicWorldEngine.Spatial
             IsNativeScan = false;
             GameBuild = "Unknown";
             CaptureTime = DateTime.UtcNow;
-            CompletenessScore = 1.0f;
+            CompletenessScore = 0.0f;
             SampledCellsCount = 0;
             TotalRequestedCells = 0;
             CaptureDuration = TimeSpan.Zero;
