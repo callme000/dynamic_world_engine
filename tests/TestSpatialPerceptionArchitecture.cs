@@ -251,6 +251,7 @@ namespace DynamicWorldEngine.Tests
                 Assert(snapshot != null, "GetPerceptionSnapshot returns non-null snapshot");
                 Assert(snapshot.Elevation == 30f, "Snapshot elevation retains the requested Z coordinate");
                 Assert(!snapshot.NativeObservationAvailable, "Headless snapshot does not claim native world observation");
+                Assert(!snapshot.GroundElevationAvailable, "Headless snapshot does not claim the coordinate Z is measured ground");
                 Assert(snapshot.PlacementFeasibility.Contains("Unknown"), "Headless snapshot does not claim optimal placement feasibility");
 
                 var gridSampler = new SpatialGridSampler();
