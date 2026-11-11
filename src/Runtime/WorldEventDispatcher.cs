@@ -19,6 +19,7 @@ namespace DynamicWorldEngine.Runtime
             EntitySpawnerService spawner,
             BlipManager blips)
         {
+            if (!GameThreadGate.EnforceMainThread("WorldEventDispatcher.ExecuteWorldEventDirect")) return;
             if (data == null || spawner == null) return;
 
             Ped player = Game.Player.Character;

@@ -148,6 +148,7 @@ namespace DynamicWorldEngine
         private void OnTick(object sender, EventArgs e)
         {
             if (!_isInitialized) return;
+            if (!GameThreadGate.EnforceMainThread("DynamicWorldEngineScript.OnTick")) return;
 
             try
             {
@@ -341,6 +342,7 @@ namespace DynamicWorldEngine
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
             if (!_isInitialized) return;
+            if (!GameThreadGate.EnforceMainThread("DynamicWorldEngineScript.OnKeyDown")) return;
 
             try
             {

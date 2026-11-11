@@ -93,6 +93,7 @@ namespace DynamicWorldEngine.Runtime
             out int vehsCount,
             HashSet<string> deadEntityIds)
         {
+            GameThreadGate.RequireMainThread("RuntimeExecutor.RealizeEnvironmentFromPlan");
             if (plan == null) throw new ArgumentNullException("plan");
 
             // 1. Activate Interior or Register Teleport Pockets
@@ -191,6 +192,7 @@ namespace DynamicWorldEngine.Runtime
         /// </summary>
         public void RealizeStash(CreateStashData data, Ped player, WorldMemoryStore store = null)
         {
+            GameThreadGate.RequireMainThread("RuntimeExecutor.RealizeStash");
             if (data == null || player == null) return;
             _spawner.SpawnStash(data, player, _blips, store);
         }
@@ -201,6 +203,7 @@ namespace DynamicWorldEngine.Runtime
         /// </summary>
         public bool DirectScenario(ScenarioDirectorData scenario, string targetEnvironmentId = null, GTA.Math.Vector3? customOrigin = null)
         {
+            GameThreadGate.RequireMainThread("RuntimeExecutor.DirectScenario");
             if (scenario == null || scenario.Beats == null || scenario.Beats.Count == 0) return false;
 
             string envId = targetEnvironmentId;
@@ -266,6 +269,7 @@ namespace DynamicWorldEngine.Runtime
         /// </summary>
         public void CleanUpEnvironment(string environmentId)
         {
+            GameThreadGate.RequireMainThread("RuntimeExecutor.CleanUpEnvironment");
             if (string.IsNullOrEmpty(environmentId)) return;
 
             _spawner.RemoveEntitiesForEnvironment(environmentId);
@@ -283,6 +287,7 @@ namespace DynamicWorldEngine.Runtime
         /// </summary>
         public void ClearAll()
         {
+            GameThreadGate.RequireMainThread("RuntimeExecutor.ClearAll");
             _spawner.ClearAllSpawnedEntities(
                 _navBlockers,
                 _teleportPockets,
