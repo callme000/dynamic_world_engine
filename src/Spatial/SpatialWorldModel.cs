@@ -103,7 +103,11 @@ namespace DynamicWorldEngine.Spatial
         public string GameBuild { get; set; }
         public DateTime CaptureTime { get; set; }
         public float CompletenessScore { get; set; }
+        // SampledCellsCount includes every in-radius cell that produced a surface record.
+        // ClassifiedCellsCount excludes records whose ground normal/slope is unknown.
         public int SampledCellsCount { get; set; }
+        public int ClassifiedCellsCount { get; set; }
+        public int UnknownCellsCount { get; set; }
         public int TotalRequestedCells { get; set; }
         public TimeSpan CaptureDuration { get; set; }
         public string DataSource { get; set; }
