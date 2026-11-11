@@ -520,6 +520,14 @@ namespace DynamicWorldEngine.Spatial
                     Snapshot = snapshot
                 };
 
+                if (!snapshot.NativeObservationAvailable && !snapshot.IsSynthetic)
+                {
+                    score.FitnessScore = 0.0f;
+                    score.Reason = "Not ranked: native world observation unavailable";
+                    results.Add(score);
+                    continue;
+                }
+
                 float fitness = 0.5f;
                 var reasons = new List<string>();
 
@@ -614,6 +622,8 @@ namespace DynamicWorldEngine.Spatial
         {
             var s = new WorldPerceptionSnapshot
             {
+                IsSynthetic = true,
+                ObservationStatus = "Synthetic scenario data (not a live GTA observation)",
                 X = x, Y = y, Z = z,
                 Elevation = z,
                 ZoneName = zone,
