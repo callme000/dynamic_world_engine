@@ -664,6 +664,7 @@ namespace DynamicWorldEngine.Spatial
                 ObservationStatus = "Synthetic scenario data (not a live GTA observation)",
                 X = x, Y = y, Z = z,
                 Elevation = z,
+                GroundElevationAvailable = true,
                 ZoneName = zone,
                 StreetName = street,
                 SlopeDegrees = slopeDegrees,
