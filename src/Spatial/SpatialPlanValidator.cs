@@ -7,6 +7,9 @@ namespace DynamicWorldEngine.Spatial
     public class SpatialValidationResult
     {
         public bool IsValid { get; set; }
+        // IsValid means geometric checks passed against the supplied model, not live-world verification.
+        public bool HasNativeSpatialEvidence { get; set; }
+        public bool PhysicalFeasibilityConfirmed { get; set; }
         public List<string> HardViolations { get; set; }
         public List<string> Warnings { get; set; }
         public List<string> AutoCorrectionsApplied { get; set; }
@@ -57,6 +60,17 @@ namespace DynamicWorldEngine.Spatial
 
             result.CheckedPropsCount = plan.ResolvedProps != null ? plan.ResolvedProps.Count : 0;
             result.CheckedNpcsCount = plan.ResolvedNpcs != null ? plan.ResolvedNpcs.Count : 0;
+
+            result.HasNativeSpatialEvidence = model != null && model.Provenance != null &&
+                model.Provenance.IsNativeScan &&
+                string.Equals(model.Provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase);
+            result.PhysicalFeasibilityConfirmed = result.HasNativeSpatialEvidence &&
+                model.Provenance.CompletenessScore >= 0.99f;
+
+            if (!result.HasNativeSpatialEvidence)
+                result.Warnings.Add("Geometric validation uses synthetic/offline/unknown spatial data; physical feasibility in the live GTA world is unconfirmed.");
+            else if (!result.PhysicalFeasibilityConfirmed)
+                result.Warnings.Add(string.Format("Live spatial evidence is incomplete ({0:P0}); physical feasibility is not fully confirmed.", model.Provenance.CompletenessScore));
 
             // 1. Surface Contact & Ground Elevation Verification
             if (model != null && model.Surfaces != null && model.Surfaces.Count > 0)

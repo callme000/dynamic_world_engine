@@ -17,6 +17,7 @@ namespace DynamicWorldEngine.Spatial
     {
         public LocationCandidate Location { get; set; }
         public WorldPerceptionSnapshot PerceptionSnapshot { get; set; }
+        public SpatialSnapshotProvenance Provenance { get; set; }
         public List<CandidateArea> CandidateAreas { get; set; }
         public List<string> AmbientCensus { get; set; }
         public List<string> RecommendedAssets { get; set; }
@@ -40,7 +41,8 @@ namespace DynamicWorldEngine.Spatial
         {
             var packet = new WorldContextPacket
             {
-                Location = location
+                Location = location,
+                Provenance = model != null ? model.Provenance : null
             };
 
             if (model != null)
@@ -136,7 +138,20 @@ namespace DynamicWorldEngine.Spatial
         public string FormatForPrompt(bool includeAsciiMap = false)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("=== GROUNDED SPATIAL CONTEXT BRIEF ===");
+            sb.AppendLine("=== SPATIAL CONTEXT BRIEF ===");
+            if (Provenance != null)
+            {
+                bool nativeEvidence = Provenance.IsNativeScan &&
+                    string.Equals(Provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase);
+                sb.AppendLine(string.Format("EVIDENCE: {0} | Source={1} | Completeness={2:P0} | Classified={3}/{4}",
+                    nativeEvidence ? "LIVE GTA OBSERVATION" : "SYNTHETIC/OFFLINE — NOT A LIVE GTA OBSERVATION",
+                    Provenance.DataSource ?? "unknown", Provenance.CompletenessScore,
+                    Provenance.ClassifiedCellsCount, Provenance.TotalRequestedCells));
+                if (!nativeEvidence)
+                    sb.AppendLine("IMPORTANT: Treat terrain, candidate regions, obstacles and distances as estimates/simulation data. Do not describe them as currently observed or physically verified in GTA.");
+            }
+            else
+                sb.AppendLine("EVIDENCE: UNKNOWN — NOT PHYSICALLY VERIFIED");
 
             if (Location != null)
             {

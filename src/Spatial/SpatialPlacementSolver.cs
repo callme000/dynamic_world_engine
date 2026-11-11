@@ -164,7 +164,10 @@ namespace DynamicWorldEngine.Spatial
                 SelectedAreaId = areaId,
                 AnchorCenter = center,
                 Pattern = requirements.Pattern,
-                FeasibilityConfirmed = true
+                FeasibilityConfirmed = true,
+                PhysicalFeasibilityConfirmed = model.Provenance != null && model.Provenance.IsNativeScan &&
+                    string.Equals(model.Provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase) &&
+                    model.Provenance.CompletenessScore >= 0.99f
             };
 
             string pattern = (requirements.Pattern ?? "").ToLowerInvariant();
@@ -483,6 +486,8 @@ namespace DynamicWorldEngine.Spatial
         public List<SolvedNpcTransform> Npcs { get; set; }
         public List<string> SpatialRelationships { get; set; }
         public bool FeasibilityConfirmed { get; set; }
+        // True only when the input model carries complete, live native spatial evidence.
+        public bool PhysicalFeasibilityConfirmed { get; set; }
         public string Diagnostic { get; set; }
 
         public SpatialSceneSolution()
