@@ -190,7 +190,8 @@ namespace DynamicWorldEngine.Spatial
             }
             catch (Exception ex)
             {
-                data.DiagnosticSummary = "SpatialVision error: " + ex.Message;
+                data.ObservationAvailable = false;
+                data.DiagnosticSummary = "SpatialVision observation incomplete: " + ex.Message;
             }
 
             return data;
