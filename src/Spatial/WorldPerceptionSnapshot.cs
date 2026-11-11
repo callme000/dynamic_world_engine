@@ -20,6 +20,8 @@ namespace DynamicWorldEngine.Spatial
         public string StreetName { get; set; }
         public DateTime Timestamp { get; set; }
         public SpatialSnapshotProvenance Provenance { get; set; }
+        public bool NativeObservationAvailable { get; set; }
+        public string ObservationStatus { get; set; }
 
         // 2. Ground & Terrain Assessment
         public float Elevation { get; set; }
@@ -72,13 +74,13 @@ namespace DynamicWorldEngine.Spatial
             EntityHighlights = new List<string>();
             NearbyEnvironments = new List<string>();
             CandidateAreas = new List<CandidateArea>();
-            ZoneName = "Los Santos";
-            StreetName = "Open Area";
-            TerrainCategory = "Flat Urban Ground";
-            ObstructionDensity = "Low";
-            PlacementFeasibility = "Optimal";
-            DominantFaction = "None";
-            PoliceActivityLevel = "None";
+            ZoneName = "Unknown";
+            StreetName = "Unknown";
+            TerrainCategory = "Unknown";
+            ObstructionDensity = "Unknown";
+            PlacementFeasibility = "Unknown (Not Observed)";
+            DominantFaction = "Unknown";
+            PoliceActivityLevel = "Unknown";
             Timestamp = DateTime.UtcNow;
             NorthClearance = 50.0f;
             SouthClearance = 50.0f;
@@ -86,10 +88,12 @@ namespace DynamicWorldEngine.Spatial
             WestClearance = 50.0f;
             AvailableWidth = 50.0f;
             AvailableLength = 50.0f;
-            WalkableAreaPercent = 100.0f;
-            RoadDistance = 15.0f;
-            SidewalkDistance = 5.0f;
-            NavMeshAvailable = true;
+            WalkableAreaPercent = 0.0f;
+            RoadDistance = -1.0f;
+            SidewalkDistance = -1.0f;
+            NavMeshAvailable = false;
+            NativeObservationAvailable = false;
+            ObservationStatus = "Not observed";
         }
 
         /// <summary>
@@ -99,7 +103,16 @@ namespace DynamicWorldEngine.Spatial
         public string FormatForPrompt()
         {
             var sb = new StringBuilder();
-            sb.AppendLine("### SPATIAL PERCEPTION SNAPSHOT (LOCAL REALITY)");
+            sb.AppendLine("### SPATIAL PERCEPTION SNAPSHOT");
+            sb.AppendFormat("- **Observation**: {0}\n", string.IsNullOrEmpty(ObservationStatus) ? "Not observed" : ObservationStatus);
+
+            if (!NativeObservationAvailable)
+            {
+                sb.AppendLine("- **Native world facts**: Unavailable; do not treat default geometry, access, population, or feasibility values as observed.");
+                if (NearbyEnvironments.Count > 0)
+                    sb.AppendFormat("- **Registered nearby environments**: {0}\n", string.Join(", ", NearbyEnvironments));
+                return sb.ToString().TrimEnd();
+            }
 
             // 1. Location & Ground
             sb.AppendFormat("- **Location**: {0} ({1}) | Elevation: {2:F1}m | Slope: {3:F1}° ({4})\n",
