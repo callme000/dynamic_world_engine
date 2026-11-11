@@ -85,23 +85,40 @@ namespace DynamicWorldEngine.Spatial
                     }
 
                     string targetPath = GetPlanFilePath(environmentId);
-                    string tempPath = targetPath + ".tmp." + Guid.NewGuid().ToString().Substring(0, 8);
+                    string tempPath = targetPath + ".tmp." + Guid.NewGuid().ToString("N");
                     string backupPath = targetPath + ".bak";
-
                     string json = JsonConvert.SerializeObject(plan, Formatting.Indented);
-                    File.WriteAllText(tempPath, json);
 
-                    if (File.Exists(targetPath))
+                    try
                     {
-                        if (File.Exists(backupPath))
+                        using (var stream = new FileStream(tempPath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
+                        using (var writer = new StreamWriter(stream, new System.Text.UTF8Encoding(false)))
                         {
-                            try { File.Delete(backupPath); } catch { }
+                            writer.Write(json);
+                            writer.Flush();
+                            stream.Flush(true);
                         }
-                        try { File.Copy(targetPath, backupPath, true); } catch { }
-                        File.Delete(targetPath);
+
+                        if (File.Exists(targetPath))
+                        {
+                            // Atomically replace the primary while retaining its last
+                            // committed version as the backup. Never delete the target first.
+                            File.Replace(tempPath, targetPath, backupPath, true);
+                        }
+                        else
+                        {
+                            File.Move(tempPath, targetPath);
+                        }
+
+                        return true;
                     }
-                    File.Move(tempPath, targetPath);
-                    return true;
+                    finally
+                    {
+                        if (File.Exists(tempPath))
+                        {
+                            try { File.Delete(tempPath); } catch { }
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -129,34 +146,52 @@ namespace DynamicWorldEngine.Spatial
                 string backupPath = path + ".bak";
                 if (!File.Exists(path) && !File.Exists(backupPath)) return false;
 
-                try
+                Exception primaryError = null;
+                if (File.Exists(path))
                 {
-                    string json = File.Exists(path) ? File.ReadAllText(path) : null;
-                    if (string.IsNullOrWhiteSpace(json) && File.Exists(backupPath))
+                    try
                     {
-                        json = File.ReadAllText(backupPath);
-                    }
-                    if (string.IsNullOrWhiteSpace(json)) return false;
-
-                    plan = JsonConvert.DeserializeObject<SpatialExecutionPlan>(json);
-                    return plan != null;
-                }
-                catch (Exception ex)
-                {
-                    // Attempt fallback to .bak
-                    if (File.Exists(backupPath))
-                    {
-                        try
+                        string json = File.ReadAllText(path);
+                        if (!string.IsNullOrWhiteSpace(json))
                         {
-                            string backupJson = File.ReadAllText(backupPath);
-                            plan = JsonConvert.DeserializeObject<SpatialExecutionPlan>(backupJson);
+                            plan = JsonConvert.DeserializeObject<SpatialExecutionPlan>(json);
                             if (plan != null) return true;
                         }
-                        catch { }
+                        primaryError = new InvalidDataException("Primary plan file was empty or deserialized to null.");
                     }
-                    Console.WriteLine("[PlanRepository] Error loading plan for " + environmentId + ": " + ex.Message);
-                    return false;
+                    catch (Exception ex)
+                    {
+                        primaryError = ex;
+                    }
                 }
+
+                if (File.Exists(backupPath))
+                {
+                    try
+                    {
+                        string backupJson = File.ReadAllText(backupPath);
+                        if (!string.IsNullOrWhiteSpace(backupJson))
+                        {
+                            plan = JsonConvert.DeserializeObject<SpatialExecutionPlan>(backupJson);
+                            if (plan != null)
+                            {
+                                Console.WriteLine("[PlanRepository] Recovered plan '" + environmentId + "' from backup.");
+                                return true;
+                            }
+                        }
+                    }
+                    catch (Exception backupError)
+                    {
+                        Console.WriteLine("[PlanRepository] Backup for '" + environmentId + "' is unreadable: " + backupError.Message);
+                    }
+                }
+
+                plan = null;
+                if (primaryError != null)
+                {
+                    Console.WriteLine("[PlanRepository] Error loading plan for " + environmentId + ": " + primaryError.Message);
+                }
+                return false;
             }
         }
 
@@ -167,12 +202,16 @@ namespace DynamicWorldEngine.Spatial
             lock (_lock)
             {
                 string path = GetPlanFilePath(environmentId);
-                if (!File.Exists(path)) return false;
+                string backupPath = path + ".bak";
+                if (!File.Exists(path) && !File.Exists(backupPath)) return false;
 
                 try
                 {
-                    File.Delete(path);
-                    return true;
+                    // The backup is part of the same logical plan. Leaving it behind
+                    // would allow TryGetPlan to resurrect a deleted plan.
+                    if (File.Exists(path)) File.Delete(path);
+                    if (File.Exists(backupPath)) File.Delete(backupPath);
+                    return !File.Exists(path) && !File.Exists(backupPath);
                 }
                 catch (Exception ex)
                 {
