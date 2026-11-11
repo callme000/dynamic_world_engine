@@ -103,7 +103,7 @@ if %ERRORLEVEL% EQU 0 (
     echo Building SyncInteriors.exe...
     C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:exe /out:SyncInteriors.exe /r:".\dist\DynamicWorldEngine.dll",".\lib\Newtonsoft.Json.dll",".\lib\ScriptHookVDotNet3.dll" tools\SyncInteriors.cs
     echo Building TestScriptPathResolver.exe...
-    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:exe /out:TestScriptPathResolver.exe /r:".\dist\DynamicWorldEngine.dll" tests\TestScriptPathResolver.cs
+    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /target:exe /out:TestScriptPathResolver.exe src\Utils\ScriptPathResolver.cs tests\TestScriptPathResolver.cs
     if errorlevel 1 exit /b 1
     echo Build complete.
 ) else (
