@@ -13,6 +13,12 @@ using GTA;
 
 namespace DynamicWorldEngine
 {
+    public enum SpatialCommissioningMode
+    {
+        RequireLiveEvidence = 0,
+        AllowUnverifiedSimulation = 1
+    }
+
     public class SpatialOrchestrationResult
     {
         public bool Success { get; set; }
@@ -213,7 +219,8 @@ namespace DynamicWorldEngine
             float playerHeading = 0f,
             bool autoRealize = true,
             SpatialWorldModel preScannedModel = null,
-            LocationSelectionResult preResolvedLocation = null)
+            LocationSelectionResult preResolvedLocation = null,
+            SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
         {
             var result = new SpatialOrchestrationResult { Prompt = userPrompt };
 
@@ -290,8 +297,15 @@ namespace DynamicWorldEngine
                 return result;
             }
 
-            // Stage 10: Commit
-            result.Environment = CommissionEnvironment(plan, payload.Data);
+            // Stage 10: Commit. Simulation geometry must not be promoted to live-world truth.
+            if (commissioningMode == SpatialCommissioningMode.RequireLiveEvidence &&
+                (result.ValidationResult == null || !result.ValidationResult.PhysicalFeasibilityConfirmed))
+            {
+                result.Success = false;
+                result.DiagnosticMessage = "Commissioning rejected: complete live GTA spatial evidence is required. Use AllowUnverifiedSimulation only for deliberate headless/offline simulation.";
+                return result;
+            }
+            result.Environment = CommissionEnvironment(plan, payload.Data, commissioningMode);
 
             // Stage 11: Realize
             if (autoRealize && result.Environment != null)
@@ -360,7 +374,7 @@ namespace DynamicWorldEngine
         /// flushes stores to disk, and synchronizes living facts to LivingLSAIs.
         /// Guaranteed to spawn ZERO GTA V entities (pure domain transaction).
         /// </summary>
-        public EnvironmentRecord CommissionEnvironment(SpatialExecutionPlan plan, BuildEnvironmentData data = null)
+        public EnvironmentRecord CommissionEnvironment(SpatialExecutionPlan plan, BuildEnvironmentData data = null, SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
         {
             if (plan == null) throw new ArgumentNullException("plan");
 
@@ -376,6 +390,14 @@ namespace DynamicWorldEngine
                     ? string.Join("; ", plan.ValidationResult.HardViolations.ToArray())
                     : "Plan validation failed or was missing.";
                 throw new InvalidOperationException(string.Format("Cannot commission environment '{0}': Spatial plan failed validation ({1}).", plan.EnvironmentId, violations));
+            }
+
+            if (commissioningMode == SpatialCommissioningMode.RequireLiveEvidence &&
+                !plan.ValidationResult.PhysicalFeasibilityConfirmed)
+            {
+                throw new InvalidOperationException(string.Format(
+                    "Cannot commission environment '{0}': complete live GTA spatial evidence is required. Current evidence is synthetic, offline, unknown, or incomplete. Use AllowUnverifiedSimulation only for deliberate simulation.",
+                    plan.EnvironmentId));
             }
 
             if (string.IsNullOrEmpty(plan.EnvironmentId))
@@ -427,11 +449,11 @@ namespace DynamicWorldEngine
         /// <summary>
         /// Commissions an environment from raw JSON payload and placement coordinates.
         /// </summary>
-        public EnvironmentRecord CommissionEnvironment(string rawJsonPayload, float originX, float originY, float originZ, float originHeading)
+        public EnvironmentRecord CommissionEnvironment(string rawJsonPayload, float originX, float originY, float originZ, float originHeading, SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
         {
             BuildEnvironmentPayload payload = _parser.ParseBuildEnvironment(rawJsonPayload);
             SpatialExecutionPlan plan = _planner.PlanEnvironment(payload.Data, new GTA.Math.Vector3(originX, originY, originZ), originHeading);
-            return CommissionEnvironment(plan, payload.Data);
+            return CommissionEnvironment(plan, payload.Data, commissioningMode);
         }
 
         /// <summary>
@@ -688,9 +710,9 @@ namespace DynamicWorldEngine
             return CommissionEnvironment(rawJsonPayload, originX, originY, originZ, originHeading);
         }
 
-        public EnvironmentRecord ExecuteBuildEnvironmentPlan(SpatialExecutionPlan plan, BuildEnvironmentData data = null)
+        public EnvironmentRecord ExecuteBuildEnvironmentPlan(SpatialExecutionPlan plan, BuildEnvironmentData data = null, SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
         {
-            return CommissionEnvironment(plan, data);
+            return CommissionEnvironment(plan, data, commissioningMode);
         }
 
         public bool ExecuteMutateEntityCommand(string rawJsonPayload, out NpcRecord modifiedNpc)
