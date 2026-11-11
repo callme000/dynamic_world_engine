@@ -21,6 +21,7 @@ namespace DynamicWorldEngine.Spatial
         public DateTime Timestamp { get; set; }
         public SpatialSnapshotProvenance Provenance { get; set; }
         public bool NativeObservationAvailable { get; set; }
+        public bool IsSynthetic { get; set; }
         public string ObservationStatus { get; set; }
 
         // 2. Ground & Terrain Assessment
@@ -106,7 +107,7 @@ namespace DynamicWorldEngine.Spatial
             sb.AppendLine("### SPATIAL PERCEPTION SNAPSHOT");
             sb.AppendFormat("- **Observation**: {0}\n", string.IsNullOrEmpty(ObservationStatus) ? "Not observed" : ObservationStatus);
 
-            if (!NativeObservationAvailable)
+            if (!NativeObservationAvailable && !IsSynthetic)
             {
                 sb.AppendLine("- **Native world facts**: Unavailable; do not treat default geometry, access, population, or feasibility values as observed.");
                 if (NearbyEnvironments.Count > 0)
