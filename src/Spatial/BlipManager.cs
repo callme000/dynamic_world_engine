@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using GTA;
 using GTA.Math;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Spatial
 {
@@ -31,6 +32,7 @@ namespace DynamicWorldEngine.Spatial
 
         public Blip CreateNpcBlip(Ped ped, string name, string envId, BlipColor color = BlipColor.Green, BlipSprite sprite = BlipSprite.Standard)
         {
+            if (!GameThreadGate.EnforceMainThread("BlipManager.CreateNpcBlip")) return null;
             if (ped == null || !ped.Exists()) return null;
 
             try
@@ -58,6 +60,7 @@ namespace DynamicWorldEngine.Spatial
 
         public Blip CreateCoordBlip(Vector3 position, string label, string envId, BlipColor color = BlipColor.Yellow, BlipSprite sprite = BlipSprite.DollarSign, bool isDiscovered = true, string requiredSecret = "")
         {
+            if (!GameThreadGate.EnforceMainThread("BlipManager.CreateCoordBlip")) return null;
             try
             {
                 Blip blip = null;
@@ -87,6 +90,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void RevealSecretBlip(string envId, string requiredSecret, BlipColor color = BlipColor.Yellow, BlipSprite sprite = BlipSprite.Standard)
         {
+            if (!GameThreadGate.EnforceMainThread("BlipManager.RevealSecretBlip")) return;
             foreach (var mb in _managedBlips)
             {
                 if (!mb.IsDiscovered && string.Equals(mb.EnvironmentId, envId, StringComparison.OrdinalIgnoreCase))
@@ -109,6 +113,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void RemoveBlipsForEnvironment(string environmentId)
         {
+            if (!GameThreadGate.EnforceMainThread("BlipManager.RemoveBlipsForEnvironment")) return;
             if (string.IsNullOrEmpty(environmentId)) return;
 
             for (int i = _managedBlips.Count - 1; i >= 0; i--)
@@ -127,6 +132,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void ClearAllBlips()
         {
+            if (!GameThreadGate.EnforceMainThread("BlipManager.ClearAllBlips")) return;
             foreach (var mb in _managedBlips)
             {
                 if (mb.BlipInstance != null && mb.BlipInstance.Exists())
