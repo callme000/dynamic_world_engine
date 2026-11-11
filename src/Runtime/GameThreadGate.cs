@@ -12,8 +12,8 @@ namespace DynamicWorldEngine.Runtime
     /// </summary>
     public static class GameThreadGate
     {
-        private static int _mainThreadId = -1;
-        private static bool _isInitialized = false;
+        private static volatile int _mainThreadId = -1;
+        private static volatile bool _isInitialized = false;
 
         public static bool IsInitialized
         {
@@ -77,7 +77,7 @@ namespace DynamicWorldEngine.Runtime
         {
             if (!IsMainThread)
             {
-                string msg = string.Format("Off-thread native GTA access violation: '{0}' attempted on ManagedThreadId={1} (AuthorizedMainThreadId={2}, Initialized={3}). Native operations must execute exclusively on the SHVDN script thread.",
+                string msg = string.Format("Off-thread native GTA access violation: '{0}' attempted on ManagedThreadId={1} (AuthorizedScriptThreadId={2}, Initialized={3}). Native operations must execute exclusively on the SHVDN script thread.",
                     operationName, Thread.CurrentThread.ManagedThreadId, _mainThreadId, _isInitialized);
                 Log.Error("GameThreadGate", null, msg);
                 throw new InvalidOperationException(msg);
