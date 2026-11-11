@@ -161,6 +161,7 @@ namespace DynamicWorldEngine.Runtime
 
         public void RemoveEntitiesForEnvironment(string environmentId)
         {
+            GameThreadGate.RequireMainThread("EntitySpawnerService.RemoveEntitiesForEnvironment");
             if (string.IsNullOrEmpty(environmentId)) return;
 
             // 1. Remove Props
@@ -218,6 +219,7 @@ namespace DynamicWorldEngine.Runtime
         public bool SafeLoadModel(string modelName, out Model model, bool isPed = false)
         {
             model = new Model(0);
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.SafeLoadModel")) return false;
             try
             {
                 model = new Model(modelName);
@@ -270,6 +272,7 @@ namespace DynamicWorldEngine.Runtime
         public bool SafeLoadVehicleModel(string modelName, out Model model)
         {
             model = new Model(0);
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.SafeLoadVehicleModel")) return false;
             try
             {
                 model = new Model(modelName);
@@ -313,6 +316,7 @@ namespace DynamicWorldEngine.Runtime
 
         public void SetVehicleColorByName(Vehicle veh, string colorName)
         {
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.SetVehicleColorByName")) return;
             if (veh == null || !veh.Exists() || string.IsNullOrEmpty(colorName)) return;
             string c = colorName.ToLowerInvariant();
             try
@@ -331,6 +335,7 @@ namespace DynamicWorldEngine.Runtime
 
         public void ApplyAtmosphere(EnvironmentAtmosphereData atmo, Vector3 centerPos)
         {
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.ApplyAtmosphere")) return;
             if (atmo == null) return;
 
             try
@@ -374,6 +379,7 @@ namespace DynamicWorldEngine.Runtime
 
         public void ResetAtmosphere()
         {
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.ResetAtmosphere")) return;
             try
             {
                 if (_atmosphereModified)
@@ -430,6 +436,7 @@ namespace DynamicWorldEngine.Runtime
             npcsCount = 0;
             vehsCount = 0;
 
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.SpawnEnvironmentFromPlanDirect")) return;
             if (plan == null) return;
 
             Log.Breadcrumb("SpawnEnvironmentFromPlanDirect: envId=\"{0}\", planId=\"{1}\"", plan.EnvironmentId, plan.PlanId);
@@ -725,6 +732,7 @@ namespace DynamicWorldEngine.Runtime
             BlipManager blips,
             WorldMemoryStore store = null)
         {
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.SpawnStash")) return;
             if (data == null || player == null) return;
 
             Vector3 playerPos = player.Position;
@@ -775,6 +783,7 @@ namespace DynamicWorldEngine.Runtime
             NpcActivityDirector activityDirector,
             DirectorTimelineManager timelineManager)
         {
+            if (!GameThreadGate.EnforceMainThread("EntitySpawnerService.ClearAllSpawnedEntities")) return;
             if (partyAudio != null) partyAudio.StopAudio();
             if (activityDirector != null) activityDirector.ClearAll();
             if (blips != null) blips.ClearAllBlips();
