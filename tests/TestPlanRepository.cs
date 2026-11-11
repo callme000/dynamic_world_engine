@@ -137,12 +137,28 @@ namespace DynamicWorldEngine.Tests
                 Assert(ids.Contains("env_bunker_repo_test"), "GetAllPlanIds contains 'env_bunker_repo_test'.");
                 Assert(ids.Count == 1, "Exact count of stored plans is 1.");
 
-                // 6. Test DeletePlan
-                Console.WriteLine("\n[Step 4] Deleting plan from repository...");
+                // 6. Verify atomic replacement and recovery from the last committed plan.
+                Console.WriteLine("\n[Step 4] Verifying backup recovery...");
+                plan.Name = "Updated Bunker Plan";
+                Assert(repo.SavePlan("env_bunker_repo_test", plan), "Second SavePlan succeeds.");
+                string backupFile = expectedFile + ".bak";
+                Assert(File.Exists(backupFile), "Previous committed plan is retained as a backup.");
+
+                File.WriteAllText(expectedFile, "{ invalid plan json");
+                SpatialExecutionPlan recoveredPlan;
+                Assert(repo.TryGetPlan("env_bunker_repo_test", out recoveredPlan),
+                    "TryGetPlan recovers when the primary plan is corrupt.");
+                Assert(recoveredPlan != null && recoveredPlan.Name == "Repo Test Bunker",
+                    "Recovery returns the previous committed plan.");
+
+                // 7. Delete both generations so backup recovery cannot resurrect the plan.
+                Console.WriteLine("\n[Step 5] Deleting plan and backup...");
                 bool deleted = repo.DeletePlan("env_bunker_repo_test");
                 Assert(deleted, "DeletePlan returns true.");
                 Assert(!repo.HasPlan("env_bunker_repo_test"), "HasPlan returns false after deletion.");
                 Assert(!File.Exists(expectedFile), "Plan file removed from disk.");
+                Assert(!File.Exists(backupFile), "Plan backup removed from disk.");
+                Assert(repo.GetPlan("env_bunker_repo_test") == null, "Deleted plan is not resurrected from backup.");
                 Assert(repo.GetAllPlanIds().Count == 0, "Plan enumeration is empty.");
 
                 // 7. Test Delete on non-existent plan
