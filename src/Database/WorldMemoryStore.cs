@@ -131,13 +131,24 @@ namespace DynamicWorldEngine.Database
 
                         if (!recovered)
                         {
-                            Console.WriteLine("[WorldMemoryStore] Warning: Failed to load DB ({0}). Creating fresh state.", ex.Message);
-                            _state = new DatabaseState();
+                            // A present but unreadable database is not an empty database.
+                            // Failing closed prevents the next save from overwriting the
+                            // only remaining copy of the user's world state.
+                            throw new InvalidDataException(
+                                "[WorldMemoryStore] Failed to load the primary database and its backup. " +
+                                "Existing data was left untouched. Primary error: " + ex.Message, ex);
                         }
                     }
                 }
                 else
                 {
+                    if (File.Exists(_filePath) || File.Exists(backupPath))
+                    {
+                        throw new InvalidDataException(
+                            "[WorldMemoryStore] Database files exist but contain no recoverable data. " +
+                            "Existing files were left untouched.");
+                    }
+
                     _state = new DatabaseState();
                     SaveDatabaseInternal();
                 }
@@ -156,25 +167,45 @@ namespace DynamicWorldEngine.Database
                 Directory.CreateDirectory(dir);
             }
 
-            string tempPath = _filePath + ".tmp." + Guid.NewGuid().ToString().Substring(0, 8);
+            string tempPath = _filePath + ".tmp." + Guid.NewGuid().ToString("N");
             string backupPath = _filePath + ".bak";
             string json = JsonConvert.SerializeObject(_state, Formatting.Indented);
 
-            File.WriteAllText(tempPath, json);
-
-            if (File.Exists(_filePath))
+            try
             {
-                if (File.Exists(backupPath))
+                // Keep the temporary file on the same volume as the database so the
+                // final rename/replace is atomic on supported filesystems.
+                using (var stream = new FileStream(tempPath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
+                using (var writer = new StreamWriter(stream, new System.Text.UTF8Encoding(false)))
                 {
-                    try { File.Delete(backupPath); } catch { }
+                    writer.Write(json);
+                    writer.Flush();
+                    stream.Flush(true);
                 }
-                try { File.Copy(_filePath, backupPath, true); } catch { }
-                File.Delete(_filePath);
-            }
-            File.Move(tempPath, _filePath);
 
-            _isDbDirty = false;
-            _lastDbSaveTime = DateTime.UtcNow;
+                if (File.Exists(_filePath))
+                {
+                    // Never delete the live database before the replacement is ready.
+                    // File.Replace atomically swaps the new file in and preserves the
+                    // previous primary as the backup. If it fails, the primary remains.
+                    File.Replace(tempPath, _filePath, backupPath, true);
+                }
+                else
+                {
+                    File.Move(tempPath, _filePath);
+                }
+
+                _isDbDirty = false;
+                _lastDbSaveTime = DateTime.UtcNow;
+            }
+            finally
+            {
+                // A failed write/replace must not leave a pile of stale temp files.
+                if (File.Exists(tempPath))
+                {
+                    try { File.Delete(tempPath); } catch { }
+                }
+            }
         }
 
         public void Save(bool force = false)
