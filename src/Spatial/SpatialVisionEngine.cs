@@ -19,6 +19,7 @@ namespace DynamicWorldEngine.Spatial
         public bool IsAbyss { get; set; }
         public bool IsGroundSolid { get; set; }
         public string DiagnosticSummary { get; set; }
+        public bool ObservationAvailable { get; set; }
     }
 
     /// <summary>
@@ -124,9 +125,11 @@ namespace DynamicWorldEngine.Spatial
 
             if (!DynamicWorldEngine.Runtime.NativeFiberCoordinator.IsMainThread)
             {
+                data.DiagnosticSummary = "Unavailable: spatial vision requires the game thread";
                 return data;
             }
 
+            data.ObservationAvailable = true;
             try
             {
                 // 1. Raycast Down (Floor)
