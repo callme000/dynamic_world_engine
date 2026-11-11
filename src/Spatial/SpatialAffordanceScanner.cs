@@ -55,6 +55,13 @@ namespace DynamicWorldEngine.Spatial
         {
             var points = new List<EnvironmentalInterestPoint>();
 
+            // Prop enumeration and entity property access are GTA native operations.
+            // An empty result is safer than querying the world from a worker thread.
+            if (!DynamicWorldEngine.Runtime.GameThreadGate.IsMainThread)
+            {
+                return points;
+            }
+
             // 1. Dynamic Physical Prop Probing (GTA V Runtime)
             try
             {

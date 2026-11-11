@@ -20,6 +20,9 @@ namespace DynamicWorldEngine.Spatial
         public string StreetName { get; set; }
         public DateTime Timestamp { get; set; }
         public SpatialSnapshotProvenance Provenance { get; set; }
+        public bool NativeObservationAvailable { get; set; }
+        public bool IsSynthetic { get; set; }
+        public string ObservationStatus { get; set; }
 
         // 2. Ground & Terrain Assessment
         public float Elevation { get; set; }
@@ -72,13 +75,13 @@ namespace DynamicWorldEngine.Spatial
             EntityHighlights = new List<string>();
             NearbyEnvironments = new List<string>();
             CandidateAreas = new List<CandidateArea>();
-            ZoneName = "Los Santos";
-            StreetName = "Open Area";
-            TerrainCategory = "Flat Urban Ground";
-            ObstructionDensity = "Low";
-            PlacementFeasibility = "Optimal";
-            DominantFaction = "None";
-            PoliceActivityLevel = "None";
+            ZoneName = "Unknown";
+            StreetName = "Unknown";
+            TerrainCategory = "Unknown";
+            ObstructionDensity = "Unknown";
+            PlacementFeasibility = "Unknown (Not Observed)";
+            DominantFaction = "Unknown";
+            PoliceActivityLevel = "Unknown";
             Timestamp = DateTime.UtcNow;
             NorthClearance = 50.0f;
             SouthClearance = 50.0f;
@@ -86,10 +89,12 @@ namespace DynamicWorldEngine.Spatial
             WestClearance = 50.0f;
             AvailableWidth = 50.0f;
             AvailableLength = 50.0f;
-            WalkableAreaPercent = 100.0f;
-            RoadDistance = 15.0f;
-            SidewalkDistance = 5.0f;
-            NavMeshAvailable = true;
+            WalkableAreaPercent = -1.0f;
+            RoadDistance = -1.0f;
+            SidewalkDistance = -1.0f;
+            NavMeshAvailable = false;
+            NativeObservationAvailable = false;
+            ObservationStatus = "Not observed";
         }
 
         /// <summary>
@@ -99,16 +104,31 @@ namespace DynamicWorldEngine.Spatial
         public string FormatForPrompt()
         {
             var sb = new StringBuilder();
-            sb.AppendLine("### SPATIAL PERCEPTION SNAPSHOT (LOCAL REALITY)");
+            sb.AppendLine("### SPATIAL PERCEPTION SNAPSHOT");
+            sb.AppendFormat("- **Observation**: {0}\n", string.IsNullOrEmpty(ObservationStatus) ? "Not observed" : ObservationStatus);
+
+            if (!NativeObservationAvailable && !IsSynthetic)
+            {
+                sb.AppendLine("- **Native world facts**: Unavailable; do not treat default geometry, access, population, or feasibility values as observed.");
+                if (NearbyEnvironments.Count > 0)
+                    sb.AppendFormat("- **Registered nearby environments**: {0}\n", string.Join(", ", NearbyEnvironments));
+                return sb.ToString().TrimEnd();
+            }
 
             // 1. Location & Ground
             sb.AppendFormat("- **Location**: {0} ({1}) | Elevation: {2:F1}m | Slope: {3:F1}° ({4})\n",
                 ZoneName, StreetName, Elevation, SlopeDegrees, TerrainCategory);
 
             // 2. Usable Footprint & Overhead
-            string sky = HasCeiling ? string.Format("Covered/Ceiling ({0:F1}m)", CeilingHeight) : "Open Sky";
-            sb.AppendFormat("- **Usable Footprint**: {0:F1}m × {1:F1}m clear ground | Walkable: {2:F0}% | Overhead: {3}\n",
-                AvailableWidth, AvailableLength, WalkableAreaPercent, sky);
+            string sky = CeilingHeight < 0.0f
+                ? "Unknown"
+                : (HasCeiling ? string.Format("Covered/Ceiling ({0:F1}m)", CeilingHeight) : "Open Sky");
+            string footprint = AvailableWidth < 0.0f || AvailableLength < 0.0f
+                ? "Unknown"
+                : string.Format("{0:F1}m × {1:F1}m", AvailableWidth, AvailableLength);
+            string walkable = WalkableAreaPercent < 0.0f ? "Unknown" : string.Format("{0:F0}%", WalkableAreaPercent);
+            sb.AppendFormat("- **Usable Footprint**: {0} clear ground | Walkable: {1} | Overhead: {2}\n",
+                footprint, walkable, sky);
 
             // 3. Boundaries & Enclosure
             if (IsAlleyOrCorridor)
@@ -127,15 +147,19 @@ namespace DynamicWorldEngine.Spatial
             }
 
             // 4. Access & Constraints
-            sb.AppendFormat("- **Access & NavMesh**: Road: {0:F1}m | Sidewalk: {1:F1}m | NavMesh: {2} | Obstructions: {3}\n",
-                RoadDistance, SidewalkDistance, NavMeshAvailable ? "Available" : "Restricted", ObstructionDensity);
+            string roadDistance = RoadDistance < 0.0f ? "Unknown" : string.Format("{0:F1}m", RoadDistance);
+            string sidewalkDistance = SidewalkDistance < 0.0f ? "Unknown" : string.Format("{0:F1}m", SidewalkDistance);
+            sb.AppendFormat("- **Access & NavMesh**: Road: {0} | Sidewalk: {1} | NavMesh: {2} | Obstructions: {3}\n",
+                roadDistance, sidewalkDistance, NavMeshAvailable ? "Available" : "Unknown", ObstructionDensity);
 
             // 5. Living Census
             string factionStr = !string.IsNullOrEmpty(DominantFaction) && DominantFaction != "None"
                 ? string.Format(" (Faction: {0})", DominantFaction)
                 : "";
+            string pedCount = NearbyPedCount < 0 ? "Unknown" : NearbyPedCount.ToString();
+            string vehicleCount = NearbyVehicleCount < 0 ? "Unknown" : NearbyVehicleCount.ToString();
             sb.AppendFormat("- **Living Census**: {0} Peds{1}, {2} Vehicles | Police Alert: {3}\n",
-                NearbyPedCount, factionStr, NearbyVehicleCount, PoliceActivityLevel);
+                pedCount, factionStr, vehicleCount, PoliceActivityLevel);
 
             if (EntityHighlights.Count > 0)
             {

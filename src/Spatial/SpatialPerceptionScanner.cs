@@ -73,6 +73,18 @@ namespace DynamicWorldEngine.Spatial
                 Timestamp = DateTime.UtcNow
             };
 
+            // GTA world inspection is only valid on the game thread. Do not turn an
+            // unavailable native observation into optimistic synthetic facts.
+            if (!IsMainThread)
+            {
+                snapshot.ObservationStatus = "Native observation unavailable (off game thread)";
+                ProbeMemoryAndThreats(origin, radius, store, recomputer, snapshot);
+                return snapshot;
+            }
+
+            snapshot.NativeObservationAvailable = true;
+            snapshot.ObservationStatus = "Native world scan attempted; failed probes are marked unknown";
+
             // 1. Ground, Elevation & Slope Assessment
             ProbeGroundAndSlope(origin, radius, snapshot);
 
@@ -146,18 +158,18 @@ namespace DynamicWorldEngine.Spatial
                     {
                         snapshot.Elevation = fallbackZ;
                     }
-                    snapshot.SlopeDegrees = 1.5f;
-                    snapshot.TerrainCategory = "Flat Urban Ground";
-                    snapshot.WalkableAreaPercent = 90.0f;
+                    snapshot.SlopeDegrees = -1.0f;
+                    snapshot.TerrainCategory = "Unknown (surface normal unavailable)";
+                    snapshot.WalkableAreaPercent = -1.0f;
                 }
             }
             catch
             {
-                // Headless/Test Fallback
-                snapshot.Elevation = origin.Z;
-                snapshot.SlopeDegrees = 1.5f;
-                snapshot.TerrainCategory = "Flat Urban Ground";
-                snapshot.WalkableAreaPercent = 90.0f;
+                // A failed native probe is unknown, not evidence of flat ground.
+                snapshot.Elevation = -1.0f;
+                snapshot.SlopeDegrees = -1.0f;
+                snapshot.TerrainCategory = "Unknown (ground probe failed)";
+                snapshot.WalkableAreaPercent = 0.0f;
             }
         }
 
@@ -174,7 +186,7 @@ namespace DynamicWorldEngine.Spatial
             }
             catch
             {
-                snapshot.RoadDistance = 18.0f;
+                snapshot.RoadDistance = -1.0f;
             }
 
             try
@@ -187,7 +199,7 @@ namespace DynamicWorldEngine.Spatial
             }
             catch
             {
-                snapshot.SidewalkDistance = 6.0f;
+                snapshot.SidewalkDistance = -1.0f;
             }
 
             try
@@ -197,7 +209,7 @@ namespace DynamicWorldEngine.Spatial
             }
             catch
             {
-                snapshot.StreetName = "Metropolitan Street";
+                snapshot.StreetName = "Unknown";
             }
 
             try
@@ -208,7 +220,7 @@ namespace DynamicWorldEngine.Spatial
             }
             catch
             {
-                snapshot.ZoneName = "Los Santos";
+                snapshot.ZoneName = "Unknown";
             }
         }
 
@@ -216,6 +228,7 @@ namespace DynamicWorldEngine.Spatial
         {
             if (!IsMainThread) return;
             float[] clearances = new float[8];
+            bool probeFailed = false;
             for (int i = 0; i < 8; i++) clearances[i] = radius;
 
             Vector3 eyePos = new Vector3(origin.X, origin.Y, snapshot.Elevation + 1.0f);
@@ -235,9 +248,21 @@ namespace DynamicWorldEngine.Spatial
                 }
                 catch
                 {
-                    // Headless default
-                    clearances[i] = radius;
+                    probeFailed = true;
+                    clearances[i] = -1.0f;
                 }
+            }
+
+            if (probeFailed)
+            {
+                snapshot.NorthClearance = -1.0f;
+                snapshot.EastClearance = -1.0f;
+                snapshot.SouthClearance = -1.0f;
+                snapshot.WestClearance = -1.0f;
+                snapshot.AvailableWidth = -1.0f;
+                snapshot.AvailableLength = -1.0f;
+                snapshot.ObstructionDensity = "Unknown (raycast failure)";
+                return;
             }
 
             snapshot.NorthClearance = clearances[0];
@@ -287,13 +312,19 @@ namespace DynamicWorldEngine.Spatial
             try
             {
                 var clearance = SpatialVisionEngine.SenseRoomClearance(origin, Math.Min(radius, 25.0f));
+                if (!clearance.ObservationAvailable)
+                {
+                    snapshot.HasCeiling = false;
+                    snapshot.CeilingHeight = -1.0f;
+                    return;
+                }
                 snapshot.HasCeiling = clearance.HasCeiling;
                 snapshot.CeilingHeight = clearance.CeilingClearance;
             }
             catch
             {
                 snapshot.HasCeiling = false;
-                snapshot.CeilingHeight = 99.0f;
+                snapshot.CeilingHeight = -1.0f;
             }
         }
 
@@ -302,6 +333,7 @@ namespace DynamicWorldEngine.Spatial
             if (!IsMainThread) return;
             try
             {
+                snapshot.NearbyPedCount = -1;
                 Ped[] nearbyPeds = World.GetNearbyPeds(origin, radius);
                 if (nearbyPeds != null)
                 {
@@ -324,20 +356,24 @@ namespace DynamicWorldEngine.Spatial
                         }
                     }
 
+                    snapshot.PoliceActivityLevel = cops > 0
+                        ? (cops >= 3 ? "Active Alert" : "Elevated")
+                        : "None";
                     if (cops > 0)
                     {
-                        snapshot.PoliceActivityLevel = cops >= 3 ? "Active Alert" : "Elevated";
                         snapshot.EntityHighlights.Add(string.Format("{0} Police Officers in immediate vicinity", cops));
                     }
                 }
             }
             catch
             {
-                snapshot.NearbyPedCount = 0;
+                snapshot.NearbyPedCount = -1;
+                snapshot.PoliceActivityLevel = "Unknown";
             }
 
             try
             {
+                snapshot.NearbyVehicleCount = -1;
                 Vehicle[] nearbyVehicles = World.GetNearbyVehicles(origin, radius);
                 if (nearbyVehicles != null)
                 {
@@ -346,7 +382,7 @@ namespace DynamicWorldEngine.Spatial
             }
             catch
             {
-                snapshot.NearbyVehicleCount = 0;
+                snapshot.NearbyVehicleCount = -1;
             }
         }
 
@@ -462,7 +498,12 @@ namespace DynamicWorldEngine.Spatial
 
         private void EvaluatePlacementFeasibility(WorldPerceptionSnapshot snapshot)
         {
-            if (snapshot.SlopeDegrees > 25.0f)
+            if (snapshot.SlopeDegrees < 0.0f || snapshot.AvailableWidth <= 0.0f ||
+                snapshot.AvailableLength <= 0.0f || snapshot.WalkableAreaPercent <= 0.0f)
+            {
+                snapshot.PlacementFeasibility = "Unknown (Incomplete native observation)";
+            }
+            else if (snapshot.SlopeDegrees > 25.0f)
             {
                 snapshot.PlacementFeasibility = "Restricted (Steep Terrain)";
             }
@@ -507,6 +548,14 @@ namespace DynamicWorldEngine.Spatial
                     CandidateLabel = string.Format("Site {0} ({1})", idx++, snapshot.ZoneName),
                     Snapshot = snapshot
                 };
+
+                if (!snapshot.NativeObservationAvailable && !snapshot.IsSynthetic)
+                {
+                    score.FitnessScore = 0.0f;
+                    score.Reason = "Not ranked: native world observation unavailable";
+                    results.Add(score);
+                    continue;
+                }
 
                 float fitness = 0.5f;
                 var reasons = new List<string>();
@@ -602,6 +651,8 @@ namespace DynamicWorldEngine.Spatial
         {
             var s = new WorldPerceptionSnapshot
             {
+                IsSynthetic = true,
+                ObservationStatus = "Synthetic scenario data (not a live GTA observation)",
                 X = x, Y = y, Z = z,
                 Elevation = z,
                 ZoneName = zone,
