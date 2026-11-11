@@ -7,7 +7,7 @@ set TESTS=TestPhase0InvariantRegression.exe TestPhase1CorrectnessAndSafety.exe T
 
 for %%T in (%TESTS%) do (
     set /a TOTAL+=1
-    %%T > nul
+    echo.\n    echo Running %%T...\n    %%T
     if !ERRORLEVEL! EQU 0 (
         echo [PASS] %%T
     ) else (
