@@ -378,11 +378,12 @@ namespace DynamicWorldEngine
         {
             if (plan == null) throw new ArgumentNullException("plan");
 
-            // Invariants #3 & #4: A spatial plan must pass validation before it can be committed.
-            if (plan.ValidationResult == null)
-            {
-                plan.ValidationResult = _planValidator.ValidatePlan(plan, plan.WorldModel, null, applyAutoCorrections: true);
-            }
+            // Revalidate the current plan/model at the transaction boundary. Never trust a cached or caller-supplied result.
+            if (commissioningMode != SpatialCommissioningMode.RequireLiveEvidence &&
+                commissioningMode != SpatialCommissioningMode.AllowUnverifiedSimulation)
+                throw new ArgumentOutOfRangeException("commissioningMode");
+
+            plan.ValidationResult = _planValidator.ValidatePlan(plan, plan.WorldModel, null, applyAutoCorrections: true);
 
             if (plan.ValidationResult == null || !plan.ValidationResult.IsValid)
             {
