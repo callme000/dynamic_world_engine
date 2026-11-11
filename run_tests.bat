@@ -3,11 +3,13 @@ setlocal enabledelayedexpansion
 set FAILED=0
 set TOTAL=0
 
-set TESTS=TestPhase0InvariantRegression.exe TestPhase1CorrectnessAndSafety.exe TestNpcRecordDeepClone.exe TestStep4Bridge.exe TestNaturalLanguagePromptSpawner.exe TestAssetDiscoveryPipeline.exe TestEpistemicAssetIntelligence.exe TestSpatialArchitecture.exe TestEndToEndIntegration.exe TestMilestone3Mutations.exe TestPlanSerializationRoundtrip.exe TestPlanRepository.exe TestEnvironmentStateArchitecture.exe TestMilestone2Environments.exe TestCommissioningArchitecture.exe TestRuntimeOwnershipArchitecture.exe TestRealizationLifecycleArchitecture.exe TestNpcDeathObservationArchitecture.exe TestWriteBeforeDestroyInvariant.exe TestRealizationScopeRollbackArchitecture.exe TestSeparatedWorldDirectorArchitecture.exe TestContextRetrievalArchitecture.exe TestEngramResolutionArchitecture.exe TestModularGeneratorArchitecture.exe TestSalienceEvaluationArchitecture.exe TestEphemeralStateArchitecture.exe TestKairosInsightArchitecture.exe TestSpatialPerceptionArchitecture.exe TestSpatialWorldModelArchitecture.exe TestSpatialOrchestrationPipeline.exe
+set TESTS=TestPhase0InvariantRegression.exe TestPhase1CorrectnessAndSafety.exe TestNpcRecordDeepClone.exe TestWorldMemoryPersistence.exe TestStep4Bridge.exe TestNaturalLanguagePromptSpawner.exe TestAssetDiscoveryPipeline.exe TestEpistemicAssetIntelligence.exe TestSpatialArchitecture.exe TestEndToEndIntegration.exe TestMilestone3Mutations.exe TestPlanSerializationRoundtrip.exe TestPlanRepository.exe TestEnvironmentStateArchitecture.exe TestMilestone2Environments.exe TestCommissioningArchitecture.exe TestRuntimeOwnershipArchitecture.exe TestRealizationLifecycleArchitecture.exe TestNpcDeathObservationArchitecture.exe TestWriteBeforeDestroyInvariant.exe TestRealizationScopeRollbackArchitecture.exe TestSeparatedWorldDirectorArchitecture.exe TestContextRetrievalArchitecture.exe TestEngramResolutionArchitecture.exe TestModularGeneratorArchitecture.exe TestSalienceEvaluationArchitecture.exe TestEphemeralStateArchitecture.exe TestKairosInsightArchitecture.exe TestSpatialPerceptionArchitecture.exe TestSpatialWorldModelArchitecture.exe TestSpatialOrchestrationPipeline.exe
 
 for %%T in (%TESTS%) do (
     set /a TOTAL+=1
-    echo.\n    echo Running %%T...\n    %%T
+    echo.
+    echo Running %%T...
+    %%T
     if !ERRORLEVEL! EQU 0 (
         echo [PASS] %%T
     ) else (
