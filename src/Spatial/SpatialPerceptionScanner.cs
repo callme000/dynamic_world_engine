@@ -83,7 +83,7 @@ namespace DynamicWorldEngine.Spatial
             }
 
             snapshot.NativeObservationAvailable = true;
-            snapshot.ObservationStatus = "Native world scan attempted";
+            snapshot.ObservationStatus = "Native world scan attempted; failed probes are marked unknown";
 
             // 1. Ground, Elevation & Slope Assessment
             ProbeGroundAndSlope(origin, radius, snapshot);
@@ -160,13 +160,13 @@ namespace DynamicWorldEngine.Spatial
                     }
                     snapshot.SlopeDegrees = -1.0f;
                     snapshot.TerrainCategory = "Unknown (surface normal unavailable)";
-                    snapshot.WalkableAreaPercent = 0.0f;
+                    snapshot.WalkableAreaPercent = -1.0f;
                 }
             }
             catch
             {
                 // A failed native probe is unknown, not evidence of flat ground.
-                snapshot.Elevation = origin.Z;
+                snapshot.Elevation = -1.0f;
                 snapshot.SlopeDegrees = -1.0f;
                 snapshot.TerrainCategory = "Unknown (ground probe failed)";
                 snapshot.WalkableAreaPercent = 0.0f;
