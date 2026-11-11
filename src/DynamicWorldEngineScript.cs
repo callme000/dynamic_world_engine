@@ -74,9 +74,10 @@ namespace DynamicWorldEngine
                 Log.Info("Script", "Paths: BaseDir=\"{0}\", GameRoot=\"{1}\", ScriptsFolder=\"{2}\"", baseDir, gameRootDirectory, scriptsFolder);
 
                 string dataFolder = Path.Combine(scriptsFolder, "DynamicWorldEngineData");
-                if (!Directory.Exists(dataFolder) && Directory.Exists(Path.Combine(baseDir, "DynamicWorldEngineData")))
+                string legacyGameRootDataFolder = Path.Combine(gameRootDirectory, "DynamicWorldEngineData");
+                if (!Directory.Exists(dataFolder) && Directory.Exists(legacyGameRootDataFolder))
                 {
-                    dataFolder = Path.Combine(baseDir, "DynamicWorldEngineData");
+                    dataFolder = legacyGameRootDataFolder;
                 }
 
                 string llaiFolder = scriptsFolder;
