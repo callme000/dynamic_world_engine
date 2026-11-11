@@ -64,6 +64,16 @@ namespace DynamicWorldEngine.Spatial
                 SampleHeadlessSyntheticWorld(origin, radius, cellSize, store, zoneContext, model);
             }
 
+            int gridSteps = (int)Math.Ceiling((radius * 2.0f) / cellSize);
+            model.Provenance.ScanType = isHeadless ? "SYNTHETIC_FALLBACK" : "NATIVE_RAYCAST";
+            model.Provenance.IsNativeScan = !isHeadless;
+            model.Provenance.DataSource = isHeadless ? "Synthetic_Terrain_Generator" : "GTA_V_Native_World";
+            model.Provenance.SampledCellsCount = model.Surfaces.Count;
+            model.Provenance.TotalRequestedCells = gridSteps * gridSteps;
+            model.Provenance.CompletenessScore = isHeadless
+                ? 1.0f
+                : Math.Min(1.0f, (float)model.Surfaces.Count / Math.Max(1, gridSteps * gridSteps));
+
             // Level 3: Cluster contiguous cells into Candidate Areas
             ClusterCandidateAreas(model, 30.0f);
 
