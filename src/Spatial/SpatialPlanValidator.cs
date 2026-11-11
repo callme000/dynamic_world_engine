@@ -68,12 +68,15 @@ namespace DynamicWorldEngine.Spatial
                 model.Provenance.TotalRequestedCells > 0 &&
                 model.Provenance.ClassifiedCellsCount > 0 &&
                 model.Provenance.ClassifiedCellsCount <= model.Provenance.TotalRequestedCells &&
-                model.Provenance.CompletenessScore >= 0.99f;
+                model.Provenance.CompletenessScore >= 0.99f &&
+                model.Provenance.CaptureTime != DateTime.MinValue &&
+                (DateTime.UtcNow - model.Provenance.CaptureTime) >= TimeSpan.Zero &&
+                (DateTime.UtcNow - model.Provenance.CaptureTime) <= TimeSpan.FromSeconds(60);
 
             if (!result.HasNativeSpatialEvidence)
                 result.Warnings.Add("Geometric validation uses synthetic/offline/unknown spatial data; physical feasibility in the live GTA world is unconfirmed.");
             else if (!result.PhysicalFeasibilityConfirmed)
-                result.Warnings.Add(string.Format("Live spatial evidence is incomplete ({0:P0}); physical feasibility is not fully confirmed.", model.Provenance.CompletenessScore));
+                result.Warnings.Add("Live spatial evidence is incomplete, invalid, or older than 60 seconds; physical feasibility is not confirmed.");
 
             // 1. Surface Contact & Ground Elevation Verification
             if (model != null && model.Surfaces != null && model.Surfaces.Count > 0)
