@@ -120,9 +120,15 @@ namespace DynamicWorldEngine.Spatial
                 ZoneName, StreetName, Elevation, SlopeDegrees, TerrainCategory);
 
             // 2. Usable Footprint & Overhead
-            string sky = HasCeiling ? string.Format("Covered/Ceiling ({0:F1}m)", CeilingHeight) : "Open Sky";
-            sb.AppendFormat("- **Usable Footprint**: {0:F1}m × {1:F1}m clear ground | Walkable: {2:F0}% | Overhead: {3}\n",
-                AvailableWidth, AvailableLength, WalkableAreaPercent, sky);
+            string sky = CeilingHeight < 0.0f
+                ? "Unknown"
+                : (HasCeiling ? string.Format("Covered/Ceiling ({0:F1}m)", CeilingHeight) : "Open Sky");
+            string footprint = AvailableWidth < 0.0f || AvailableLength < 0.0f
+                ? "Unknown"
+                : string.Format("{0:F1}m × {1:F1}m", AvailableWidth, AvailableLength);
+            string walkable = WalkableAreaPercent < 0.0f ? "Unknown" : string.Format("{0:F0}%", WalkableAreaPercent);
+            sb.AppendFormat("- **Usable Footprint**: {0} clear ground | Walkable: {1} | Overhead: {2}\n",
+                footprint, walkable, sky);
 
             // 3. Boundaries & Enclosure
             if (IsAlleyOrCorridor)
@@ -141,15 +147,19 @@ namespace DynamicWorldEngine.Spatial
             }
 
             // 4. Access & Constraints
-            sb.AppendFormat("- **Access & NavMesh**: Road: {0:F1}m | Sidewalk: {1:F1}m | NavMesh: {2} | Obstructions: {3}\n",
-                RoadDistance, SidewalkDistance, NavMeshAvailable ? "Available" : "Restricted", ObstructionDensity);
+            string roadDistance = RoadDistance < 0.0f ? "Unknown" : string.Format("{0:F1}m", RoadDistance);
+            string sidewalkDistance = SidewalkDistance < 0.0f ? "Unknown" : string.Format("{0:F1}m", SidewalkDistance);
+            sb.AppendFormat("- **Access & NavMesh**: Road: {0} | Sidewalk: {1} | NavMesh: {2} | Obstructions: {3}\n",
+                roadDistance, sidewalkDistance, NavMeshAvailable ? "Available" : "Unknown", ObstructionDensity);
 
             // 5. Living Census
             string factionStr = !string.IsNullOrEmpty(DominantFaction) && DominantFaction != "None"
                 ? string.Format(" (Faction: {0})", DominantFaction)
                 : "";
+            string pedCount = NearbyPedCount < 0 ? "Unknown" : NearbyPedCount.ToString();
+            string vehicleCount = NearbyVehicleCount < 0 ? "Unknown" : NearbyVehicleCount.ToString();
             sb.AppendFormat("- **Living Census**: {0} Peds{1}, {2} Vehicles | Police Alert: {3}\n",
-                NearbyPedCount, factionStr, NearbyVehicleCount, PoliceActivityLevel);
+                pedCount, factionStr, vehicleCount, PoliceActivityLevel);
 
             if (EntityHighlights.Count > 0)
             {
