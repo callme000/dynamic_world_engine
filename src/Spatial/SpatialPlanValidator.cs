@@ -65,6 +65,9 @@ namespace DynamicWorldEngine.Spatial
                 model.Provenance.IsNativeScan &&
                 string.Equals(model.Provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase);
             result.PhysicalFeasibilityConfirmed = result.HasNativeSpatialEvidence &&
+                model.Provenance.TotalRequestedCells > 0 &&
+                model.Provenance.ClassifiedCellsCount > 0 &&
+                model.Provenance.ClassifiedCellsCount <= model.Provenance.TotalRequestedCells &&
                 model.Provenance.CompletenessScore >= 0.99f;
 
             if (!result.HasNativeSpatialEvidence)
