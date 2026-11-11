@@ -95,7 +95,7 @@ namespace DynamicWorldEngine.Utils
 
                     WriteInternal("SYSTEM", LogLevel.Info, "================================================================================");
                     WriteInternal("SYSTEM", LogLevel.Info, string.Format("Dynamic World Engine Logging System Initialized. Log file: {0}", _logFilePath));
-                    WriteInternal("SYSTEM", LogLevel.Info, string.Format("OS: {0} | CLR: {1} | Main Thread ID: {2}", Environment.OSVersion, Environment.Version, MainThreadId));
+                    WriteInternal("SYSTEM", LogLevel.Info, string.Format("OS: {0} | CLR: {1} | Logger Initialization Thread ID: {2}", Environment.OSVersion, Environment.Version, MainThreadId));
                     WriteInternal("SYSTEM", LogLevel.Info, "================================================================================");
                 }
                 catch (Exception ex)
@@ -262,7 +262,7 @@ namespace DynamicWorldEngine.Utils
         private static string GetThreadTag()
         {
             int tid = Thread.CurrentThread.ManagedThreadId;
-            if (tid == MainThreadId) return "Main";
+            if (tid == MainThreadId) return "Script";
             if (Thread.CurrentThread.IsThreadPoolThread) return string.Format("Pool-{0}", tid);
             return string.Format("Thread-{0}", tid);
         }
