@@ -67,15 +67,7 @@ namespace DynamicWorldEngine.Utils
                     if (string.IsNullOrEmpty(targetDir))
                     {
                         string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-                        string scriptsCandidate = Path.Combine(baseDir, "scripts");
-                        if (Directory.Exists(scriptsCandidate))
-                        {
-                            targetDir = scriptsCandidate;
-                        }
-                        else
-                        {
-                            targetDir = baseDir;
-                        }
+                        targetDir = ScriptPathResolver.ResolveScriptsDirectory(baseDir);
                     }
 
                     _logFilePath = Path.Combine(targetDir, "DynamicWorldEngine.log");
