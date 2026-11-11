@@ -64,15 +64,30 @@ namespace DynamicWorldEngine.Spatial
                 SampleHeadlessSyntheticWorld(origin, radius, cellSize, store, zoneContext, model);
             }
 
-            int gridSteps = (int)Math.Ceiling((radius * 2.0f) / cellSize);
+            int totalRequestedCells = CountRequestedGridCells(origin, radius, cellSize);
+            int classifiedCells = 0;
+            int unknownCells = 0;
+            foreach (var surface in model.Surfaces)
+            {
+                if (surface != null && surface.SlopeDegrees >= 0.0f)
+                    classifiedCells++;
+                else
+                    unknownCells++;
+            }
+
             model.Provenance.ScanType = isHeadless ? "SYNTHETIC_FALLBACK" : "NATIVE_RAYCAST";
             model.Provenance.IsNativeScan = !isHeadless;
             model.Provenance.DataSource = isHeadless ? "Synthetic_Terrain_Generator" : "GTA_V_Native_World";
             model.Provenance.SampledCellsCount = model.Surfaces.Count;
-            model.Provenance.TotalRequestedCells = gridSteps * gridSteps;
-            model.Provenance.CompletenessScore = isHeadless
-                ? 1.0f
-                : Math.Min(1.0f, (float)model.Surfaces.Count / Math.Max(1, gridSteps * gridSteps));
+            model.Provenance.ClassifiedCellsCount = classifiedCells;
+            model.Provenance.UnknownCellsCount = unknownCells;
+            model.Provenance.TotalRequestedCells = totalRequestedCells;
+            // For native scans, completeness reflects classified ground samples,
+            // not merely allocated surface records. Synthetic completeness describes
+            // generated grid coverage only; provenance still labels it as synthetic.
+            model.Provenance.CompletenessScore = totalRequestedCells > 0
+                ? Math.Min(1.0f, (float)classifiedCells / totalRequestedCells)
+                : 0.0f;
 
             // Level 3: Cluster contiguous cells into Candidate Areas
             ClusterCandidateAreas(model, 30.0f);
@@ -81,6 +96,27 @@ namespace DynamicWorldEngine.Spatial
             SynthesizeSpatialGraph(model);
 
             return model;
+        }
+
+        private int CountRequestedGridCells(Vector3 origin, float radius, float cellSize)
+        {
+            int steps = (int)Math.Ceiling((radius * 2.0f) / cellSize);
+            int count = 0;
+            float startX = origin.X - radius;
+            float startY = origin.Y - radius;
+
+            for (int ix = 0; ix < steps; ix++)
+            {
+                for (int iy = 0; iy < steps; iy++)
+                {
+                    float cx = startX + (ix * cellSize) + (cellSize * 0.5f);
+                    float cy = startY + (iy * cellSize) + (cellSize * 0.5f);
+                    if (new Vector2(cx - origin.X, cy - origin.Y).Length() <= radius)
+                        count++;
+                }
+            }
+
+            return count;
         }
 
         private void SampleNativeWorld(
