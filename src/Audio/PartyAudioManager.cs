@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using GTA;
 using GTA.Native;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Audio
 {
@@ -32,6 +33,7 @@ namespace DynamicWorldEngine.Audio
         /// </summary>
         public void StartPartyAudio(string venueId = "", string venueName = "", string radioStation = "RADIO_22_DLC_BATTLE_MIX1_RADIO")
         {
+            if (!GameThreadGate.EnforceMainThread("PartyAudioManager.StartPartyAudio")) return;
             StopAudio();
 
             try
@@ -74,6 +76,7 @@ namespace DynamicWorldEngine.Audio
         /// </summary>
         public void StartGalleryAudio(string venueId = "", string venueName = "")
         {
+            if (!GameThreadGate.EnforceMainThread("PartyAudioManager.StartGalleryAudio")) return;
             StopAudio();
 
             try
@@ -104,6 +107,7 @@ namespace DynamicWorldEngine.Audio
         /// </summary>
         public void StopAudio()
         {
+            if (!GameThreadGate.EnforceMainThread("PartyAudioManager.StopAudio")) return;
             if (!_isPlaying && string.IsNullOrEmpty(_activeAudioScene)) return;
 
             try
