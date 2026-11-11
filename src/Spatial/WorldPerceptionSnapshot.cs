@@ -26,6 +26,7 @@ namespace DynamicWorldEngine.Spatial
 
         // 2. Ground & Terrain Assessment
         public float Elevation { get; set; }
+        public bool GroundElevationAvailable { get; set; }
         public float SlopeDegrees { get; set; }
         public string TerrainCategory { get; set; }
         public float WalkableAreaPercent { get; set; }
@@ -116,8 +117,10 @@ namespace DynamicWorldEngine.Spatial
             }
 
             // 1. Location & Ground
-            sb.AppendFormat("- **Location**: {0} ({1}) | Elevation: {2:F1}m | Slope: {3:F1}° ({4})\n",
-                ZoneName, StreetName, Elevation, SlopeDegrees, TerrainCategory);
+            string elevation = GroundElevationAvailable ? string.Format("{0:F1}m", Elevation) : "Unknown";
+            string slope = SlopeDegrees < 0.0f ? "Unknown" : string.Format("{0:F1}°", SlopeDegrees);
+            sb.AppendFormat("- **Location**: {0} ({1}) | Elevation: {2} | Slope: {3} ({4})\n",
+                ZoneName, StreetName, elevation, slope, TerrainCategory);
 
             // 2. Usable Footprint & Overhead
             string sky = CeilingHeight < 0.0f
