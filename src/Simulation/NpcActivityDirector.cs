@@ -4,6 +4,7 @@ using GTA;
 using GTA.Math;
 using GTA.Native;
 using DynamicWorldEngine.Spatial;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Simulation
 {
@@ -61,6 +62,7 @@ namespace DynamicWorldEngine.Simulation
 
         public void RegisterNpc(Ped ped, string role, string requestedScenario = "")
         {
+            if (!GameThreadGate.EnforceMainThread("NpcActivityDirector.RegisterNpc")) return;
             if (ped == null || !ped.Exists() || ped.IsDead) return;
 
             string rLower = (role ?? "").ToLowerInvariant();
@@ -150,6 +152,7 @@ namespace DynamicWorldEngine.Simulation
 
         public void OnTick()
         {
+            if (!GameThreadGate.EnforceMainThread("NpcActivityDirector.OnTick")) return;
             int now = Game.GameTime;
             if (now - _lastTickTime < 500) return; // Process every 500ms
             _lastTickTime = now;
@@ -338,6 +341,7 @@ namespace DynamicWorldEngine.Simulation
 
         public void ClearAll()
         {
+            if (!GameThreadGate.EnforceMainThread("NpcActivityDirector.ClearAll")) return;
             foreach (var act in _activities)
             {
                 if (act != null && act.IsValid)

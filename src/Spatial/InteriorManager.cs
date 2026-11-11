@@ -5,6 +5,7 @@ using GTA;
 using GTA.Math;
 using GTA.Native;
 using GTA.UI;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Spatial
 {
@@ -59,6 +60,7 @@ namespace DynamicWorldEngine.Spatial
 
         public bool ActivateInterior(InteriorDefinition interior, Ped playerPed, bool teleportPlayer = false)
         {
+            if (!GameThreadGate.EnforceMainThread("InteriorManager.ActivateInterior")) return false;
             if (interior == null) return false;
 
             try
@@ -273,6 +275,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void BindEntityToInteriorRoom(Entity entity, Ped playerPed)
         {
+            if (!GameThreadGate.EnforceMainThread("InteriorManager.BindEntityToInteriorRoom")) return;
             if (entity == null || !entity.Exists() || _currentActiveInteriorId == 0) return;
 
             try
@@ -296,6 +299,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void DeactivateCurrentInterior()
         {
+            if (!GameThreadGate.EnforceMainThread("InteriorManager.DeactivateCurrentInterior")) return;
             if (_currentActiveInteriorId != 0)
             {
                 try
@@ -312,6 +316,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void ClearCurrentInteriorBlip()
         {
+            if (!GameThreadGate.EnforceMainThread("InteriorManager.ClearCurrentInteriorBlip")) return;
             if (_currentInteriorBlip != null && _currentInteriorBlip.Exists())
             {
                 _currentInteriorBlip.Delete();
