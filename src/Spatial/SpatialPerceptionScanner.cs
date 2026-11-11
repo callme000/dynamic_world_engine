@@ -73,6 +73,18 @@ namespace DynamicWorldEngine.Spatial
                 Timestamp = DateTime.UtcNow
             };
 
+            // GTA world inspection is only valid on the game thread. Do not turn an
+            // unavailable native observation into optimistic synthetic facts.
+            if (!IsMainThread)
+            {
+                snapshot.ObservationStatus = "Native observation unavailable (off game thread)";
+                ProbeMemoryAndThreats(origin, radius, store, recomputer, snapshot);
+                return snapshot;
+            }
+
+            snapshot.NativeObservationAvailable = true;
+            snapshot.ObservationStatus = "Native world scan attempted";
+
             // 1. Ground, Elevation & Slope Assessment
             ProbeGroundAndSlope(origin, radius, snapshot);
 
