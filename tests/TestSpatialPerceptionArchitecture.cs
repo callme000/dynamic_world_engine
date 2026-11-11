@@ -262,6 +262,16 @@ namespace DynamicWorldEngine.Tests
                     "Synthetic spatial grid does not claim a native scan");
                 Assert(syntheticModel.Provenance.CompletenessScore > 0f,
                     "Synthetic model completeness is reported separately from native provenance");
+                Assert(syntheticModel.Provenance.TotalRequestedCells > 0 &&
+                       syntheticModel.Provenance.TotalRequestedCells < 64,
+                    "Requested cell count covers the circular scan area, not the full square grid");
+                Assert(syntheticModel.Provenance.SampledCellsCount ==
+                       syntheticModel.Provenance.TotalRequestedCells,
+                    "Synthetic sampler reports all requested in-radius cells as sampled");
+                Assert(syntheticModel.Provenance.ClassifiedCellsCount ==
+                       syntheticModel.Provenance.SampledCellsCount &&
+                       syntheticModel.Provenance.UnknownCellsCount == 0,
+                    "Synthetic grid reports classified and unknown cell counts accurately");
 
                 // 3. Multi-site ranking via EngineCore
                 var candidates = new List<Vector3>
