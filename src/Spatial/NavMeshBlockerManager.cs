@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using GTA.Math;
 using GTA.Native;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Spatial
 {
@@ -12,6 +13,7 @@ namespace DynamicWorldEngine.Spatial
 
         public int AddBlockingVolume(string environmentId, Vector3 centerPosition, Vector3 size, float heading)
         {
+            if (!GameThreadGate.EnforceMainThread("NavMeshBlockerManager.AddBlockingVolume")) return 0;
             try
             {
                 // GTA V Native: ADD_NAVMESH_BLOCKING_OBJECT (0x387E77229B16CA9E)
@@ -62,6 +64,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void RemoveBlocker(int handle)
         {
+            if (!GameThreadGate.EnforceMainThread("NavMeshBlockerManager.RemoveBlocker")) return;
             if (handle != 0)
             {
                 try
@@ -83,6 +86,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void RemoveBlockersForEnvironment(string environmentId)
         {
+            if (!GameThreadGate.EnforceMainThread("NavMeshBlockerManager.RemoveBlockersForEnvironment")) return;
             if (string.IsNullOrEmpty(environmentId)) return;
 
             List<int> handles;
@@ -103,6 +107,7 @@ namespace DynamicWorldEngine.Spatial
 
         public void ClearAllBlockers()
         {
+            if (!GameThreadGate.EnforceMainThread("NavMeshBlockerManager.ClearAllBlockers")) return;
             foreach (var handle in _globalBlockerHandles)
             {
                 try
