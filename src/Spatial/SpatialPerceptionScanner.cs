@@ -141,10 +141,13 @@ namespace DynamicWorldEngine.Spatial
         {
             if (!IsMainThread)
             {
-                snapshot.Elevation = origin.Z;
-                snapshot.SlopeDegrees = 1.5f;
-                snapshot.TerrainCategory = "Flat Urban Ground";
-                snapshot.WalkableAreaPercent = 90.0f;
+                // Defensive guard: ScanLocationCore normally returns before reaching
+                // this probe when native observation is unavailable.
+                snapshot.Elevation = -1.0f;
+                snapshot.GroundElevationAvailable = false;
+                snapshot.SlopeDegrees = -1.0f;
+                snapshot.TerrainCategory = "Unknown (off game thread)";
+                snapshot.WalkableAreaPercent = -1.0f;
                 return;
             }
 
