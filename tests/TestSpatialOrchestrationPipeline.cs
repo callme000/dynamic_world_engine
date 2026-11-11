@@ -147,7 +147,9 @@ namespace DynamicWorldEngine.Tests
 
             string brief = packet.FormatForPrompt(includeAsciiMap: true);
             Assert(!string.IsNullOrEmpty(brief), "FormatForPrompt emits non-empty string");
-            Assert(brief.Contains("=== GROUNDED SPATIAL CONTEXT BRIEF ==="), "Brief contains standardized header");
+            Assert(brief.Contains("=== SPATIAL CONTEXT BRIEF ==="), "Brief contains standardized header");
+            Assert(brief.Contains("SYNTHETIC/OFFLINE — NOT A LIVE GTA OBSERVATION"), "Brief explicitly labels synthetic spatial evidence");
+            Assert(packet.Provenance != null && !packet.Provenance.IsNativeScan, "Synthetic packet retains non-native provenance");
             Assert(brief.Contains("[Area_A]"), "Brief exposes Candidate Area_A");
             Assert(brief.Contains("[Area_B]"), "Brief exposes Candidate Area_B");
             Assert(brief.Length < 3000, string.Format("Brief is token-efficient (length {0} chars < 3000 chars / ~500 tokens)", brief.Length));
@@ -173,7 +175,8 @@ namespace DynamicWorldEngine.Tests
 
             var solution = solver.Solve(model, req);
             Assert(solution != null, "SpatialPlacementSolver produces solution");
-            Assert(solution.FeasibilityConfirmed, "Solution feasibility confirmed");
+            Assert(solution.FeasibilityConfirmed, "Geometric solution generated");
+            Assert(!solution.PhysicalFeasibilityConfirmed, "Synthetic model does not claim physical feasibility");
             Assert(solution.Props.Count >= 3, "Solution places focal table + 2 chairs");
 
             // Verify facing relationships between chairs
