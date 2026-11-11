@@ -5,6 +5,7 @@ using DynamicWorldEngine.Database;
 using GTA;
 using GTA.Math;
 using GTA.UI;
+using DynamicWorldEngine.Runtime;
 
 namespace DynamicWorldEngine.Simulation
 {
@@ -45,6 +46,7 @@ namespace DynamicWorldEngine.Simulation
             Vector3 sceneOrigin,
             List<ActiveNpcContext> npcs)
         {
+            if (!GameThreadGate.EnforceMainThread("DirectorTimelineManager.LoadScenario")) return;
             Reset();
 
             if (scenario == null || scenario.Beats == null || scenario.Beats.Count == 0) return;
@@ -82,6 +84,7 @@ namespace DynamicWorldEngine.Simulation
             Action<TriggerWorldEventData> onFireWorldEvent,
             Action<MutateEntityData> onFireMutation)
         {
+            if (!GameThreadGate.EnforceMainThread("DirectorTimelineManager.ProcessTimeline")) return;
             if (!IsScenarioActive) return;
 
             DateTime now = DateTime.UtcNow;
@@ -177,6 +180,7 @@ namespace DynamicWorldEngine.Simulation
 
         public void Reset()
         {
+            if (!GameThreadGate.EnforceMainThread("DirectorTimelineManager.Reset")) return;
             _currentScenario = null;
             _runtimeBeats.Clear();
             _boundNpcs.Clear();
@@ -187,6 +191,7 @@ namespace DynamicWorldEngine.Simulation
 
         public void ResetIfEnvironment(string environmentId)
         {
+            if (!GameThreadGate.EnforceMainThread("DirectorTimelineManager.ResetIfEnvironment")) return;
             if (!string.IsNullOrEmpty(environmentId) && string.Equals(_activeEnvironmentId, environmentId, StringComparison.OrdinalIgnoreCase))
             {
                 Reset();
