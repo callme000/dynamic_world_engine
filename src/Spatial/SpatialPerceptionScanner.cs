@@ -140,6 +140,7 @@ namespace DynamicWorldEngine.Spatial
                 if (gotNormal)
                 {
                     snapshot.Elevation = groundHeight;
+                    snapshot.GroundElevationAvailable = true;
                     float nz = Math.Max(-1.0f, Math.Min(1.0f, normal.Z));
                     float slopeRad = (float)Math.Acos(nz);
                     snapshot.SlopeDegrees = slopeRad * (180.0f / (float)Math.PI);
@@ -157,6 +158,11 @@ namespace DynamicWorldEngine.Spatial
                     if (SpatialVisionEngine.ProbeGroundElevation(origin, out fallbackZ))
                     {
                         snapshot.Elevation = fallbackZ;
+                        snapshot.GroundElevationAvailable = true;
+                    }
+                    else
+                    {
+                        snapshot.Elevation = -1.0f;
                     }
                     snapshot.SlopeDegrees = -1.0f;
                     snapshot.TerrainCategory = "Unknown (surface normal unavailable)";
@@ -169,7 +175,7 @@ namespace DynamicWorldEngine.Spatial
                 snapshot.Elevation = -1.0f;
                 snapshot.SlopeDegrees = -1.0f;
                 snapshot.TerrainCategory = "Unknown (ground probe failed)";
-                snapshot.WalkableAreaPercent = 0.0f;
+                snapshot.WalkableAreaPercent = -1.0f;
             }
         }
 
@@ -231,7 +237,10 @@ namespace DynamicWorldEngine.Spatial
             bool probeFailed = false;
             for (int i = 0; i < 8; i++) clearances[i] = radius;
 
-            Vector3 eyePos = new Vector3(origin.X, origin.Y, snapshot.Elevation + 1.0f);
+            float rayOriginZ = snapshot.TerrainCategory.StartsWith("Unknown", StringComparison.OrdinalIgnoreCase)
+                ? origin.Z
+                : snapshot.Elevation;
+            Vector3 eyePos = new Vector3(origin.X, origin.Y, rayOriginZ + 1.0f);
 
             for (int i = 0; i < 8; i++)
             {
