@@ -32,6 +32,7 @@ namespace DynamicWorldEngine
     {
         private readonly EngineCore _engine;
         private bool _isInitialized = false;
+        private bool _nativeStartupComplete = false;
         private int _currentArchetypeIndex = 0;
 
         private readonly EntitySpawnerService _spawner = new EntitySpawnerService();
@@ -64,18 +65,13 @@ namespace DynamicWorldEngine
         {
             try
             {
-                int currentThreadId = Thread.CurrentThread.ManagedThreadId;
-                Log.MainThreadId = currentThreadId;
-                GameThreadGate.Initialize(currentThreadId);
-
                 string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-                string scriptsFolder = Directory.Exists(Path.Combine(baseDir, "scripts"))
-                    ? Path.Combine(baseDir, "scripts")
-                    : baseDir;
+                string scriptsFolder = ScriptPathResolver.ResolveScriptsDirectory(baseDir);
+                string gameRootDirectory = ScriptPathResolver.ResolveGameRootDirectory(baseDir);
 
                 Log.Initialize(scriptsFolder);
-                Log.Info("Script", "DynamicWorldEngineScript starting up... MainThreadId={0}", currentThreadId);
-                Log.Info("Script", "Paths: BaseDir=\"{0}\", ScriptsFolder=\"{1}\"", baseDir, scriptsFolder);
+                Log.Info("Script", "DynamicWorldEngineScript constructor running on ManagedThreadId={0}", Thread.CurrentThread.ManagedThreadId);
+                Log.Info("Script", "Paths: BaseDir=\"{0}\", GameRoot=\"{1}\", ScriptsFolder=\"{2}\"", baseDir, gameRootDirectory, scriptsFolder);
 
                 string dataFolder = Path.Combine(scriptsFolder, "DynamicWorldEngineData");
                 if (!Directory.Exists(dataFolder) && Directory.Exists(Path.Combine(baseDir, "DynamicWorldEngineData")))
@@ -109,49 +105,67 @@ namespace DynamicWorldEngine
                 _engine = new EngineCore(dataFolder, llaiFolder, _navBlockers, _blips, _teleportPockets, _interiorManager, _runtimeExecutor);
                 _isInitialized = true;
 
-                // Interrogate GTA V installation & discover active DLC ontology
+                // Interrogate the actual GTA V installation root, not SHVDN's scripts AppDomain directory.
                 try
                 {
-                    SpatialAssetRegistry.Instance.InitializeRegistry(baseDir);
-                    Log.Info("Script", "SpatialAssetRegistry initialized successfully.");
+                    SpatialAssetRegistry.Instance.InitializeRegistry(gameRootDirectory);
+                    Log.Info("Script", "SpatialAssetRegistry initialized successfully. GameRoot={0}", gameRootDirectory);
                 }
                 catch (Exception ex)
                 {
                     Log.Warn("Script", "Failed initializing SpatialAssetRegistry: {0}", ex.Message);
                 }
 
-                // Enable Online Multiplayer DLC Map Assets in Singleplayer
-                try
-                {
-                    Function.Call(Hash.ON_ENTER_MP);
-                    Log.Debug("Script", "ON_ENTER_MP called successfully.");
-                }
-                catch (Exception ex)
-                {
-                    Log.Warn("Script", "Failed calling ON_ENTER_MP: {0}", ex.Message);
-                }
-
+                // Native GTA calls are intentionally deferred until the first SHVDN Tick callback.
+                // SHVDN constructs Script instances on a different managed thread from the per-script
+                // execution thread that raises Tick and KeyDown.
                 KeyDown += OnKeyDown;
                 Tick += OnTick;
                 Interval = 20; // 20ms for ultra-responsive 0ms observer loop & HUD drawing
 
-                Log.Info("Script", "Dynamic World Engine v8.0 loaded cleanly. Ready for player prompts.");
-                Notification.Show("~g~Dynamic World Engine v8.0 (GPT-6 Astra Edition)~w~ Loaded!~n~~y~F7:~w~ Direct Story/Events (World Director) | ~y~F8:~w~ Generate Scene (World Architect) | ~y~F9:~w~ Inspector HUD | ~y~F10:~w~ Presets | ~y~F11:~w~ Clear");
+                Log.Info("Script", "Dynamic World Engine v8.0 initialized. Awaiting first SHVDN script tick to bind native execution context.");
             }
             catch (Exception ex)
             {
                 Log.Fatal("Script", ex, "Fatal exception during DynamicWorldEngineScript constructor");
-                Notification.Show("~r~Dynamic World Engine Error:~w~ " + ex.Message);
             }
         }
 
         private void OnTick(object sender, EventArgs e)
         {
             if (!_isInitialized) return;
+
+            // SHVDN creates each Script's execution thread after invoking its constructor.
+            // Bind exactly once from the first Tick callback, not from the constructor thread.
+            if (!GameThreadGate.IsInitialized)
+            {
+                int scriptThreadId = Thread.CurrentThread.ManagedThreadId;
+                GameThreadGate.Initialize(scriptThreadId);
+                Log.MainThreadId = scriptThreadId;
+                Log.Info("Script", "Bound SHVDN script execution thread. ManagedThreadId={0}", scriptThreadId);
+            }
+
             if (!GameThreadGate.EnforceMainThread("DynamicWorldEngineScript.OnTick")) return;
 
             try
             {
+                if (!_nativeStartupComplete)
+                {
+                    _nativeStartupComplete = true;
+                    try
+                    {
+                        Function.Call(Hash.ON_ENTER_MP);
+                        Log.Debug("Script", "ON_ENTER_MP called successfully from SHVDN script thread.");
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Warn("Script", "Failed calling ON_ENTER_MP: {0}", ex.Message);
+                    }
+
+                    Notification.Show("~g~Dynamic World Engine v8.0 (GPT-6 Astra Edition)~w~ Loaded!~n~~y~F7:~w~ Direct Story/Events (World Director) | ~y~F8:~w~ Generate Scene (World Architect) | ~y~F9:~w~ Inspector HUD | ~y~F10:~w~ Presets | ~y~F11:~w~ Clear");
+                    Log.Info("Script", "Native startup completed on SHVDN script execution thread.");
+                }
+
                 Ped playerPed = null;
                 try
                 {
@@ -341,7 +355,7 @@ namespace DynamicWorldEngine
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
-            if (!_isInitialized) return;
+            if (!_isInitialized || !GameThreadGate.IsInitialized) return;
             if (!GameThreadGate.EnforceMainThread("DynamicWorldEngineScript.OnKeyDown")) return;
 
             try
