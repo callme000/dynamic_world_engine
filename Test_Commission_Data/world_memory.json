@@ -6,14 +6,14 @@
     {
       "NpcId": 1000,
       "EntityId": "npc_resident_dj_solomun",
-      "Guid": "54203199-4bcc-4813-9734-74ed28383dce",
+      "Guid": "eebc3b31-ab9d-48e1-9053-9bb565af4897",
       "Name": "DJ Solomun",
       "Occupation": "Resident DJ",
       "PublicFaction": "Afterlife Records",
       "HiddenRole": "Headline Artist",
       "PedModel": "ig_djblamadon",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:34.1624965Z",
+      "CreatedAt": "2026-11-10T11:41:23.3810037Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -33,7 +33,7 @@
           "SentimentTag": "neutral",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:34.1680236Z",
+          "Timestamp": "2026-11-10T11:41:23.3842528Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -46,7 +46,7 @@
         "Headline Artist"
       ],
       "ActiveGoal": {
-        "GoalId": "7c3204b2",
+        "GoalId": "cb74e928",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -54,7 +54,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "e19abce7",
+        "GoalId": "d55c319f",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -65,14 +65,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_head_bouncer_vlad",
-      "Guid": "e0a63c6d-697f-4a68-bccb-9e1b191462b9",
+      "Guid": "0f1214c4-a977-4eea-b8ea-4e4b5adec236",
       "Name": "Vladislav 'The Gate' Petrenko",
       "Occupation": "Head Bouncer",
       "PublicFaction": "Nightlife Security",
       "HiddenRole": "Strict Velvet Rope Enforcer",
       "PedModel": "s_m_m_highsec_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:34.1680236Z",
+      "CreatedAt": "2026-11-10T11:41:23.3842528Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -87,7 +87,7 @@
         "Strict Velvet Rope Enforcer"
       ],
       "ActiveGoal": {
-        "GoalId": "9a5633cb",
+        "GoalId": "381154cc",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -95,7 +95,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "21a95a69",
+        "GoalId": "c1c70720",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -106,14 +106,14 @@
     {
       "NpcId": 1002,
       "EntityId": "npc_mechanic_tork",
-      "Guid": "719b850e-565a-48ad-81a9-141ce2f949a5",
+      "Guid": "2bc47e5a-0184-4a56-8e85-b3303b23be5a",
       "Name": "Tork 'Wrench' Henderson",
       "Occupation": "Black Market Auto Mechanic",
       "PublicFaction": "Chop Shop Crew",
       "HiddenRole": "Modifies vin numbers on boosted luxury vehicles",
       "PedModel": "s_m_m_autoshop_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:35.8373905Z",
+      "CreatedAt": "2026-11-10T11:41:24.2826405Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -134,7 +134,7 @@
           "SentimentTag": "Mechanic_Active",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:35.8373905Z",
+          "Timestamp": "2026-11-10T11:41:24.2826405Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -147,7 +147,7 @@
         "Modifies vin numbers on boosted luxury vehicles"
       ],
       "ActiveGoal": {
-        "GoalId": "d51cb172",
+        "GoalId": "69add932",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -155,7 +155,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "fddc1275",
+        "GoalId": "8d9d4bb5",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -186,7 +186,7 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:35.8363141Z",
+      "CreatedAt": "2026-11-10T11:41:24.2826405Z",
       "LastRealizedAt": null,
       "LastDerealizedAt": null,
       "PropIds": []
@@ -204,7 +204,7 @@
       "SentimentTag": "neutral",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:34.1680236Z",
+      "Timestamp": "2026-11-10T11:41:23.3842528Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -221,7 +221,7 @@
       "SentimentTag": "Mechanic_Active",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:35.8373905Z",
+      "Timestamp": "2026-11-10T11:41:24.2826405Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,

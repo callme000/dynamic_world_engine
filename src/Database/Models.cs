@@ -159,6 +159,39 @@ namespace DynamicWorldEngine.Database
             ActiveGoal = new NpcGoal("MAINTAIN_ROUTINE", "self", 1, "Conduct daily routine");
             LongTermGoal = new NpcGoal("PROSPER", "self", 5, "Maintain position and avoid trouble");
         }
+
+        /// <summary>
+        /// Produces a deep defensive copy of this NPC record to prevent external callers
+        /// from mutating authoritative internal database state directly.
+        /// </summary>
+        public NpcRecord Clone()
+        {
+            var copy = new NpcRecord
+            {
+                NpcId = this.NpcId,
+                EntityId = this.EntityId,
+                Guid = this.Guid,
+                Name = this.Name,
+                Occupation = this.Occupation,
+                PublicFaction = this.PublicFaction,
+                HiddenRole = this.HiddenRole,
+                PedModel = this.PedModel,
+                IsAlive = this.IsAlive,
+                CreatedAt = this.CreatedAt,
+                Trust = this.Trust,
+                Fear = this.Fear,
+                Respect = this.Respect,
+                CurrentState = this.CurrentState,
+                Relationships = this.Relationships != null ? new Dictionary<string, int>(this.Relationships, StringComparer.OrdinalIgnoreCase) : new Dictionary<string, int>(),
+                History = this.History != null ? new List<EventRecord>(this.History) : new List<EventRecord>(),
+                Knowledge = this.Knowledge != null ? new List<KnowledgeEntry>(this.Knowledge) : new List<KnowledgeEntry>(),
+                Beliefs = this.Beliefs != null ? new List<BeliefEntry>(this.Beliefs) : new List<BeliefEntry>(),
+                Secrets = this.Secrets != null ? new List<string>(this.Secrets) : new List<string>(),
+                ActiveGoal = this.ActiveGoal != null ? new NpcGoal(this.ActiveGoal.GoalType, this.ActiveGoal.TargetEntity, this.ActiveGoal.Priority, this.ActiveGoal.Description) : null,
+                LongTermGoal = this.LongTermGoal != null ? new NpcGoal(this.LongTermGoal.GoalType, this.LongTermGoal.TargetEntity, this.LongTermGoal.Priority, this.LongTermGoal.Description) : null
+            };
+            return copy;
+        }
     }
 
     public class EventRecord

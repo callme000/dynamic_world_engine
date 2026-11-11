@@ -12,6 +12,7 @@ namespace DynamicWorldEngine.Runtime
         public float AnchoredHeading { get; set; }
         public bool IsNativeGtaRuntime { get; set; }
         public bool CollisionLoaded { get; set; }
+        public bool IsSyntheticFallback { get; set; }
         public string DiagnosticMessage { get; set; }
 
         public TeleportAnchorResult()
@@ -21,6 +22,7 @@ namespace DynamicWorldEngine.Runtime
             AnchoredHeading = 0f;
             IsNativeGtaRuntime = false;
             CollisionLoaded = false;
+            IsSyntheticFallback = false;
             DiagnosticMessage = "";
         }
     }
@@ -48,10 +50,9 @@ namespace DynamicWorldEngine.Runtime
             LastAnchorTime = DateTime.MinValue;
         }
 
-        public static int MainThreadId = -1;
         public static bool IsMainThread
         {
-            get { return MainThreadId == -1 || System.Threading.Thread.CurrentThread.ManagedThreadId == MainThreadId; }
+            get { return GameThreadGate.IsMainThread; }
         }
 
         /// <summary>
@@ -116,17 +117,21 @@ namespace DynamicWorldEngine.Runtime
                 else
                 {
                     // Headless / non-game thread safe simulated anchor
+                    // Invariant #6: CollisionLoaded must remain false when only synthetic fallback occurred
                     result.IsNativeGtaRuntime = false;
-                    result.CollisionLoaded = true;
+                    result.CollisionLoaded = false;
+                    result.IsSyntheticFallback = true;
                     result.Success = true;
-                    result.DiagnosticMessage = string.Format("Coordinate anchor established at {0} (Heading {1:F1} deg)", targetCoordinates, targetHeading);
+                    result.DiagnosticMessage = string.Format("Synthetic coordinate anchor established at {0} (Heading {1:F1} deg)", targetCoordinates, targetHeading);
                 }
             }
             catch (Exception ex)
             {
                 // Headless fallback
+                // Invariant #6: CollisionLoaded must remain false when only synthetic fallback occurred
                 result.IsNativeGtaRuntime = false;
-                result.CollisionLoaded = true;
+                result.CollisionLoaded = false;
+                result.IsSyntheticFallback = true;
                 result.Success = true;
                 result.DiagnosticMessage = string.Format("Fallback anchor at {0}: {1}", targetCoordinates, ex.Message);
             }

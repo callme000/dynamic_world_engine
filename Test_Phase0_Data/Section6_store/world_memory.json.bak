@@ -1,0 +1,47 @@
+{
+  "NextNpcId": 1001,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "",
+      "Guid": "5573e874-257b-48a8-939f-fcec181100bd",
+      "Name": "Test NPC",
+      "Occupation": "Tester",
+      "PublicFaction": "Neutral",
+      "HiddenRole": "None",
+      "PedModel": "a_m_y_beach_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-11-10T11:56:54.090911Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "141de41c",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "8c706fea",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [],
+  "WorldEvents": []
+}

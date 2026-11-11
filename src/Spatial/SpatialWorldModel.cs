@@ -25,6 +25,7 @@ namespace DynamicWorldEngine.Spatial
         public List<SpatialEntityRecord> ExistingEntities { get; set; }
         public List<CandidateArea> CandidateAreas { get; set; }
         public SpatialGraph Graph { get; set; }
+        public SpatialSnapshotProvenance Provenance { get; set; }
 
         [JsonIgnore]
         public WorldPerceptionSnapshot SemanticSnapshot { get; set; }
@@ -39,6 +40,7 @@ namespace DynamicWorldEngine.Spatial
             CandidateAreas = new List<CandidateArea>();
             Graph = new SpatialGraph();
             Timestamp = DateTime.UtcNow;
+            Provenance = new SpatialSnapshotProvenance();
         }
 
         public CandidateArea FindCandidateArea(string areaId)
@@ -87,6 +89,36 @@ namespace DynamicWorldEngine.Spatial
             }
 
             return best;
+        }
+    }
+
+    /// <summary>
+    /// Captures provenance and completeness metadata for a spatial world model snapshot.
+    /// Conforms to Invariant #6 and Phase 2H.
+    /// </summary>
+    public class SpatialSnapshotProvenance
+    {
+        public string ScanType { get; set; } // "NATIVE_RAYCAST", "OFFLINE_GEOMETRY", "SYNTHETIC_FALLBACK"
+        public bool IsNativeScan { get; set; }
+        public string GameBuild { get; set; }
+        public DateTime CaptureTime { get; set; }
+        public float CompletenessScore { get; set; }
+        public int SampledCellsCount { get; set; }
+        public int TotalRequestedCells { get; set; }
+        public TimeSpan CaptureDuration { get; set; }
+        public string DataSource { get; set; }
+
+        public SpatialSnapshotProvenance()
+        {
+            ScanType = "SYNTHETIC_FALLBACK";
+            IsNativeScan = false;
+            GameBuild = "Unknown";
+            CaptureTime = DateTime.UtcNow;
+            CompletenessScore = 1.0f;
+            SampledCellsCount = 0;
+            TotalRequestedCells = 0;
+            CaptureDuration = TimeSpan.Zero;
+            DataSource = "Synthetic_Terrain_Generator";
         }
     }
 

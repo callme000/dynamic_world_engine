@@ -86,12 +86,18 @@ namespace DynamicWorldEngine.Spatial
 
                     string targetPath = GetPlanFilePath(environmentId);
                     string tempPath = targetPath + ".tmp." + Guid.NewGuid().ToString().Substring(0, 8);
+                    string backupPath = targetPath + ".bak";
 
                     string json = JsonConvert.SerializeObject(plan, Formatting.Indented);
                     File.WriteAllText(tempPath, json);
 
                     if (File.Exists(targetPath))
                     {
+                        if (File.Exists(backupPath))
+                        {
+                            try { File.Delete(backupPath); } catch { }
+                        }
+                        try { File.Copy(targetPath, backupPath, true); } catch { }
                         File.Delete(targetPath);
                     }
                     File.Move(tempPath, targetPath);
@@ -120,16 +126,34 @@ namespace DynamicWorldEngine.Spatial
             lock (_lock)
             {
                 string path = GetPlanFilePath(environmentId);
-                if (!File.Exists(path)) return false;
+                string backupPath = path + ".bak";
+                if (!File.Exists(path) && !File.Exists(backupPath)) return false;
 
                 try
                 {
-                    string json = File.ReadAllText(path);
+                    string json = File.Exists(path) ? File.ReadAllText(path) : null;
+                    if (string.IsNullOrWhiteSpace(json) && File.Exists(backupPath))
+                    {
+                        json = File.ReadAllText(backupPath);
+                    }
+                    if (string.IsNullOrWhiteSpace(json)) return false;
+
                     plan = JsonConvert.DeserializeObject<SpatialExecutionPlan>(json);
                     return plan != null;
                 }
                 catch (Exception ex)
                 {
+                    // Attempt fallback to .bak
+                    if (File.Exists(backupPath))
+                    {
+                        try
+                        {
+                            string backupJson = File.ReadAllText(backupPath);
+                            plan = JsonConvert.DeserializeObject<SpatialExecutionPlan>(backupJson);
+                            if (plan != null) return true;
+                        }
+                        catch { }
+                    }
                     Console.WriteLine("[PlanRepository] Error loading plan for " + environmentId + ": " + ex.Message);
                     return false;
                 }

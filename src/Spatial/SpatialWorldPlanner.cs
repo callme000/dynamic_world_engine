@@ -474,7 +474,14 @@ namespace DynamicWorldEngine.Spatial
                 }
                 plan.ValidationResult = validator.ValidatePlan(plan, plan.WorldModel, valReq, true);
             }
-            catch {}
+            catch (Exception ex)
+            {
+                plan.ValidationResult = new SpatialValidationResult
+                {
+                    IsValid = false,
+                    HardViolations = new List<string> { "Validator exception: " + ex.Message }
+                };
+            }
 
             return plan;
         }

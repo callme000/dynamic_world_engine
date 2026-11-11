@@ -6,14 +6,14 @@
     {
       "NpcId": 1000,
       "EntityId": "",
-      "Guid": "893730a2-a634-455a-87b1-4fafc81a787a",
+      "Guid": "40783bdf-2f83-42b1-b270-c612400ce729",
       "Name": "Viktor",
       "Occupation": "Syndicate Lieutenant",
       "PublicFaction": "Mafia",
       "HiddenRole": "Arms courier",
       "PedModel": "g_m_y_salvagoon_01",
       "IsAlive": false,
-      "CreatedAt": "2026-10-12T10:18:39.4533918Z",
+      "CreatedAt": "2026-11-10T11:41:26.7595281Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -34,7 +34,7 @@
             "Permanent_Casualty"
           ],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:39.5532009Z",
+          "Timestamp": "2026-11-10T11:41:27.028611Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -47,7 +47,7 @@
         "Arms courier"
       ],
       "ActiveGoal": {
-        "GoalId": "250ee936",
+        "GoalId": "6d8e1090",
         "GoalType": "DEAD",
         "TargetEntity": "none",
         "Priority": 0,
@@ -55,7 +55,7 @@
         "Description": "Deceased"
       },
       "LongTermGoal": {
-        "GoalId": "4dd44fd4",
+        "GoalId": "ce789686",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -66,14 +66,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_guard_1",
-      "Guid": "5960dd54-444f-43ad-ade8-ac744da80814",
+      "Guid": "a06a9a07-205a-4f97-bcc0-e7e5b2f85760",
       "Name": "Guard Alexei",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "g_m_m_chicold_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:39.6932922Z",
+      "CreatedAt": "2026-11-10T11:41:27.1220091Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -84,7 +84,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "49304956",
+        "GoalId": "38dd1f50",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -92,7 +92,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "ba129e83",
+        "GoalId": "07b60067",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -103,14 +103,14 @@
     {
       "NpcId": 1002,
       "EntityId": "npc_bunker_boss",
-      "Guid": "83da7d42-8db3-43cd-8eb2-f13c6a22ba6d",
+      "Guid": "d284ada8-b634-43aa-aefb-0fc882b1cc61",
       "Name": "General Vance",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "s_m_m_security_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:39.8077471Z",
+      "CreatedAt": "2026-11-10T11:41:27.1812437Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -121,7 +121,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "2efa0e62",
+        "GoalId": "83798f61",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -129,7 +129,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "711304a7",
+        "GoalId": "68a72ec0",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -160,9 +160,9 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:39.6932922Z",
+      "CreatedAt": "2026-11-10T11:41:27.1220091Z",
       "LastRealizedAt": null,
-      "LastDerealizedAt": "2026-10-12T10:18:39.7806436Z",
+      "LastDerealizedAt": "2026-11-10T11:41:27.1663725Z",
       "PropIds": []
     },
     {
@@ -185,9 +185,9 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:39.8072475Z",
+      "CreatedAt": "2026-11-10T11:41:27.1812437Z",
       "LastRealizedAt": null,
-      "LastDerealizedAt": "2026-10-12T10:18:39.8586598Z",
+      "LastDerealizedAt": "2026-11-10T11:41:27.1994984Z",
       "PropIds": []
     }
   ],
@@ -206,7 +206,7 @@
         "Permanent_Casualty"
       ],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:39.5532009Z",
+      "Timestamp": "2026-11-10T11:41:27.028611Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,

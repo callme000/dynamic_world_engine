@@ -54,11 +54,36 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
+                string json = null;
+                string backupPath = _filePath + ".bak";
+
                 if (File.Exists(_filePath))
                 {
                     try
                     {
-                        string json = File.ReadAllText(_filePath);
+                        json = File.ReadAllText(_filePath);
+                        if (string.IsNullOrWhiteSpace(json) && File.Exists(backupPath))
+                        {
+                            json = File.ReadAllText(backupPath);
+                        }
+                    }
+                    catch
+                    {
+                        if (File.Exists(backupPath))
+                        {
+                            try { json = File.ReadAllText(backupPath); } catch { }
+                        }
+                    }
+                }
+                else if (File.Exists(backupPath))
+                {
+                    try { json = File.ReadAllText(backupPath); } catch { }
+                }
+
+                if (!string.IsNullOrEmpty(json))
+                {
+                    try
+                    {
                         _state = JsonConvert.DeserializeObject<DatabaseState>(json) ?? new DatabaseState();
                         if (_state.Npcs == null) _state.Npcs = new List<NpcRecord>();
                         if (_state.Props == null) _state.Props = new List<PropRecord>();
@@ -90,8 +115,25 @@ namespace DynamicWorldEngine.Database
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine("[WorldMemoryStore] Warning: Failed to load DB ({0}). Creating fresh state.", ex.Message);
-                        _state = new DatabaseState();
+                        // Attempt fallback from backup if primary JSON parsing failed
+                        bool recovered = false;
+                        if (File.Exists(backupPath))
+                        {
+                            try
+                            {
+                                string backupJson = File.ReadAllText(backupPath);
+                                _state = JsonConvert.DeserializeObject<DatabaseState>(backupJson) ?? new DatabaseState();
+                                recovered = true;
+                                Console.WriteLine("[WorldMemoryStore] Recovered state from database backup: " + backupPath);
+                            }
+                            catch { }
+                        }
+
+                        if (!recovered)
+                        {
+                            Console.WriteLine("[WorldMemoryStore] Warning: Failed to load DB ({0}). Creating fresh state.", ex.Message);
+                            _state = new DatabaseState();
+                        }
                     }
                 }
                 else
@@ -108,8 +150,29 @@ namespace DynamicWorldEngine.Database
 
         private void SaveDatabaseInternal()
         {
+            string dir = Path.GetDirectoryName(_filePath);
+            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
+
+            string tempPath = _filePath + ".tmp." + Guid.NewGuid().ToString().Substring(0, 8);
+            string backupPath = _filePath + ".bak";
             string json = JsonConvert.SerializeObject(_state, Formatting.Indented);
-            File.WriteAllText(_filePath, json);
+
+            File.WriteAllText(tempPath, json);
+
+            if (File.Exists(_filePath))
+            {
+                if (File.Exists(backupPath))
+                {
+                    try { File.Delete(backupPath); } catch { }
+                }
+                try { File.Copy(_filePath, backupPath, true); } catch { }
+                File.Delete(_filePath);
+            }
+            File.Move(tempPath, _filePath);
+
             _isDbDirty = false;
             _lastDbSaveTime = DateTime.UtcNow;
         }
@@ -184,18 +247,32 @@ namespace DynamicWorldEngine.Database
             return CreateNpc(name, occupation, publicFaction, pedModel, "None", null);
         }
 
+        private NpcRecord GetNpcInternal(int npcId)
+        {
+            return _state.Npcs.FirstOrDefault(n => n.NpcId == npcId);
+        }
+
+        private NpcRecord GetNpcByEntityIdInternal(string entityId)
+        {
+            if (string.IsNullOrEmpty(entityId)) return null;
+            return _state.Npcs.FirstOrDefault(n => 
+                string.Equals(n.EntityId, entityId, StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(n.Guid, entityId, StringComparison.OrdinalIgnoreCase));
+        }
+
         public NpcRecord EnrollNpc(NpcRecord record)
         {
             if (record == null) return null;
             lock (_lock)
             {
-                if (record.NpcId <= 0)
+                var clone = record.Clone();
+                if (clone.NpcId <= 0)
                 {
-                    record.NpcId = _state.NextNpcId++;
+                    clone.NpcId = _state.NextNpcId++;
                 }
-                _state.Npcs.Add(record);
+                _state.Npcs.Add(clone);
                 Save(false);
-                return record;
+                return clone.Clone();
             }
         }
 
@@ -203,7 +280,8 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                return _state.Npcs.FirstOrDefault(n => n.NpcId == npcId);
+                var npc = GetNpcInternal(npcId);
+                return npc != null ? npc.Clone() : null;
             }
         }
 
@@ -217,9 +295,8 @@ namespace DynamicWorldEngine.Database
             if (string.IsNullOrEmpty(entityId)) return null;
             lock (_lock)
             {
-                return _state.Npcs.FirstOrDefault(n => 
-                    string.Equals(n.EntityId, entityId, StringComparison.OrdinalIgnoreCase) ||
-                    string.Equals(n.Guid, entityId, StringComparison.OrdinalIgnoreCase));
+                var npc = GetNpcByEntityIdInternal(entityId);
+                return npc != null ? npc.Clone() : null;
             }
         }
 
@@ -227,7 +304,8 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                return _state.Npcs.FirstOrDefault(n => string.Equals(n.Name, name, StringComparison.OrdinalIgnoreCase));
+                var npc = _state.Npcs.FirstOrDefault(n => string.Equals(n.Name, name, StringComparison.OrdinalIgnoreCase));
+                return npc != null ? npc.Clone() : null;
             }
         }
 
@@ -235,7 +313,12 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                return new List<NpcRecord>(_state.Npcs);
+                var list = new List<NpcRecord>(_state.Npcs.Count);
+                foreach (var n in _state.Npcs)
+                {
+                    if (n != null) list.Add(n.Clone());
+                }
+                return list;
             }
         }
 
@@ -243,7 +326,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc != null)
                 {
                     npc.Relationships[targetEntity] = standingValue;
@@ -256,7 +339,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc != null)
                 {
                     npc.Trust = Math.Max(-100, Math.Min(100, npc.Trust + deltaTrust));
@@ -281,7 +364,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc != null)
                 {
                     npc.HiddenRole = newHiddenRole;
@@ -311,7 +394,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc == null || !npc.IsAlive) return false;
 
                 npc.IsAlive = false;
@@ -339,7 +422,7 @@ namespace DynamicWorldEngine.Database
         public bool MarkNpcDeadByEntityId(string entityId, string killer = "Unknown", string cause = "Fatal injuries")
         {
             if (string.IsNullOrEmpty(entityId)) return false;
-            var npc = GetNpcByEntityId(entityId);
+            var npc = GetNpcByEntityIdInternal(entityId);
             if (npc != null)
             {
                 return MarkNpcDead(npc.NpcId, killer, cause);
@@ -353,7 +436,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc != null)
                 {
                     if (!npc.Knowledge.Any(k => string.Equals(k.FactKey, factKey, StringComparison.OrdinalIgnoreCase)))
@@ -369,7 +452,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc != null)
                 {
                     var existing = npc.Beliefs.FirstOrDefault(b => 
@@ -396,7 +479,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc != null)
                 {
                     npc.ActiveGoal = new NpcGoal(goalType, targetEntity, priority, description);
@@ -444,7 +527,7 @@ namespace DynamicWorldEngine.Database
                 }
 
                 // Add to Primary NPC
-                var primaryNpc = GetNpcById(primaryNpcId);
+                var primaryNpc = GetNpcInternal(primaryNpcId);
                 if (primaryNpc != null)
                 {
                     primaryNpc.History.Add(evt);
@@ -460,7 +543,7 @@ namespace DynamicWorldEngine.Database
                     foreach (var w in witnesses)
                     {
                         if (w.NpcId == primaryNpcId) continue;
-                        var wNpc = GetNpcById(w.NpcId);
+                        var wNpc = GetNpcInternal(w.NpcId);
                         if (wNpc != null)
                         {
                             wNpc.History.Add(evt);
@@ -491,7 +574,6 @@ namespace DynamicWorldEngine.Database
                 return evt;
             }
         }
-
         public EventRecord RecordEventGraphEventWithWitnesses(int primaryNpcId, string actor, string target, string eventType, float severity, string description, string sentimentTag, List<string> consequences, List<WitnessRecord> witnesses, float posX, float posY, float posZ)
         {
             var evt = RecordEventGraphEventWithWitnesses(primaryNpcId, actor, target, eventType, severity, description, sentimentTag, consequences, witnesses);
@@ -509,7 +591,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc == null || npc.History == null) return new List<EventRecord>();
                 return npc.History.OrderByDescending(h => h.Timestamp).Take(maxCount).ToList();
             }
@@ -770,7 +852,7 @@ namespace DynamicWorldEngine.Database
         {
             lock (_lock)
             {
-                var npc = GetNpcById(npcId);
+                var npc = GetNpcInternal(npcId);
                 if (npc == null) return string.Empty;
 
                 var relList = new List<string>();

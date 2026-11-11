@@ -1,0 +1,55 @@
+{
+  "EnvironmentId": "env_force_plan_fail",
+  "PlanId": "env_force_plan_fail",
+  "Name": "Forced Plan Save Failure",
+  "Archetype": null,
+  "CenterPosition": {
+    "x": 10.0,
+    "y": 20.0,
+    "z": 30.0
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "p1",
+      "ParentPropId": null,
+      "ModelName": "model1",
+      "WorldPosition": {
+        "x": 10.0,
+        "y": 20.0,
+        "z": 30.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

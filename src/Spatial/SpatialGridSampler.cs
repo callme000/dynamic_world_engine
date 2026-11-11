@@ -16,10 +16,9 @@ namespace DynamicWorldEngine.Spatial
     {
         public const float DefaultCellSize = 5.0f;
 
-        public static int MainThreadId = -1;
         public static bool IsMainThread
         {
-            get { return MainThreadId == -1 || System.Threading.Thread.CurrentThread.ManagedThreadId == MainThreadId; }
+            get { return DynamicWorldEngine.Runtime.GameThreadGate.IsMainThread; }
         }
 
         /// <summary>

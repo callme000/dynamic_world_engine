@@ -1,0 +1,73 @@
+{
+  "NextNpcId": 1001,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_test",
+      "Guid": "de6db83b-63d2-437c-9ca1-d734d89e7903",
+      "Name": "Test NPC",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "a_m_y_beach_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-11-10T11:58:54.4508458Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "29f6b2f1",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "377d824b",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "test_commission_persist",
+      "PlanId": "test_commission_persist",
+      "Name": "Commission Persistence Test",
+      "Archetype": null,
+      "Description": "",
+      "CenterX": 10.0,
+      "CenterY": 20.0,
+      "CenterZ": 30.0,
+      "Heading": 0.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_test"
+      ],
+      "NpcIds": [
+        1000
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-11-10T11:58:54.4498461Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": []
+}

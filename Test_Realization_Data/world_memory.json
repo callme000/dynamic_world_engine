@@ -6,14 +6,14 @@
     {
       "NpcId": 1000,
       "EntityId": "npc_dealer_01",
-      "Guid": "9d9c6fbc-100e-46a7-9eee-a88222859ab9",
+      "Guid": "49ee0c47-3d59-403a-b20b-df49f4e9b123",
       "Name": "Dealer Sophia",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "a_f_y_topless",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:36.7915819Z",
+      "CreatedAt": "2026-11-10T11:41:24.8664281Z",
       "Trust": 0,
       "Fear": 50,
       "Respect": 0,
@@ -26,7 +26,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "ec2ff8bf",
+        "GoalId": "f5db8229",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -34,7 +34,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "f035f405",
+        "GoalId": "9ca0d464",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -45,14 +45,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_guard_01",
-      "Guid": "c69b4113-7d6e-4c9d-b650-b127d73a87e1",
+      "Guid": "72060337-90ac-45b3-9f0d-4655ad112182",
       "Name": "Guard Viktor",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "s_m_m_security_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:36.7920804Z",
+      "CreatedAt": "2026-11-10T11:41:24.8664281Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -63,7 +63,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "602d8b47",
+        "GoalId": "08112aee",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -71,7 +71,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "d5b6120f",
+        "GoalId": "8487d868",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -82,14 +82,14 @@
     {
       "NpcId": 1002,
       "EntityId": "npc_dockworker_01",
-      "Guid": "64ea1b95-8e23-4293-a4db-339c40799c99",
+      "Guid": "37c525ea-73e7-4212-bd70-3658908716ef",
       "Name": "Worker Joe",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "s_m_m_dockwork_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:36.8781297Z",
+      "CreatedAt": "2026-11-10T11:41:25.1101129Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -100,7 +100,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "a1715730",
+        "GoalId": "17de0e1b",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -108,7 +108,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "585749d9",
+        "GoalId": "2c5aebc1",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -141,9 +141,9 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:36.7878525Z",
-      "LastRealizedAt": "2026-10-12T10:18:37.3939655Z",
-      "LastDerealizedAt": "2026-10-12T10:18:37.4263483Z",
+      "CreatedAt": "2026-11-10T11:41:24.8648309Z",
+      "LastRealizedAt": "2026-11-10T11:41:25.3742099Z",
+      "LastDerealizedAt": "2026-11-10T11:41:25.3879625Z",
       "PropIds": []
     }
   ],

@@ -20,31 +20,52 @@ namespace DynamicWorldEngine.Runtime
             if (data == null || activeNpcContexts == null) return;
 
             ActiveNpcContext targetContext = null;
-            Vector3 playerPos = Game.Player.Character.Position;
+            Vector3 playerPos = Vector3.Zero;
+            try
+            {
+                if (Game.Player != null && Game.Player.Character != null)
+                {
+                    playerPos = Game.Player.Character.Position;
+                }
+            }
+            catch { }
 
-            if (!string.IsNullOrEmpty(data.TargetEntityId))
+            bool hasExplicitTarget = !string.IsNullOrEmpty(data.TargetEntityId);
+            if (hasExplicitTarget)
             {
                 targetContext = activeNpcContexts.Find(ctx =>
                     ctx != null && ctx.IsValid && (
                         string.Equals(ctx.Record.Name, data.TargetEntityId, StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(ctx.EntityId, data.TargetEntityId, StringComparison.OrdinalIgnoreCase) ||
                         ctx.Record.NpcId.ToString() == data.TargetEntityId
                     )
                 );
-            }
 
-            if (targetContext == null)
+                // Invariant #7: An explicit NPC target that cannot be resolved must not be replaced with the nearest NPC.
+                if (targetContext == null)
+                {
+                    Console.WriteLine(string.Format("[EntityMutationHandler] Explicit target NPC '{0}' could not be resolved. Aborting mutation without fallback to nearest NPC (Invariant #7).", data.TargetEntityId));
+                    return;
+                }
+            }
+            else
             {
+                // Ambient / unaddressed mutation: resolve to nearest valid NPC
                 float minDist = float.MaxValue;
                 foreach (var ctx in activeNpcContexts)
                 {
-                    if (ctx != null && ctx.IsValid)
+                    if (ctx != null && ctx.IsValid && ctx.PedInstance != null)
                     {
-                        float dist = ctx.PedInstance.Position.DistanceTo(playerPos);
-                        if (dist < minDist)
+                        try
                         {
-                            minDist = dist;
-                            targetContext = ctx;
+                            float dist = ctx.PedInstance.Position.DistanceTo(playerPos);
+                            if (dist < minDist)
+                            {
+                                minDist = dist;
+                                targetContext = ctx;
+                            }
                         }
+                        catch { }
                     }
                 }
             }
@@ -54,12 +75,12 @@ namespace DynamicWorldEngine.Runtime
                 Ped targetPed = targetContext.PedInstance;
                 NpcRecord targetRecord = targetContext.Record;
 
-                if (!string.IsNullOrEmpty(data.GiveWeapon))
+                if (!string.IsNullOrEmpty(data.GiveWeapon) && targetPed != null)
                 {
                     WeaponHash wHash;
                     if (Enum.TryParse<WeaponHash>(data.GiveWeapon.Replace("WEAPON_", ""), true, out wHash))
                     {
-                        targetPed.Weapons.Give(wHash, 100, true, true);
+                        try { targetPed.Weapons.Give(wHash, 100, true, true); } catch { }
                     }
                 }
 
@@ -80,9 +101,19 @@ namespace DynamicWorldEngine.Runtime
                     }
                 }
 
-                NpcStateMachine.ApplyPhysicalBehavior(targetPed, targetRecord, Game.Player.Character, targetContext);
+                try
+                {
+                    Ped playerPed = null;
+                    try { if (Game.Player != null) playerPed = Game.Player.Character; } catch { }
+                    NpcStateMachine.ApplyPhysicalBehavior(targetPed, targetRecord, playerPed, targetContext);
+                }
+                catch { }
 
-                Notification.Show(string.Format("~y~[World Mutation]~w~~n~{0}", data.NarrativeReason ?? "Character behavior changed!"));
+                try
+                {
+                    Notification.Show(string.Format("~y~[World Mutation]~w~~n~{0}", data.NarrativeReason ?? "Character behavior changed!"));
+                }
+                catch { }
             }
         }
     }

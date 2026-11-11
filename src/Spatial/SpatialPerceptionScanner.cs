@@ -16,10 +16,9 @@ namespace DynamicWorldEngine.Spatial
     /// </summary>
     public class SpatialPerceptionScanner
     {
-        public static int MainThreadId = -1;
         public static bool IsMainThread
         {
-            get { return MainThreadId == -1 || System.Threading.Thread.CurrentThread.ManagedThreadId == MainThreadId; }
+            get { return DynamicWorldEngine.Runtime.GameThreadGate.IsMainThread; }
         }
 
         private static readonly Vector3[] CompassDirections = new Vector3[]

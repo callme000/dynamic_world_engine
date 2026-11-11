@@ -19,6 +19,7 @@ namespace DynamicWorldEngine.Spatial
         public string ZoneName { get; set; }
         public string StreetName { get; set; }
         public DateTime Timestamp { get; set; }
+        public SpatialSnapshotProvenance Provenance { get; set; }
 
         // 2. Ground & Terrain Assessment
         public float Elevation { get; set; }

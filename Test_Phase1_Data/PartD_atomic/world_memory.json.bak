@@ -1,0 +1,47 @@
+{
+  "NextNpcId": 1001,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "",
+      "Guid": "8f8745ff-5cba-43f6-8b51-b808600120fc",
+      "Name": "Agent Smith",
+      "Occupation": "Enforcer",
+      "PublicFaction": "Matrix",
+      "HiddenRole": "None",
+      "PedModel": "s_m_m_highsec_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-11-10T11:58:47.2674267Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "8963f6e4",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "4fa8ba87",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [],
+  "WorldEvents": []
+}

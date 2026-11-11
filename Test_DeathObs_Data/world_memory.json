@@ -6,14 +6,14 @@
     {
       "NpcId": 101,
       "EntityId": "npc_vincent",
-      "Guid": "28a033d5-5866-4ed5-98cd-c16aeb7715b0",
+      "Guid": "43fa5914-614d-4be6-b8e1-f2fe43a9c279",
       "Name": "Vincent",
       "Occupation": "Arms Courier",
       "PublicFaction": "Syndicate",
       "HiddenRole": null,
       "PedModel": null,
       "IsAlive": false,
-      "CreatedAt": "2026-10-12T10:18:38.0730197Z",
+      "CreatedAt": "2026-11-10T11:41:25.7890381Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -34,7 +34,7 @@
             "Permanent_Casualty"
           ],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:38.0866486Z",
+          "Timestamp": "2026-11-10T11:41:25.7930385Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -45,7 +45,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "41d90d67",
+        "GoalId": "55254bce",
         "GoalType": "DEAD",
         "TargetEntity": "none",
         "Priority": 0,
@@ -53,7 +53,7 @@
         "Description": "Deceased"
       },
       "LongTermGoal": {
-        "GoalId": "d2a8d902",
+        "GoalId": "ad5afb4f",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -64,14 +64,14 @@
     {
       "NpcId": 102,
       "EntityId": "npc_sophia",
-      "Guid": "1df76496-7dcc-4a51-8699-a9b86969cf18",
+      "Guid": "e3f30ca4-f457-4975-ba6b-49c89577bcac",
       "Name": "Sophia",
       "Occupation": "Casino Dealer",
       "PublicFaction": "Independent",
       "HiddenRole": null,
       "PedModel": null,
       "IsAlive": false,
-      "CreatedAt": "2026-10-12T10:18:38.1582262Z",
+      "CreatedAt": "2026-11-10T11:41:26.0413848Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -92,7 +92,7 @@
             "Permanent_Casualty"
           ],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:38.1754882Z",
+          "Timestamp": "2026-11-10T11:41:26.0474007Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -103,7 +103,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "e8255513",
+        "GoalId": "0d0476ea",
         "GoalType": "DEAD",
         "TargetEntity": "none",
         "Priority": 0,
@@ -111,7 +111,7 @@
         "Description": "Deceased"
       },
       "LongTermGoal": {
-        "GoalId": "4df7d569",
+        "GoalId": "d43ec4c9",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -122,14 +122,14 @@
     {
       "NpcId": 103,
       "EntityId": "npc_marcus",
-      "Guid": "35479d41-63b3-4dae-9b55-2b9b85999e60",
+      "Guid": "8b1f307e-bd98-4043-8db2-c5e48925656c",
       "Name": "Marcus",
       "Occupation": "Security Lead",
       "PublicFaction": "Independent",
       "HiddenRole": null,
       "PedModel": null,
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:38.1954555Z",
+      "CreatedAt": "2026-11-10T11:41:26.0995697Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -140,7 +140,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "86a09e5b",
+        "GoalId": "138a233a",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -148,7 +148,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "1dd36133",
+        "GoalId": "2e1c7755",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -159,14 +159,14 @@
     {
       "NpcId": 1000,
       "EntityId": "npc_dealer_dmitri",
-      "Guid": "d3eeaa12-bfe0-4d10-aed0-efdd16e3c982",
+      "Guid": "196f7a0d-aefc-49d6-a479-6c6a4deb2581",
       "Name": "Dmitri",
       "Occupation": "Arms Dealer",
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "g_m_y_salvagoon_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:38.2936129Z",
+      "CreatedAt": "2026-11-10T11:41:26.1586015Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -177,7 +177,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "4a57e4f0",
+        "GoalId": "a2534c81",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -185,7 +185,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "cdaeff8b",
+        "GoalId": "4a4b051f",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -196,14 +196,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_guard_boris",
-      "Guid": "c1a81c41-7831-408a-b335-7319e73ea3d5",
+      "Guid": "384185ef-e370-4a9a-8a9d-c57845bdfb4b",
       "Name": "Boris",
       "Occupation": "Bodyguard",
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "s_m_y_blackops_01",
       "IsAlive": false,
-      "CreatedAt": "2026-10-12T10:18:38.2936129Z",
+      "CreatedAt": "2026-11-10T11:41:26.1586015Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -224,7 +224,7 @@
             "Permanent_Casualty"
           ],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:38.7610621Z",
+          "Timestamp": "2026-11-10T11:41:26.353958Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -235,7 +235,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "16d9be3d",
+        "GoalId": "a890017c",
         "GoalType": "DEAD",
         "TargetEntity": "none",
         "Priority": 0,
@@ -243,7 +243,7 @@
         "Description": "Deceased"
       },
       "LongTermGoal": {
-        "GoalId": "070c34d6",
+        "GoalId": "a1d6c15f",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -269,7 +269,7 @@
         "Permanent_Casualty"
       ],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:38.0866486Z",
+      "Timestamp": "2026-11-10T11:41:25.7930385Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -289,7 +289,7 @@
         "Permanent_Casualty"
       ],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:38.1754882Z",
+      "Timestamp": "2026-11-10T11:41:26.0474007Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -309,7 +309,7 @@
         "Permanent_Casualty"
       ],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:38.7610621Z",
+      "Timestamp": "2026-11-10T11:41:26.353958Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,

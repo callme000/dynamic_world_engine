@@ -1,0 +1,53 @@
+{
+  "EnvironmentId": "test_commission_persist",
+  "PlanId": "test_commission_persist",
+  "Name": "Commission Persistence Test",
+  "Archetype": null,
+  "CenterPosition": {
+    "x": 10.0,
+    "y": 20.0,
+    "z": 30.0
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_test",
+      "Name": "Test NPC",
+      "Occupation": null,
+      "PublicFaction": null,
+      "HiddenRole": null,
+      "PedModel": "a_m_y_beach_01",
+      "WorldPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

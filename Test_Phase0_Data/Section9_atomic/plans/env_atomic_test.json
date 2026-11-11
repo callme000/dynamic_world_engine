@@ -1,0 +1,76 @@
+{
+  "EnvironmentId": "env_atomic_test",
+  "PlanId": "env_atomic_test",
+  "Name": "Atomic Test Environment",
+  "Archetype": null,
+  "CenterPosition": {
+    "x": 50.0,
+    "y": 50.0,
+    "z": 10.0
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": null,
+  "ResolvedProps": [
+    {
+      "PropId": "prop_test",
+      "ParentPropId": null,
+      "ModelName": "test_model",
+      "WorldPosition": {
+        "x": 50.0,
+        "y": 50.0,
+        "z": 10.0
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_atomic",
+      "Name": "Atomic NPC",
+      "Occupation": "Test",
+      "PublicFaction": null,
+      "HiddenRole": null,
+      "PedModel": "a_m_y_beach_01",
+      "WorldPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Heading": 0.0,
+      "Scenario": null,
+      "Weapon": null,
+      "InitialTask": "",
+      "InitialState": "CALM",
+      "Relationships": {},
+      "InitialEvents": []
+    }
+  ],
+  "ResolvedVehicles": [],
+  "Atmosphere": {
+    "weather": "",
+    "time_hours": -1,
+    "time_minutes": 0,
+    "ambient_fx": "none"
+  },
+  "NavBlockers": [],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": null,
+  "EngramReport": null
+}

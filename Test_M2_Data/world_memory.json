@@ -6,14 +6,14 @@
     {
       "NpcId": 1000,
       "EntityId": "npc_dealer_marcus",
-      "Guid": "b2549238-a393-4996-bec2-7b3d5960e61a",
+      "Guid": "4614c68b-9f4a-4bba-8aba-9f2e3afffe1a",
       "Name": "Marcus 'Snake-Eyes' Vance",
       "Occupation": "Blackjack & Poker Dealer",
       "PublicFaction": "Independent Fixers",
       "HiddenRole": "Secretly skimming money from Ballas kingpin",
       "PedModel": "s_m_m_highsec_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.7343041Z",
+      "CreatedAt": "2026-11-10T11:41:22.4953442Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -35,7 +35,7 @@
           "SentimentTag": "Gambling_Active",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:32.7395408Z",
+          "Timestamp": "2026-11-10T11:41:22.4953442Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -48,7 +48,7 @@
         "Secretly skimming money from Ballas kingpin"
       ],
       "ActiveGoal": {
-        "GoalId": "27c78ec1",
+        "GoalId": "e29da844",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -56,7 +56,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "44da8bcc",
+        "GoalId": "905fb300",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -67,14 +67,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_guard_bruno",
-      "Guid": "5ab68477-304e-4886-8adc-5f3fc7e5dae1",
+      "Guid": "5eead014-b246-409c-b578-3942b57c33f7",
       "Name": "Bruno 'The Wall' Kowalski",
       "Occupation": "Enforcer & Table Bouncer",
       "PublicFaction": "Independent Fixers",
       "HiddenRole": "Under orders to shoot anyone who draws a weapon",
       "PedModel": "g_m_y_salvagoon_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.7395408Z",
+      "CreatedAt": "2026-11-10T11:41:22.4953442Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -96,7 +96,7 @@
           "SentimentTag": "Guard_Active",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:32.7405768Z",
+          "Timestamp": "2026-11-10T11:41:22.4953442Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -109,7 +109,7 @@
         "Under orders to shoot anyone who draws a weapon"
       ],
       "ActiveGoal": {
-        "GoalId": "8536a04f",
+        "GoalId": "2faf25fd",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -117,7 +117,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "0968efd7",
+        "GoalId": "8f56d6b8",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -128,14 +128,14 @@
     {
       "NpcId": 1002,
       "EntityId": "npc_gambling_patron_3",
-      "Guid": "65c9562c-0d2e-4888-b1c7-e3302dfc1ff9",
+      "Guid": "2d291a2a-6150-4362-a465-1385799472aa",
       "Name": "Poker Tournament Patron 3",
       "Occupation": "High-Roller Gambler",
       "PublicFaction": "Civilians",
       "HiddenRole": "High-Stakes Table Bettor",
       "PedModel": "a_f_y_smartcaspat_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "CreatedAt": "2026-11-10T11:41:22.4953442Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -148,7 +148,7 @@
         "High-Stakes Table Bettor"
       ],
       "ActiveGoal": {
-        "GoalId": "2a8e3c13",
+        "GoalId": "aaa9d5fe",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -156,7 +156,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "39044b50",
+        "GoalId": "9bbcb319",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -167,14 +167,14 @@
     {
       "NpcId": 1003,
       "EntityId": "npc_gambling_patron_4",
-      "Guid": "2e384041-6e87-45fa-bf69-b53205dd0a65",
+      "Guid": "d3d6db7e-64bf-42cd-adc1-ca615c8ea4e1",
       "Name": "Poker Tournament Patron 4",
       "Occupation": "High-Roller Gambler",
       "PublicFaction": "Civilians",
       "HiddenRole": "VIP Tournament Observer",
       "PedModel": "a_m_y_smartcaspat_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "CreatedAt": "2026-11-10T11:41:22.4953442Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -187,7 +187,7 @@
         "VIP Tournament Observer"
       ],
       "ActiveGoal": {
-        "GoalId": "4a2834be",
+        "GoalId": "fe28ebcd",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -195,7 +195,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "1b8ea55f",
+        "GoalId": "1a95281e",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -206,14 +206,14 @@
     {
       "NpcId": 1004,
       "EntityId": "npc_gambling_patron_5",
-      "Guid": "baf036ac-f72a-4e77-91c3-9987f12ae7f1",
+      "Guid": "a26d9341-7208-43d2-a880-b48d5a60b286",
       "Name": "Poker Tournament Patron 5",
       "Occupation": "High-Roller Gambler",
       "PublicFaction": "Civilians",
       "HiddenRole": "Syndicate Card Sharp",
       "PedModel": "csb_billionaire",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "CreatedAt": "2026-11-10T11:41:22.4953442Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -226,7 +226,7 @@
         "Syndicate Card Sharp"
       ],
       "ActiveGoal": {
-        "GoalId": "932fe999",
+        "GoalId": "d8c14d20",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -234,7 +234,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "df0232df",
+        "GoalId": "551ed5e5",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -245,14 +245,14 @@
     {
       "NpcId": 1005,
       "EntityId": "npc_gambling_patron_6",
-      "Guid": "1bbbe7ad-dc7b-4602-9154-43a405f7245f",
+      "Guid": "44b4955f-88e6-47b0-bb66-0efb290427f3",
       "Name": "Poker Tournament Patron 6",
       "Occupation": "High-Roller Gambler",
       "PublicFaction": "Civilians",
       "HiddenRole": "Floor Pit Security Guard",
       "PedModel": "s_m_m_security_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.7405768Z",
+      "CreatedAt": "2026-11-10T11:41:22.4953442Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -265,7 +265,7 @@
         "Floor Pit Security Guard"
       ],
       "ActiveGoal": {
-        "GoalId": "9790f45b",
+        "GoalId": "c49adcc3",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -273,7 +273,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "ae91e5dd",
+        "GoalId": "a561e220",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -284,14 +284,14 @@
     {
       "NpcId": 1006,
       "EntityId": "npc_vendor_sal",
-      "Guid": "23834bff-033d-48a6-9c83-8eb19539998c",
+      "Guid": "5abf7b04-0b03-4d59-836c-ac95e1954b02",
       "Name": "Sal 'Mustard' Calzone",
       "Occupation": "Street Food Vendor",
       "PublicFaction": "Civilians",
       "HiddenRole": "Informant who overhears underworld business from hungry crooks",
       "PedModel": "s_m_m_strvend_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:32.9500478Z",
+      "CreatedAt": "2026-11-10T11:41:22.7422951Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -313,7 +313,7 @@
           "SentimentTag": "Vendor_Active",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:32.9500478Z",
+          "Timestamp": "2026-11-10T11:41:22.7422951Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -326,7 +326,7 @@
         "Informant who overhears underworld business from hungry crooks"
       ],
       "ActiveGoal": {
-        "GoalId": "968b0308",
+        "GoalId": "33f3d23f",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -334,7 +334,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "e6285de6",
+        "GoalId": "4964d740",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -345,14 +345,14 @@
     {
       "NpcId": 1007,
       "EntityId": "npc_mechanic_tork",
-      "Guid": "a6e6f5bf-c04a-4f7b-a864-6f2e6e75bdd5",
+      "Guid": "918427ff-110e-4e40-8631-15f82cb01108",
       "Name": "Tork 'Wrench' Henderson",
       "Occupation": "Black Market Auto Mechanic",
       "PublicFaction": "Chop Shop Crew",
       "HiddenRole": "Modifies vin numbers on boosted luxury vehicles",
       "PedModel": "s_m_m_autoshop_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.1436438Z",
+      "CreatedAt": "2026-11-10T11:41:22.8373764Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -373,7 +373,7 @@
           "SentimentTag": "Mechanic_Active",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:33.1436438Z",
+          "Timestamp": "2026-11-10T11:41:22.8373764Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -386,7 +386,7 @@
         "Modifies vin numbers on boosted luxury vehicles"
       ],
       "ActiveGoal": {
-        "GoalId": "9d224920",
+        "GoalId": "4e9bc909",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -394,7 +394,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "e4448ab3",
+        "GoalId": "98835196",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -405,14 +405,14 @@
     {
       "NpcId": 1008,
       "EntityId": "npc_cop_miller",
-      "Guid": "78721bfc-956b-4b75-bfab-1122717bb5c0",
+      "Guid": "a0857df5-fef1-4c27-9628-2286bab85763",
       "Name": "Officer Miller",
       "Occupation": "LSPD Patrol Officer",
       "PublicFaction": "Police",
       "HiddenRole": "Conducting contraband checks and suspicious person searches",
       "PedModel": "s_m_y_cop_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "CreatedAt": "2026-11-10T11:41:22.9012168Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -433,7 +433,7 @@
           "SentimentTag": "Police_Checkpoint",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:33.3027639Z",
+          "Timestamp": "2026-11-10T11:41:22.9012168Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -446,7 +446,7 @@
         "Conducting contraband checks and suspicious person searches"
       ],
       "ActiveGoal": {
-        "GoalId": "48d66ff9",
+        "GoalId": "ce820865",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -454,7 +454,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "5ddf2bf7",
+        "GoalId": "52ad5d3a",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -465,14 +465,14 @@
     {
       "NpcId": 1009,
       "EntityId": "npc_cop_davies",
-      "Guid": "78d8853b-44e8-410f-a92c-ef6703582615",
+      "Guid": "a9a23978-8372-42ba-8600-5a28d019bf56",
       "Name": "Officer Davies",
       "Occupation": "LSPD Tactical Support",
       "PublicFaction": "Police",
       "HiddenRole": "Overwatch with carbine rifle",
       "PedModel": "s_m_y_cop_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "CreatedAt": "2026-11-10T11:41:22.9012168Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -493,7 +493,7 @@
           "SentimentTag": "Police_Overwatch",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:33.3027639Z",
+          "Timestamp": "2026-11-10T11:41:22.9012168Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -506,7 +506,7 @@
         "Overwatch with carbine rifle"
       ],
       "ActiveGoal": {
-        "GoalId": "e7e4f61b",
+        "GoalId": "f8d0609a",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -514,7 +514,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "abcab324",
+        "GoalId": "bfaf8c8e",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -525,14 +525,14 @@
     {
       "NpcId": 1010,
       "EntityId": "npc_military_garrison_3",
-      "Guid": "02b9fb71-dde2-4b42-9b5c-de036f6f11a0",
+      "Guid": "462746f4-da1e-45a0-85ea-8cae0505d151",
       "Name": "Marine Soldier 3",
       "Occupation": "Marine Tactical Specialist",
       "PublicFaction": "Military",
       "HiddenRole": "Tactical Checkpoint Sentinel",
       "PedModel": "s_m_y_marine_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "CreatedAt": "2026-11-10T11:41:22.9012168Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -545,7 +545,7 @@
         "Tactical Checkpoint Sentinel"
       ],
       "ActiveGoal": {
-        "GoalId": "14cd6bd3",
+        "GoalId": "524d95be",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -553,7 +553,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "1d21a80d",
+        "GoalId": "9dd65d94",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -564,14 +564,14 @@
     {
       "NpcId": 1011,
       "EntityId": "npc_military_garrison_4",
-      "Guid": "4b3765e2-da61-404a-8b04-17a28c56c94f",
+      "Guid": "7055a7d8-04c9-468f-809f-5c32d00f2de1",
       "Name": "Marine Soldier 4",
       "Occupation": "Marine Tactical Specialist",
       "PublicFaction": "Military",
       "HiddenRole": "Perimeter Sandbag Gunner",
       "PedModel": "s_m_m_marine_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "CreatedAt": "2026-11-10T11:41:22.9012168Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -584,7 +584,7 @@
         "Perimeter Sandbag Gunner"
       ],
       "ActiveGoal": {
-        "GoalId": "3c539b98",
+        "GoalId": "8f8f8085",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -592,7 +592,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "79847424",
+        "GoalId": "e19fb9bb",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -603,14 +603,14 @@
     {
       "NpcId": 1012,
       "EntityId": "npc_military_garrison_5",
-      "Guid": "370a57dc-d341-4ef6-a364-1d8300ee4675",
+      "Guid": "99e39c01-bdfb-4533-b009-eeb838635609",
       "Name": "Marine Soldier 5",
       "Occupation": "Marine Tactical Specialist",
       "PublicFaction": "Military",
       "HiddenRole": "Field Communications Specialist",
       "PedModel": "s_m_y_marine_02",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "CreatedAt": "2026-11-10T11:41:22.9012168Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -623,7 +623,7 @@
         "Field Communications Specialist"
       ],
       "ActiveGoal": {
-        "GoalId": "ff8be1ea",
+        "GoalId": "e919a332",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -631,7 +631,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "3dcdda8f",
+        "GoalId": "44e443b8",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -642,14 +642,14 @@
     {
       "NpcId": 1013,
       "EntityId": "npc_homie_tyrone",
-      "Guid": "f000a162-941c-4177-b6b2-3a1eddb928f0",
+      "Guid": "624bd88e-d8c9-4e1b-9197-290bf436c12d",
       "Name": "Tyrone 'Smokey' Green",
       "Occupation": "Grillmaster & Families OG",
       "PublicFaction": "Families",
       "HiddenRole": "Hosting neighborhood gathering, hates Ballas encroaching on turf",
       "PedModel": "g_m_y_famca_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -671,7 +671,7 @@
           "SentimentTag": "BBQ_Host",
           "Consequences": [],
           "Witnesses": [],
-          "Timestamp": "2026-10-12T10:18:33.4289183Z",
+          "Timestamp": "2026-11-10T11:41:22.9648201Z",
           "PositionX": 0.0,
           "PositionY": 0.0,
           "PositionZ": 0.0,
@@ -684,7 +684,7 @@
         "Hosting neighborhood gathering, hates Ballas encroaching on turf"
       ],
       "ActiveGoal": {
-        "GoalId": "553647e0",
+        "GoalId": "34ee575d",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -692,7 +692,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "4b83b41a",
+        "GoalId": "f8799c52",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -703,14 +703,14 @@
     {
       "NpcId": 1014,
       "EntityId": "npc_vip_guest_2",
-      "Guid": "1c137f85-ba98-4987-9cf2-2e653cd395b9",
+      "Guid": "7996bb8e-747f-4f51-805d-9aa717f5d019",
       "Name": "VIP Guest 2",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "a_f_y_studioparty_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -723,7 +723,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "deeb8710",
+        "GoalId": "512a8953",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -731,7 +731,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "b05f1e0d",
+        "GoalId": "98293306",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -742,14 +742,14 @@
     {
       "NpcId": 1015,
       "EntityId": "npc_vip_guest_3",
-      "Guid": "652cb228-8714-4faf-9871-176e6a6a6ea9",
+      "Guid": "681ce1dc-3f68-4699-856c-6b8d2fafffe7",
       "Name": "VIP Guest 3",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "a_f_y_studioparty_02",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -762,7 +762,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "d279d544",
+        "GoalId": "912c58dc",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -770,7 +770,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "c31fdefe",
+        "GoalId": "c89afdb5",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -781,14 +781,14 @@
     {
       "NpcId": 1016,
       "EntityId": "npc_vip_guest_4",
-      "Guid": "0262e2c2-9dd9-4916-ae0e-9b204b7e4ce7",
+      "Guid": "d04f079b-cc16-45fd-a38b-f6fb55dc5a60",
       "Name": "VIP Guest 4",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "a_m_y_studioparty_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -801,7 +801,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "239facaa",
+        "GoalId": "83dde7ac",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -809,7 +809,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "764e12f9",
+        "GoalId": "1cc01126",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -820,14 +820,14 @@
     {
       "NpcId": 1017,
       "EntityId": "npc_vip_guest_5",
-      "Guid": "2306bb14-56b6-404a-b388-1d4271e4f908",
+      "Guid": "e86c969e-23cd-4bc8-bf16-7526cccaa65e",
       "Name": "VIP Guest 5",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "a_m_m_studioparty_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -840,7 +840,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "e4ff1090",
+        "GoalId": "92302438",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -848,7 +848,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "eec8cc9a",
+        "GoalId": "433afcff",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -859,14 +859,14 @@
     {
       "NpcId": 1018,
       "EntityId": "npc_vip_guest_6",
-      "Guid": "c0139658-6613-47f4-ad58-97671eaf86d8",
+      "Guid": "73602374-8784-4a73-b72e-b4fcdb25565d",
       "Name": "VIP Guest 6",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "a_f_y_smartcaspat_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -879,7 +879,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "24038883",
+        "GoalId": "f8307a1e",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -887,7 +887,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "ec2df935",
+        "GoalId": "ecc25117",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -898,14 +898,14 @@
     {
       "NpcId": 1019,
       "EntityId": "npc_vip_guest_7",
-      "Guid": "d48e4bd2-9d3d-4ff2-ac83-abd138b4d791",
+      "Guid": "509d04e9-18b3-4ff1-bdc0-66f2fac08e4f",
       "Name": "VIP Guest 7",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "a_m_y_smartcaspat_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -918,7 +918,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "063c034b",
+        "GoalId": "833a04bf",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -926,7 +926,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "bdb1990a",
+        "GoalId": "c4b53e5b",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -937,14 +937,14 @@
     {
       "NpcId": 1020,
       "EntityId": "npc_vip_guest_8",
-      "Guid": "7e7c272f-13a7-4942-bb1b-c963871f462c",
+      "Guid": "37d701cb-5448-488b-b217-93e9440e1941",
       "Name": "VIP Guest 8",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "csb_billionaire",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -957,7 +957,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "715a9adb",
+        "GoalId": "5d24166a",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -965,7 +965,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "f558fc2a",
+        "GoalId": "f4565009",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -976,14 +976,14 @@
     {
       "NpcId": 1021,
       "EntityId": "npc_vip_guest_9",
-      "Guid": "9906408b-ba2e-4e52-b2b5-8a1e1629d976",
+      "Guid": "0e06b4f8-0caf-4054-9fc2-151c595263b1",
       "Name": "VIP Guest 9",
       "Occupation": "High-Society VIP",
       "PublicFaction": "Civilians",
       "HiddenRole": "Party Guest",
       "PedModel": "s_f_y_clubbar_02",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -996,7 +996,7 @@
         "Party Guest"
       ],
       "ActiveGoal": {
-        "GoalId": "8ae3a2fb",
+        "GoalId": "2edc16e1",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -1004,7 +1004,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "d90c18e3",
+        "GoalId": "04a577b7",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -1035,7 +1035,7 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:32.9500478Z",
+      "CreatedAt": "2026-11-10T11:41:22.7422951Z",
       "LastRealizedAt": null,
       "LastDerealizedAt": null,
       "PropIds": []
@@ -1060,7 +1060,7 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:33.1436438Z",
+      "CreatedAt": "2026-11-10T11:41:22.8373764Z",
       "LastRealizedAt": null,
       "LastDerealizedAt": null,
       "PropIds": []
@@ -1093,7 +1093,7 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:33.3027639Z",
+      "CreatedAt": "2026-11-10T11:41:22.9012168Z",
       "LastRealizedAt": null,
       "LastDerealizedAt": null,
       "PropIds": []
@@ -1134,7 +1134,7 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:33.4289183Z",
+      "CreatedAt": "2026-11-10T11:41:22.9648201Z",
       "LastRealizedAt": null,
       "LastDerealizedAt": null,
       "PropIds": []
@@ -1152,7 +1152,7 @@
       "SentimentTag": "Gambling_Active",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:32.7395408Z",
+      "Timestamp": "2026-11-10T11:41:22.4953442Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -1169,7 +1169,7 @@
       "SentimentTag": "Guard_Active",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:32.7405768Z",
+      "Timestamp": "2026-11-10T11:41:22.4953442Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -1186,7 +1186,7 @@
       "SentimentTag": "Vendor_Active",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:32.9500478Z",
+      "Timestamp": "2026-11-10T11:41:22.7422951Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -1203,7 +1203,7 @@
       "SentimentTag": "Mechanic_Active",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:33.1436438Z",
+      "Timestamp": "2026-11-10T11:41:22.8373764Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -1220,7 +1220,7 @@
       "SentimentTag": "Police_Checkpoint",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:33.3027639Z",
+      "Timestamp": "2026-11-10T11:41:22.9012168Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -1237,7 +1237,7 @@
       "SentimentTag": "Police_Overwatch",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:33.3027639Z",
+      "Timestamp": "2026-11-10T11:41:22.9012168Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,
@@ -1254,7 +1254,7 @@
       "SentimentTag": "BBQ_Host",
       "Consequences": [],
       "Witnesses": [],
-      "Timestamp": "2026-10-12T10:18:33.4289183Z",
+      "Timestamp": "2026-11-10T11:41:22.9648201Z",
       "PositionX": 0.0,
       "PositionY": 0.0,
       "PositionZ": 0.0,

@@ -1,8 +1,8 @@
 {
   "EnvironmentId": "env_del_perro_beach_bonfire",
   "PlanId": "env_del_perro_beach_bonfire",
-  "Name": "Del Perro Beach After-Hours Bonfire",
-  "Archetype": "beach_party",
+  "Name": "Del Perro Midnight Beach Session",
+  "Archetype": "Beach Gathering",
   "CenterPosition": {
     "x": -1500.0,
     "y": -1190.0,
@@ -61,7 +61,7 @@
   },
   "ResolvedProps": [
     {
-      "PropId": "prop_bonfire_1",
+      "PropId": "bonfire_1",
       "ParentPropId": "",
       "ModelName": "prop_beach_fire",
       "WorldPosition": {
@@ -83,7 +83,7 @@
       }
     },
     {
-      "PropId": "prop_chair_1",
+      "PropId": "chair_1",
       "ParentPropId": "",
       "ModelName": "prop_chair_02",
       "WorldPosition": {
@@ -105,7 +105,7 @@
       }
     },
     {
-      "PropId": "prop_chair_2",
+      "PropId": "chair_2",
       "ParentPropId": "",
       "ModelName": "prop_chair_02",
       "WorldPosition": {
@@ -127,13 +127,35 @@
       }
     },
     {
-      "PropId": "prop_cooler_1",
+      "PropId": "table_1",
       "ParentPropId": "",
+      "ModelName": "prop_table_01",
+      "WorldPosition": {
+        "x": -1498.39307,
+        "y": -1188.08484,
+        "z": 2.5
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 140.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.0,
+        "y": 1.0,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "cooler_1",
+      "ParentPropId": "table_1",
       "ModelName": "prop_cooler_01a",
       "WorldPosition": {
-        "x": -1497.56543,
-        "y": -1189.43213,
-        "z": 2.5
+        "x": -1498.77612,
+        "y": -1187.76343,
+        "z": 2.3
       },
       "WorldRotation": {
         "x": 0.0,
@@ -152,44 +174,17 @@
   "ResolvedNpcs": [
     {
       "EntityId": "npc_1",
-      "Name": "Jax",
-      "Occupation": "Beach Regular",
+      "Name": "Beach Surfer",
+      "Occupation": "Surfer / Local",
       "PublicFaction": "Civilians",
-      "HiddenRole": "Local supplier",
-      "PedModel": "beach_guy",
+      "HiddenRole": "Local beach bum enjoying the night air",
+      "PedModel": "surfer",
       "WorldPosition": {
-        "x": -1500.51953,
-        "y": -1192.17493,
+        "x": -1499.58533,
+        "y": -1192.306,
         "z": 2.5
       },
-      "Heading": 310.0026,
-      "Scenario": "WORLD_HUMAN_PARTYING",
-      "Weapon": "none",
-      "InitialTask": "none",
-      "InitialState": "CALM",
-      "Relationships": {
-        "Player": 0
-      },
-      "InitialEvents": [
-        {
-          "description": "Enjoying the late night warmth of the beach fire.",
-          "sentiment_tag": "neutral"
-        }
-      ]
-    },
-    {
-      "EntityId": "npc_2",
-      "Name": "Chloe",
-      "Occupation": "Surfer",
-      "PublicFaction": "Civilians",
-      "HiddenRole": "Lookout",
-      "PedModel": "beach_girl",
-      "WorldPosition": {
-        "x": -1502.43457,
-        "y": -1190.56787,
-        "z": 2.5
-      },
-      "Heading": 130.002579,
+      "Heading": 309.9986,
       "Scenario": "WORLD_HUMAN_DRINKING",
       "Weapon": "none",
       "InitialTask": "none",
@@ -199,8 +194,35 @@
       },
       "InitialEvents": [
         {
-          "description": "Sipping a cold drink by the fire.",
+          "description": "Relaxing by the fire with a cold drink.",
           "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_2",
+      "Name": "Beach Partygoer",
+      "Occupation": "Partier",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Music enthusiast",
+      "PedModel": "partygoer",
+      "WorldPosition": {
+        "x": -1502.34314,
+        "y": -1189.99207,
+        "z": 2.5
+      },
+      "Heading": 95.0,
+      "Scenario": "WORLD_HUMAN_PARTYING",
+      "Weapon": "none",
+      "InitialTask": "none",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Dancing near the bonfire.",
+          "sentiment_tag": "friendly"
         }
       ]
     },
@@ -267,30 +289,30 @@
   ],
   "ResolvedVehicles": [
     {
-      "VehicleId": "veh_rebel",
-      "ModelName": "rebel2",
-      "WorldPosition": {
-        "x": -1506.0,
-        "y": -1186.0,
-        "z": 2.5
-      },
-      "Heading": 205.0,
-      "PrimaryColor": "matte_black",
-      "IsEngineRunning": false,
-      "Sirens": false,
-      "LightsOn": true,
-      "DriverEntityId": ""
-    },
-    {
       "VehicleId": "veh_surfer",
       "ModelName": "surfer",
       "WorldPosition": {
         "x": -1494.0,
+        "y": -1186.0,
+        "z": 2.5
+      },
+      "Heading": 205.0,
+      "PrimaryColor": "blue",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    },
+    {
+      "VehicleId": "veh_rebel",
+      "ModelName": "rebel2",
+      "WorldPosition": {
+        "x": -1507.0,
         "y": -1184.0,
         "z": 2.5
       },
-      "Heading": 20.0,
-      "PrimaryColor": "yellow",
+      "Heading": 260.0,
+      "PrimaryColor": "matte_black",
       "IsEngineRunning": false,
       "Sirens": false,
       "LightsOn": false,
@@ -316,6 +338,19 @@
         "z": 0.5
       },
       "Heading": 140.0
+    },
+    {
+      "Center": {
+        "x": -1498.39307,
+        "y": -1188.08484,
+        "z": 2.5
+      },
+      "Size": {
+        "x": 1.0,
+        "y": 2.0,
+        "z": 0.76
+      },
+      "Heading": 140.0
     }
   ],
   "PlannedPocket": null,
@@ -326,20 +361,21 @@
   "CharacterAudit": null,
   "AssetTransferAudit": {
     "host_environment": "Del Perro Beach Sands",
-    "donor_asset_origin": "Base Game Beach Props & Vehicles",
-    "requested_asset_family": "Coastal Leisure",
-    "ontological_distinction": "Location is public beach real estate populated with native beach and off-road assets.",
+    "donor_asset_origin": "Base Game Leisure",
+    "requested_asset_family": "Beach Props and Vehicles",
+    "ontological_distinction": "Environment is native public beach space populated with authentic recreational assets.",
     "resolved_venue_interior": "loc_del_perro_beach",
     "transferred_asset_models": [
       "prop_beach_fire",
       "prop_chair_02",
+      "prop_table_01",
       "prop_cooler_01a"
     ]
   },
   "EngramReport": {
-    "TotalProcessed": 6,
+    "TotalProcessed": 7,
     "ResolvedCount": 0,
-    "PassthroughCount": 6,
+    "PassthroughCount": 7,
     "FallbackCount": 0,
     "Items": [
       {
@@ -371,6 +407,15 @@
       },
       {
         "AssetType": "Prop",
+        "OriginalDescriptor": "prop_table_01",
+        "ResolvedModelName": "prop_table_01",
+        "IsExactMatch": true,
+        "Confidence": 1.0,
+        "MatchScore": 100.0,
+        "Provenance": "Exact Passthrough (Curated Asset)"
+      },
+      {
+        "AssetType": "Prop",
         "OriginalDescriptor": "prop_cooler_01a",
         "ResolvedModelName": "prop_cooler_01a",
         "IsExactMatch": true,
@@ -380,8 +425,8 @@
       },
       {
         "AssetType": "Vehicle",
-        "OriginalDescriptor": "rebel2",
-        "ResolvedModelName": "rebel2",
+        "OriginalDescriptor": "surfer",
+        "ResolvedModelName": "surfer",
         "IsExactMatch": true,
         "Confidence": 1.0,
         "MatchScore": 100.0,
@@ -389,8 +434,8 @@
       },
       {
         "AssetType": "Vehicle",
-        "OriginalDescriptor": "surfer",
-        "ResolvedModelName": "surfer",
+        "OriginalDescriptor": "rebel2",
+        "ResolvedModelName": "rebel2",
         "IsExactMatch": true,
         "Confidence": 1.0,
         "MatchScore": 100.0,

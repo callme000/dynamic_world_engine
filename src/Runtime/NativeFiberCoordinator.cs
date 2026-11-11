@@ -1,5 +1,4 @@
 using System;
-using System.Threading;
 using DynamicWorldEngine.Utils;
 
 namespace DynamicWorldEngine.Runtime
@@ -8,25 +7,30 @@ namespace DynamicWorldEngine.Runtime
     /// Enforces Inviolable Rule #2: Zero Native GTA Calls off Main Thread.
     /// Provides authoritative fiber confinement and thread isolation between
     /// background worker threads and GTA V's native C++ ScriptHookVDotNet fiber.
+    /// Delegates to the authoritative GameThreadGate.
     /// </summary>
     public static class NativeFiberCoordinator
     {
-        private static int _mainThreadId = -1;
-
         public static int MainThreadId
         {
-            get { return _mainThreadId; }
-            set { _mainThreadId = value; }
+            get { return GameThreadGate.MainThreadId; }
+            set
+            {
+                if (value > 0)
+                    GameThreadGate.Initialize(value);
+                else
+                    GameThreadGate.Reset();
+            }
         }
 
         public static void Initialize(int managedThreadId)
         {
-            _mainThreadId = managedThreadId;
+            GameThreadGate.Initialize(managedThreadId);
         }
 
         public static void Reset()
         {
-            _mainThreadId = -1;
+            GameThreadGate.Reset();
         }
 
         /// <summary>
@@ -35,10 +39,7 @@ namespace DynamicWorldEngine.Runtime
         /// </summary>
         public static bool IsMainThread
         {
-            get
-            {
-                return _mainThreadId != -1 && Thread.CurrentThread.ManagedThreadId == _mainThreadId;
-            }
+            get { return GameThreadGate.IsMainThread; }
         }
 
         /// <summary>
@@ -47,13 +48,16 @@ namespace DynamicWorldEngine.Runtime
         /// </summary>
         public static bool EnforceMainThread(string operationName)
         {
-            if (!IsMainThread)
-            {
-                Log.Warn("FiberConfinement", "Blocked off-thread native GTA engine call in '{0}' on ManagedThreadId={1} (MainThreadId={2})",
-                    operationName, Thread.CurrentThread.ManagedThreadId, _mainThreadId);
-                return false;
-            }
-            return true;
+            return GameThreadGate.EnforceMainThread(operationName);
+        }
+
+        /// <summary>
+        /// Strictly requires that the current thread is the main game thread.
+        /// Throws InvalidOperationException if called off-thread or uninitialized.
+        /// </summary>
+        public static void RequireMainThread(string operationName)
+        {
+            GameThreadGate.RequireMainThread(operationName);
         }
     }
 }

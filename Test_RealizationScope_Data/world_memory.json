@@ -6,14 +6,14 @@
     {
       "NpcId": 1000,
       "EntityId": "npc_hostess",
-      "Guid": "e9d5b64e-6ab3-41f6-9d48-0c99bbbfa8ce",
+      "Guid": "d50f99bb-9deb-4fd8-a4ba-f8f0e22d9d11",
       "Name": "Elena Rostova",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "a_f_y_bevhills_02",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:40.6993722Z",
+      "CreatedAt": "2026-11-10T11:41:27.5586875Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -24,7 +24,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "cfccd93a",
+        "GoalId": "50462fab",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -32,7 +32,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "1184566d",
+        "GoalId": "87be00ec",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -43,14 +43,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_quartermaster",
-      "Guid": "cbecae38-de36-43da-95a1-3a08e8d34ca9",
+      "Guid": "f667766a-09df-4008-ac79-8113a41a1289",
       "Name": "Sergeant Miller",
       "Occupation": null,
       "PublicFaction": null,
       "HiddenRole": "None",
       "PedModel": "s_m_m_armoured_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:41.2502078Z",
+      "CreatedAt": "2026-11-10T11:41:27.9388536Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -61,7 +61,7 @@
       "Beliefs": [],
       "Secrets": [],
       "ActiveGoal": {
-        "GoalId": "02be1d6c",
+        "GoalId": "5bfcab48",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -69,7 +69,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "e10accd1",
+        "GoalId": "4d6e3431",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -100,8 +100,8 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:40.6839482Z",
-      "LastRealizedAt": "2026-10-12T10:18:41.2078038Z",
+      "CreatedAt": "2026-11-10T11:41:27.5566802Z",
+      "LastRealizedAt": "2026-11-10T11:41:27.9288262Z",
       "LastDerealizedAt": null,
       "PropIds": []
     },
@@ -125,8 +125,8 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:41.249159Z",
-      "LastRealizedAt": "2026-10-12T10:18:41.3222943Z",
+      "CreatedAt": "2026-11-10T11:41:27.9388536Z",
+      "LastRealizedAt": "2026-11-10T11:41:27.9801929Z",
       "LastDerealizedAt": null,
       "PropIds": []
     }

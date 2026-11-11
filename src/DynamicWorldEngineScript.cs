@@ -66,10 +66,7 @@ namespace DynamicWorldEngine
             {
                 int currentThreadId = Thread.CurrentThread.ManagedThreadId;
                 Log.MainThreadId = currentThreadId;
-                NativeFiberCoordinator.Initialize(currentThreadId);
-                PlayerTeleportCoordinator.MainThreadId = currentThreadId;
-                SpatialPerceptionScanner.MainThreadId = currentThreadId;
-                SpatialGridSampler.MainThreadId = currentThreadId;
+                GameThreadGate.Initialize(currentThreadId);
 
                 string baseDir = AppDomain.CurrentDomain.BaseDirectory;
                 string scriptsFolder = Directory.Exists(Path.Combine(baseDir, "scripts"))

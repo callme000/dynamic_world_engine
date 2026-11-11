@@ -6,14 +6,14 @@
     {
       "NpcId": 1000,
       "EntityId": "npc_dealer_01",
-      "Guid": "e9a4fef8-e9da-4537-8841-767d11cf61fb",
+      "Guid": "f2027883-66b9-4f7f-a502-558c30f5ce09",
       "Name": "Boris 'The Russian'",
       "Occupation": "Arms Dealer",
       "PublicFaction": "Fixers",
       "HiddenRole": "Loyal to the highest bidder",
       "PedModel": "a_m_y_beach_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:27.994588Z",
+      "CreatedAt": "2026-11-10T11:41:19.815502Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -29,7 +29,7 @@
         "Loyal to the highest bidder"
       ],
       "ActiveGoal": {
-        "GoalId": "dc8223b5",
+        "GoalId": "69854838",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -37,7 +37,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "bc26385d",
+        "GoalId": "e1ef5e58",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -48,14 +48,14 @@
     {
       "NpcId": 1001,
       "EntityId": "npc_guard_01",
-      "Guid": "7f3c8bb8-90a9-4eaa-afc9-3fdd311b4000",
+      "Guid": "589f1fc9-e5ab-4be2-882b-7d445f327b40",
       "Name": "Vince 'Iron'",
       "Occupation": "Bodyguard",
       "PublicFaction": "Fixers",
       "HiddenRole": "Bodyguard with heavy rifle",
       "PedModel": "a_m_y_beach_01",
       "IsAlive": true,
-      "CreatedAt": "2026-10-12T10:18:27.9966309Z",
+      "CreatedAt": "2026-11-10T11:41:19.815502Z",
       "Trust": 0,
       "Fear": 0,
       "Respect": 0,
@@ -71,7 +71,7 @@
         "Bodyguard with heavy rifle"
       ],
       "ActiveGoal": {
-        "GoalId": "784b1100",
+        "GoalId": "ef0600a0",
         "GoalType": "MAINTAIN_ROUTINE",
         "TargetEntity": "self",
         "Priority": 1,
@@ -79,7 +79,7 @@
         "Description": "Conduct daily routine"
       },
       "LongTermGoal": {
-        "GoalId": "92348143",
+        "GoalId": "be197cee",
         "GoalType": "PROSPER",
         "TargetEntity": "self",
         "Priority": 5,
@@ -112,7 +112,7 @@
       "PortalStates": {},
       "ContainerStates": {},
       "ScenarioState": null,
-      "CreatedAt": "2026-10-12T10:18:27.9598381Z",
+      "CreatedAt": "2026-11-10T11:41:19.8135411Z",
       "LastRealizedAt": null,
       "LastDerealizedAt": null,
       "PropIds": []

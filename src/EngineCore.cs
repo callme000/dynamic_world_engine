@@ -279,6 +279,17 @@ namespace DynamicWorldEngine
             result.ValidationResult = _planValidator.ValidatePlan(plan, result.WorldModel, null, applyAutoCorrections: true);
             plan.ValidationResult = result.ValidationResult;
 
+            // Invariants #3 & #4: Plan must pass validation before commitment
+            if (result.ValidationResult == null || !result.ValidationResult.IsValid)
+            {
+                result.Success = false;
+                string violations = (result.ValidationResult != null && result.ValidationResult.HardViolations != null && result.ValidationResult.HardViolations.Count > 0)
+                    ? string.Join("; ", result.ValidationResult.HardViolations.ToArray())
+                    : "Plan validation failed or was missing.";
+                result.DiagnosticMessage = string.Format("Spatial Validation Barrier Rejected Plan: {0}", violations);
+                return result;
+            }
+
             // Stage 10: Commit
             result.Environment = CommissionEnvironment(plan, payload.Data);
 
@@ -352,31 +363,59 @@ namespace DynamicWorldEngine
         public EnvironmentRecord CommissionEnvironment(SpatialExecutionPlan plan, BuildEnvironmentData data = null)
         {
             if (plan == null) throw new ArgumentNullException("plan");
+
+            // Invariants #3 & #4: A spatial plan must pass validation before it can be committed.
+            if (plan.ValidationResult == null)
+            {
+                plan.ValidationResult = _planValidator.ValidatePlan(plan, plan.WorldModel, null, applyAutoCorrections: true);
+            }
+
+            if (plan.ValidationResult == null || !plan.ValidationResult.IsValid)
+            {
+                string violations = (plan.ValidationResult != null && plan.ValidationResult.HardViolations != null && plan.ValidationResult.HardViolations.Count > 0)
+                    ? string.Join("; ", plan.ValidationResult.HardViolations.ToArray())
+                    : "Plan validation failed or was missing.";
+                throw new InvalidOperationException(string.Format("Cannot commission environment '{0}': Spatial plan failed validation ({1}).", plan.EnvironmentId, violations));
+            }
+
             if (string.IsNullOrEmpty(plan.EnvironmentId))
             {
                 plan.EnvironmentId = "env_" + Guid.NewGuid().ToString().Substring(0, 8);
             }
 
-            // 1. Authoritative physical persistence in PlanRepository
+            // Invariants #5 & #12: Authoritative physical persistence in PlanRepository
             if (_plans != null)
             {
                 bool planSaved = _plans.SavePlan(plan);
                 if (!planSaved)
                 {
-                    Console.WriteLine("[EngineCore] Warning: Failed to save CanonicalPlan to PlanRepository for {0}", plan.EnvironmentId);
+                    throw new InvalidOperationException(string.Format("Cannot commission environment '{0}': Failed to persist CanonicalPlan to PlanRepository. Commissioning aborted to prevent partial world state.", plan.EnvironmentId));
                 }
             }
 
-            // 2. Authoritative narrative/world-state enrollment in WorldMemoryStore
-            EnvironmentRecord env = _executor.ExecuteSpatialExecutionPlan(plan, data);
-
-            // 3. Flush stores to disk
-            if (_store != null)
+            // Invariants #5 & #12: Authoritative narrative/world-state enrollment in WorldMemoryStore
+            EnvironmentRecord env;
+            try
             {
-                _store.Flush();
+                env = _executor.ExecuteSpatialExecutionPlan(plan, data);
+
+                // Flush stores to disk
+                if (_store != null)
+                {
+                    _store.Flush();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Rollback plan persistence if world-state enrollment fails
+                if (_plans != null)
+                {
+                    try { _plans.DeletePlan(plan.EnvironmentId); } catch { }
+                }
+                throw new InvalidOperationException(string.Format("Cannot commission environment '{0}': WorldMemoryStore enrollment failed ({1}). Plan rolled back from PlanRepository.", plan.EnvironmentId, ex.Message), ex);
             }
 
-            // 4. Hot-sync living world facts to AI bridge
+            // Hot-sync living world facts to AI bridge
             if (_bridge != null)
             {
                 _bridge.SyncAllNpcFactsToCustomRules(null, true);

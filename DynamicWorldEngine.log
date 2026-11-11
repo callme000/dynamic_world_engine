@@ -1318,3 +1318,699 @@ To enable assembly bind failure logging, set the registry value [HKLM\Software\M
 Note: There is some performance penalty associated with assembly bind failure logging.
 To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
 
+[2026-10-12 15:20:52.472] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-10-12 15:20:52.480] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-10-12 15:20:52.484] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-10-12 15:20:52.485] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-10-12 15:20:52.489] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_luxury_casino_01", planId="env_luxury_casino_01"
+[2026-10-12 15:20:52.491] [INFO ] [Main] [Spawner] Beginning physical realization for "env_luxury_casino_01" (PlanId: env_luxury_casino_01). Props: 2, Vehs: 1, NPCs: 2
+[2026-10-12 15:20:52.526] [ERROR] [Main] [Spawner] Exception loading model "prop_table_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.528] [ERROR] [Main] [Spawner] Exception loading model "prop_bar_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.532] [ERROR] [Main] [Spawner] Exception loading vehicle model "stretch"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadVehicleModel(String modelName, Model& model)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.552] [ERROR] [Main] [Spawner] Exception loading model "a_f_y_topless"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.557] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_security_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.584] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_luxury_casino_01", planId="env_luxury_casino_01"
+[2026-10-12 15:20:52.588] [INFO ] [Main] [Spawner] Beginning physical realization for "env_luxury_casino_01" (PlanId: env_luxury_casino_01). Props: 2, Vehs: 1, NPCs: 2
+[2026-10-12 15:20:52.591] [ERROR] [Main] [Spawner] Exception loading model "prop_table_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.593] [ERROR] [Main] [Spawner] Exception loading model "prop_bar_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.596] [ERROR] [Main] [Spawner] Exception loading vehicle model "stretch"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadVehicleModel(String modelName, Model& model)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.598] [ERROR] [Main] [Spawner] Exception loading model "a_f_y_topless"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.601] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_security_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.605] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_dock_warehouse_02", planId="env_dock_warehouse_02"
+[2026-10-12 15:20:52.609] [INFO ] [Main] [Spawner] Beginning physical realization for "env_dock_warehouse_02" (PlanId: env_dock_warehouse_02). Props: 1, Vehs: 0, NPCs: 1
+[2026-10-12 15:20:52.613] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a_pu"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:52.618] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_dockwork_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.516] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-10-12 15:20:53.525] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-10-12 15:20:53.529] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-10-12 15:20:53.533] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-10-12 15:20:53.542] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_bunker_mortality", planId="env_bunker_mortality"
+[2026-10-12 15:20:53.547] [INFO ] [Main] [Spawner] Beginning physical realization for "env_bunker_mortality" (PlanId: env_bunker_mortality). Props: 1, Vehs: 0, NPCs: 2
+[2026-10-12 15:20:53.578] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.602] [ERROR] [Main] [Spawner] Exception loading model "g_m_y_salvagoon_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.607] [ERROR] [Main] [Spawner] Exception loading model "s_m_y_blackops_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.649] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_bunker_mortality", planId="env_bunker_mortality"
+[2026-10-12 15:20:53.655] [INFO ] [Main] [Spawner] Beginning physical realization for "env_bunker_mortality" (PlanId: env_bunker_mortality). Props: 1, Vehs: 0, NPCs: 2
+[2026-10-12 15:20:53.660] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.664] [ERROR] [Main] [Spawner] Exception loading model "g_m_y_salvagoon_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.669] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_bunker_mortality", planId="env_bunker_mortality"
+[2026-10-12 15:20:53.673] [INFO ] [Main] [Spawner] Beginning physical realization for "env_bunker_mortality" (PlanId: env_bunker_mortality). Props: 1, Vehs: 0, NPCs: 2
+[2026-10-12 15:20:53.678] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:53.683] [ERROR] [Main] [Spawner] Exception loading model "g_m_y_salvagoon_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:55.293] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-10-12 15:20:55.299] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-10-12 15:20:55.302] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-10-12 15:20:55.306] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-10-12 15:20:55.311] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_happy_penthouse", planId="env_happy_penthouse"
+[2026-10-12 15:20:55.315] [INFO ] [Main] [Spawner] Beginning physical realization for "env_happy_penthouse" (PlanId: env_happy_penthouse). Props: 1, Vehs: 0, NPCs: 1
+[2026-10-12 15:20:55.358] [ERROR] [Main] [Spawner] Exception loading model "prop_couch_lg_02"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:55.383] [ERROR] [Main] [Spawner] Exception loading model "a_f_y_bevhills_02"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:55.434] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_secure_armory", planId="env_secure_armory"
+[2026-10-12 15:20:55.438] [INFO ] [Main] [Spawner] Beginning physical realization for "env_secure_armory" (PlanId: env_secure_armory). Props: 1, Vehs: 0, NPCs: 1
+[2026-10-12 15:20:55.443] [ERROR] [Main] [Spawner] Exception loading model "prop_box_ammo04a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:55.449] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_armoured_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:55.458] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_secure_armory", planId="env_secure_armory"
+[2026-10-12 15:20:55.460] [INFO ] [Main] [Spawner] Beginning physical realization for "env_secure_armory" (PlanId: env_secure_armory). Props: 1, Vehs: 0, NPCs: 1
+[2026-10-12 15:20:55.464] [ERROR] [Main] [Spawner] Exception loading model "prop_box_ammo04a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-10-12 15:20:55.470] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_armoured_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:39:50.691] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:39:50.697] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:39:50.697] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:39:50.697] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:39:50.697] [WARN ] [Main] [FiberConfinement] Blocked off-thread native GTA engine call in 'test_op' on ManagedThreadId=1 (MainThreadId=-1)
+[2026-11-10 14:39:50.697] [WARN ] [Main] [FiberConfinement] Blocked off-thread native GTA engine call in 'test_op' on ManagedThreadId=1 (MainThreadId=99999)
+[2026-11-10 14:39:50.707] [WARN ] [Pool-3] [FiberConfinement] Blocked off-thread native GTA engine call in 'worker_op' on ManagedThreadId=3 (MainThreadId=1)
+[2026-11-10 14:40:27.652] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:40:27.656] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:40:27.657] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:40:27.659] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:40:27.661] [WARN ] [Main] [FiberConfinement] Blocked off-thread native GTA engine call in 'test_op' on ManagedThreadId=1 (MainThreadId=-1)
+[2026-11-10 14:40:27.663] [WARN ] [Main] [FiberConfinement] Blocked off-thread native GTA engine call in 'test_op' on ManagedThreadId=1 (MainThreadId=99999)
+[2026-11-10 14:40:27.666] [WARN ] [Pool-4] [FiberConfinement] Blocked off-thread native GTA engine call in 'worker_op' on ManagedThreadId=4 (MainThreadId=1)
+[2026-11-10 14:41:25.262] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:41:25.277] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:41:25.279] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:41:25.281] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:41:25.283] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_luxury_casino_01", planId="env_luxury_casino_01"
+[2026-11-10 14:41:25.286] [INFO ] [Main] [Spawner] Beginning physical realization for "env_luxury_casino_01" (PlanId: env_luxury_casino_01). Props: 2, Vehs: 1, NPCs: 2
+[2026-11-10 14:41:25.314] [ERROR] [Main] [Spawner] Exception loading model "prop_table_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.317] [ERROR] [Main] [Spawner] Exception loading model "prop_bar_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.320] [ERROR] [Main] [Spawner] Exception loading vehicle model "stretch"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadVehicleModel(String modelName, Model& model)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.334] [ERROR] [Main] [Spawner] Exception loading model "a_f_y_topless"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.336] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_security_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.357] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_luxury_casino_01", planId="env_luxury_casino_01"
+[2026-11-10 14:41:25.360] [INFO ] [Main] [Spawner] Beginning physical realization for "env_luxury_casino_01" (PlanId: env_luxury_casino_01). Props: 2, Vehs: 1, NPCs: 2
+[2026-11-10 14:41:25.362] [ERROR] [Main] [Spawner] Exception loading model "prop_table_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.365] [ERROR] [Main] [Spawner] Exception loading model "prop_bar_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.367] [ERROR] [Main] [Spawner] Exception loading vehicle model "stretch"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadVehicleModel(String modelName, Model& model)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.370] [ERROR] [Main] [Spawner] Exception loading model "a_f_y_topless"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.372] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_security_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.375] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_dock_warehouse_02", planId="env_dock_warehouse_02"
+[2026-11-10 14:41:25.378] [INFO ] [Main] [Spawner] Beginning physical realization for "env_dock_warehouse_02" (PlanId: env_dock_warehouse_02). Props: 1, Vehs: 0, NPCs: 1
+[2026-11-10 14:41:25.381] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a_pu"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:25.384] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_dockwork_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.296] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:41:26.301] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:41:26.306] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:41:26.307] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:41:26.311] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_bunker_mortality", planId="env_bunker_mortality"
+[2026-11-10 14:41:26.312] [INFO ] [Main] [Spawner] Beginning physical realization for "env_bunker_mortality" (PlanId: env_bunker_mortality). Props: 1, Vehs: 0, NPCs: 2
+[2026-11-10 14:41:26.332] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.346] [ERROR] [Main] [Spawner] Exception loading model "g_m_y_salvagoon_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.346] [ERROR] [Main] [Spawner] Exception loading model "s_m_y_blackops_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.385] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_bunker_mortality", planId="env_bunker_mortality"
+[2026-11-10 14:41:26.392] [INFO ] [Main] [Spawner] Beginning physical realization for "env_bunker_mortality" (PlanId: env_bunker_mortality). Props: 1, Vehs: 0, NPCs: 2
+[2026-11-10 14:41:26.396] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.398] [ERROR] [Main] [Spawner] Exception loading model "g_m_y_salvagoon_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.402] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_bunker_mortality", planId="env_bunker_mortality"
+[2026-11-10 14:41:26.402] [INFO ] [Main] [Spawner] Beginning physical realization for "env_bunker_mortality" (PlanId: env_bunker_mortality). Props: 1, Vehs: 0, NPCs: 2
+[2026-11-10 14:41:26.406] [ERROR] [Main] [Spawner] Exception loading model "prop_box_wood02a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:26.409] [ERROR] [Main] [Spawner] Exception loading model "g_m_y_salvagoon_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:27.882] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:41:27.887] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:41:27.889] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:41:27.889] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:41:27.893] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_happy_penthouse", planId="env_happy_penthouse"
+[2026-11-10 14:41:27.895] [INFO ] [Main] [Spawner] Beginning physical realization for "env_happy_penthouse" (PlanId: env_happy_penthouse). Props: 1, Vehs: 0, NPCs: 1
+[2026-11-10 14:41:27.912] [ERROR] [Main] [Spawner] Exception loading model "prop_couch_lg_02"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:27.926] [ERROR] [Main] [Spawner] Exception loading model "a_f_y_bevhills_02"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:27.956] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_secure_armory", planId="env_secure_armory"
+[2026-11-10 14:41:27.958] [INFO ] [Main] [Spawner] Beginning physical realization for "env_secure_armory" (PlanId: env_secure_armory). Props: 1, Vehs: 0, NPCs: 1
+[2026-11-10 14:41:27.960] [ERROR] [Main] [Spawner] Exception loading model "prop_box_ammo04a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:27.964] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_armoured_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:27.972] [DEBUG] [Main] [TRACE] SpawnEnvironmentFromPlanDirect: envId="env_secure_armory", planId="env_secure_armory"
+[2026-11-10 14:41:27.974] [INFO ] [Main] [Spawner] Beginning physical realization for "env_secure_armory" (PlanId: env_secure_armory). Props: 1, Vehs: 0, NPCs: 1
+[2026-11-10 14:41:27.976] [ERROR] [Main] [Spawner] Exception loading model "prop_box_ammo04a"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:41:27.978] [ERROR] [Main] [Spawner] Exception loading model "s_m_m_armoured_01"
+EXCEPTION: System.IO.FileNotFoundException: Could not load file or assembly 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483' or one of its dependencies. The system cannot find the file specified.
+File name: 'ScriptHookVDotNet, Version=3.9.0.6, Culture=neutral, PublicKeyToken=8564999cffc18483'
+   at GTA.Native.Function.Call(Hash hash, InputArgument argument0)
+   at GTA.Model.Request(Int32 timeout)
+   at DynamicWorldEngine.Runtime.EntitySpawnerService.SafeLoadModel(String modelName, Model& model, Boolean isPed)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+[2026-11-10 14:56:53.656] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:56:53.659] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:56:53.663] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:56:53.665] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:56:53.667] [WARN ] [Main] [GameThreadGate] Blocked native GTA engine call in 'test_op' on ManagedThreadId=1 (AuthorizedMainThreadId=-1, Initialized=False)
+[2026-11-10 14:56:53.669] [WARN ] [Main] [GameThreadGate] Blocked native GTA engine call in 'test_op' on ManagedThreadId=1 (AuthorizedMainThreadId=99999, Initialized=True)
+[2026-11-10 14:56:53.673] [WARN ] [Pool-4] [GameThreadGate] Blocked native GTA engine call in 'worker_op' on ManagedThreadId=4 (AuthorizedMainThreadId=1, Initialized=True)
+[2026-11-10 14:58:46.970] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:58:46.975] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:58:46.976] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:58:46.976] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:58:46.976] [WARN ] [Main] [GameThreadGate] Blocked native GTA engine call in 'test' on ManagedThreadId=1 (AuthorizedMainThreadId=-1, Initialized=False)
+[2026-11-10 14:58:46.982] [ERROR] [Main] [GameThreadGate] Off-thread native GTA access violation: 'test_uninit' attempted on ManagedThreadId=1 (AuthorizedMainThreadId=-1, Initialized=False). Native operations must execute exclusively on the SHVDN script thread.
+[2026-11-10 14:58:46.986] [WARN ] [Pool-3] [GameThreadGate] Blocked native GTA engine call in 'worker_calc' on ManagedThreadId=3 (AuthorizedMainThreadId=1, Initialized=True)
+[2026-11-10 14:58:46.987] [ERROR] [Pool-3] [GameThreadGate] Off-thread native GTA access violation: 'worker_require' attempted on ManagedThreadId=3 (AuthorizedMainThreadId=1, Initialized=True). Native operations must execute exclusively on the SHVDN script thread.
+[2026-11-10 14:58:54.066] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:58:54.116] [INFO ] [Main] [SYSTEM] Dynamic World Engine Logging System Initialized. Log file: C:\Users\melod\Documents\gtavmods\DynamicWorldEngine.log
+[2026-11-10 14:58:54.121] [INFO ] [Main] [SYSTEM] OS: Microsoft Windows NT 6.2.9200.0 | CLR: 4.0.30319.42000 | Main Thread ID: 1
+[2026-11-10 14:58:54.123] [INFO ] [Main] [SYSTEM] ================================================================================
+[2026-11-10 14:58:54.126] [WARN ] [Main] [GameThreadGate] Blocked native GTA engine call in 'test_op' on ManagedThreadId=1 (AuthorizedMainThreadId=-1, Initialized=False)
+[2026-11-10 14:58:54.129] [WARN ] [Main] [GameThreadGate] Blocked native GTA engine call in 'test_op' on ManagedThreadId=1 (AuthorizedMainThreadId=99999, Initialized=True)
+[2026-11-10 14:58:54.132] [WARN ] [Pool-3] [GameThreadGate] Blocked native GTA engine call in 'worker_op' on ManagedThreadId=3 (AuthorizedMainThreadId=1, Initialized=True)

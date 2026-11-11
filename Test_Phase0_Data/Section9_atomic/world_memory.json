@@ -1,0 +1,73 @@
+{
+  "NextNpcId": 1001,
+  "NextEventId": 1,
+  "NextPropId": 5000,
+  "Npcs": [
+    {
+      "NpcId": 1000,
+      "EntityId": "npc_atomic",
+      "Guid": "b1764e18-60ff-4214-8794-262f7a75b092",
+      "Name": "Atomic NPC",
+      "Occupation": "Test",
+      "PublicFaction": null,
+      "HiddenRole": "None",
+      "PedModel": "a_m_y_beach_01",
+      "IsAlive": true,
+      "CreatedAt": "2026-11-10T11:58:54.5801401Z",
+      "Trust": 0,
+      "Fear": 0,
+      "Respect": 0,
+      "CurrentState": "CALM",
+      "Relationships": {},
+      "History": [],
+      "Knowledge": [],
+      "Beliefs": [],
+      "Secrets": [],
+      "ActiveGoal": {
+        "GoalId": "b0e30eda",
+        "GoalType": "MAINTAIN_ROUTINE",
+        "TargetEntity": "self",
+        "Priority": 1,
+        "Status": "ACTIVE",
+        "Description": "Conduct daily routine"
+      },
+      "LongTermGoal": {
+        "GoalId": "b03485cd",
+        "GoalType": "PROSPER",
+        "TargetEntity": "self",
+        "Priority": 5,
+        "Status": "ACTIVE",
+        "Description": "Maintain position and avoid trouble"
+      }
+    }
+  ],
+  "Props": [],
+  "Environments": [
+    {
+      "EnvironmentId": "env_atomic_test",
+      "PlanId": "env_atomic_test",
+      "Name": "Atomic Test Environment",
+      "Archetype": null,
+      "Description": "",
+      "CenterX": 50.0,
+      "CenterY": 50.0,
+      "CenterZ": 10.0,
+      "Heading": 0.0,
+      "Status": "COMMISSIONED",
+      "ResidentEntityIds": [
+        "npc_atomic"
+      ],
+      "NpcIds": [
+        1000
+      ],
+      "PortalStates": {},
+      "ContainerStates": {},
+      "ScenarioState": null,
+      "CreatedAt": "2026-11-10T11:58:54.5801401Z",
+      "LastRealizedAt": null,
+      "LastDerealizedAt": null,
+      "PropIds": []
+    }
+  ],
+  "WorldEvents": []
+}

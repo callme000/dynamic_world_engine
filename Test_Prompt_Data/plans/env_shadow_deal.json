@@ -1,0 +1,313 @@
+{
+  "EnvironmentId": "env_shadow_deal",
+  "PlanId": "env_shadow_deal",
+  "Name": "Shadow Deal",
+  "Archetype": "Illicit Trade",
+  "CenterPosition": {
+    "x": 844.26,
+    "y": -3004.994,
+    "z": -45.4
+  },
+  "Heading": 0.0,
+  "IsSkyPocket": false,
+  "MatchedInterior": {
+    "InteriorId": "int_the_criminal_enterprise_basement",
+    "Name": "The Criminal Enterprise Basement",
+    "Category": "basement",
+    "Description": "Dynamically discovered basement venue.",
+    "Privacy": null,
+    "Atmosphere": null,
+    "SecurityLevel": null,
+    "CapacityNpcs": 10,
+    "SemanticTags": [
+      "basement",
+      "safehouse",
+      "underground",
+      "cartel",
+      "interrogation",
+      "covert",
+      "warehouse",
+      "torture",
+      "hideout",
+      "hostage",
+      "undercover",
+      "The Criminal Enterprise Basement",
+      "int_the_criminal_enterprise_basement",
+      "Criminal Enterprise Basement",
+      "Underground Safehouse",
+      "Cartel Hideout"
+    ],
+    "Keywords": [],
+    "IplNames": [],
+    "RemoveIplNames": [],
+    "EntranceCoords": {
+      "x": 116.12,
+      "y": -2688.961,
+      "z": 5.0
+    },
+    "InteriorCoords": {
+      "x": 844.26,
+      "y": -3004.994,
+      "z": -45.4
+    },
+    "InteriorHeading": 0.0,
+    "EntitySets": [],
+    "SupportsVehicles": false,
+    "WaterArrivalCoords": null
+  },
+  "ResolvedProps": [
+    {
+      "PropId": "item_1",
+      "ParentPropId": "",
+      "ModelName": "prop_table_03",
+      "WorldPosition": {
+        "x": 844.26,
+        "y": -3004.994,
+        "z": -45.4
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.4,
+        "y": 1.2,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "item_2",
+      "ParentPropId": "item_1",
+      "ModelName": "prop_table_03",
+      "WorldPosition": {
+        "x": 844.86,
+        "y": -3004.994,
+        "z": -45.4
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.4,
+        "y": 1.2,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "item_3",
+      "ParentPropId": "item_1",
+      "ModelName": "prop_table_03",
+      "WorldPosition": {
+        "x": 843.660034,
+        "y": -3004.994,
+        "z": -45.4
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": true,
+      "Dimensions": {
+        "x": 2.4,
+        "y": 1.2,
+        "z": 0.76
+      }
+    },
+    {
+      "PropId": "item_4",
+      "ParentPropId": "item_1",
+      "ModelName": "prop_box_ammo04a",
+      "WorldPosition": {
+        "x": 844.26,
+        "y": -3005.494,
+        "z": -45.4
+      },
+      "WorldRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "IsDynamic": false,
+      "BlocksNavMesh": false,
+      "Dimensions": {
+        "x": 0.8,
+        "y": 0.5,
+        "z": 0.5
+      }
+    }
+  ],
+  "ResolvedNpcs": [
+    {
+      "EntityId": "npc_1",
+      "Name": "Silas \"The Broker\" Marquez",
+      "Occupation": "Arms Dealer",
+      "PublicFaction": "Civilians",
+      "HiddenRole": "Cartel Supplier",
+      "PedModel": "cartel_soldier",
+      "WorldPosition": {
+        "x": 844.26,
+        "y": -3002.994,
+        "z": -45.4
+      },
+      "Heading": 270.0,
+      "Scenario": "WORLD_HUMAN_SMOKING",
+      "Weapon": "none",
+      "InitialTask": "talk_to:npc_2",
+      "InitialState": "CALM",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Dealer is negotiating a weapons shipment.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    },
+    {
+      "EntityId": "npc_2",
+      "Name": "Rico \"Shield\" Alvarez",
+      "Occupation": "Bodyguard",
+      "PublicFaction": "Cartel",
+      "HiddenRole": "Enforcer",
+      "PedModel": "cartel_soldier",
+      "WorldPosition": {
+        "x": 842.76,
+        "y": -3002.994,
+        "z": -45.4
+      },
+      "Heading": 90.0,
+      "Scenario": "WORLD_HUMAN_GUARD_STAND",
+      "Weapon": "WEAPON_PISTOL",
+      "InitialTask": "guard_post",
+      "InitialState": "ALERT",
+      "Relationships": {
+        "Player": 0
+      },
+      "InitialEvents": [
+        {
+          "description": "Bodyguard keeps vigilant watch.",
+          "sentiment_tag": "neutral"
+        }
+      ]
+    }
+  ],
+  "ResolvedVehicles": [
+    {
+      "VehicleId": "veh_1",
+      "ModelName": "daemon",
+      "WorldPosition": {
+        "x": 121.12,
+        "y": -2690.961,
+        "z": 5.0
+      },
+      "Heading": 45.0,
+      "PrimaryColor": "black",
+      "IsEngineRunning": false,
+      "Sirens": false,
+      "LightsOn": false,
+      "DriverEntityId": ""
+    }
+  ],
+  "Atmosphere": {
+    "weather": "CLEAR",
+    "time_hours": 22,
+    "time_minutes": 0,
+    "ambient_fx": "smoke_plume"
+  },
+  "NavBlockers": [
+    {
+      "Center": {
+        "x": 844.26,
+        "y": -3004.994,
+        "z": -45.4
+      },
+      "Size": {
+        "x": 1.2,
+        "y": 2.4,
+        "z": 0.76
+      },
+      "Heading": 0.0
+    }
+  ],
+  "PlannedPocket": null,
+  "ConnectedPockets": [],
+  "ArchitecturalLayers": [],
+  "ScenarioDirector": null,
+  "FeasibilityAudit": null,
+  "CharacterAudit": null,
+  "AssetTransferAudit": {
+    "host_environment": "Abandoned Warehouse Basement",
+    "donor_asset_origin": "Cartel",
+    "requested_asset_family": "weapon_cases, ammunition",
+    "ontological_distinction": "The warehouse is owned by a neutral property holder, while the weapon cases are supplied by the cartel.",
+    "resolved_venue_interior": "int_the_criminal_enterprise_basement",
+    "transferred_asset_models": [
+      "prop_table_03",
+      "prop_box_ammo04a"
+    ]
+  },
+  "EngramReport": {
+    "TotalProcessed": 5,
+    "ResolvedCount": 5,
+    "PassthroughCount": 0,
+    "FallbackCount": 0,
+    "Items": [
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "metal_table",
+        "ResolvedModelName": "prop_table_03",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 135.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 135.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "weapon_case",
+        "ResolvedModelName": "prop_table_03",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 40.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 40.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "weapon_case",
+        "ResolvedModelName": "prop_table_03",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 40.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 40.0)"
+      },
+      {
+        "AssetType": "Prop",
+        "OriginalDescriptor": "ammo_crate",
+        "ResolvedModelName": "prop_box_ammo04a",
+        "IsExactMatch": false,
+        "Confidence": 0.95,
+        "MatchScore": 45.0,
+        "Provenance": "Engram Resolution: Resolved via CuratedCanonical (Confidence: 0.95, Score: 45.0)"
+      },
+      {
+        "AssetType": "Vehicle",
+        "OriginalDescriptor": "motorcycle",
+        "ResolvedModelName": "daemon",
+        "IsExactMatch": false,
+        "Confidence": 0.85,
+        "MatchScore": 0.0,
+        "Provenance": "Semantic Class: Motorcycle"
+      }
+    ],
+    "UnresolvedAssets": []
+  }
+}
