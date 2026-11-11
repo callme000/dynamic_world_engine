@@ -50,6 +50,45 @@ namespace DynamicWorldEngine.Database
         {
         }
 
+        private void NormalizeDatabaseState()
+        {
+            if (_state == null)
+            {
+                throw new InvalidDataException("[WorldMemoryStore] Database deserialized to a null state.");
+            }
+
+            if (_state.Npcs == null) _state.Npcs = new List<NpcRecord>();
+            if (_state.Props == null) _state.Props = new List<PropRecord>();
+            if (_state.Environments == null) _state.Environments = new List<EnvironmentRecord>();
+            if (_state.WorldEvents == null) _state.WorldEvents = new List<EventRecord>();
+            if (_state.NextNpcId <= 0) _state.NextNpcId = 1000;
+            if (_state.NextEventId <= 0) _state.NextEventId = 1;
+            if (_state.NextPropId <= 0) _state.NextPropId = 5000;
+
+            foreach (var npc in _state.Npcs)
+            {
+                if (npc == null) continue;
+                if (npc.Knowledge == null) npc.Knowledge = new List<KnowledgeEntry>();
+                if (npc.Beliefs == null) npc.Beliefs = new List<BeliefEntry>();
+                if (npc.Secrets == null) npc.Secrets = new List<string>();
+                if (npc.History == null) npc.History = new List<EventRecord>();
+                if (npc.Relationships == null) npc.Relationships = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+                if (npc.ActiveGoal == null) npc.ActiveGoal = new NpcGoal("MAINTAIN_ROUTINE", "self", 1, "Conduct daily routine");
+            }
+
+            foreach (var env in _state.Environments)
+            {
+                if (env == null) continue;
+                if (env.ResidentEntityIds == null) env.ResidentEntityIds = new List<string>();
+                if (env.NpcIds == null) env.NpcIds = new List<int>();
+                if (env.PropIds == null) env.PropIds = new List<int>();
+                if (env.PortalStates == null) env.PortalStates = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
+                if (env.ContainerStates == null) env.ContainerStates = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                if (string.IsNullOrEmpty(env.Status)) env.Status = "COMMISSIONED";
+                if (string.IsNullOrEmpty(env.PlanId)) env.PlanId = env.EnvironmentId;
+            }
+        }
+
         private void LoadDatabase()
         {
             lock (_lock)
@@ -122,7 +161,8 @@ namespace DynamicWorldEngine.Database
                             try
                             {
                                 string backupJson = File.ReadAllText(backupPath);
-                                _state = JsonConvert.DeserializeObject<DatabaseState>(backupJson) ?? new DatabaseState();
+                                _state = JsonConvert.DeserializeObject<DatabaseState>(backupJson);
+                                NormalizeDatabaseState();
                                 recovered = true;
                                 Console.WriteLine("[WorldMemoryStore] Recovered state from database backup: " + backupPath);
                             }
