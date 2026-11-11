@@ -33,6 +33,11 @@ namespace DynamicWorldEngine.Database
             Confidence = confidence;
             DistanceToEvent = distance;
         }
+
+        public WitnessRecord Clone()
+        {
+            return new WitnessRecord(NpcId, Perception, Confidence, DistanceToEvent);
+        }
     }
 
     public class BeliefEntry
@@ -59,6 +64,19 @@ namespace DynamicWorldEngine.Database
             Source = source;
             Timestamp = DateTime.UtcNow;
         }
+
+        public BeliefEntry Clone()
+        {
+            return new BeliefEntry
+            {
+                Subject = Subject,
+                Predicate = Predicate,
+                ObjectValue = ObjectValue,
+                Confidence = Confidence,
+                Source = Source,
+                Timestamp = Timestamp
+            };
+        }
     }
 
     public class KnowledgeEntry
@@ -79,6 +97,17 @@ namespace DynamicWorldEngine.Database
             Description = description;
             SourceEventId = sourceEventId;
             AcquiredAt = DateTime.UtcNow;
+        }
+
+        public KnowledgeEntry Clone()
+        {
+            return new KnowledgeEntry
+            {
+                FactKey = FactKey,
+                Description = Description,
+                SourceEventId = SourceEventId,
+                AcquiredAt = AcquiredAt
+            };
         }
     }
 
@@ -108,6 +137,19 @@ namespace DynamicWorldEngine.Database
             Priority = priority;
             Status = "ACTIVE";
             Description = description;
+        }
+
+        public NpcGoal Clone()
+        {
+            return new NpcGoal
+            {
+                GoalId = GoalId,
+                GoalType = GoalType,
+                TargetEntity = TargetEntity,
+                Priority = Priority,
+                Status = Status,
+                Description = Description
+            };
         }
     }
 
@@ -183,13 +225,38 @@ namespace DynamicWorldEngine.Database
                 Respect = this.Respect,
                 CurrentState = this.CurrentState,
                 Relationships = this.Relationships != null ? new Dictionary<string, int>(this.Relationships, StringComparer.OrdinalIgnoreCase) : new Dictionary<string, int>(),
-                History = this.History != null ? new List<EventRecord>(this.History) : new List<EventRecord>(),
-                Knowledge = this.Knowledge != null ? new List<KnowledgeEntry>(this.Knowledge) : new List<KnowledgeEntry>(),
-                Beliefs = this.Beliefs != null ? new List<BeliefEntry>(this.Beliefs) : new List<BeliefEntry>(),
+                History = new List<EventRecord>(),
+                Knowledge = new List<KnowledgeEntry>(),
+                Beliefs = new List<BeliefEntry>(),
                 Secrets = this.Secrets != null ? new List<string>(this.Secrets) : new List<string>(),
-                ActiveGoal = this.ActiveGoal != null ? new NpcGoal(this.ActiveGoal.GoalType, this.ActiveGoal.TargetEntity, this.ActiveGoal.Priority, this.ActiveGoal.Description) : null,
-                LongTermGoal = this.LongTermGoal != null ? new NpcGoal(this.LongTermGoal.GoalType, this.LongTermGoal.TargetEntity, this.LongTermGoal.Priority, this.LongTermGoal.Description) : null
+                ActiveGoal = this.ActiveGoal != null ? this.ActiveGoal.Clone() : null,
+                LongTermGoal = this.LongTermGoal != null ? this.LongTermGoal.Clone() : null
             };
+
+            if (this.History != null)
+            {
+                foreach (var item in this.History)
+                {
+                    copy.History.Add(item != null ? item.Clone() : null);
+                }
+            }
+
+            if (this.Knowledge != null)
+            {
+                foreach (var item in this.Knowledge)
+                {
+                    copy.Knowledge.Add(item != null ? item.Clone() : null);
+                }
+            }
+
+            if (this.Beliefs != null)
+            {
+                foreach (var item in this.Beliefs)
+                {
+                    copy.Beliefs.Add(item != null ? item.Clone() : null);
+                }
+            }
+
             return copy;
         }
     }
@@ -222,6 +289,38 @@ namespace DynamicWorldEngine.Database
             Witnesses = new List<WitnessRecord>();
             Timestamp = DateTime.UtcNow;
             HasPosition = false;
+        }
+
+        public EventRecord Clone()
+        {
+            var copy = new EventRecord
+            {
+                EventId = EventId,
+                NpcId = NpcId,
+                Actor = Actor,
+                Target = Target,
+                EventType = EventType,
+                Severity = Severity,
+                Description = Description,
+                SentimentTag = SentimentTag,
+                Consequences = Consequences != null ? new List<string>(Consequences) : new List<string>(),
+                Witnesses = new List<WitnessRecord>(),
+                Timestamp = Timestamp,
+                PositionX = PositionX,
+                PositionY = PositionY,
+                PositionZ = PositionZ,
+                HasPosition = HasPosition
+            };
+
+            if (Witnesses != null)
+            {
+                foreach (var witness in Witnesses)
+                {
+                    copy.Witnesses.Add(witness != null ? witness.Clone() : null);
+                }
+            }
+
+            return copy;
         }
     }
 
