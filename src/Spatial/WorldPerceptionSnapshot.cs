@@ -134,7 +134,12 @@ namespace DynamicWorldEngine.Spatial
                 footprint, walkable, sky);
 
             // 3. Boundaries & Enclosure
-            if (IsAlleyOrCorridor)
+            if (NorthClearance < 0.0f || SouthClearance < 0.0f ||
+                EastClearance < 0.0f || WestClearance < 0.0f)
+            {
+                sb.AppendLine("- **Boundaries**: Unknown (one or more raycasts failed)");
+            }
+            else if (IsAlleyOrCorridor)
             {
                 sb.AppendFormat("- **Enclosure**: Alley/Corridor (Width: {0:F1}m) | Boundaries: {1}\n",
                     CorridorWidth, BoundaryStructures.Count > 0 ? string.Join("; ", BoundaryStructures) : "Constrained on both flanks");
