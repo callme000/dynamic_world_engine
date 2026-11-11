@@ -705,9 +705,9 @@ namespace DynamicWorldEngine
 
         // --- BACKWARD-COMPATIBLE ALIASES ---
 
-        public EnvironmentRecord ExecuteBuildEnvironmentCommand(string rawJsonPayload, float originX, float originY, float originZ, float originHeading)
+        public EnvironmentRecord ExecuteBuildEnvironmentCommand(string rawJsonPayload, float originX, float originY, float originZ, float originHeading, SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
         {
-            return CommissionEnvironment(rawJsonPayload, originX, originY, originZ, originHeading);
+            return CommissionEnvironment(rawJsonPayload, originX, originY, originZ, originHeading, commissioningMode);
         }
 
         public EnvironmentRecord ExecuteBuildEnvironmentPlan(SpatialExecutionPlan plan, BuildEnvironmentData data = null, SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
