@@ -221,12 +221,15 @@ namespace DynamicWorldEngine.Tests
             // Rank for a large staging compound / drag strip
             var compoundScores = scanner.RankCandidates(positions, "compound");
             Assert(compoundScores.Count == 3, "Ranked all 3 candidate locations");
-            Assert(compoundScores[0].FitnessScore >= compoundScores[1].FitnessScore, "Rankings sorted descending by fitness");
+            Assert(compoundScores[0].FitnessScore == 0f && compoundScores[1].FitnessScore == 0f,
+                "Headless candidate sites are not assigned invented fitness scores");
 
             // Rank for an illicit gang hideout / chop shop
             var hideoutScores = scanner.RankCandidates(positions, "gang_hideout");
             Assert(hideoutScores.Count == 3, "Ranked 3 candidates for gang hideout");
-            Assert(hideoutScores[0].FitnessScore > 0f, "Top hideout candidate has positive fitness score");
+            Assert(hideoutScores[0].FitnessScore == 0f &&
+                   hideoutScores[0].Reason.Contains("observation unavailable"),
+                "Headless hideout candidates remain explicitly unranked without native observations");
         }
 
         private static void TestEngineCoreIntegration()
@@ -246,7 +249,9 @@ namespace DynamicWorldEngine.Tests
                 // 2. Scan snapshot
                 var snapshot = engine.GetPerceptionSnapshot(120f, -1400f, 30f);
                 Assert(snapshot != null, "GetPerceptionSnapshot returns non-null snapshot");
-                Assert(snapshot.Elevation == 30f, "Snapshot elevation grounded to target Z in headless mode");
+                Assert(snapshot.Elevation == 30f, "Snapshot elevation retains the requested Z coordinate");
+                Assert(!snapshot.NativeObservationAvailable, "Headless snapshot does not claim native world observation");
+                Assert(snapshot.PlacementFeasibility.Contains("Unknown"), "Headless snapshot does not claim optimal placement feasibility");
 
                 // 3. Multi-site ranking via EngineCore
                 var candidates = new List<Vector3>
