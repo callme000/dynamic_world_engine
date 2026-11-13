@@ -261,6 +261,91 @@ namespace DynamicWorldEngine.Spatial
         }
 
         /// <summary>
+        /// Recovers a failed low-elevation ground query by repeating it from a
+        /// high point above the surrounding map. The result is accepted only when
+        /// the returned elevation and upward-facing normal are finite and plausible.
+        /// </summary>
+        private static bool TryRecoverGroundSampleAtHighElevation(
+            Vector3 probePos,
+            out float groundHeight,
+            out Vector3 normal,
+            out string failureDetail)
+        {
+            const float highProbeZ = 1000.0f;
+            const float minimumGroundZ = -100.0f;
+            groundHeight = probePos.Z;
+            normal = Vector3.Zero;
+            failureDetail = "not_attempted";
+
+            try
+            {
+                float candidateHeight;
+                Vector3 candidateNormal;
+                bool found = World.GetGroundHeightAndNormal(
+                    new Vector3(probePos.X, probePos.Y, highProbeZ),
+                    out candidateHeight,
+                    out candidateNormal);
+
+                if (!found)
+                {
+                    failureDetail = "high_elevation_query_no_result";
+                    return false;
+                }
+
+                if (float.IsNaN(candidateHeight) || float.IsInfinity(candidateHeight) ||
+                    candidateHeight < minimumGroundZ || candidateHeight >= highProbeZ)
+                {
+                    failureDetail = string.Format(
+                        "high_elevation_invalid_height value={0}", candidateHeight);
+                    return false;
+                }
+
+                if (float.IsNaN(candidateNormal.X) || float.IsInfinity(candidateNormal.X) ||
+                    float.IsNaN(candidateNormal.Y) || float.IsInfinity(candidateNormal.Y) ||
+                    float.IsNaN(candidateNormal.Z) || float.IsInfinity(candidateNormal.Z))
+                {
+                    failureDetail = string.Format(
+                        "high_elevation_invalid_normal ({0},{1},{2})",
+                        candidateNormal.X, candidateNormal.Y, candidateNormal.Z);
+                    return false;
+                }
+
+                float normalLength = (float)Math.Sqrt(
+                    candidateNormal.X * candidateNormal.X +
+                    candidateNormal.Y * candidateNormal.Y +
+                    candidateNormal.Z * candidateNormal.Z);
+
+                if (normalLength < 0.5f)
+                {
+                    failureDetail = string.Format(
+                        "high_elevation_normal_too_small length={0:F4}", normalLength);
+                    return false;
+                }
+
+                if (candidateNormal.Z <= 0.0f)
+                {
+                    failureDetail = string.Format(
+                        "high_elevation_normal_not_upward normalZ={0:F3}", candidateNormal.Z);
+                    return false;
+                }
+
+                groundHeight = candidateHeight;
+                normal = new Vector3(
+                    candidateNormal.X / normalLength,
+                    candidateNormal.Y / normalLength,
+                    candidateNormal.Z / normalLength);
+                failureDetail = null;
+                return true;
+            }
+            catch (Exception ex)
+            {
+                failureDetail = string.Format(
+                    "high_elevation_exception={0}:{1}", ex.GetType().Name, ex.Message);
+                return false;
+            }
+        }
+
+        /// <summary>
         /// Diagnostic-only follow-up for unresolved cells. Repeats the ground query
         /// from a high, known-above-ground Z and casts a much longer map-only ray.
         /// This distinguishes a too-low probe/short ray envelope from a location
@@ -331,6 +416,7 @@ namespace DynamicWorldEngine.Spatial
             float startY = origin.Y - radius;
             int normalQueryMisses = 0;
             int raycastRecoveries = 0;
+            int highElevationRecoveries = 0;
             int raycastMisses = 0;
             var unresolvedSamples = new List<string>();
             var unresolvedProbePositions = new List<Vector2>();
@@ -359,7 +445,16 @@ namespace DynamicWorldEngine.Spatial
                         }
                         else
                         {
-                            raycastMisses++;
+                            string highElevationFailure;
+                            if (TryRecoverGroundSampleAtHighElevation(
+                                probePos, out groundHeight, out normal, out highElevationFailure))
+                            {
+                                gotNormal = true;
+                                highElevationRecoveries++;
+                            }
+                            else
+                            {
+                                raycastMisses++;
                             unresolvedProbePositions.Add(new Vector2(cx, cy));
                             unresolvedSamples.Add(string.Format(
                                 "({0:F1},{1:F1},{2:F1})[{3}]",
@@ -384,6 +479,7 @@ namespace DynamicWorldEngine.Spatial
                                 fallbackFinite ? "true" : "false",
                                 fallbackWithinRay ? "true" : "false",
                                 fallbackDelta);
+                            }
                         }
                     }
 
@@ -436,9 +532,10 @@ namespace DynamicWorldEngine.Spatial
             if (normalQueryMisses > 0)
             {
                 Log.Info("SpatialGridSampler",
-                    "Ground-normal recovery diagnostics: nativeMisses={0}, raycastRecovered={1}, raycastUnresolved={2}, unresolvedSamples={3}",
+                    "Ground-normal recovery diagnostics: nativeMisses={0}, raycastRecovered={1}, highElevationRecovered={2}, raycastUnresolved={3}, unresolvedSamples={4}",
                     normalQueryMisses,
                     raycastRecoveries,
+                    highElevationRecoveries,
                     raycastMisses,
                     unresolvedSamples.Count > 0 ? string.Join("; ", unresolvedSamples.ToArray()) : "none");
             }
