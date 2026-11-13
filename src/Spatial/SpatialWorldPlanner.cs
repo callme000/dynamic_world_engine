@@ -30,7 +30,8 @@ namespace DynamicWorldEngine.Spatial
         public SpatialExecutionPlan PlanEnvironment(
             BuildEnvironmentData data,
             Vector3 playerOrigin,
-            float playerHeading)
+            float playerHeading,
+            SpatialWorldModel worldModel = null)
         {
             if (data == null) throw new ArgumentNullException("data");
 
@@ -51,6 +52,10 @@ namespace DynamicWorldEngine.Spatial
             var venueRes = VenueSelectionResolver.ResolveVenue(data, playerOrigin, playerHeading, fullQuery);
             Vector3 centerPos = venueRes.CenterPosition;
             plan.CenterPosition = centerPos;
+            // Prefer the caller's authoritative scan. This may be a live GTA snapshot
+            // captured on the SHVDN script thread; never replace it with a background
+            // synthetic fallback merely because this planner runs on a worker thread.
+            plan.WorldModel = worldModel;
             plan.Heading = venueRes.Heading;
             plan.IsSkyPocket = venueRes.IsSkyPocket;
             plan.MatchedInterior = venueRes.MatchedInterior;
@@ -79,9 +84,13 @@ namespace DynamicWorldEngine.Spatial
             {
                 try
                 {
-                    var sampler = new SpatialGridSampler();
-                    var model = sampler.SampleArea(centerPos, 50.0f, SpatialGridSampler.DefaultCellSize, null, data.Name);
-                    plan.WorldModel = model;
+                    SpatialWorldModel model = plan.WorldModel;
+                    if (model == null)
+                    {
+                        var sampler = new SpatialGridSampler();
+                        model = sampler.SampleArea(centerPos, 50.0f, SpatialGridSampler.DefaultCellSize, null, data.Name);
+                        plan.WorldModel = model;
+                    }
 
                     var solver = new SpatialPlacementSolver();
                     var req = new SceneInteractionRequirements

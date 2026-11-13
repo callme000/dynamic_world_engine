@@ -10,6 +10,7 @@ namespace DynamicWorldEngine.Spatial
         // IsValid means geometric checks passed against the supplied model, not live-world verification.
         public bool HasNativeSpatialEvidence { get; set; }
         public bool PhysicalFeasibilityConfirmed { get; set; }
+        public string PhysicalEvidenceDiagnostic { get; set; }
         public List<string> HardViolations { get; set; }
         public List<string> Warnings { get; set; }
         public List<string> AutoCorrectionsApplied { get; set; }
@@ -23,6 +24,7 @@ namespace DynamicWorldEngine.Spatial
             HardViolations = new List<string>();
             Warnings = new List<string>();
             AutoCorrectionsApplied = new List<string>();
+            PhysicalEvidenceDiagnostic = "Not evaluated.";
         }
 
         public override string ToString()
@@ -61,22 +63,51 @@ namespace DynamicWorldEngine.Spatial
             result.CheckedPropsCount = plan.ResolvedProps != null ? plan.ResolvedProps.Count : 0;
             result.CheckedNpcsCount = plan.ResolvedNpcs != null ? plan.ResolvedNpcs.Count : 0;
 
-            result.HasNativeSpatialEvidence = model != null && model.Provenance != null &&
-                model.Provenance.IsNativeScan &&
-                string.Equals(model.Provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase);
-            result.PhysicalFeasibilityConfirmed = result.HasNativeSpatialEvidence &&
-                model.Provenance.TotalRequestedCells > 0 &&
-                model.Provenance.ClassifiedCellsCount > 0 &&
-                model.Provenance.ClassifiedCellsCount <= model.Provenance.TotalRequestedCells &&
-                model.Provenance.CompletenessScore >= 0.99f &&
-                model.Provenance.CaptureTime != DateTime.MinValue &&
-                (DateTime.UtcNow - model.Provenance.CaptureTime) >= TimeSpan.Zero &&
-                (DateTime.UtcNow - model.Provenance.CaptureTime) <= TimeSpan.FromSeconds(60);
+            var evidenceIssues = new List<string>();
+            SpatialSnapshotProvenance provenance = model != null ? model.Provenance : null;
 
-            if (!result.HasNativeSpatialEvidence)
-                result.Warnings.Add("Geometric validation uses synthetic/offline/unknown spatial data; physical feasibility in the live GTA world is unconfirmed.");
-            else if (!result.PhysicalFeasibilityConfirmed)
-                result.Warnings.Add("Live spatial evidence is incomplete, invalid, or older than 60 seconds; physical feasibility is not confirmed.");
+            result.HasNativeSpatialEvidence = provenance != null &&
+                provenance.IsNativeScan &&
+                string.Equals(provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase);
+
+            if (model == null)
+                evidenceIssues.Add("world model is missing");
+            if (provenance == null)
+                evidenceIssues.Add("spatial provenance is missing");
+            else
+            {
+                if (!provenance.IsNativeScan)
+                    evidenceIssues.Add("scan is not marked native");
+                if (!string.Equals(provenance.ScanType, "NATIVE_RAYCAST", StringComparison.OrdinalIgnoreCase))
+                    evidenceIssues.Add("scan type is '" + (provenance.ScanType ?? "null") + "', expected NATIVE_RAYCAST");
+                if (provenance.TotalRequestedCells <= 0)
+                    evidenceIssues.Add("requested cell count is zero");
+                if (provenance.ClassifiedCellsCount <= 0)
+                    evidenceIssues.Add("classified cell count is zero");
+                if (provenance.ClassifiedCellsCount > provenance.TotalRequestedCells)
+                    evidenceIssues.Add("classified cell count exceeds requested cell count");
+                if (provenance.CompletenessScore < 0.99f)
+                    evidenceIssues.Add(string.Format("completeness {0:P2} is below the 99% threshold", provenance.CompletenessScore));
+
+                if (provenance.CaptureTime == DateTime.MinValue)
+                    evidenceIssues.Add("capture timestamp is missing");
+                else
+                {
+                    TimeSpan captureAge = DateTime.UtcNow - provenance.CaptureTime;
+                    if (captureAge < TimeSpan.Zero)
+                        evidenceIssues.Add("capture timestamp is in the future");
+                    else if (captureAge > TimeSpan.FromSeconds(60))
+                        evidenceIssues.Add(string.Format("capture is stale ({0:F1}s old; maximum 60s)", captureAge.TotalSeconds));
+                }
+            }
+
+            result.PhysicalFeasibilityConfirmed = evidenceIssues.Count == 0;
+            result.PhysicalEvidenceDiagnostic = evidenceIssues.Count == 0
+                ? "Live spatial evidence accepted."
+                : "Evidence rejected: " + string.Join("; ", evidenceIssues.ToArray());
+
+            if (!result.PhysicalFeasibilityConfirmed)
+                result.Warnings.Add(result.PhysicalEvidenceDiagnostic);
 
             // 1. Surface Contact & Ground Elevation Verification
             if (model != null && model.Surfaces != null && model.Surfaces.Count > 0)
