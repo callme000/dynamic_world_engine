@@ -260,6 +260,65 @@ namespace DynamicWorldEngine.Spatial
             }
         }
 
+        /// <summary>
+        /// Diagnostic-only follow-up for unresolved cells. Repeats the ground query
+        /// from a high, known-above-ground Z and casts a much longer map-only ray.
+        /// This distinguishes a too-low probe/short ray envelope from a location
+        /// where no map collision is currently available. Results never classify cells.
+        /// </summary>
+        private static string DiagnoseUnresolvedProbeElevation(float x, float y)
+        {
+            const float highProbeZ = 1000.0f;
+            const float longRayEndZ = -100.0f;
+            string normalResult;
+            string rayResult;
+            float highGroundZ = 0.0f;
+            Vector3 highNormal = Vector3.Zero;
+
+            try
+            {
+                bool found = World.GetGroundHeightAndNormal(
+                    new Vector3(x, y, highProbeZ),
+                    out highGroundZ,
+                    out highNormal);
+                normalResult = string.Format(
+                    "highNormalFound={0} highGroundZ={1:F2} highNormal=({2:F3},{3:F3},{4:F3})",
+                    found ? "true" : "false",
+                    highGroundZ,
+                    highNormal.X, highNormal.Y, highNormal.Z);
+            }
+            catch (Exception ex)
+            {
+                normalResult = string.Format("highNormalException={0}:{1}", ex.GetType().Name, ex.Message);
+            }
+
+            try
+            {
+                RaycastResult highRay = World.Raycast(
+                    new Vector3(x, y, highProbeZ),
+                    new Vector3(x, y, longRayEndZ),
+                    IntersectFlags.Map);
+                if (highRay.DidHit)
+                {
+                    Vector3 p = highRay.HitPosition;
+                    Vector3 n = highRay.SurfaceNormal;
+                    rayResult = string.Format(
+                        "highRay=hit pos=({0:F2},{1:F2},{2:F2}) normal=({3:F3},{4:F3},{5:F3})",
+                        p.X, p.Y, p.Z, n.X, n.Y, n.Z);
+                }
+                else
+                {
+                    rayResult = string.Format("highRay=no_hit startZ={0:F1} endZ={1:F1}", highProbeZ, longRayEndZ);
+                }
+            }
+            catch (Exception ex)
+            {
+                rayResult = string.Format("highRayException={0}:{1}", ex.GetType().Name, ex.Message);
+            }
+
+            return normalResult + " " + rayResult;
+        }
+
         private void SampleNativeWorld(
             Vector3 origin,
             float radius,
@@ -274,6 +333,7 @@ namespace DynamicWorldEngine.Spatial
             int raycastRecoveries = 0;
             int raycastMisses = 0;
             var unresolvedSamples = new List<string>();
+            var unresolvedProbePositions = new List<Vector2>();
 
             for (int ix = 0; ix < steps; ix++)
             {
@@ -300,6 +360,7 @@ namespace DynamicWorldEngine.Spatial
                         else
                         {
                             raycastMisses++;
+                            unresolvedProbePositions.Add(new Vector2(cx, cy));
                             unresolvedSamples.Add(string.Format(
                                 "({0:F1},{1:F1},{2:F1})[{3}]",
                                 cx, cy, origin.Z, recoveryFailure ?? "unspecified"));
@@ -380,6 +441,24 @@ namespace DynamicWorldEngine.Spatial
                     raycastRecoveries,
                     raycastMisses,
                     unresolvedSamples.Count > 0 ? string.Join("; ", unresolvedSamples.ToArray()) : "none");
+            }
+
+            if (unresolvedProbePositions.Count > 0)
+            {
+                // Cap the expensive high-altitude diagnostics and distribute probes
+                // across the unresolved set rather than repeatedly sampling one corner.
+                int diagnosticCount = Math.Min(6, unresolvedProbePositions.Count);
+                for (int diagnosticIndex = 0; diagnosticIndex < diagnosticCount; diagnosticIndex++)
+                {
+                    int sampleIndex = diagnosticCount == 1
+                        ? 0
+                        : (diagnosticIndex * (unresolvedProbePositions.Count - 1)) / (diagnosticCount - 1);
+                    Vector2 sample = unresolvedProbePositions[sampleIndex];
+                    string detail = DiagnoseUnresolvedProbeElevation(sample.X, sample.Y);
+                    Log.Info("SpatialGridSampler",
+                        "Unresolved elevation diagnostic {0}/{1} at ({2:F1},{3:F1}): {4}",
+                        diagnosticIndex + 1, diagnosticCount, sample.X, sample.Y, detail);
+                }
             }
 
             // Living entities probe
