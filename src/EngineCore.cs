@@ -275,8 +275,9 @@ namespace DynamicWorldEngine
             }
 
             // Stage 8: Solve Transforms (orientation, facing, clearances)
-            SpatialExecutionPlan plan = _planner.PlanEnvironment(payload.Data, selectedLoc.Coordinates, selectedLoc.Heading);
-            if (plan.WorldModel == null && result.WorldModel != null)
+            SpatialExecutionPlan plan = _planner.PlanEnvironment(payload.Data, selectedLoc.Coordinates, selectedLoc.Heading, result.WorldModel);
+            // Preserve the exact observation used by Stage 9 through the transaction boundary.
+            if (result.WorldModel != null && !object.ReferenceEquals(plan.WorldModel, result.WorldModel))
             {
                 plan.WorldModel = result.WorldModel;
             }
@@ -396,9 +397,12 @@ namespace DynamicWorldEngine
             if (commissioningMode == SpatialCommissioningMode.RequireLiveEvidence &&
                 !plan.ValidationResult.PhysicalFeasibilityConfirmed)
             {
+                string evidenceDiagnostic = plan.ValidationResult != null
+                    ? plan.ValidationResult.PhysicalEvidenceDiagnostic
+                    : "Validation result is missing.";
                 throw new InvalidOperationException(string.Format(
-                    "Cannot commission environment '{0}': complete live GTA spatial evidence is required. Current evidence is synthetic, offline, unknown, or incomplete. Use AllowUnverifiedSimulation only for deliberate simulation.",
-                    plan.EnvironmentId));
+                    "Cannot commission environment '{0}': complete live GTA spatial evidence is required. {1} Use AllowUnverifiedSimulation only for deliberate simulation.",
+                    plan.EnvironmentId, evidenceDiagnostic));
             }
 
             if (string.IsNullOrEmpty(plan.EnvironmentId))
