@@ -303,7 +303,9 @@ namespace DynamicWorldEngine
                 (result.ValidationResult == null || !result.ValidationResult.PhysicalFeasibilityConfirmed))
             {
                 result.Success = false;
-                result.DiagnosticMessage = "Commissioning rejected: complete live GTA spatial evidence is required. Use AllowUnverifiedSimulation only for deliberate headless/offline simulation.";
+                result.DiagnosticMessage = "Commissioning rejected: complete live GTA spatial evidence is required. " +
+                    result.ValidationResult.PhysicalEvidenceDiagnostic +
+                    " Use AllowUnverifiedSimulation only for deliberate headless/offline simulation.";
                 return result;
             }
             result.Environment = CommissionEnvironment(plan, payload.Data, commissioningMode);
