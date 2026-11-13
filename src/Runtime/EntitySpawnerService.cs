@@ -259,7 +259,7 @@ namespace DynamicWorldEngine.Runtime
                 LogModelLoadOutcome(modelName, model, expectedKind, loaded, attempts);
                 if (!loaded)
                 {
-                    Log.Warn("Spawner", "Failed to load model \\\"{0}\\\" (isPed={1}) after {2} attempts", modelName, isPed, attempts);
+                    Log.Warn("Spawner", "Failed to load model \"{0}\" (isPed={1}) after {2} attempts", modelName, isPed, attempts);
                     model.MarkAsNoLongerNeeded();
                     if (isPed)
                     {
@@ -286,7 +286,7 @@ namespace DynamicWorldEngine.Runtime
             }
             catch (Exception ex)
             {
-                Log.Error("Spawner", ex, "Exception loading model \\\"{0}\\\"", modelName);
+                Log.Error("Spawner", ex, "Exception loading model \"{0}\"", modelName);
                 return false;
             }
         }
@@ -318,7 +318,7 @@ namespace DynamicWorldEngine.Runtime
                 LogModelLoadOutcome(modelName, model, "vehicle", loaded, attempts);
                 if (!loaded)
                 {
-                    Log.Warn("Spawner", "Failed to load vehicle model \\\"{0}\\\" after {1} attempts. Falling back to police vehicle.", modelName, attempts);
+                    Log.Warn("Spawner", "Failed to load vehicle model \"{0}\" after {1} attempts. Falling back to police vehicle.", modelName, attempts);
                     model.MarkAsNoLongerNeeded();
                     model = new Model(VehicleHash.Police);
                     LogModelPreflight("police", model, "vehicle fallback");
@@ -337,7 +337,7 @@ namespace DynamicWorldEngine.Runtime
             }
             catch (Exception ex)
             {
-                Log.Error("Spawner", ex, "Exception loading vehicle model \\\"{0}\\\"", modelName);
+                Log.Error("Spawner", ex, "Exception loading vehicle model \"{0}\"", modelName);
                 return false;
             }
         }
