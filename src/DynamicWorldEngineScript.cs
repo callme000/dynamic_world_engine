@@ -382,9 +382,9 @@ namespace DynamicWorldEngine
                                     ? targetLoc.DisplayName
                                     : task.Label;
 
-                                Log.Info("Realize", "Realization complete! Props={0}, Vehicles={1}, NPCs={2}", propsCount, vehsCount, npcsCount);
+                                Log.Info("Realize", "Realization pass finished. Spawned entities: Props={0}, Vehicles={1}, NPCs={2}. See Spawner outcome summary for planned vs spawned totals.", propsCount, vehsCount, npcsCount);
                                 
-                                Notification.Show(string.Format("~g~[Spatial Orchestration Realized]~w~ {0}!~n~~y~Props:~w~ {1} | ~y~Vehicles:~w~ {2} | ~y~Cast:~w~ {3}",
+                                Notification.Show(string.Format("~y~[Spatial Orchestration Finished]~w~ {0}!~n~~y~Props:~w~ {1} | ~y~Vehicles:~w~ {2} | ~y~Cast:~w~ {3}",
                                     locName, propsCount, vehsCount, npcsCount));
                             }
                             catch (Exception ex)
