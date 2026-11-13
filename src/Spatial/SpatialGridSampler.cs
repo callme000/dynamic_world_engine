@@ -308,6 +308,21 @@ namespace DynamicWorldEngine.Spatial
                             // water comparison, but it never promotes a cell to classified.
                             groundHeight = World.GetGroundHeight(probePos);
                             normal = Vector3.Zero;
+
+                            // Record what the elevation-only native query returned. This is
+                            // diagnostic evidence only: without a valid normal, the sample
+                            // remains UNKNOWN and cannot contribute to commissioning.
+                            bool fallbackFinite = !float.IsNaN(groundHeight) && !float.IsInfinity(groundHeight);
+                            bool fallbackWithinRay = fallbackFinite &&
+                                groundHeight <= probePos.Z + 3.0f &&
+                                groundHeight >= probePos.Z - 12.0f;
+                            float fallbackDelta = probePos.Z - groundHeight;
+                            unresolvedSamples[unresolvedSamples.Count - 1] += string.Format(
+                                " elevationFallbackZ={0:F2} finite={1} withinRaySegment={2} probeMinusGround={3:F2}",
+                                groundHeight,
+                                fallbackFinite ? "true" : "false",
+                                fallbackWithinRay ? "true" : "false",
+                                fallbackDelta);
                         }
                     }
 
