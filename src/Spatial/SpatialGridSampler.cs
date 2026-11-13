@@ -455,30 +455,32 @@ namespace DynamicWorldEngine.Spatial
                             else
                             {
                                 raycastMisses++;
-                            unresolvedProbePositions.Add(new Vector2(cx, cy));
-                            unresolvedSamples.Add(string.Format(
-                                "({0:F1},{1:F1},{2:F1})[{3}]",
-                                cx, cy, origin.Z, recoveryFailure ?? "unspecified"));
+                                unresolvedProbePositions.Add(new Vector2(cx, cy));
+                                unresolvedSamples.Add(string.Format(
+                                    "({0:F1},{1:F1},{2:F1})[shortRay={3}; highElevation={4}]",
+                                    cx, cy, origin.Z,
+                                    recoveryFailure ?? "unspecified",
+                                    highElevationFailure ?? "unspecified"));
 
-                            // Preserve the elevation-only fallback for diagnostics and
-                            // water comparison, but it never promotes a cell to classified.
-                            groundHeight = World.GetGroundHeight(probePos);
-                            normal = Vector3.Zero;
+                                // Preserve the elevation-only fallback for diagnostics and
+                                // water comparison, but it never promotes a cell to classified.
+                                groundHeight = World.GetGroundHeight(probePos);
+                                normal = Vector3.Zero;
 
-                            // Record what the elevation-only native query returned. This is
-                            // diagnostic evidence only: without a valid normal, the sample
-                            // remains UNKNOWN and cannot contribute to commissioning.
-                            bool fallbackFinite = !float.IsNaN(groundHeight) && !float.IsInfinity(groundHeight);
-                            bool fallbackWithinRay = fallbackFinite &&
-                                groundHeight <= probePos.Z + 3.0f &&
-                                groundHeight >= probePos.Z - 12.0f;
-                            float fallbackDelta = probePos.Z - groundHeight;
-                            unresolvedSamples[unresolvedSamples.Count - 1] += string.Format(
-                                " elevationFallbackZ={0:F2} finite={1} withinRaySegment={2} probeMinusGround={3:F2}",
-                                groundHeight,
-                                fallbackFinite ? "true" : "false",
-                                fallbackWithinRay ? "true" : "false",
-                                fallbackDelta);
+                                // Record what the elevation-only native query returned. This is
+                                // diagnostic evidence only: without a valid normal, the sample
+                                // remains UNKNOWN and cannot contribute to commissioning.
+                                bool fallbackFinite = !float.IsNaN(groundHeight) && !float.IsInfinity(groundHeight);
+                                bool fallbackWithinRay = fallbackFinite &&
+                                    groundHeight <= probePos.Z + 3.0f &&
+                                    groundHeight >= probePos.Z - 12.0f;
+                                float fallbackDelta = probePos.Z - groundHeight;
+                                unresolvedSamples[unresolvedSamples.Count - 1] += string.Format(
+                                    " elevationFallbackZ={0:F2} finite={1} withinRaySegment={2} probeMinusGround={3:F2}",
+                                    groundHeight,
+                                    fallbackFinite ? "true" : "false",
+                                    fallbackWithinRay ? "true" : "false",
+                                    fallbackDelta);
                             }
                         }
                     }
