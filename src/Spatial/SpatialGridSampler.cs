@@ -4,6 +4,7 @@ using GTA;
 using GTA.Math;
 using GTA.Native;
 using DynamicWorldEngine.Database;
+using DynamicWorldEngine.Utils;
 
 namespace DynamicWorldEngine.Spatial
 {
@@ -125,6 +126,67 @@ namespace DynamicWorldEngine.Spatial
             return count;
         }
 
+        /// <summary>
+        /// Recovers a failed ground-normal query from a downward map-collision raycast.
+        /// Object collisions are deliberately excluded so props and vehicles cannot be
+        /// mistaken for terrain. Only an upward-facing, finite surface normal is accepted.
+        /// </summary>
+        private static bool TryRecoverGroundSample(Vector3 probePos, out float groundHeight, out Vector3 normal)
+        {
+            groundHeight = probePos.Z;
+            normal = Vector3.Zero;
+
+            try
+            {
+                // Match the existing spatial ground-probe envelope. Keep this fallback
+                // narrow and deterministic; a miss remains unknown rather than guessed.
+                Vector3 rayStart = new Vector3(probePos.X, probePos.Y, probePos.Z + 3.0f);
+                Vector3 rayEnd = new Vector3(probePos.X, probePos.Y, probePos.Z - 12.0f);
+                RaycastResult hit = World.Raycast(rayStart, rayEnd, IntersectFlags.Map);
+
+                if (!hit.DidHit) return false;
+
+                Vector3 hitPosition = hit.HitPosition;
+                Vector3 hitNormal = hit.SurfaceNormal;
+
+                if (float.IsNaN(hitPosition.X) || float.IsInfinity(hitPosition.X) ||
+                    float.IsNaN(hitPosition.Y) || float.IsInfinity(hitPosition.Y) ||
+                    float.IsNaN(hitPosition.Z) || float.IsInfinity(hitPosition.Z) ||
+                    hitPosition.Z > rayStart.Z || hitPosition.Z < rayEnd.Z)
+                {
+                    return false;
+                }
+
+                if (float.IsNaN(hitNormal.X) || float.IsInfinity(hitNormal.X) ||
+                    float.IsNaN(hitNormal.Y) || float.IsInfinity(hitNormal.Y) ||
+                    float.IsNaN(hitNormal.Z) || float.IsInfinity(hitNormal.Z))
+                {
+                    return false;
+                }
+
+                float normalLength = (float)Math.Sqrt(
+                    hitNormal.X * hitNormal.X +
+                    hitNormal.Y * hitNormal.Y +
+                    hitNormal.Z * hitNormal.Z);
+
+                // A floor sample must have a usable, upward-facing normal. Vertical
+                // walls and underside/ceiling hits are not floor evidence.
+                if (normalLength < 0.5f || hitNormal.Z <= 0.0f) return false;
+
+                normal = new Vector3(
+                    hitNormal.X / normalLength,
+                    hitNormal.Y / normalLength,
+                    hitNormal.Z / normalLength);
+                groundHeight = hitPosition.Z;
+                return true;
+            }
+            catch
+            {
+                // Native/raycast failures are represented as unknown evidence.
+                return false;
+            }
+        }
+
         private void SampleNativeWorld(
             Vector3 origin,
             float radius,
@@ -135,6 +197,10 @@ namespace DynamicWorldEngine.Spatial
             int steps = (int)Math.Ceiling((radius * 2.0f) / cellSize);
             float startX = origin.X - radius;
             float startY = origin.Y - radius;
+            int normalQueryMisses = 0;
+            int raycastRecoveries = 0;
+            int raycastMisses = 0;
+            var unresolvedSamples = new List<string>();
 
             for (int ix = 0; ix < steps; ix++)
             {
@@ -151,8 +217,26 @@ namespace DynamicWorldEngine.Spatial
                     bool gotNormal = World.GetGroundHeightAndNormal(probePos, out groundHeight, out normal);
                     if (!gotNormal)
                     {
-                        groundHeight = World.GetGroundHeight(probePos);
-                        normal = Vector3.Zero;
+                        normalQueryMisses++;
+                        if (TryRecoverGroundSample(probePos, out groundHeight, out normal))
+                        {
+                            gotNormal = true;
+                            raycastRecoveries++;
+                        }
+                        else
+                        {
+                            raycastMisses++;
+                            if (unresolvedSamples.Count < 8)
+                            {
+                                unresolvedSamples.Add(string.Format(
+                                    "({0:F1}, {1:F1}, {2:F1})", cx, cy, origin.Z));
+                            }
+
+                            // Preserve the elevation-only fallback for diagnostics and
+                            // water comparison, but it never promotes a cell to classified.
+                            groundHeight = World.GetGroundHeight(probePos);
+                            normal = Vector3.Zero;
+                        }
                     }
 
                     // A fallback elevation without a valid surface normal is not enough
@@ -199,6 +283,16 @@ namespace DynamicWorldEngine.Spatial
                     };
                     model.Surfaces.Add(surface);
                 }
+            }
+
+            if (normalQueryMisses > 0)
+            {
+                Log.Info("SpatialGridSampler",
+                    "Ground-normal recovery: nativeMisses={0}, raycastRecovered={1}, raycastUnresolved={2}, unresolvedSampleCoordinates={3}",
+                    normalQueryMisses,
+                    raycastRecoveries,
+                    raycastMisses,
+                    unresolvedSamples.Count > 0 ? string.Join("; ", unresolvedSamples.ToArray()) : "none");
             }
 
             // Living entities probe
