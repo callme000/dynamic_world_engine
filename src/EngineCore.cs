@@ -234,6 +234,14 @@ namespace DynamicWorldEngine
                 return result;
             }
 
+            // Deferred orchestration must remain entirely free of GTA world/native calls
+            // on the worker thread. A missing main-thread snapshot is a hard stop.
+            if (deferCommissioning && preScannedModel == null)
+            {
+                result.DiagnosticMessage = "Background scene generation aborted: no main-thread spatial snapshot was available.";
+                return result;
+            }
+
             // Stage 3: Teleport Player / Anchor Physical Context Frame (only if not pre-scanned on main thread)
             if (preScannedModel == null)
             {
