@@ -333,6 +333,121 @@ namespace DynamicWorldEngine
             return result;
         }
 
+        /// <summary>
+        /// Generates scene intent from a previously captured world-context packet.
+        /// Intended for background execution; it performs no GTA world queries.
+        /// </summary>
+        public string GenerateSceneJsonFromContext(string prompt, WorldContextPacket contextPacket)
+        {
+            return _generator.GenerateSceneJsonFromPrompt(prompt, contextPacket);
+        }
+
+        /// <summary>
+        /// Completes scene orchestration using a fresh main-thread spatial observation.
+        /// Scene generation may take place in the background, but planning, validation,
+        /// and commissioning are repeated against this latest observation.
+        /// </summary>
+        public SpatialOrchestrationResult CompleteOrchestrationPipeline(
+            SpatialOrchestrationResult draft,
+            SpatialWorldModel latestWorldModel,
+            bool autoRealize = false,
+            SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
+        {
+            if (draft == null) throw new ArgumentNullException("draft");
+
+            draft.WorldModel = latestWorldModel;
+            draft.Perception = latestWorldModel != null
+                ? latestWorldModel.SemanticSnapshot
+                : null;
+
+            LocationCandidate selectedLoc = draft.LocationResult != null
+                ? draft.LocationResult.SelectedLocation
+                : null;
+            if (selectedLoc == null)
+            {
+                draft.DiagnosticMessage = "Failed to resolve macro-location candidate before fresh-evidence commissioning.";
+                return draft;
+            }
+
+            BuildEnvironmentPayload payload = _parser.ParseBuildEnvironment(draft.GeneratedSceneJson);
+            if (payload == null || payload.Data == null)
+            {
+                draft.DiagnosticMessage = "Failed to parse scene architect payload.";
+                return draft;
+            }
+
+            if (string.IsNullOrEmpty(payload.Data.Name) ||
+                payload.Data.Name.Equals("Custom Generated Environment", StringComparison.OrdinalIgnoreCase))
+            {
+                payload.Data.Name = selectedLoc.DisplayName;
+            }
+
+            // Re-solve placement against the refreshed observation, not the snapshot
+            // that was supplied to the model before potentially lengthy scene generation.
+            SpatialExecutionPlan plan = _planner.PlanEnvironment(
+                payload.Data,
+                selectedLoc.Coordinates,
+                selectedLoc.Heading,
+                latestWorldModel);
+            if (latestWorldModel != null && !object.ReferenceEquals(plan.WorldModel, latestWorldModel))
+            {
+                plan.WorldModel = latestWorldModel;
+            }
+            draft.Plan = plan;
+
+            draft.ValidationResult = _planValidator.ValidatePlan(
+                plan,
+                latestWorldModel,
+                null,
+                applyAutoCorrections: true);
+            plan.ValidationResult = draft.ValidationResult;
+
+            if (draft.ValidationResult == null || !draft.ValidationResult.IsValid)
+            {
+                string violations = (draft.ValidationResult != null &&
+                    draft.ValidationResult.HardViolations != null &&
+                    draft.ValidationResult.HardViolations.Count > 0)
+                    ? string.Join("; ", draft.ValidationResult.HardViolations.ToArray())
+                    : "Plan validation failed or was missing.";
+                draft.DiagnosticMessage = string.Format(
+                    "Spatial Validation Barrier Rejected Plan: {0}", violations);
+                draft.Success = false;
+                return draft;
+            }
+
+            if (commissioningMode == SpatialCommissioningMode.RequireLiveEvidence &&
+                !draft.ValidationResult.PhysicalFeasibilityConfirmed)
+            {
+                draft.DiagnosticMessage = "Commissioning rejected: complete live GTA spatial evidence is required. " +
+                    draft.ValidationResult.PhysicalEvidenceDiagnostic +
+                    " Use AllowUnverifiedSimulation only for deliberate headless/offline simulation.";
+                draft.Success = false;
+                return draft;
+            }
+
+            draft.Environment = CommissionEnvironment(plan, payload.Data, commissioningMode);
+            if (autoRealize && draft.Environment != null)
+            {
+                try
+                {
+                    Ped playerPed = null;
+                    try { if (Game.Player != null) playerPed = Game.Player.Character; } catch {}
+                    Realize(draft.Environment.EnvironmentId, playerPed, payload.Data);
+                }
+                catch {}
+            }
+
+            draft.Success = draft.Environment != null;
+            draft.DiagnosticMessage = string.Format(
+                "Orchestration Pipeline Complete: Location='{0}', CandidateAreas={1}, Props={2}, NPCs={3}, Status='{4}'",
+                selectedLoc.DisplayName,
+                latestWorldModel != null ? latestWorldModel.CandidateAreas.Count : 0,
+                plan.ResolvedProps.Count,
+                plan.ResolvedNpcs.Count,
+                draft.Environment != null ? draft.Environment.Status : "FAILED");
+            return draft;
+        }
+
         public string GenerateSceneJsonFromNaturalLanguage(string prompt)
         {
             return _generator.GenerateSceneJsonFromPrompt(prompt);
