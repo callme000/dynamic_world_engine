@@ -131,29 +131,50 @@ namespace DynamicWorldEngine.Spatial
         /// Object collisions are deliberately excluded so props and vehicles cannot be
         /// mistaken for terrain. Only an upward-facing, finite surface normal is accepted.
         /// </summary>
-        private static bool TryRecoverGroundSample(Vector3 probePos, out float groundHeight, out Vector3 normal)
+        private static bool TryRecoverGroundSample(
+            Vector3 probePos,
+            out float groundHeight,
+            out Vector3 normal,
+            out string failureDetail)
         {
             groundHeight = probePos.Z;
             normal = Vector3.Zero;
+            failureDetail = "not_attempted";
+
+            Vector3 rayStart = new Vector3(probePos.X, probePos.Y, probePos.Z + 3.0f);
+            Vector3 rayEnd = new Vector3(probePos.X, probePos.Y, probePos.Z - 12.0f);
 
             try
             {
-                // Match the existing spatial ground-probe envelope. Keep this fallback
-                // narrow and deterministic; a miss remains unknown rather than guessed.
-                Vector3 rayStart = new Vector3(probePos.X, probePos.Y, probePos.Z + 3.0f);
-                Vector3 rayEnd = new Vector3(probePos.X, probePos.Y, probePos.Z - 12.0f);
                 RaycastResult hit = World.Raycast(rayStart, rayEnd, IntersectFlags.Map);
 
-                if (!hit.DidHit) return false;
+                if (!hit.DidHit)
+                {
+                    failureDetail = string.Format(
+                        "no_hit rayStartZ={0:F2} rayEndZ={1:F2}",
+                        rayStart.Z, rayEnd.Z);
+                    return false;
+                }
 
                 Vector3 hitPosition = hit.HitPosition;
                 Vector3 hitNormal = hit.SurfaceNormal;
 
                 if (float.IsNaN(hitPosition.X) || float.IsInfinity(hitPosition.X) ||
                     float.IsNaN(hitPosition.Y) || float.IsInfinity(hitPosition.Y) ||
-                    float.IsNaN(hitPosition.Z) || float.IsInfinity(hitPosition.Z) ||
-                    hitPosition.Z > rayStart.Z || hitPosition.Z < rayEnd.Z)
+                    float.IsNaN(hitPosition.Z) || float.IsInfinity(hitPosition.Z))
                 {
+                    failureDetail = string.Format(
+                        "invalid_hit_position hit=({0},{1},{2}) normal=({3:F3},{4:F3},{5:F3})",
+                        hitPosition.X, hitPosition.Y, hitPosition.Z,
+                        hitNormal.X, hitNormal.Y, hitNormal.Z);
+                    return false;
+                }
+
+                if (hitPosition.Z > rayStart.Z || hitPosition.Z < rayEnd.Z)
+                {
+                    failureDetail = string.Format(
+                        "hit_outside_vertical_segment hitZ={0:F2} rayStartZ={1:F2} rayEndZ={2:F2}",
+                        hitPosition.Z, rayStart.Z, rayEnd.Z);
                     return false;
                 }
 
@@ -161,6 +182,10 @@ namespace DynamicWorldEngine.Spatial
                     float.IsNaN(hitNormal.Y) || float.IsInfinity(hitNormal.Y) ||
                     float.IsNaN(hitNormal.Z) || float.IsInfinity(hitNormal.Z))
                 {
+                    failureDetail = string.Format(
+                        "invalid_hit_normal hit=({0:F2},{1:F2},{2:F2}) normal=({3},{4},{5})",
+                        hitPosition.X, hitPosition.Y, hitPosition.Z,
+                        hitNormal.X, hitNormal.Y, hitNormal.Z);
                     return false;
                 }
 
@@ -169,20 +194,35 @@ namespace DynamicWorldEngine.Spatial
                     hitNormal.Y * hitNormal.Y +
                     hitNormal.Z * hitNormal.Z);
 
-                // A floor sample must have a usable, upward-facing normal. Vertical
-                // walls and underside/ceiling hits are not floor evidence.
-                if (normalLength < 0.5f || hitNormal.Z <= 0.0f) return false;
+                if (normalLength < 0.5f)
+                {
+                    failureDetail = string.Format(
+                        "normal_too_small length={0:F4} normal=({1:F3},{2:F3},{3:F3}) hitZ={4:F2}",
+                        normalLength, hitNormal.X, hitNormal.Y, hitNormal.Z, hitPosition.Z);
+                    return false;
+                }
+
+                if (hitNormal.Z <= 0.0f)
+                {
+                    failureDetail = string.Format(
+                        "normal_not_upward normal=({0:F3},{1:F3},{2:F3}) hitZ={3:F2}",
+                        hitNormal.X, hitNormal.Y, hitNormal.Z, hitPosition.Z);
+                    return false;
+                }
 
                 normal = new Vector3(
                     hitNormal.X / normalLength,
                     hitNormal.Y / normalLength,
                     hitNormal.Z / normalLength);
                 groundHeight = hitPosition.Z;
+                failureDetail = null;
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-                // Native/raycast failures are represented as unknown evidence.
+                failureDetail = string.Format(
+                    "exception={0}: {1} rayStartZ={2:F2} rayEndZ={3:F2}",
+                    ex.GetType().Name, ex.Message, rayStart.Z, rayEnd.Z);
                 return false;
             }
         }
@@ -218,7 +258,8 @@ namespace DynamicWorldEngine.Spatial
                     if (!gotNormal)
                     {
                         normalQueryMisses++;
-                        if (TryRecoverGroundSample(probePos, out groundHeight, out normal))
+                        string recoveryFailure;
+                        if (TryRecoverGroundSample(probePos, out groundHeight, out normal, out recoveryFailure))
                         {
                             gotNormal = true;
                             raycastRecoveries++;
@@ -226,11 +267,9 @@ namespace DynamicWorldEngine.Spatial
                         else
                         {
                             raycastMisses++;
-                            if (unresolvedSamples.Count < 8)
-                            {
-                                unresolvedSamples.Add(string.Format(
-                                    "({0:F1}, {1:F1}, {2:F1})", cx, cy, origin.Z));
-                            }
+                            unresolvedSamples.Add(string.Format(
+                                "({0:F1},{1:F1},{2:F1})[{3}]",
+                                cx, cy, origin.Z, recoveryFailure ?? "unspecified"));
 
                             // Preserve the elevation-only fallback for diagnostics and
                             // water comparison, but it never promotes a cell to classified.
@@ -288,7 +327,7 @@ namespace DynamicWorldEngine.Spatial
             if (normalQueryMisses > 0)
             {
                 Log.Info("SpatialGridSampler",
-                    "Ground-normal recovery: nativeMisses={0}, raycastRecovered={1}, raycastUnresolved={2}, unresolvedSampleCoordinates={3}",
+                    "Ground-normal recovery diagnostics: nativeMisses={0}, raycastRecovered={1}, raycastUnresolved={2}, unresolvedSamples={3}",
                     normalQueryMisses,
                     raycastRecoveries,
                     raycastMisses,
