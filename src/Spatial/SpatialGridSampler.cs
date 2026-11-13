@@ -32,6 +32,7 @@ namespace DynamicWorldEngine.Spatial
             WorldMemoryStore store = null,
             string zoneContext = null)
         {
+            DateTime captureStarted = DateTime.UtcNow;
             var model = new SpatialWorldModel
             {
                 Origin = origin,
@@ -63,6 +64,11 @@ namespace DynamicWorldEngine.Spatial
             {
                 SampleHeadlessSyntheticWorld(origin, radius, cellSize, store, zoneContext, model);
             }
+
+            // Timestamp the completed observation, not merely model allocation, so
+            // freshness checks reflect when native sampling actually finished.
+            model.Provenance.CaptureTime = DateTime.UtcNow;
+            model.Provenance.CaptureDuration = model.Provenance.CaptureTime - captureStarted;
 
             int totalRequestedCells = CountRequestedGridCells(origin, radius, cellSize);
             int classifiedCells = 0;
