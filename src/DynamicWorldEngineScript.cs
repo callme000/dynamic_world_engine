@@ -59,6 +59,7 @@ namespace DynamicWorldEngine
             public string Label { get; set; }
             public string ErrorMessage { get; set; }
             public SpatialOrchestrationResult OrchestrationResult { get; set; }
+            public SpatialOrchestrationResult OrchestrationDraft { get; set; }
         }
 
         public DynamicWorldEngineScript()
@@ -590,41 +591,33 @@ namespace DynamicWorldEngine
                 try
                 {
                     Log.Breadcrumb("Background scene generation started for prompt: \"{0}\"", userPrompt);
-                    var orchResult = _engine.ExecuteOrchestrationPipeline(
+                    var orchDraft = _engine.ExecuteOrchestrationPipeline(
                         userPrompt,
                         playerPos,
                         playerHeading,
                         autoRealize: false,
                         preScannedModel: worldModel,
-                        preResolvedLocation: locResult);
+                        preResolvedLocation: locResult,
+                        deferCommissioning: true);
 
                     lock (_queueLock)
                     {
-                        if (orchResult != null && orchResult.Plan != null)
+                        if (orchDraft != null && !string.IsNullOrEmpty(orchDraft.GeneratedSceneJson))
                         {
-                            if (orchResult.Success && orchResult.Environment != null)
+                            Log.Info("Prompt", "Scene intent generated in background. Enqueuing fresh-evidence commissioning for \"{0}\"", userPrompt);
+                            _taskQueue.Enqueue(new PendingTask
                             {
-                                Log.Info("Prompt", "Orchestration committed successfully. Enqueuing realization for plan \"{0}\"", orchResult.Plan.Name);
-                                _taskQueue.Enqueue(new PendingTask
-                                {
-                                    Label = userPrompt,
-                                    OrchestrationResult = orchResult
-                                });
-                            }
-                            else
-                            {
-                                string failure = !string.IsNullOrEmpty(orchResult.DiagnosticMessage)
-                                    ? orchResult.DiagnosticMessage
-                                    : "Orchestration produced a plan but did not commission an environment.";
-                                Log.Error("Prompt", null, "Orchestration failed; raw-JSON fallback suppressed to preserve the commissioning barrier. {0}", failure);
-                                _taskQueue.Enqueue(new PendingTask { Label = userPrompt, ErrorMessage = failure });
-                            }
+                                Label = userPrompt,
+                                OrchestrationDraft = orchDraft
+                            });
                         }
                         else
                         {
-                            Log.Warn("Prompt", "Orchestration produced no plan. Falling back to direct JSON generation.");
-                            string generatedJson = _engine.GenerateSceneJsonFromNaturalLanguage(userPrompt);
-                            _taskQueue.Enqueue(new PendingTask { JsonPayload = generatedJson, Label = userPrompt });
+                            string failure = orchDraft != null && !string.IsNullOrEmpty(orchDraft.DiagnosticMessage)
+                                ? orchDraft.DiagnosticMessage
+                                : "Scene generation returned no usable payload.";
+                            Log.Error("Prompt", null, "Scene generation failed; commissioning was not attempted. {0}", failure);
+                            _taskQueue.Enqueue(new PendingTask { Label = userPrompt, ErrorMessage = failure });
                         }
                     }
                 }
@@ -904,41 +897,33 @@ namespace DynamicWorldEngine
                     try
                     {
                         Log.Breadcrumb("Background scene generation started for prompt: \"{0}\"", userPrompt);
-                        var orchResult = _engine.ExecuteOrchestrationPipeline(
+                        var orchDraft = _engine.ExecuteOrchestrationPipeline(
                             userPrompt,
                             playerPos,
                             playerHeading,
                             autoRealize: false,
                             preScannedModel: worldModel,
-                            preResolvedLocation: locResult);
+                            preResolvedLocation: locResult,
+                            deferCommissioning: true);
 
                         lock (_queueLock)
                         {
-                            if (orchResult != null && orchResult.Plan != null)
+                            if (orchDraft != null && !string.IsNullOrEmpty(orchDraft.GeneratedSceneJson))
                             {
-                                if (orchResult.Success && orchResult.Environment != null)
+                                Log.Info("Prompt", "Scene intent generated in background. Enqueuing fresh-evidence commissioning for \"{0}\"", userPrompt);
+                                _taskQueue.Enqueue(new PendingTask
                                 {
-                                    Log.Info("Prompt", "Orchestration committed successfully. Enqueuing realization for plan \"{0}\"", orchResult.Plan.Name);
-                                    _taskQueue.Enqueue(new PendingTask
-                                    {
-                                        Label = userPrompt,
-                                        OrchestrationResult = orchResult
-                                    });
-                                }
-                                else
-                                {
-                                    string failure = !string.IsNullOrEmpty(orchResult.DiagnosticMessage)
-                                        ? orchResult.DiagnosticMessage
-                                        : "Orchestration produced a plan but did not commission an environment.";
-                                    Log.Error("Prompt", null, "Orchestration failed; raw-JSON fallback suppressed to preserve the commissioning barrier. {0}", failure);
-                                    _taskQueue.Enqueue(new PendingTask { Label = userPrompt, ErrorMessage = failure });
-                                }
+                                    Label = userPrompt,
+                                    OrchestrationDraft = orchDraft
+                                });
                             }
                             else
                             {
-                                Log.Warn("Prompt", "Orchestration produced no plan. Falling back to direct JSON generation.");
-                                string generatedJson = _engine.GenerateSceneJsonFromNaturalLanguage(userPrompt);
-                                _taskQueue.Enqueue(new PendingTask { JsonPayload = generatedJson, Label = userPrompt });
+                                string failure = orchDraft != null && !string.IsNullOrEmpty(orchDraft.DiagnosticMessage)
+                                    ? orchDraft.DiagnosticMessage
+                                    : "Scene generation returned no usable payload.";
+                                Log.Error("Prompt", null, "Scene generation failed; commissioning was not attempted. {0}", failure);
+                                _taskQueue.Enqueue(new PendingTask { Label = userPrompt, ErrorMessage = failure });
                             }
                         }
                     }
