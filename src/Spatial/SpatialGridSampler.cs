@@ -150,9 +150,42 @@ namespace DynamicWorldEngine.Spatial
 
                 if (!hit.DidHit)
                 {
+                    // Diagnostic comparison only: determine whether the broader
+                    // Map|Objects mask sees collision where Map alone does not.
+                    // Never use this secondary hit to classify or recover a surface.
+                    string comparisonDetail;
+                    try
+                    {
+                        RaycastResult comparisonHit = World.Raycast(
+                            rayStart,
+                            rayEnd,
+                            IntersectFlags.Map | IntersectFlags.Objects);
+
+                        if (comparisonHit.DidHit)
+                        {
+                            Vector3 comparisonPosition = comparisonHit.HitPosition;
+                            Vector3 comparisonNormal = comparisonHit.SurfaceNormal;
+                            comparisonDetail = string.Format(
+                                "mapObjects=hit pos=({0:F2},{1:F2},{2:F2}) normal=({3:F3},{4:F3},{5:F3})",
+                                comparisonPosition.X, comparisonPosition.Y, comparisonPosition.Z,
+                                comparisonNormal.X, comparisonNormal.Y, comparisonNormal.Z);
+                        }
+                        else
+                        {
+                            comparisonDetail = "mapObjects=no_hit";
+                        }
+                    }
+                    catch (Exception comparisonException)
+                    {
+                        comparisonDetail = string.Format(
+                            "mapObjects=exception:{0}:{1}",
+                            comparisonException.GetType().Name,
+                            comparisonException.Message);
+                    }
+
                     failureDetail = string.Format(
-                        "no_hit rayStartZ={0:F2} rayEndZ={1:F2}",
-                        rayStart.Z, rayEnd.Z);
+                        "no_hit rayStartZ={0:F2} rayEndZ={1:F2} {2}",
+                        rayStart.Z, rayEnd.Z, comparisonDetail);
                     return false;
                 }
 
