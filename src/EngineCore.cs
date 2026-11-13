@@ -220,7 +220,8 @@ namespace DynamicWorldEngine
             bool autoRealize = true,
             SpatialWorldModel preScannedModel = null,
             LocationSelectionResult preResolvedLocation = null,
-            SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence)
+            SpatialCommissioningMode commissioningMode = SpatialCommissioningMode.RequireLiveEvidence,
+            bool deferCommissioning = false)
         {
             var result = new SpatialOrchestrationResult { Prompt = userPrompt };
 
@@ -259,6 +260,14 @@ namespace DynamicWorldEngine
             // Stage 7: Generate Intent (LLM / Synthesizer guided by grounded WorldContextPacket)
             string sceneJson = _generator.GenerateSceneJsonFromPrompt(userPrompt, result.ContextPacket);
             result.GeneratedSceneJson = sceneJson;
+
+            // The game-thread caller will refresh physical evidence and complete
+            // planning/validation/commissioning after background generation finishes.
+            if (deferCommissioning)
+            {
+                result.DiagnosticMessage = "Scene intent generated; awaiting fresh main-thread spatial evidence.";
+                return result;
+            }
 
             // Parse BuildEnvironmentData
             BuildEnvironmentPayload payload = _parser.ParseBuildEnvironment(sceneJson);
@@ -331,15 +340,6 @@ namespace DynamicWorldEngine
                 result.Environment != null ? result.Environment.Status : "FAILED");
 
             return result;
-        }
-
-        /// <summary>
-        /// Generates scene intent from a previously captured world-context packet.
-        /// Intended for background execution; it performs no GTA world queries.
-        /// </summary>
-        public string GenerateSceneJsonFromContext(string prompt, WorldContextPacket contextPacket)
-        {
-            return _generator.GenerateSceneJsonFromPrompt(prompt, contextPacket);
         }
 
         /// <summary>
