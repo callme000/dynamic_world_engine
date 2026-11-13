@@ -216,6 +216,28 @@ namespace DynamicWorldEngine.Runtime
             }
         }
 
+        private static void LogModelPreflight(string modelName, Model model, string expectedKind)
+        {
+            try
+            {
+                Log.Debug("Spawner", "Model preflight: name=\"{0}\", hash=0x{1:X8}, expected={2}, inCdImage={3}, valid={4}, isPed={5}, isVehicle={6}",
+                    modelName ?? "<null>", model.Hash, expectedKind,
+                    model.IsInCdImage, model.IsValid, model.IsPed, model.IsVehicle);
+            }
+            catch (Exception ex)
+            {
+                Log.Warn("Spawner", "Model preflight check failed for \"{0}\" (expected={1}): {2}: {3}",
+                    modelName ?? "<null>", expectedKind, ex.GetType().Name, ex.Message);
+            }
+        }
+
+        private static void LogModelLoadOutcome(string modelName, Model model, string expectedKind, bool loaded, int attempts)
+        {
+            Log.Info("Spawner", "Model load outcome: name=\"{0}\", hash=0x{1:X8}, expected={2}, loaded={3}, attempts={4}, inCdImage={5}, valid={6}",
+                modelName ?? "<null>", model.Hash, expectedKind, loaded, attempts,
+                model.IsInCdImage, model.IsValid);
+        }
+
         public bool SafeLoadModel(string modelName, out Model model, bool isPed = false)
         {
             model = new Model(0);
@@ -223,6 +245,8 @@ namespace DynamicWorldEngine.Runtime
             try
             {
                 model = new Model(modelName);
+                string expectedKind = isPed ? "ped" : "prop/object";
+                LogModelPreflight(modelName, model, expectedKind);
                 model.Request(1000);
                 int attempts = 0;
                 while (!model.IsLoaded && attempts < 50)
@@ -231,7 +255,9 @@ namespace DynamicWorldEngine.Runtime
                     attempts++;
                 }
 
-                if (!model.IsLoaded)
+                bool loaded = model.IsLoaded;
+                LogModelLoadOutcome(modelName, model, expectedKind, loaded, attempts);
+                if (!loaded)
                 {
                     Log.Warn("Spawner", "Failed to load model \"{0}\" (isPed={1}) after {2} attempts", modelName, isPed, attempts);
                     model.MarkAsNoLongerNeeded();
@@ -240,6 +266,7 @@ namespace DynamicWorldEngine.Runtime
                         string fallback = "a_m_y_beach_01";
                         Log.Info("Spawner", "Falling back to default ped model: {0}", fallback);
                         model = new Model(fallback);
+                        LogModelPreflight(fallback, model, "ped fallback");
                         model.Request(1000);
                         attempts = 0;
                         while (!model.IsLoaded && attempts < 50)
@@ -247,13 +274,15 @@ namespace DynamicWorldEngine.Runtime
                             Script.Wait(20);
                             attempts++;
                         }
-                        return model.IsLoaded;
+                        loaded = model.IsLoaded;
+                        LogModelLoadOutcome(fallback, model, "ped fallback", loaded, attempts);
+                        return loaded;
                     }
                     // For props, fail gracefully rather than spawning an out-of-place wooden supply crate!
                     return false;
                 }
 
-                return model.IsLoaded;
+                return loaded;
             }
             catch (Exception ex)
             {
@@ -276,6 +305,7 @@ namespace DynamicWorldEngine.Runtime
             try
             {
                 model = new Model(modelName);
+                LogModelPreflight(modelName, model, "vehicle");
                 model.Request(1000);
                 int attempts = 0;
                 while (!model.IsLoaded && attempts < 50)
@@ -284,11 +314,14 @@ namespace DynamicWorldEngine.Runtime
                     attempts++;
                 }
 
-                if (!model.IsLoaded)
+                bool loaded = model.IsLoaded;
+                LogModelLoadOutcome(modelName, model, "vehicle", loaded, attempts);
+                if (!loaded)
                 {
                     Log.Warn("Spawner", "Failed to load vehicle model \"{0}\" after {1} attempts. Falling back to police vehicle.", modelName, attempts);
                     model.MarkAsNoLongerNeeded();
                     model = new Model(VehicleHash.Police);
+                    LogModelPreflight("police", model, "vehicle fallback");
                     model.Request(1000);
                     attempts = 0;
                     while (!model.IsLoaded && attempts < 50)
@@ -296,9 +329,11 @@ namespace DynamicWorldEngine.Runtime
                         Script.Wait(20);
                         attempts++;
                     }
+                    loaded = model.IsLoaded;
+                    LogModelLoadOutcome("police", model, "vehicle fallback", loaded, attempts);
                 }
 
-                return model.IsLoaded;
+                return loaded;
             }
             catch (Exception ex)
             {
@@ -583,6 +618,7 @@ namespace DynamicWorldEngine.Runtime
             }
 
             List<ActiveNpcContext> newlySpawnedNpcs = new List<ActiveNpcContext>();
+            int skippedDeadNpcs = 0;
             if (plan.ResolvedNpcs != null && plan.ResolvedNpcs.Count > 0)
             {
                 int nIdx = 0;
@@ -595,6 +631,7 @@ namespace DynamicWorldEngine.Runtime
                             (!string.IsNullOrEmpty(npcPlan.Name) && deadEntityIds.Contains(npcPlan.Name)) ||
                             (envRecord != null && envRecord.NpcIds != null && nIdx < envRecord.NpcIds.Count && deadEntityIds.Contains(envRecord.NpcIds[nIdx].ToString()))))
                         {
+                            skippedDeadNpcs++;
                             nIdx++;
                             continue;
                         }
@@ -724,6 +761,15 @@ namespace DynamicWorldEngine.Runtime
                     ctx.ExecuteInitialChoreography(npcPlan.InitialTask, _activeNpcContexts);
                 }
             }
+
+            int plannedProps = plan.ResolvedProps != null ? plan.ResolvedProps.Count : 0;
+            int plannedVehicles = plan.ResolvedVehicles != null ? plan.ResolvedVehicles.Count : 0;
+            int plannedNpcs = plan.ResolvedNpcs != null ? plan.ResolvedNpcs.Count : 0;
+            Log.Info("Spawner", "Physical realization outcome: props planned={0}, spawned={1}, notSpawned={2}; vehicles planned={3}, spawned={4}, notSpawned={5}; NPCs planned={6}, spawned={7}, skippedDead={8}, notSpawned={9}",
+                plannedProps, propsCount, Math.Max(0, plannedProps - propsCount),
+                plannedVehicles, vehsCount, Math.Max(0, plannedVehicles - vehsCount),
+                plannedNpcs, npcsCount, skippedDeadNpcs,
+                Math.Max(0, plannedNpcs - npcsCount - skippedDeadNpcs));
         }
 
         public void SpawnStash(
