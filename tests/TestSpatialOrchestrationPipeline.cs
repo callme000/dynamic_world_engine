@@ -283,6 +283,8 @@ namespace DynamicWorldEngine.Tests
             Assert(result.ContextPacket != null, "Stage 6: World Context Packet synthesized");
             Assert(!string.IsNullOrEmpty(result.GeneratedSceneJson), "Stage 7: Scene Intent JSON generated");
             Assert(result.Plan != null, "Stage 8: SpatialExecutionPlan produced");
+            Assert(object.ReferenceEquals(result.WorldModel, result.Plan.WorldModel),
+                "Authoritative scanned world model is preserved in the committed plan");
             Assert(result.Plan.ValidationResult != null && result.Plan.ValidationResult.IsValid, "Stage 9: Hard Spatial Validation Gate passed");
             Assert(result.Environment != null, "Stage 10: Environment committed to storage");
             Assert(result.Environment.Status == "COMMISSIONED", "Environment enrolled with COMMISSIONED status");
@@ -305,6 +307,12 @@ namespace DynamicWorldEngine.Tests
                 "Default orchestration refuses to commission synthetic spatial evidence");
             Assert(strictResult != null && strictResult.DiagnosticMessage.Contains("complete live GTA spatial evidence"),
                 "Strict commissioning explains the missing live evidence");
+            Assert(strictResult != null && strictResult.ValidationResult != null &&
+                strictResult.ValidationResult.PhysicalEvidenceDiagnostic.Contains("scan is not marked native"),
+                "Strict commissioning identifies the exact synthetic-evidence predicate that failed");
+            Assert(strictResult != null && strictResult.Plan != null &&
+                object.ReferenceEquals(strictResult.WorldModel, strictResult.Plan.WorldModel),
+                "Strict rejection still retains the authoritative scanned model for diagnostics");
 
             // Edge case 1: Open ground prompt with no specific landmark named
             var resGeneric = engine.ExecuteOrchestrationPipeline("Tactical arms deal in a secluded alleyway", autoRealize: false, commissioningMode: SpatialCommissioningMode.AllowUnverifiedSimulation);
