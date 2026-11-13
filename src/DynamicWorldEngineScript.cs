@@ -354,6 +354,41 @@ namespace DynamicWorldEngine
             }
         }
 
+        private void LogSpatialScanDiagnostics(string source, SpatialWorldModel model)
+        {
+            if (model == null)
+            {
+                Log.Warn("SpatialEvidence", "{0}: spatial scan returned no world model.", source);
+                return;
+            }
+
+            SpatialSnapshotProvenance provenance = model.Provenance;
+            if (provenance == null)
+            {
+                Log.Warn("SpatialEvidence", "{0}: world model has no provenance. Surfaces={1}, Radius={2:F1}m",
+                    source, model.Surfaces != null ? model.Surfaces.Count : 0, model.Radius);
+                return;
+            }
+
+            double captureAgeSeconds = provenance.CaptureTime == DateTime.MinValue
+                ? -1.0
+                : (DateTime.UtcNow - provenance.CaptureTime).TotalSeconds;
+
+            Log.Info("SpatialEvidence",
+                "{0}: ScanType={1}, IsNative={2}, DataSource={3}, Requested={4}, Sampled={5}, Classified={6}, Unknown={7}, Completeness={8:P2}, CaptureAge={9:F2}s, CaptureDuration={10:F0}ms",
+                source,
+                provenance.ScanType,
+                provenance.IsNativeScan,
+                provenance.DataSource,
+                provenance.TotalRequestedCells,
+                provenance.SampledCellsCount,
+                provenance.ClassifiedCellsCount,
+                provenance.UnknownCellsCount,
+                provenance.CompletenessScore,
+                captureAgeSeconds,
+                provenance.CaptureDuration.TotalMilliseconds);
+        }
+
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
             if (!_isInitialized || !GameThreadGate.IsInitialized) return;
@@ -548,6 +583,8 @@ namespace DynamicWorldEngine
                 Log.Error("Prompt", ex, "Exception during main-thread location discovery/perception");
             }
 
+            LogSpatialScanDiagnostics("AI World Architect", worldModel);
+
             ThreadPool.QueueUserWorkItem(delegate
             {
                 try
@@ -565,16 +602,27 @@ namespace DynamicWorldEngine
                     {
                         if (orchResult != null && orchResult.Plan != null)
                         {
-                            Log.Info("Prompt", "Orchestration pipeline succeeded! Enqueuing task with plan \"{0}\"", orchResult.Plan.Name);
-                            _taskQueue.Enqueue(new PendingTask { 
-                                JsonPayload = orchResult.GeneratedSceneJson, 
-                                Label = userPrompt,
-                                OrchestrationResult = orchResult
-                            });
+                            if (orchResult.Success && orchResult.Environment != null)
+                            {
+                                Log.Info("Prompt", "Orchestration committed successfully. Enqueuing realization for plan \"{0}\"", orchResult.Plan.Name);
+                                _taskQueue.Enqueue(new PendingTask
+                                {
+                                    Label = userPrompt,
+                                    OrchestrationResult = orchResult
+                                });
+                            }
+                            else
+                            {
+                                string failure = !string.IsNullOrEmpty(orchResult.DiagnosticMessage)
+                                    ? orchResult.DiagnosticMessage
+                                    : "Orchestration produced a plan but did not commission an environment.";
+                                Log.Error("Prompt", null, "Orchestration failed; raw-JSON fallback suppressed to preserve the commissioning barrier. {0}", failure);
+                                _taskQueue.Enqueue(new PendingTask { Label = userPrompt, ErrorMessage = failure });
+                            }
                         }
                         else
                         {
-                            Log.Warn("Prompt", "Orchestration plan was null. Falling back to direct JSON generation.");
+                            Log.Warn("Prompt", "Orchestration produced no plan. Falling back to direct JSON generation.");
                             string generatedJson = _engine.GenerateSceneJsonFromNaturalLanguage(userPrompt);
                             _taskQueue.Enqueue(new PendingTask { JsonPayload = generatedJson, Label = userPrompt });
                         }
@@ -849,6 +897,8 @@ namespace DynamicWorldEngine
                     Log.Error("Prompt", ex, "Exception during main-thread location discovery/perception");
                 }
 
+                LogSpatialScanDiagnostics("AI World Architect", worldModel);
+
                 ThreadPool.QueueUserWorkItem(delegate
                 {
                     try
@@ -866,16 +916,27 @@ namespace DynamicWorldEngine
                         {
                             if (orchResult != null && orchResult.Plan != null)
                             {
-                                Log.Info("Prompt", "Orchestration pipeline succeeded! Enqueuing task with plan \"{0}\"", orchResult.Plan.Name);
-                                _taskQueue.Enqueue(new PendingTask { 
-                                    JsonPayload = orchResult.GeneratedSceneJson, 
-                                    Label = userPrompt,
-                                    OrchestrationResult = orchResult
-                                });
+                                if (orchResult.Success && orchResult.Environment != null)
+                                {
+                                    Log.Info("Prompt", "Orchestration committed successfully. Enqueuing realization for plan \"{0}\"", orchResult.Plan.Name);
+                                    _taskQueue.Enqueue(new PendingTask
+                                    {
+                                        Label = userPrompt,
+                                        OrchestrationResult = orchResult
+                                    });
+                                }
+                                else
+                                {
+                                    string failure = !string.IsNullOrEmpty(orchResult.DiagnosticMessage)
+                                        ? orchResult.DiagnosticMessage
+                                        : "Orchestration produced a plan but did not commission an environment.";
+                                    Log.Error("Prompt", null, "Orchestration failed; raw-JSON fallback suppressed to preserve the commissioning barrier. {0}", failure);
+                                    _taskQueue.Enqueue(new PendingTask { Label = userPrompt, ErrorMessage = failure });
+                                }
                             }
                             else
                             {
-                                Log.Warn("Prompt", "Orchestration plan was null. Falling back to direct JSON generation.");
+                                Log.Warn("Prompt", "Orchestration produced no plan. Falling back to direct JSON generation.");
                                 string generatedJson = _engine.GenerateSceneJsonFromNaturalLanguage(userPrompt);
                                 _taskQueue.Enqueue(new PendingTask { JsonPayload = generatedJson, Label = userPrompt });
                             }
